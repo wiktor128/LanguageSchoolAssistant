@@ -90,6 +90,7 @@
   },
 
   "scripts": {
+    "precompile": "webpack --config webpack-production.config.js --progress --colors",
     "prepublish": [ "bower install", "dotnet bundle" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   }
