@@ -105,10 +105,22 @@ namespace LanguageSchoolAssistant.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, OfficeNumber = model.OfficeNumber };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    if (model.IsAdministrator)
+                    {
+                        await _userManager.AddToRoleAsync(user, "Administrator");
+                    }
+                    else if (model.IsManager)
+                    {
+                        await _userManager.AddToRoleAsync(user, "Manager");
+                    }
+
+                    var officeClaim = new Claim("office", user.OfficeNumber.ToString(), ClaimValueTypes.Integer);
+                    await _userManager.AddClaimAsync(user, officeClaim);
+
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=532713
                     // Send an email with this link
                     //var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);

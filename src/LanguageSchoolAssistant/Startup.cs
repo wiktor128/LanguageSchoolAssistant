@@ -12,10 +12,11 @@ using Microsoft.Extensions.Logging;
 using LanguageSchoolAssistant.Data;
 using LanguageSchoolAssistant.Models;
 using LanguageSchoolAssistant.Services;
+using Microsoft.AspNetCore.Identity;
 
 namespace LanguageSchoolAssistant
 {
-    public class Startup
+    public partial class Startup
     {
         public Startup(IHostingEnvironment env)
         {
@@ -55,7 +56,7 @@ namespace LanguageSchoolAssistant
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public async void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, RoleManager<IdentityRole> roleManager)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -84,6 +85,8 @@ namespace LanguageSchoolAssistant
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            await InitializeRoles(roleManager);
         }
     }
 }
