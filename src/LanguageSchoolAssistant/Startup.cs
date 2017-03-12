@@ -13,11 +13,16 @@ using LanguageSchoolAssistant.Data;
 using LanguageSchoolAssistant.Models;
 using LanguageSchoolAssistant.Services;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Cryptography.X509Certificates;
+//using System.Security;
+using System.Diagnostics;
 
 namespace LanguageSchoolAssistant
 {
     public partial class Startup
     {
+        private X509Certificate2 jwtSigningCert;
+
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -33,6 +38,11 @@ namespace LanguageSchoolAssistant
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            jwtSigningCert = new X509Certificate2(
+                env.WebRootPath + "\\certificates\\AuthSample.pfx",
+                "123123");
+
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -41,8 +51,15 @@ namespace LanguageSchoolAssistant
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationDbContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+
+                // Register the entity sets needed by OpenIddict.
+                // Note: use the generic overload if you need
+                // to replace the default OpenIddict entities.
+                options.UseOpenIddict();
+                }               
+            );
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -53,6 +70,17 @@ namespace LanguageSchoolAssistant
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+
+
+            //OpenIddict
+            services.AddOpenIddict()
+                .AddEntityFrameworkCoreStores<ApplicationDbContext>()
+                .AddMvcBinders()
+                .EnableTokenEndpoint("/connect/token")
+                .UseJsonWebTokens()
+                .AllowPasswordFlow()
+                .AddSigningCertificate(jwtSigningCert)
+                .DisableHttpsRequirement();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,6 +104,13 @@ namespace LanguageSchoolAssistant
             app.UseStaticFiles();
 
             app.UseIdentity();
+
+            //app.Use(next => context => {
+            //    var scheme = context.Request.Scheme;
+            //    return next(context);
+            //});
+
+            app.UseOpenIddict();
 
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
 
