@@ -51,7 +51,9 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-config": "^4.0.0",
-    "whatwg-fetch": "^1.0.0"
+    "whatwg-fetch": "^1.0.0",
+    "material-ui": "^0.17.1",
+    "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
     "file-loader": "^0.8.5"
