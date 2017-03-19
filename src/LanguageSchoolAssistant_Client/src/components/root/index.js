@@ -19,10 +19,12 @@ function Root(props) {
   return (
     <MuiThemeProvider muiTheme={muiTheme}>
       <div style={styles.container}>
-        <AppBarHeader
-          title="LSA"
-        />
-        { props.children }
+        <AppBarHeader />
+        <div style={styles.paper}>
+          <div style={styles.content}>
+            { props.children }
+          </div>
+        </div>
       </div>
     </MuiThemeProvider>
   );
@@ -37,11 +39,9 @@ const styles = {
   content: {
     padding: '1em',
     flex: '1 0 auto',
-    width: '100%'
   },
   container: {
-    width: '100%',
-    padding: '1em'
+    width: '100%'
   }
 }
 
