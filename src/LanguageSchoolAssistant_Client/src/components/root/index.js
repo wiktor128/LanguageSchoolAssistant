@@ -1,9 +1,14 @@
 import React from 'react';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import AppBarHeader from '../appBarHeader';
+
+injectTapEventPlugin();
 
 function Root(props) {
   return (
     <div style={styles.paper}>
       <div style={styles.content}>
+        <AppBarHeader />
         { props.children }
       </div>
     </div>
