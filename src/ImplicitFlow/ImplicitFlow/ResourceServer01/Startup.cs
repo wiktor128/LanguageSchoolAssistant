@@ -8,6 +8,7 @@ namespace ResourceServer01
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddMvc();
         }
 

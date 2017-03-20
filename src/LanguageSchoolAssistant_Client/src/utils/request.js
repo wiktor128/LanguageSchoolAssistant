@@ -15,6 +15,6 @@ export default function apiRequest(url, method = 'GET') {
 
   return fetch(url, options)
     .then((res) => res.json())
-    .then((data) => ({data}))
+    .then((data) => ({data})) 
     .catch((error) => ({ error }));
 }

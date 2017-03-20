@@ -1,13 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import userManager from '../../utils/userManager';
-import { loadSubscriptionsStart } from '../../actions';
+import { 
+  loadSubscriptionsStart,
+  loadTestResourceStart
+} from '../../actions';
 import ChannelInfo from '../channelInfo';
 
 class MainPage extends React.Component {
   // load the subscriptions
   componentWillMount() {
-    this.props.dispatch(loadSubscriptionsStart());
+    //this.props.dispatch(loadSubscriptionsStart());
+    this.props.dispatch(loadTestResourceStart())
   }
 
   // display the current user
@@ -35,13 +39,17 @@ class MainPage extends React.Component {
   }
 
   render() {
-    const { user, channels } = this.props;
+    const { user, channels, message } = this.props;
 
     return (
       <div style={styles.root}>
         <div style={styles.title}>
           <h3>Welcome, {user ? user.profile.name : 'Mister Unknown'}!</h3>
           <p>Your 5 most recent YouTube channel subscriptions:</p>
+          <div>
+            Text from server: <br />
+            {message}
+          </div>
         </div>
         { channels.length > 0 ? this.channels : <i>You have no subscriptions.</i>}
         <button onClick={this.showUserInfoButtonClick}>Show user info</button>
@@ -70,7 +78,8 @@ const styles = {
 function mapStateToProps(state) {
   return {
     user: state.oidc.user,
-    channels: state.subscriptions.channels
+    channels: state.subscriptions.channels,
+    message: state.testResource.message
   };
 }
 

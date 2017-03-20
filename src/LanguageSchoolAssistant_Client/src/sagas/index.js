@@ -1,6 +1,12 @@
 import { take, put, select, call } from 'redux-saga/effects';
-import { LOAD_SUBSCRIPTIONS_START } from '../constants';
-import { loadSubscriptionsSuccess } from '../actions';
+import { 
+  LOAD_SUBSCRIPTIONS_START,
+  LOAD_TEST_RESOURCE_START
+} from '../constants';
+import { 
+  loadSubscriptionsSuccess,
+  loadTestResourceSuccess
+} from '../actions';
 import apiRequest from '../utils/request';
 
 export function* loadSubscriptionsSaga() {
@@ -24,4 +30,26 @@ export function* loadSubscriptionsSaga() {
 
     yield put(loadSubscriptionsSuccess(channels));
   }
+}
+
+
+export function* loadTestResourceSaga() {
+  while (true) {
+    yield take(LOAD_TEST_RESOURCE_START);
+
+    const url = 'https://localhost:44305/Resource/Private';
+
+    const result = yield call(apiRequest, url);
+
+    const message = result.data;
+
+    yield put(loadTestResourceSuccess(message));
+  }
+}
+
+export function* rootSaga() {
+  yield [
+    loadTestResourceSaga(),
+    loadSubscriptionsSaga()
+  ]
 }

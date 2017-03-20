@@ -9,7 +9,7 @@
 			"type": "node",
 			"request": "launch",
 			"name": "Launch Program",
-			"program": "${workspaceRoot}\\dist\\redux-oidc-example.js",
+			"program": "${workspaceRoot}\\server.js",
 			"outFiles": []
 		},
 		{
