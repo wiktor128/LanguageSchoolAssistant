@@ -205,6 +205,7 @@
 --resource:"D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\AuthorizationServer\obj\Debug\netcoreapp1.0\AuthorizationServerdotnet-compile.deps.json",AuthorizationServer.deps.json
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\AuthorizationServer\Program.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\AuthorizationServer\Startup.cs
+D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\AuthorizationServer\StartupRoles.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\AuthorizationServer\Controllers\AccountController.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\AuthorizationServer\Controllers\AuthorizationController.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\AuthorizationServer\Controllers\ErrorController.cs

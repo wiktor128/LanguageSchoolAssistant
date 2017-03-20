@@ -43644,7 +43644,7 @@
 	  client_id: 'redux-oidc',
 	  redirect_uri: window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + '/callback',
 	  response_type: 'token id_token',
-	  scope: 'openid profile https://www.googleapis.com/auth/youtube.readonly',
+	  scope: 'openid profile',
 	  authority: 'https://localhost:44316/',
 	  silent_redirect_uri: window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '') + '/silent_renew.html',
 	  automaticSilentRenew: true,
@@ -44187,10 +44187,16 @@
 	    _react2.default.createElement(
 	      'div',
 	      { style: styles.container },
-	      _react2.default.createElement(_appBarHeader2.default, {
-	        title: 'LSA'
-	      }),
-	      props.children
+	      _react2.default.createElement(_appBarHeader2.default, null),
+	      _react2.default.createElement(
+	        'div',
+	        { style: styles.paper },
+	        _react2.default.createElement(
+	          'div',
+	          { style: styles.content },
+	          props.children
+	        )
+	      )
 	    )
 	  );
 	}
@@ -44203,12 +44209,10 @@
 	  },
 	  content: {
 	    padding: '1em',
-	    flex: '1 0 auto',
-	    width: '100%'
+	    flex: '1 0 auto'
 	  },
 	  container: {
-	    width: '100%',
-	    padding: '1em'
+	    width: '100%'
 	  }
 	};
 	
@@ -46142,6 +46146,12 @@
 	  /** @ignore */
 	  onTouchStart: _react.PropTypes.func,
 	  /**
+	   * Callback function fired when the button is touch-tapped.
+	   *
+	   * @param {object} event TouchTap event targeting the button.
+	   */
+	  onTouchTap: _react.PropTypes.func,
+	  /**
 	   * Override the inline-styles of the root element.
 	   */
 	  style: _react.PropTypes.object,
@@ -46418,7 +46428,7 @@
 	      injectStyle();
 	      listenForTabPresses();
 	      if (this.state.isKeyboardFocused) {
-	        this.refs.enhancedButton.focus();
+	        this.button.focus();
 	        this.props.onKeyboardFocus(null, true);
 	      }
 	    }
@@ -46435,7 +46445,9 @@
 	  }, {
 	    key: 'componentWillUnmount',
 	    value: function componentWillUnmount() {
-	      clearTimeout(this.focusTimeout);
+	      if (this.focusTimeout) {
+	        clearTimeout(this.focusTimeout);
+	      }
 	    }
 	  }, {
 	    key: 'isKeyboardFocused',
@@ -46510,6 +46522,8 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+	
 	      var _props3 = this.props,
 	          centerRipple = _props3.centerRipple,
 	          children = _props3.children,
@@ -46554,8 +46568,8 @@
 	        fontSize: 'inherit',
 	        fontWeight: 'inherit',
 	        position: 'relative', // This is needed so that ripples do not bleed past border radius.
-	        verticalAlign: href ? 'middle' : null
-	      }, style);
+	        verticalAlign: href ? 'middle' : null,
+	        zIndex: 1 }, style);
 	
 	      // Passing both background:none & backgroundColor can break due to object iteration order
 	      if (!mergedStyles.backgroundColor && !mergedStyles.background) {
@@ -46574,7 +46588,9 @@
 	
 	      var buttonProps = (0, _extends3.default)({}, other, {
 	        style: prepareStyles(mergedStyles),
-	        ref: 'enhancedButton',
+	        ref: function ref(node) {
+	          return _this2.button = node;
+	        },
 	        disabled: disabled,
 	        href: href,
 	        onBlur: this.handleBlur,
@@ -48769,7 +48785,8 @@
 	  var _context$muiTheme = context.muiTheme,
 	      baseTheme = _context$muiTheme.baseTheme,
 	      zIndex = _context$muiTheme.zIndex,
-	      tooltip = _context$muiTheme.tooltip;
+	      tooltip = _context$muiTheme.tooltip,
+	      borderRadius = _context$muiTheme.borderRadius;
 	
 	
 	  var styles = {
@@ -48783,11 +48800,11 @@
 	      color: tooltip.color,
 	      overflow: 'hidden',
 	      top: -10000,
-	      borderRadius: 2,
+	      borderRadius: borderRadius,
 	      userSelect: 'none',
 	      opacity: 0,
 	      right: horizontalPosition === 'left' ? 12 : null,
-	      left: horizontalPosition === 'center' ? (state.offsetWidth - 48) / 2 * -1 : null,
+	      left: horizontalPosition === 'center' ? (state.offsetWidth - 48) / 2 * -1 : horizontalPosition === 'right' ? 12 : null,
 	      transition: _transitions2.default.easeOut('0ms', 'top', '450ms') + ', ' + _transitions2.default.easeOut('450ms', 'transform', '0ms') + ', ' + _transitions2.default.easeOut('450ms', 'opacity', '0ms')
 	    },
 	    label: {
@@ -49514,7 +49531,8 @@
 	      zDepth = props.zDepth;
 	  var _context$muiTheme = context.muiTheme,
 	      baseTheme = _context$muiTheme.baseTheme,
-	      paper = _context$muiTheme.paper;
+	      paper = _context$muiTheme.paper,
+	      borderRadius = _context$muiTheme.borderRadius;
 	
 	
 	  return {
@@ -49526,7 +49544,7 @@
 	      fontFamily: baseTheme.fontFamily,
 	      WebkitTapHighlightColor: 'rgba(0,0,0,0)', // Remove mobile color flashing (deprecated)
 	      boxShadow: paper.zDepthShadows[zDepth - 1], // No shadow for 0 depth papers
-	      borderRadius: circle ? '50%' : rounded ? '2px' : '0px'
+	      borderRadius: circle ? '50%' : rounded ? borderRadius : '0px'
 	    }
 	  };
 	}
@@ -50254,37 +50272,39 @@
 	    value: function cloneMenuItem(child, childIndex, styles, index) {
 	      var _this2 = this;
 	
-	      var _props = this.props,
-	          desktop = _props.desktop,
-	          menuItemStyle = _props.menuItemStyle,
-	          selectedMenuItemStyle = _props.selectedMenuItemStyle;
+	      var childIsDisabled = child.props.disabled;
 	
+	      var selectedChildStyles = {};
+	      if (!childIsDisabled) {
+	        var selected = this.isChildSelected(child, this.props);
 	
-	      var selected = this.isChildSelected(child, this.props);
-	      var selectedChildrenStyles = {};
-	
-	      if (selected) {
-	        selectedChildrenStyles = (0, _simpleAssign2.default)(styles.selectedMenuItem, selectedMenuItemStyle);
+	        if (selected) {
+	          (0, _simpleAssign2.default)(selectedChildStyles, styles.selectedMenuItem, this.props.selectedMenuItemStyle);
+	        }
 	      }
+	      var mergedChildStyles = (0, _simpleAssign2.default)({}, child.props.style, this.props.menuItemStyle, selectedChildStyles);
 	
-	      var mergedChildrenStyles = (0, _simpleAssign2.default)({}, child.props.style, menuItemStyle, selectedChildrenStyles);
+	      var extraProps = {
+	        desktop: this.props.desktop,
+	        style: mergedChildStyles
+	      };
+	      if (!childIsDisabled) {
+	        var isFocused = childIndex === this.state.focusIndex;
+	        var focusState = 'none';
+	        if (isFocused) {
+	          focusState = this.state.isKeyboardFocused ? 'keyboard-focused' : 'focused';
+	        }
 	
-	      var isFocused = childIndex === this.state.focusIndex;
-	      var focusState = 'none';
-	      if (isFocused) {
-	        focusState = this.state.isKeyboardFocused ? 'keyboard-focused' : 'focused';
+	        (0, _simpleAssign2.default)(extraProps, {
+	          focusState: focusState,
+	          onTouchTap: function onTouchTap(event) {
+	            _this2.handleMenuItemTouchTap(event, child, index);
+	            if (child.props.onTouchTap) child.props.onTouchTap(event);
+	          },
+	          ref: isFocused ? 'focusedMenuItem' : null
+	        });
 	      }
-	
-	      return _react2.default.cloneElement(child, {
-	        desktop: desktop,
-	        focusState: focusState,
-	        onTouchTap: function onTouchTap(event) {
-	          _this2.handleMenuItemTouchTap(event, child, index);
-	          if (child.props.onTouchTap) child.props.onTouchTap(event);
-	        },
-	        ref: isFocused ? 'focusedMenuItem' : null,
-	        style: mergedChildrenStyles
-	      });
+	      return _react2.default.cloneElement(child, extraProps);
 	    }
 	  }, {
 	    key: 'decrementKeyboardFocusIndex',
@@ -50357,10 +50377,13 @@
 	      this.setFocusIndex(event, focusIndex, false);
 	
 	      if (multiple) {
+	        menuValue = menuValue || [];
+	
 	        var itemIndex = menuValue.indexOf(itemValue);
 	
-	        var _menuValue = (0, _toArray3.default)(menuValue),
-	            newMenuValue = _menuValue;
+	        var _menuValue = menuValue,
+	            _menuValue2 = (0, _toArray3.default)(_menuValue),
+	            newMenuValue = _menuValue2.slice(0);
 	
 	        if (itemIndex === -1) {
 	          newMenuValue.push(itemValue);
@@ -50393,7 +50416,7 @@
 	      var childValue = child.props.value;
 	
 	      if (props.multiple) {
-	        return menuValue.length && menuValue.indexOf(childValue) !== -1;
+	        return menuValue && menuValue.length && menuValue.indexOf(childValue) !== -1;
 	      } else {
 	        return child.props.hasOwnProperty('value') && menuValue === childValue;
 	      }
@@ -50459,25 +50482,25 @@
 	    value: function render() {
 	      var _this4 = this;
 	
-	      var _props2 = this.props,
-	          autoWidth = _props2.autoWidth,
-	          children = _props2.children,
-	          desktop = _props2.desktop,
-	          disableAutoFocus = _props2.disableAutoFocus,
-	          initiallyKeyboardFocused = _props2.initiallyKeyboardFocused,
-	          listStyle = _props2.listStyle,
-	          maxHeight = _props2.maxHeight,
-	          multiple = _props2.multiple,
-	          onItemTouchTap = _props2.onItemTouchTap,
-	          onEscKeyDown = _props2.onEscKeyDown,
-	          onMenuItemFocusChange = _props2.onMenuItemFocusChange,
-	          selectedMenuItemStyle = _props2.selectedMenuItemStyle,
-	          menuItemStyle = _props2.menuItemStyle,
-	          style = _props2.style,
-	          value = _props2.value,
-	          valueLink = _props2.valueLink,
-	          width = _props2.width,
-	          other = (0, _objectWithoutProperties3.default)(_props2, ['autoWidth', 'children', 'desktop', 'disableAutoFocus', 'initiallyKeyboardFocused', 'listStyle', 'maxHeight', 'multiple', 'onItemTouchTap', 'onEscKeyDown', 'onMenuItemFocusChange', 'selectedMenuItemStyle', 'menuItemStyle', 'style', 'value', 'valueLink', 'width']);
+	      var _props = this.props,
+	          autoWidth = _props.autoWidth,
+	          children = _props.children,
+	          desktop = _props.desktop,
+	          disableAutoFocus = _props.disableAutoFocus,
+	          initiallyKeyboardFocused = _props.initiallyKeyboardFocused,
+	          listStyle = _props.listStyle,
+	          maxHeight = _props.maxHeight,
+	          multiple = _props.multiple,
+	          onItemTouchTap = _props.onItemTouchTap,
+	          onEscKeyDown = _props.onEscKeyDown,
+	          onMenuItemFocusChange = _props.onMenuItemFocusChange,
+	          selectedMenuItemStyle = _props.selectedMenuItemStyle,
+	          menuItemStyle = _props.menuItemStyle,
+	          style = _props.style,
+	          value = _props.value,
+	          valueLink = _props.valueLink,
+	          width = _props.width,
+	          other = (0, _objectWithoutProperties3.default)(_props, ['autoWidth', 'children', 'desktop', 'disableAutoFocus', 'initiallyKeyboardFocused', 'listStyle', 'maxHeight', 'multiple', 'onItemTouchTap', 'onEscKeyDown', 'onMenuItemFocusChange', 'selectedMenuItemStyle', 'menuItemStyle', 'style', 'value', 'valueLink', 'width']);
 	      var prepareStyles = this.context.muiTheme.prepareStyles;
 	
 	      var styles = getStyles(this.props, this.context);
@@ -50495,7 +50518,7 @@
 	
 	        switch (childName) {
 	          case 'MenuItem':
-	            newChild = childIsDisabled ? _react2.default.cloneElement(child, { desktop: desktop }) : _this4.cloneMenuItem(child, menuItemIndex, styles, index);
+	            newChild = _this4.cloneMenuItem(child, menuItemIndex, styles, index);
 	            break;
 	
 	          case 'Divider':
@@ -51334,29 +51357,33 @@
 	    value: function componentWillReceiveProps(nextProps) {
 	      var _this2 = this;
 	
-	      if (nextProps.open !== this.state.open) {
-	        if (nextProps.open) {
-	          this.anchorEl = nextProps.anchorEl || this.props.anchorEl;
-	          this.setState({
-	            open: true,
-	            closing: false
-	          });
-	        } else {
-	          if (nextProps.animated) {
-	            if (this.timeout !== null) return;
-	            this.setState({ closing: true });
-	            this.timeout = setTimeout(function () {
-	              _this2.setState({
-	                open: false
-	              }, function () {
-	                _this2.timeout = null;
-	              });
-	            }, 500);
-	          } else {
-	            this.setState({
+	      if (nextProps.open === this.props.open) {
+	        return;
+	      }
+	
+	      if (nextProps.open) {
+	        clearTimeout(this.timeout);
+	        this.timeout = null;
+	        this.anchorEl = nextProps.anchorEl || this.props.anchorEl;
+	        this.setState({
+	          open: true,
+	          closing: false
+	        });
+	      } else {
+	        if (nextProps.animated) {
+	          if (this.timeout !== null) return;
+	          this.setState({ closing: true });
+	          this.timeout = setTimeout(function () {
+	            _this2.setState({
 	              open: false
+	            }, function () {
+	              _this2.timeout = null;
 	            });
-	          }
+	          }, 500);
+	        } else {
+	          this.setState({
+	            open: false
+	          });
 	        }
 	      }
 	    }
@@ -51676,6 +51703,10 @@
 	
 	var _keys2 = _interopRequireDefault(_keys);
 	
+	var _objectWithoutProperties2 = __webpack_require__(656);
+	
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+	
 	var _assign = __webpack_require__(615);
 	
 	var _assign2 = _interopRequireDefault(_assign);
@@ -51742,12 +51773,17 @@
 	var state = {};
 	
 	function forEachListener(props, iteratee) {
-	  (0, _keys2.default)(props).forEach(function (name) {
+	  var children = props.children,
+	      target = props.target,
+	      eventProps = (0, _objectWithoutProperties3.default)(props, ['children', 'target']);
+	
+	
+	  (0, _keys2.default)(eventProps).forEach(function (name) {
 	    if (name.substring(0, 2) !== 'on') {
 	      return;
 	    }
 	
-	    var prop = props[name];
+	    var prop = eventProps[name];
 	    var type = typeof prop === 'undefined' ? 'undefined' : (0, _typeof3.default)(prop);
 	    var isObject = type === 'object';
 	    var isFunction = type === 'function';
@@ -52880,6 +52916,10 @@
 	
 	var _Menu2 = _interopRequireDefault(_Menu);
 	
+	var _propTypes = __webpack_require__(713);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var nestedMenuStyle = {
@@ -53030,8 +53070,9 @@
 	          secondaryText = _props.secondaryText,
 	          style = _props.style,
 	          animation = _props.animation,
+	          anchorOrigin = _props.anchorOrigin,
 	          value = _props.value,
-	          other = (0, _objectWithoutProperties3.default)(_props, ['checked', 'children', 'desktop', 'disabled', 'focusState', 'innerDivStyle', 'insetChildren', 'leftIcon', 'menuItems', 'rightIcon', 'secondaryText', 'style', 'animation', 'value']);
+	          other = (0, _objectWithoutProperties3.default)(_props, ['checked', 'children', 'desktop', 'disabled', 'focusState', 'innerDivStyle', 'insetChildren', 'leftIcon', 'menuItems', 'rightIcon', 'secondaryText', 'style', 'animation', 'anchorOrigin', 'value']);
 	      var prepareStyles = this.context.muiTheme.prepareStyles;
 	
 	      var styles = getStyles(this.props, this.context);
@@ -53070,7 +53111,7 @@
 	          _Popover2.default,
 	          {
 	            animation: animation,
-	            anchorOrigin: { horizontal: 'right', vertical: 'top' },
+	            anchorOrigin: anchorOrigin,
 	            anchorEl: this.state.anchorEl,
 	            open: this.state.open,
 	            useLayerForClickAway: false,
@@ -53108,6 +53149,7 @@
 	
 	MenuItem.muiName = 'MenuItem';
 	MenuItem.defaultProps = {
+	  anchorOrigin: { horizontal: 'right', vertical: 'top' },
 	  checked: false,
 	  desktop: false,
 	  disabled: false,
@@ -53118,6 +53160,11 @@
 	  muiTheme: _react.PropTypes.object.isRequired
 	};
 	process.env.NODE_ENV !== "production" ? MenuItem.propTypes = {
+	  /**
+	   * Location of the anchor for the popover of nested `MenuItem`
+	   * elements.
+	   */
+	  anchorOrigin: _propTypes2.default.origin,
 	  /**
 	   * Override the default animation component used.
 	   */
@@ -53544,10 +53591,8 @@
 	  }, {
 	    key: 'applyFocusState',
 	    value: function applyFocusState(focusState) {
-	      var button = this.refs.enhancedButton;
-	
-	      if (button) {
-	        var buttonEl = _reactDom2.default.findDOMNode(button);
+	      if (this.button) {
+	        var buttonEl = _reactDom2.default.findDOMNode(this.button);
 	
 	        switch (focusState) {
 	          case 'none':
@@ -53557,7 +53602,7 @@
 	            buttonEl.focus();
 	            break;
 	          case 'keyboard-focused':
-	            button.setKeyboardFocus();
+	            this.button.setKeyboardFocus();
 	            buttonEl.focus();
 	            break;
 	        }
@@ -53636,9 +53681,12 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+	
 	      var _props3 = this.props,
 	          autoGenerateNestedIndicator = _props3.autoGenerateNestedIndicator,
 	          children = _props3.children,
+	          containerElement = _props3.containerElement,
 	          disabled = _props3.disabled,
 	          disableKeyboardFocus = _props3.disableKeyboardFocus,
 	          hoverColor = _props3.hoverColor,
@@ -53666,7 +53714,7 @@
 	          secondaryText = _props3.secondaryText,
 	          secondaryTextLines = _props3.secondaryTextLines,
 	          style = _props3.style,
-	          other = (0, _objectWithoutProperties3.default)(_props3, ['autoGenerateNestedIndicator', 'children', 'disabled', 'disableKeyboardFocus', 'hoverColor', 'initiallyOpen', 'innerDivStyle', 'insetChildren', 'leftAvatar', 'leftCheckbox', 'leftIcon', 'nestedItems', 'nestedLevel', 'nestedListStyle', 'onKeyboardFocus', 'onMouseEnter', 'onMouseLeave', 'onNestedListToggle', 'onTouchStart', 'onTouchTap', 'rightAvatar', 'rightIcon', 'rightIconButton', 'rightToggle', 'primaryText', 'primaryTogglesNestedList', 'secondaryText', 'secondaryTextLines', 'style']);
+	          other = (0, _objectWithoutProperties3.default)(_props3, ['autoGenerateNestedIndicator', 'children', 'containerElement', 'disabled', 'disableKeyboardFocus', 'hoverColor', 'initiallyOpen', 'innerDivStyle', 'insetChildren', 'leftAvatar', 'leftCheckbox', 'leftIcon', 'nestedItems', 'nestedLevel', 'nestedListStyle', 'onKeyboardFocus', 'onMouseEnter', 'onMouseLeave', 'onNestedListToggle', 'onTouchStart', 'onTouchTap', 'rightAvatar', 'rightIcon', 'rightIconButton', 'rightToggle', 'primaryText', 'primaryTogglesNestedList', 'secondaryText', 'secondaryTextLines', 'style']);
 	      var prepareStyles = this.context.muiTheme.prepareStyles;
 	
 	      var styles = getStyles(this.props, this.context, this.state);
@@ -53759,7 +53807,7 @@
 	        simpleLabel ? this.createLabelElement(styles, contentChildren, other) : disabled ? this.createDisabledElement(styles, contentChildren, other) : _react2.default.createElement(
 	          _EnhancedButton2.default,
 	          (0, _extends3.default)({
-	            containerElement: 'span'
+	            containerElement: containerElement
 	          }, other, {
 	            disableKeyboardFocus: disableKeyboardFocus || this.state.rightIconButtonKeyboardFocused,
 	            onKeyboardFocus: this.handleKeyboardFocus,
@@ -53768,7 +53816,9 @@
 	            onTouchStart: this.handleTouchStart,
 	            onTouchEnd: this.handleTouchEnd,
 	            onTouchTap: primaryTogglesNestedList ? this.handleNestedListToggle : onTouchTap,
-	            ref: 'enhancedButton',
+	            ref: function ref(node) {
+	              return _this2.button = node;
+	            },
 	            style: (0, _simpleAssign2.default)({}, styles.root, style)
 	          }),
 	          _react2.default.createElement(
@@ -53787,6 +53837,7 @@
 	ListItem.muiName = 'ListItem';
 	ListItem.defaultProps = {
 	  autoGenerateNestedIndicator: true,
+	  containerElement: 'span',
 	  disableKeyboardFocus: false,
 	  disabled: false,
 	  initiallyOpen: false,
@@ -53818,6 +53869,14 @@
 	   * Children passed into the `ListItem`.
 	   */
 	  children: _react.PropTypes.node,
+	  /**
+	   * The element to use as the container for the ListItem. Either a string to
+	   * use a DOM element or a ReactElement. This is useful for wrapping the
+	   * ListItem in a custom Link component. If a ReactElement is given, ensure
+	   * that it passes all of its given props through to the underlying DOM
+	   * element and renders its children prop for proper integration.
+	   */
+	  containerElement: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.element]),
 	  /**
 	   * If true, the element will not be able to be focused by the keyboard.
 	   */
@@ -53948,9 +54007,9 @@
 
 /***/ },
 /* 781 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -53964,6 +54023,13 @@
 	exports.fade = fade;
 	exports.darken = darken;
 	exports.lighten = lighten;
+	
+	var _warning = __webpack_require__(517);
+	
+	var _warning2 = _interopRequireDefault(_warning);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	/**
 	 * Returns a number whose value is limited to the given range.
 	 *
@@ -54046,7 +54112,7 @@
 	/**
 	 * Returns an object with the type and values of a color.
 	 *
-	 * Note: Does not support rgb % values.
+	 * Note: Does not support rgb % values and color names.
 	 *
 	 * @param {string} color - CSS color, i.e. one of: #nnn, #nnnnnn, rgb(), rgba(), hsl(), hsla()
 	 * @returns {{type: string, values: number[]}} A MUI color object
@@ -54057,6 +54123,9 @@
 	  }
 	
 	  var marker = color.indexOf('(');
+	
+	  process.env.NODE_ENV !== "production" ? (0, _warning2.default)(marker !== -1, 'Material-UI: The ' + color + ' color was not parsed correctly,\n  because it has an unsupported format (color name or RGB %). This may cause issues in component rendering.') : void 0;
+	
 	  var type = color.substring(0, marker);
 	  var values = color.substring(marker + 1, color.length - 1).split(',');
 	  values = values.map(function (value) {
@@ -54182,6 +54251,7 @@
 	
 	  return convertColorToString(color);
 	}
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
 /* 782 */
@@ -54469,10 +54539,11 @@
 	    key: 'render',
 	    value: function render() {
 	      var _props = this.props,
+	          backgroundColor = _props.backgroundColor,
 	          children = _props.children,
 	          disabled = _props.disabled,
+	          fullWidth = _props.fullWidth,
 	          hoverColor = _props.hoverColor,
-	          backgroundColor = _props.backgroundColor,
 	          icon = _props.icon,
 	          label = _props.label,
 	          labelStyle = _props.labelStyle,
@@ -54481,8 +54552,9 @@
 	          rippleColor = _props.rippleColor,
 	          secondary = _props.secondary,
 	          style = _props.style,
-	          other = (0, _objectWithoutProperties3.default)(_props, ['children', 'disabled', 'hoverColor', 'backgroundColor', 'icon', 'label', 'labelStyle', 'labelPosition', 'primary', 'rippleColor', 'secondary', 'style']);
+	          other = (0, _objectWithoutProperties3.default)(_props, ['backgroundColor', 'children', 'disabled', 'fullWidth', 'hoverColor', 'icon', 'label', 'labelStyle', 'labelPosition', 'primary', 'rippleColor', 'secondary', 'style']);
 	      var _context$muiTheme = this.context.muiTheme,
+	          borderRadius = _context$muiTheme.borderRadius,
 	          _context$muiTheme$but = _context$muiTheme.button,
 	          buttonHeight = _context$muiTheme$but.height,
 	          buttonMinWidth = _context$muiTheme$but.minWidth,
@@ -54511,10 +54583,10 @@
 	      var mergedRootStyles = (0, _simpleAssign2.default)({}, {
 	        height: buttonHeight,
 	        lineHeight: buttonHeight + 'px',
-	        minWidth: buttonMinWidth,
+	        minWidth: fullWidth ? '100%' : buttonMinWidth,
 	        color: defaultTextColor,
 	        transition: _transitions2.default.easeOut(),
-	        borderRadius: 2,
+	        borderRadius: borderRadius,
 	        userSelect: 'none',
 	        overflow: 'hidden',
 	        backgroundColor: hovered ? buttonHoverColor : buttonBackgroundColor,
@@ -54590,6 +54662,7 @@
 	FlatButton.muiName = 'FlatButton';
 	FlatButton.defaultProps = {
 	  disabled: false,
+	  fullWidth: false,
 	  labelStyle: {},
 	  labelPosition: 'after',
 	  onKeyboardFocus: function onKeyboardFocus() {},
@@ -54618,9 +54691,29 @@
 	   */
 	  children: _react.PropTypes.node,
 	  /**
+	   * The CSS class name of the root element.
+	   */
+	  className: _react.PropTypes.string,
+	  /**
+	   * The element to use as the container for the FlatButton. Either a string to
+	   * use a DOM element or a ReactElement. This is useful for wrapping the
+	   * FlatButton in a custom Link component. If a ReactElement is given, ensure
+	   * that it passes all of its given props through to the underlying DOM
+	   * element and renders its children prop for proper integration.
+	   */
+	  containerElement: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.element]),
+	  /**
+	   * If true, the element's ripple effect will be disabled.
+	   */
+	  disableTouchRipple: _react2.default.PropTypes.bool,
+	  /**
 	   * Disables the button if set to true.
 	   */
 	  disabled: _react.PropTypes.bool,
+	  /**
+	   * If true, the button will take up the full width of its container.
+	   */
+	  fullWidth: _react.PropTypes.bool,
 	  /**
 	   * Color of button when mouse hovers over.
 	   */
@@ -54658,6 +54751,12 @@
 	  onMouseLeave: _react.PropTypes.func,
 	  /** @ignore */
 	  onTouchStart: _react.PropTypes.func,
+	  /**
+	   * Callback function fired when the button is touch-tapped.
+	   *
+	   * @param {object} event TouchTap event targeting the button.
+	   */
+	  onTouchTap: _react.PropTypes.func,
 	  /**
 	   * If true, colors button according to
 	   * primaryTextColor from the Theme.
@@ -55085,6 +55184,9 @@
 	  labelStyle: _react.PropTypes.object,
 	  /**
 	   * Callback function that is fired when the toggle switch is toggled.
+	   *
+	   * @param {object} event Change event targeting the toggle.
+	   * @param {bool} isInputChecked The new value of the toggle.
 	   */
 	  onToggle: _react.PropTypes.func,
 	  /**
@@ -55354,11 +55456,10 @@
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
 	      var hasCheckedProp = nextProps.hasOwnProperty('checked');
-	      var hasToggledProp = nextProps.hasOwnProperty('toggled');
 	      var hasNewDefaultProp = nextProps.hasOwnProperty('defaultChecked') && nextProps.defaultChecked !== this.props.defaultChecked;
 	
-	      if (hasCheckedProp || hasToggledProp || hasNewDefaultProp) {
-	        var switched = nextProps.checked || nextProps.toggled || nextProps.defaultChecked || false;
+	      if (hasCheckedProp || hasNewDefaultProp) {
+	        var switched = nextProps.checked || nextProps.defaultChecked || false;
 	
 	        this.setState({
 	          switched: switched
@@ -58575,6 +58676,7 @@
 	exports.default = {
 	  spacing: _spacing2.default,
 	  fontFamily: 'Roboto, sans-serif',
+	  borderRadius: 2,
 	  palette: {
 	    primary1Color: _colors.cyan500,
 	    primary2Color: _colors.cyan700,

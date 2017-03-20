@@ -245,6 +245,7 @@
 "D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\LanguageSchoolAssistant\Controllers\ConnectController.cs"
 "D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\LanguageSchoolAssistant\Controllers\HomeController.cs"
 "D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\LanguageSchoolAssistant\Controllers\ManageController.cs"
+"D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\LanguageSchoolAssistant\CustomExtensions\CustomAuthorize.cs"
 "D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\LanguageSchoolAssistant\Data\ApplicationDbContext.cs"
 "D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\LanguageSchoolAssistant\Data\Migrations\00000000000000_CreateIdentitySchema.cs"
 "D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\LanguageSchoolAssistant\Data\Migrations\00000000000000_CreateIdentitySchema.Designer.cs"

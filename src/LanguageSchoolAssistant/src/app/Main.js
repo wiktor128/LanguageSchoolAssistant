@@ -19,7 +19,6 @@ import Comment from './components/Comment';
 const styles = {
     container: {
         textAlign: 'center'
-        //,paddingTop: 200,
     },
 };
 

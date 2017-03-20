@@ -11,10 +11,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using OpenIddict.Core;
 using OpenIddict.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace AuthorizationServer
 {
-    public class Startup
+    public partial class Startup
     {
         public void ConfigureServices(IServiceCollection services)
         {
@@ -98,7 +99,7 @@ namespace AuthorizationServer
             services.AddTransient<ISmsSender, AuthMessageSender>();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public async void Configure(IApplicationBuilder app, RoleManager<IdentityRole> roleManager)
         {
             app.UseCors(builder =>
             {
@@ -124,6 +125,8 @@ namespace AuthorizationServer
             // Seed the database with the sample applications.
             // Note: in a real world application, this step should be part of a setup script.
             InitializeAsync(app.ApplicationServices, CancellationToken.None).GetAwaiter().GetResult();
+
+            await InitializeRoles(roleManager);
         }
 
         private async Task InitializeAsync(IServiceProvider services, CancellationToken cancellationToken)
@@ -155,7 +158,7 @@ namespace AuthorizationServer
                     {
                         ClientId = "redux-oidc",
                         DisplayName = "Oidc Redux React client application",
-                        //LogoutRedirectUri = "https://localhost:8080/signout-oidc",
+                        //LogoutRedirectUri = "https://localhost:8080",
                         RedirectUri = "https://localhost:8080/callback"
                     };
 

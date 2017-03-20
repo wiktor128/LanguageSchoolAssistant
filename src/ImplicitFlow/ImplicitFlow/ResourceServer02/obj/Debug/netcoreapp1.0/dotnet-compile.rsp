@@ -1,5 +1,5 @@
---temp-output:C:\Users\Thinkpad-T450s\Desktop\SEM\openiddict-samples-master\openiddict-samples-master\samples\ImplicitFlow\ResourceServer02\obj\Debug\netcoreapp1.0\
---out:C:\Users\Thinkpad-T450s\Desktop\SEM\openiddict-samples-master\openiddict-samples-master\samples\ImplicitFlow\ResourceServer02\bin\Debug\netcoreapp1.0\ResourceServer02.dll
+--temp-output:D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer02\obj\Debug\netcoreapp1.0\
+--out:D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer02\bin\Debug\netcoreapp1.0\ResourceServer02.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -178,7 +178,7 @@
 --reference:C:\Users\Thinkpad-T450s\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Thinkpad-T450s\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Thinkpad-T450s\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\Thinkpad-T450s\Desktop\SEM\openiddict-samples-master\openiddict-samples-master\samples\ImplicitFlow\ResourceServer02\obj\Debug\netcoreapp1.0\ResourceServer02dotnet-compile.deps.json",ResourceServer02.deps.json
-C:\Users\Thinkpad-T450s\Desktop\SEM\openiddict-samples-master\openiddict-samples-master\samples\ImplicitFlow\ResourceServer02\Program.cs
-C:\Users\Thinkpad-T450s\Desktop\SEM\openiddict-samples-master\openiddict-samples-master\samples\ImplicitFlow\ResourceServer02\Startup.cs
-C:\Users\Thinkpad-T450s\Desktop\SEM\openiddict-samples-master\openiddict-samples-master\samples\ImplicitFlow\ResourceServer02\Controllers\ResourceController.cs
+--resource:"D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer02\obj\Debug\netcoreapp1.0\ResourceServer02dotnet-compile.deps.json",ResourceServer02.deps.json
+D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer02\Program.cs
+D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer02\Startup.cs
+D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer02\Controllers\ResourceController.cs
