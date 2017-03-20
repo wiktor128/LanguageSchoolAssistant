@@ -103,9 +103,13 @@ namespace AuthorizationServer
         {
             app.UseCors(builder =>
             {
-                builder.WithOrigins("https://localhost:8080");
-                builder.WithMethods("GET");
-                builder.WithHeaders("Authorization");
+                //builder.WithOrigins("https://localhost:8080");
+                //builder.WithMethods("GET");
+                //builder.WithHeaders("Authorization");
+
+                builder.AllowAnyMethod();
+                builder.AllowAnyHeader();
+                builder.AllowAnyOrigin();
             });
 
             app.UseWhen(context => !context.Request.Path.StartsWithSegments("/api"), branch =>

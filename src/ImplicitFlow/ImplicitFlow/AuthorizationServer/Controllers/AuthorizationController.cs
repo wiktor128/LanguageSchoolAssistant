@@ -41,6 +41,11 @@ namespace AuthorizationServer.Controllers
             _userManager = userManager;
         }
 
+        private async Task<ApplicationUser> GetCurrentUser()
+        {
+            return await _userManager.GetUserAsync(HttpContext.User);
+        }
+
         [Authorize, HttpGet("~/connect/authorize")]
         public async Task<IActionResult> Authorize(OpenIdConnectRequest request)
         {
@@ -49,7 +54,8 @@ namespace AuthorizationServer.Controllers
                 "Make sure services.AddOpenIddict().AddMvcBinders() is correctly called.");
 
             // Retrieve the profile of the logged in user.
-            var user = await _userManager.GetUserAsync(User);
+            //var user = await _userManager.GetUserAsync(User);
+            var user = await GetCurrentUser();
             if (user == null)
             {
                 return View("Error", new ErrorViewModel

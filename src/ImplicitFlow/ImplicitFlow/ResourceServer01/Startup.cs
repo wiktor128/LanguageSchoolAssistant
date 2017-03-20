@@ -47,9 +47,12 @@ namespace ResourceServer01
 
             app.UseCors(builder =>
             {
-                builder.WithOrigins("https://localhost:8080");
-                builder.WithMethods("GET");
-                builder.WithHeaders("Authorization");
+                //builder.WithOrigins("https://localhost:8080");
+                //builder.WithMethods("GET");
+                //builder.WithHeaders("Authorization");
+                builder.AllowAnyMethod();
+                builder.AllowAnyHeader();
+                builder.AllowAnyOrigin();
             });
 
             app.UseMvc(routes =>
