@@ -58,7 +58,6 @@ class Logged extends React.Component {
 
 class AppBarHeader extends React.Component {
 
-  
   render() {
     const { user } = this.props;
     
