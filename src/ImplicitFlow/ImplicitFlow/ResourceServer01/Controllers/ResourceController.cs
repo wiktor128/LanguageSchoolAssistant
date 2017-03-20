@@ -7,7 +7,10 @@ namespace ResourceServer01.Controllers
 {
     public class ResourceController : Controller
     {
-        [Authorize(ActiveAuthenticationSchemes = OAuthIntrospectionDefaults.AuthenticationScheme)]
+        [Authorize (
+            ActiveAuthenticationSchemes = OAuthIntrospectionDefaults.AuthenticationScheme,
+            Roles = "LanguageInstructor"
+        )]
         [HttpGet]
         public IActionResult Private()
         {
