@@ -103,7 +103,7 @@ namespace AuthorizationServer
         {
             app.UseCors(builder =>
             {
-                builder.WithOrigins("http://localhost:9000");
+                builder.WithOrigins("https://localhost:8080");
                 builder.WithMethods("GET");
                 builder.WithHeaders("Authorization");
             });
