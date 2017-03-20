@@ -6,6 +6,7 @@ export default function apiRequest(url, method = 'GET') {
   const headers = new Headers();
   headers.append('Accept', 'application/json');
   headers.append('Authorization', `Bearer ${token}`);
+  headers.append('Access-Control-Allow-Origin', 'true');
 
   const options = {
     method,
