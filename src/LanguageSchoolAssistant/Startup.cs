@@ -23,6 +23,8 @@ namespace LanguageSchoolAssistant
     public partial class Startup
     {
         private X509Certificate2 jwtSigningCert;
+        public IConfigurationRoot Configuration { get; }
+
 
         public Startup(IHostingEnvironment env)
         {
@@ -45,8 +47,6 @@ namespace LanguageSchoolAssistant
                 "123123");
 
         }
-
-        public IConfigurationRoot Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)

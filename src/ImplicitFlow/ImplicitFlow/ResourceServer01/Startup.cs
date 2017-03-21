@@ -1,15 +1,39 @@
 using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using ResourceServer01.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace ResourceServer01
 {
     public class Startup
     {
+        public IConfigurationRoot Configuration { get; }
+
+        public Startup(IHostingEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(env.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+
+            builder.AddEnvironmentVariables();
+            Configuration = builder.Build();
+
+        }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
             services.AddMvc();
+
+
+            services.AddDbContext<ApplicationDbContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            }
+);
         }
 
         public void Configure(IApplicationBuilder app)
