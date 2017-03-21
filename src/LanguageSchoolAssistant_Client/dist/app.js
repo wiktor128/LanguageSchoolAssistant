@@ -44915,11 +44915,7 @@
 	        null,
 	        _react2.default.createElement(_AppBar2.default, {
 	          title: 'Language School Assistant',
-	          iconElementLeft: _react2.default.createElement(
-	            _IconButton2.default,
-	            null,
-	            _react2.default.createElement(_close2.default, null)
-	          ),
+	          showMenuIconButton: false,
 	          iconElementRight: !user || user.expired ? _react2.default.createElement(Login, null) : _react2.default.createElement(Logged, null)
 	        })
 	      );

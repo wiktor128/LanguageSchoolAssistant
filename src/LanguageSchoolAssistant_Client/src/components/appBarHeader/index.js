@@ -65,7 +65,7 @@ class AppBarHeader extends React.Component {
       <div>
         <AppBar
           title="Language School Assistant"
-          iconElementLeft={<IconButton><NavigationClose /></IconButton>}
+          showMenuIconButton={false}
           iconElementRight={ !user || user.expired ? <Login /> : <Logged />}
         />
       </div>
