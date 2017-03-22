@@ -30,3 +30,15 @@ export function loadTestResourceSuccess(message) {
     payload: message
   }
 }
+
+export function loadProfileResourceStart() {
+  return {
+    type: LOAD_PROFILE_RESOURCE_START
+  };
+}
+export function loadProfileResourceSuccess(profile) {
+  return {
+    type: LOAD_PROFILE_RESOURCE_SUCCESS,
+    payload: profile
+  }
+}

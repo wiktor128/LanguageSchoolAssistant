@@ -3,3 +3,6 @@ export const LOAD_SUBSCRIPTIONS_SUCCESS = 'redux-oidc-sample/LOAD_SUBSCRIPTIONS_
 
 export const LOAD_TEST_RESOURCE_START = 'redux-oidc-sample/LOAD_TEST_RESOURCE_START';
 export const LOAD_TEST_RESOURCE_SUCCESS = 'redux-oidc-sample/LOAD_TEST_RESOURCE_SUCCESS';
+
+export const LOAD_PROFILE_RESOURCE_START = 'redux-oidc-sample/LOAD_PROFILE_RESOURCE_START';
+export const LOAD_PROFILE_RESOURCE_SUCCESS = 'redux-oidc-sample/LOAD_PROFILE_RESOURCE_SUCCESS';
