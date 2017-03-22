@@ -1,24 +1,50 @@
 import React from 'react';
-
-import Paper from 'material-ui/Paper';
-
 import { createStyleSheet } from 'jss-theme-reactor';
-
 import userManager from '../../utils/userManager';
 
 import CodeExample from '../codeExample';
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import Paper from 'material-ui/Paper';
 
 class MyProfilePage extends React.Component {
 
 
   render() {
+                /*<CodeExample
+              code={"sdfsdfsdfsdf"}
+              title="Composition example"
+            >
+              blah blah blah
+            </CodeExample>
+          </Col>
+          <Col xs={12} md={3}>
+            <CodeExample
+              code={"sdfsdfsdfsdf"}
+              title="Composition example"
+            >
+              blah blah blah
+            </CodeExample>*/
     return (
-      <CodeExample
-        code={"sdfsdfsdfsdf"}
-        title="Composition example"
-      >
-        blah blah blah
-      </CodeExample>
+      <Grid fluid>
+        <Row>
+          <Col xs={12} md={6}>
+            <CodeExample
+              code={"sdfsdfsdfsdf"}
+              title="Composition example"
+            >
+              blah blah blah
+            </CodeExample>
+          </Col>
+          <Col xs={12} md={6}>
+             <CodeExample
+              code={"sdfsdfsdfsdf"}
+              title="Composition example"
+            >
+              blah blah blah
+            </CodeExample>
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

@@ -38,13 +38,16 @@
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.17.0",
     "immutable": "^3.8.1",
+    "material-ui": "^0.17.1",
     "oidc-client": "^1.2.0",
     "path": "^0.12.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-flexbox-grid": "^1.0.2",
     "react-redux": "^4.4.2",
     "react-router": "^2.0.1",
     "react-router-redux": "^4.0.2",
+    "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.4.0",
     "redux-oidc": "^3.0.0-beta.2",
     "redux-saga": "^0.10.4",
@@ -52,8 +55,8 @@
     "webpack": "^1.13.1",
     "webpack-config": "^4.0.0",
     "whatwg-fetch": "^1.0.0",
-    "material-ui": "^0.17.1",
-    "react-tap-event-plugin": "^2.0.1"
+    "style-loader": "^0.16.0",
+    "css-loader": "^0.27.3"
   },
   "devDependencies": {
     "file-loader": "^0.8.5"

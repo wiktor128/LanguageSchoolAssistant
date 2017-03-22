@@ -37,8 +37,8 @@ const styles = {
     margin: '0 auto',
   },
   content: {
-    padding: '1em',
-    flex: '1 0 auto',
+    //padding: '1em',
+    flex: '1 1 auto',
   },
   container: {
     width: '100%'
