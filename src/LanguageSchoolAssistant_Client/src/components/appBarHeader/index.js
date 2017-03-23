@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import userManager from '../../utils/userManager';
+import { browserHistory } from 'react-router';
 
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
@@ -50,6 +51,7 @@ class Logged extends React.Component {
       >
         <MenuItem primaryText="Refresh" />
         <MenuItem primaryText="Help" />
+        <MenuItem primaryText="My profile" onClick={() => browserHistory.push('/myprofile')}/>
         <MenuItem primaryText="Sign out" onClick={this.onLogoutButtonClicked} />
       </IconMenu>
     );
@@ -64,7 +66,8 @@ class AppBarHeader extends React.Component {
     return (
       <div>
         <AppBar
-          title="Language School Assistant"
+          title={<span style={styles.title}>Language School Assistant</span>}
+          onTitleTouchTap={() => browserHistory.push('/')}
           showMenuIconButton={false}
           iconElementRight={ !user || user.expired ? <Login /> : <Logged />}
         />
@@ -72,6 +75,12 @@ class AppBarHeader extends React.Component {
     );
   }
 }
+
+const styles = {
+  title: {
+    cursor: 'pointer',
+  },
+};
 
 function mapStateToProps(state) {
   return {

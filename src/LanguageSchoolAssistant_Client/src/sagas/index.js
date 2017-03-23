@@ -1,11 +1,15 @@
 import { take, put, select, call } from 'redux-saga/effects';
+import store from '../store';
 import { 
+  RESOURCE_SERVER_ADDRESS,
   LOAD_SUBSCRIPTIONS_START,
-  LOAD_TEST_RESOURCE_START
+  LOAD_TEST_RESOURCE_START,
+  LOAD_PROFILE_RESOURCE_START
 } from '../constants';
 import { 
   loadSubscriptionsSuccess,
-  loadTestResourceSuccess
+  loadTestResourceSuccess,
+  loadProfileResourceSuccess
 } from '../actions';
 import apiRequest from '../utils/request';
 
@@ -14,9 +18,7 @@ export function* loadSubscriptionsSaga() {
     yield take(LOAD_SUBSCRIPTIONS_START);
 
     const url = 'https://www.googleapis.com/youtube/v3/subscriptions?part=snippet&mine=true';
-
     const result = yield call(apiRequest, url);
-
     const channels = []
 
     for (const channel of result.data.items) {
@@ -37,19 +39,36 @@ export function* loadTestResourceSaga() {
   while (true) {
     yield take(LOAD_TEST_RESOURCE_START);
 
-    const url = 'https://localhost:44305/Resource/Private';
-
+    const url = RESOURCE_SERVER_ADDRESS + '/Resource/Private';
     const result = yield call(apiRequest, url);
-
     const message = result.data;
 
     yield put(loadTestResourceSuccess(message));
   }
 }
 
+export function* loadProfileResourceSaga() {
+  while (true) {
+    yield take(LOAD_PROFILE_RESOURCE_START);
+
+    const userLoginName = store.getState().oidc.user.profile.name;
+
+    var bodyParams = {
+      loginName: userLoginName
+    }
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Profile/Get/';
+    const result = yield call(apiRequest, url, 'POST', bodyParams);
+    const resultData = result.data;
+
+    yield put(loadProfileResourceSuccess(resultData));
+  }
+}
+
 export function* rootSaga() {
   yield [
     loadTestResourceSaga(),
-    loadSubscriptionsSaga()
+    loadSubscriptionsSaga(),
+    loadProfileResourceSaga()
   ]
 }
