@@ -1,12 +1,12 @@
 import React, {Component, PropTypes} from 'react';
-import CodeBlock from './CodeBlock';
+import CodeBlockTitle from './CodeBlockTitle';
 import ClearFix from 'material-ui/internal/ClearFix';
 import Paper from 'material-ui/Paper';
 
-class CodeExample extends Component {
+
+class SimpleFrame extends Component {
   static propTypes = {
     children: PropTypes.node,
-    code: PropTypes.string.isRequired,
     component: PropTypes.bool,
     description: PropTypes.string,
     exampleBlockStyle: React.PropTypes.object,
@@ -25,7 +25,6 @@ class CodeExample extends Component {
   render() {
     const {
       children,
-      code,
       component,
       exampleBlockStyle,
       layoutSideBySide,
@@ -50,16 +49,16 @@ class CodeExample extends Component {
 
     return (
       <Paper style={styles.root}>
-        <CodeBlock
-          title={this.props.title}
-          description={this.props.description || "asdfasdfasdfasdf"}
-        >
-          {code}
-        </CodeBlock>
-        <ClearFix style={Object.assign(styles.exampleBlock, exampleBlockStyle)}>{children}</ClearFix>
+        <CodeBlockTitle 
+          title={this.props.title} 
+          iconElementRight={this.props.iconElementRight}
+        />
+        <ClearFix style={Object.assign(styles.exampleBlock, exampleBlockStyle)}>
+          {children}
+        </ClearFix>
       </Paper>
     );
   }
 }
 
-export default CodeExample;
+export default SimpleFrame;
