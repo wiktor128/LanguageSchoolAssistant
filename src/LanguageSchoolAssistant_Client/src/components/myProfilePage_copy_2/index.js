@@ -14,7 +14,6 @@ import SimpleFrame from '../simpleFrame';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Paper from 'material-ui/Paper';
 
-import RaisedButton from 'material-ui/RaisedButton';
 import IconButton from 'material-ui/IconButton';
 import CodeIcon from 'material-ui/svg-icons/action/code';
 import FingerprintIcon from 'material-ui/svg-icons/action/fingerprint';
@@ -69,11 +68,6 @@ class MyProfilePage extends React.Component {
     console.log("this.props.profile.email " + this.props.profile.email);
   }
 
-  onSubmit() {
-    // update redux 'profile' state
-    // start some redux action to send this
-  }
-
   render() {
 
     return (
@@ -85,65 +79,63 @@ class MyProfilePage extends React.Component {
               /*iconElementRight = {<FeatureButton />}*/
             >
               <Row start='xs' middle='xs'>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={6}>
 
                 </Col>
-                <Col xs={12} md={8}>
-                  <form>
-                    <Row middle='xs'>
-                      <Col xs={6}> First Name: </Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='firstName'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.firstName}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={6}>Second Name:</Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='secondName'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.secondName}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={6}>Contact Email:</Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='email'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.email}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={6}>Telephone Number:</Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='telephone'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.telephone}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={12}>
-                        <RaisedButton type='submit' label="Update Profile" fullWidth={true}/>
-                      </Col>
-                    </Row>
-                  </form>
+                <Col xs={12} md={6}>
+                  <Table
+                    selectable={false}
+                    multiSelectable={false}
+                  >
+                    <TableBody
+                      displayRowCheckbox={false}
+                    >
+                      <TableRow displayBorder={false}>
+                        <TableRowColumn>First Name:</TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='firstName'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.firstName}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
+                      </TableRow>
+                      <TableRow displayBorder={false}>
+                        <TableRowColumn>Second Name:</TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='secondName'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.secondName}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
+                      </TableRow>
+                      <TableRow displayBorder={false}>
+                        <TableRowColumn>Contact Email:</TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='email'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.email}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
+                      </TableRow>
+                      <TableRow>
+                        <TableRowColumn>Telephone Number:</TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='telephone'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.telephone}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
                 </Col>
               </Row>
             </SimpleFrame>

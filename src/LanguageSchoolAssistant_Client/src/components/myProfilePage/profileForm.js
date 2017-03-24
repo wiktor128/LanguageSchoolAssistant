@@ -85,65 +85,61 @@ class MyProfilePage extends React.Component {
               /*iconElementRight = {<FeatureButton />}*/
             >
               <Row start='xs' middle='xs'>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={6}>
 
                 </Col>
-                <Col xs={12} md={8}>
-                  <form>
-                    <Row middle='xs'>
-                      <Col xs={6}> First Name: </Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='firstName'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.firstName}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={6}>Second Name:</Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='secondName'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.secondName}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={6}>Contact Email:</Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='email'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.email}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={6}>Telephone Number:</Col>
-                      <Col xs={6}>
-                        <TextField
-                          name='telephone'
-                          hintText="Fill this field, please."
-                          value={this.props.profile.telephone}
-                          onChange={this.handleInputChange}
-                          fullWidth={true}
-                        />
-                      </Col>
-                    </Row>
-                    <Row middle='xs'>
-                      <Col xs={12}>
-                        <RaisedButton type='submit' label="Update Profile" fullWidth={true}/>
-                      </Col>
-                    </Row>
-                  </form>
+                <Col xs={12} md={6}>
+					<form>
+					<Row>
+						<Col xs={6}> First Name: </Col>
+						<Col xs={6}>
+							<TextField
+								name='firstName'
+								hintText="Fill this field, please."
+								value={this.props.profile.firstName}
+								onChange={this.handleInputChange}
+							/>
+                		</Col>
+					</Row>
+					<Row>
+						<Col xs={6}>Second Name:</Col>
+						<Col xs={6}>
+							<TextField
+								name='secondName'
+								hintText="Fill this field, please."
+								value={this.props.profile.secondName}
+								onChange={this.handleInputChange}
+							/>
+                		</Col>
+					</Row>
+					<Row>
+						<Col xs={6}>Contact Email:</Col>
+						<Col xs={6}>
+							<TextField
+								name='email'
+								hintText="Fill this field, please."
+								value={this.props.profile.email}
+								onChange={this.handleInputChange}
+							/>
+                		</Col>
+					</Row>
+					<Row>
+						<Col xs={6}>Telephone Number:</Col>
+						<Col xs={6}>
+							<TextField
+								name='telephone'
+								hintText="Fill this field, please."
+								value={this.props.profile.telephone}
+								onChange={this.handleInputChange}
+							/>
+                		</Col>
+					</Row>
+					<Row>
+						<Col xs={12}>
+							<RaisedButton type='submit' label="Update Profile" fullWidth={true}/>
+						</Col>
+					</Row>
+					</form>
                 </Col>
               </Row>
             </SimpleFrame>

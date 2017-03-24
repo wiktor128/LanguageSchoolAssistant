@@ -4,6 +4,7 @@ import { reducer as oidcReducer } from 'redux-oidc';
 import subscriptionsReducer from './subscriptions';
 import testResourceReducer from './testResource';
 import profileResourceReducer from './profileResource';
+import { reducer as formReducer } from 'redux-form';
 
 const reducer = combineReducers(
   {
@@ -11,7 +12,8 @@ const reducer = combineReducers(
     oidc: oidcReducer,
     subscriptions: subscriptionsReducer,
     testResource: testResourceReducer,
-    profileResource: profileResourceReducer
+    profileResource: profileResourceReducer,
+    form: formReducer
   }
 );
 
