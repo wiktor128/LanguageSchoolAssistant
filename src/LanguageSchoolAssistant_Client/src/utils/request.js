@@ -21,7 +21,6 @@ export default function apiRequest(url, method = 'GET', bodyData) { // improve h
     }
   }
   
-
   const options = {
     method,
     headers,

@@ -44537,6 +44537,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -44571,10 +44573,19 @@
 	var MyProfilePage = function (_React$Component2) {
 	  _inherits(MyProfilePage, _React$Component2);
 	
-	  function MyProfilePage() {
+	  function MyProfilePage(props) {
 	    _classCallCheck(this, MyProfilePage);
 	
-	    return _possibleConstructorReturn(this, (MyProfilePage.__proto__ || Object.getPrototypeOf(MyProfilePage)).apply(this, arguments));
+	    var _this2 = _possibleConstructorReturn(this, (MyProfilePage.__proto__ || Object.getPrototypeOf(MyProfilePage)).call(this, props));
+	
+	    _this2.state = {
+	      firstName: _this2.props.profile.firstName,
+	      secondName: _this2.props.profile.secondName,
+	      email: _this2.props.profile.email,
+	      telephone: _this2.props.profile.telephone
+	    };
+	    _this2.handleInputChange = _this2.handleInputChange.bind(_this2);
+	    return _this2;
 	  }
 	
 	  _createClass(MyProfilePage, [{
@@ -44583,10 +44594,28 @@
 	      this.props.dispatch((0, _actions.loadProfileResourceStart)());
 	    }
 	  }, {
+	    key: 'handleInputChange',
+	    value: function handleInputChange(event) {
+	      var target = event.target;
+	      var value = target.type === 'checkbox' ? target.checked : target.value;
+	      var name = target.name;
+	
+	      this.props.profile[name] = value;
+	
+	      this.setState(_defineProperty({}, name, event.target.value));
+	
+	      console.log("this.props.profile[name] " + this.props.profile[name]);
+	      console.log("value " + value);
+	      console.log("name " + name);
+	      console.log("target " + target);
+	
+	      console.log("this.props.profile.email " + this.props.profile.email);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	
-	      var profile = this.props.profile;
+	      // var profile = this.props.profile;
 	
 	      return _react2.default.createElement(
 	        _reactFlexboxGrid.Grid,
@@ -44623,7 +44652,7 @@
 	                      },
 	                      _react2.default.createElement(
 	                        _Table.TableRow,
-	                        null,
+	                        { displayBorder: false },
 	                        _react2.default.createElement(
 	                          _Table.TableRowColumn,
 	                          null,
@@ -44632,11 +44661,50 @@
 	                        _react2.default.createElement(
 	                          _Table.TableRowColumn,
 	                          null,
-	                          _react2.default.createElement(
-	                            'strong',
-	                            null,
-	                            profile.firstName
-	                          )
+	                          _react2.default.createElement(_TextField2.default, {
+	                            name: 'firstName',
+	                            hintText: 'Fill this field, please.',
+	                            value: this.props.profile.firstName,
+	                            onChange: this.handleInputChange
+	                          })
+	                        )
+	                      ),
+	                      _react2.default.createElement(
+	                        _Table.TableRow,
+	                        { displayBorder: false },
+	                        _react2.default.createElement(
+	                          _Table.TableRowColumn,
+	                          null,
+	                          'Second Name:'
+	                        ),
+	                        _react2.default.createElement(
+	                          _Table.TableRowColumn,
+	                          null,
+	                          _react2.default.createElement(_TextField2.default, {
+	                            name: 'secondName',
+	                            hintText: 'Fill this field, please.',
+	                            value: this.props.profile.secondName,
+	                            onChange: this.handleInputChange
+	                          })
+	                        )
+	                      ),
+	                      _react2.default.createElement(
+	                        _Table.TableRow,
+	                        { displayBorder: false },
+	                        _react2.default.createElement(
+	                          _Table.TableRowColumn,
+	                          null,
+	                          'Contact Email:'
+	                        ),
+	                        _react2.default.createElement(
+	                          _Table.TableRowColumn,
+	                          null,
+	                          _react2.default.createElement(_TextField2.default, {
+	                            name: 'email',
+	                            hintText: 'Fill this field, please.',
+	                            value: this.props.profile.email,
+	                            onChange: this.handleInputChange
+	                          })
 	                        )
 	                      ),
 	                      _react2.default.createElement(
@@ -44645,52 +44713,17 @@
 	                        _react2.default.createElement(
 	                          _Table.TableRowColumn,
 	                          null,
-	                          'Second Name'
+	                          'Telephone Number:'
 	                        ),
 	                        _react2.default.createElement(
 	                          _Table.TableRowColumn,
 	                          null,
-	                          _react2.default.createElement(
-	                            'strong',
-	                            null,
-	                            profile.secondName
-	                          )
-	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        _Table.TableRow,
-	                        null,
-	                        _react2.default.createElement(
-	                          _Table.TableRowColumn,
-	                          null,
-	                          'Contact Email'
-	                        ),
-	                        _react2.default.createElement(
-	                          _Table.TableRowColumn,
-	                          null,
-	                          _react2.default.createElement(
-	                            'strong',
-	                            null,
-	                            profile.email
-	                          )
-	                        )
-	                      ),
-	                      _react2.default.createElement(
-	                        _Table.TableRow,
-	                        null,
-	                        _react2.default.createElement(
-	                          _Table.TableRowColumn,
-	                          null,
-	                          'Telephone Number'
-	                        ),
-	                        _react2.default.createElement(
-	                          _Table.TableRowColumn,
-	                          null,
-	                          _react2.default.createElement(
-	                            'strong',
-	                            null,
-	                            profile.telephone
-	                          )
+	                          _react2.default.createElement(_TextField2.default, {
+	                            name: 'telephone',
+	                            hintText: 'Fill this field, please.',
+	                            value: this.props.profile.telephone,
+	                            onChange: this.handleInputChange
+	                          })
 	                        )
 	                      )
 	                    )

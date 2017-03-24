@@ -3,7 +3,7 @@ import { createStyleSheet } from 'jss-theme-reactor';
 import userManager from '../../utils/userManager';
 import { connect } from 'react-redux';
 
-import { 
+import {
   loadProfileResourceStart
 } from '../../actions';
 
@@ -34,13 +34,44 @@ class FeatureButton extends React.Component {
 
 class MyProfilePage extends React.Component {
 
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      firstName: this.props.profile.firstName,
+      secondName: this.props.profile.secondName,
+      email: this.props.profile.email,
+      telephone: this.props.profile.telephone,
+    };
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
   componentWillMount() {
     this.props.dispatch(loadProfileResourceStart())
   }
 
+
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+
+    this.props.profile[name] = value;
+
+    this.setState({[name] : event.target.value});
+
+
+    console.log("this.props.profile[name] " + this.props.profile[name]);
+    console.log("value " + value);
+    console.log("name " + name);
+    console.log("target " + target);
+
+    console.log("this.props.profile.email " + this.props.profile.email);
+  }
+
   render() {
-   
-    const profile = this.props.profile;
+
+    // var profile = this.props.profile;
 
     return (
       <Grid fluid>
@@ -62,21 +93,49 @@ class MyProfilePage extends React.Component {
                     <TableBody
                       displayRowCheckbox={false}
                     >
-                      <TableRow>
+                      <TableRow displayBorder={false}>
                         <TableRowColumn>First Name:</TableRowColumn>
-                        <TableRowColumn><strong>{profile.firstName}</strong></TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='firstName'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.firstName}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
+                      </TableRow>
+                      <TableRow displayBorder={false}>
+                        <TableRowColumn>Second Name:</TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='secondName'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.secondName}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
+                      </TableRow>
+                      <TableRow displayBorder={false}>
+                        <TableRowColumn>Contact Email:</TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='email'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.email}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
                       </TableRow>
                       <TableRow>
-                        <TableRowColumn>Second Name</TableRowColumn>
-                        <TableRowColumn><strong>{profile.secondName}</strong></TableRowColumn>
-                      </TableRow>
-                      <TableRow>
-                        <TableRowColumn>Contact Email</TableRowColumn>
-                        <TableRowColumn><strong>{profile.email}</strong></TableRowColumn>
-                      </TableRow>
-                      <TableRow>
-                        <TableRowColumn>Telephone Number</TableRowColumn>
-                        <TableRowColumn><strong>{profile.telephone}</strong></TableRowColumn>
+                        <TableRowColumn>Telephone Number:</TableRowColumn>
+                        <TableRowColumn>
+                          <TextField
+                            name='telephone'
+                            hintText="Fill this field, please."
+                            value={this.props.profile.telephone}
+                            onChange={this.handleInputChange}
+                          />
+                        </TableRowColumn>
                       </TableRow>
                     </TableBody>
                   </Table>
