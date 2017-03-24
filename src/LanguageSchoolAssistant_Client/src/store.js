@@ -24,8 +24,6 @@ const createStoreWithMiddleware = compose(
 
 const store = createStoreWithMiddleware(reducer, initialState);
 
-//sagaMiddleware.run(loadSubscriptionsSaga);
-// sagaMiddleware.run(loadTestResourcesSaga);
 sagaMiddleware.run(rootSaga);
 
 export default store;

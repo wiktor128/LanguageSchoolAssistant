@@ -11,7 +11,7 @@ import {
   loadSubscriptionsSuccess,
   loadTestResourceSuccess,
   loadProfileResourceSuccess,
-  uploadProfileResourceSuccess
+  updateProfileResourceSuccess
 } from '../actions';
 import apiRequest from '../utils/request';
 
@@ -77,6 +77,7 @@ export function* updateProfileResourceSaga() {
     const result = yield call(apiRequest, url, 'POST', profile); // simple put 'profile' as parameter - because it is json (not form data)
     const resultData = result.data;
 
+    yield put(updateProfileResourceSuccess());
   }
 }
 

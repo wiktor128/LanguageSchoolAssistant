@@ -4,7 +4,6 @@ import userManager from '../../utils/userManager';
 import { connect } from 'react-redux';
 
 import { reduxForm } from 'redux-form';
-import validateContact from './validateContact';
 
 import {
   loadProfileResourceStart,
@@ -19,6 +18,8 @@ import RaisedButton from 'material-ui/RaisedButton';
 import IconButton from 'material-ui/IconButton';
 import CodeIcon from 'material-ui/svg-icons/action/code';
 import FingerprintIcon from 'material-ui/svg-icons/action/fingerprint';
+
+import Snackbar from 'material-ui/Snackbar'
 
 import TextField from 'material-ui/TextField';
 import Divider from 'material-ui/Divider';
@@ -42,6 +43,7 @@ class MyProfilePage extends React.Component {
 
     this.state = {
       profile: this.props.profile,
+      showSnackbar: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -51,6 +53,13 @@ class MyProfilePage extends React.Component {
   componentWillMount() {
     this.props.dispatch(loadProfileResourceStart())
   }
+
+  
+  handleCloseSnackbar = () => {
+    this.setState({
+      showSnackbar: false,
+    });
+  };
 
   handleInputChange(event) {
     const target = event.target;
@@ -69,6 +78,8 @@ class MyProfilePage extends React.Component {
     // start some redux action to send this
     event.preventDefault();
     this.props.dispatch(updateProfileResourceStart());
+
+    this.setState({showSnackbar: true});
   }
 
   render() {
@@ -144,6 +155,14 @@ class MyProfilePage extends React.Component {
                 </Col>
               </Row>
             </SimpleFrame>
+            <Snackbar
+              open={this.state.showSnackbar}
+              message="Profile Updated"
+              autoHideDuration={4000}
+              onRequestClose={this.handleCloseSnackbar}
+              action="OK"
+              onActionTouchTap={this.handleCloseSnackbar}
+            />
           </Col>
         </Row>
       </Grid>
