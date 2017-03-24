@@ -43593,9 +43593,6 @@
 	          result = _context4.sent;
 	          // simple put 'profile' as parameter - because it is json (not form data)
 	          resultData = result.data;
-	
-	          // yield put(loadProfileResourceSuccess(resultData));
-	
 	          _context4.next = 0;
 	          break;
 	
@@ -54686,6 +54683,8 @@
 	  }, {
 	    key: 'handleSubmit',
 	    value: function handleSubmit(event) {
+	      // update redux 'profile' state
+	      // start some redux action to send this
 	      event.preventDefault();
 	      this.props.dispatch((0, _actions.updateProfileResourceStart)());
 	    }

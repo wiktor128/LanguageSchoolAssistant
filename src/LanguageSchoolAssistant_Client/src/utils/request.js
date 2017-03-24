@@ -21,8 +21,6 @@ export default function apiRequest(url, method = 'GET', bodyData) { // improve h
       formData.append( key, value);
     }
   }
-
-  console.log('body data inside request: ' + JSON.stringify(bodyData));
   
   const options = {
     method,

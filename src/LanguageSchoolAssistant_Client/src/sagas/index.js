@@ -72,15 +72,11 @@ export function* updateProfileResourceSaga() {
     yield take(UPDATE_PROFILE_RESOURCE_START);
 
     const profile = store.getState().profileResource.profile;
-    console.log("saga update profile: " + JSON.stringify(profile));
-
-    console.log("JSON stringify 'bodyParams' " + JSON.stringify(bodyParams));
 
     const url = RESOURCE_SERVER_ADDRESS + '/Profile/Update/';
     const result = yield call(apiRequest, url, 'POST', profile); // simple put 'profile' as parameter - because it is json (not form data)
     const resultData = result.data;
 
-    // yield put(loadProfileResourceSuccess(resultData));
   }
 }
 

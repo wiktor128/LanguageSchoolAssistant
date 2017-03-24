@@ -25,14 +25,41 @@ namespace ResourceServer01.Controllers
                             .Where( x => x.LoginName == loginName)
                             .SingleOrDefault();
 
+            if (profile == null && !string.IsNullOrWhiteSpace(loginName))
+            {
+                PersonalProfile newProfile = new PersonalProfile() {
+                    FirstName = "",
+                    SecondName = "",
+                    IsLanguageInstructor = User.IsInRole("LanguageInstructor"),
+                    LoginName = loginName,
+                    Email = loginName,
+                    Telephone = ""
+                };
+                _context.Add(newProfile);
+                _context.SaveChanges();
+
+                return Json(newProfile);
+            }
             return Json(profile);
         }
 
         [HttpPost]
         public void Update(PersonalProfile profile)
         {
-            var x = profile.Email;
-            ;
+            var localStoredProfile =    _context.PersonalProfiles
+                                        .Where(x => x.LoginName == profile.LoginName)
+                                        .SingleOrDefault();
+
+            //if (localStoredProfile == null)
+            //{
+            //    _context.Add(profile);
+            //}
+            /*else*/
+            if ( !string.IsNullOrWhiteSpace(profile.LoginName))
+            {
+                _context.Entry(localStoredProfile).CurrentValues.SetValues(profile);
+                _context.SaveChanges();
+            }
         }
 
         [HttpPost]

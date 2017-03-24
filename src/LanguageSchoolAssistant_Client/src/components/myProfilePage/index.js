@@ -62,21 +62,13 @@ class MyProfilePage extends React.Component {
     const profile = {...this.state.profile}; // deconstruct state.abc into a new object-- effectively making a copy
     profile[name]=event.target.value;
     this.setState(profile);
-
-    console.log("this.props.profile " + JSON.stringify(this.props.profile));
-    console.log("value " + value);
-    console.log("name " + name);
-    console.log("target " + target);
-
   }
 
   handleSubmit(event) {
     // update redux 'profile' state
     // start some redux action to send this
     event.preventDefault();
-    console.log("handle submit");
     this.props.dispatch(updateProfileResourceStart());
-    console.log('dispatched ??');
   }
 
   render() {
