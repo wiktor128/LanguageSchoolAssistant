@@ -7,7 +7,8 @@ import { reduxForm } from 'redux-form';
 import validateContact from './validateContact';
 
 import {
-  loadProfileResourceStart
+  loadProfileResourceStart,
+  updateProfileResourceStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
@@ -40,12 +41,11 @@ class MyProfilePage extends React.Component {
     super(props);
 
     this.state = {
-      firstName: this.props.profile.firstName,
-      secondName: this.props.profile.secondName,
-      email: this.props.profile.email,
-      telephone: this.props.profile.telephone,
+      profile: this.props.profile,
     };
+
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentWillMount() {
@@ -59,19 +59,24 @@ class MyProfilePage extends React.Component {
 
     this.props.profile[name] = value;
 
-    this.setState({[name] : event.target.value});
+    const profile = {...this.state.profile}; // deconstruct state.abc into a new object-- effectively making a copy
+    profile[name]=event.target.value;
+    this.setState(profile);
 
-    console.log("this.props.profile[name] " + this.props.profile[name]);
+    console.log("this.props.profile " + JSON.stringify(this.props.profile));
     console.log("value " + value);
     console.log("name " + name);
     console.log("target " + target);
 
-    console.log("this.props.profile.email " + this.props.profile.email);
   }
 
-  onSubmit() {
+  handleSubmit(event) {
     // update redux 'profile' state
     // start some redux action to send this
+    event.preventDefault();
+    console.log("handle submit");
+    this.props.dispatch(updateProfileResourceStart());
+    console.log('dispatched ??');
   }
 
   render() {
@@ -89,7 +94,7 @@ class MyProfilePage extends React.Component {
 
                 </Col>
                 <Col xs={12} md={8}>
-                  <form>
+                  <form onSubmit={this.handleSubmit}>
                     <Row middle='xs'>
                       <Col xs={6}> First Name: </Col>
                       <Col xs={6}>

@@ -4,12 +4,14 @@ import {
   RESOURCE_SERVER_ADDRESS,
   LOAD_SUBSCRIPTIONS_START,
   LOAD_TEST_RESOURCE_START,
-  LOAD_PROFILE_RESOURCE_START
+  LOAD_PROFILE_RESOURCE_START,
+  UPDATE_PROFILE_RESOURCE_START
 } from '../constants';
 import { 
   loadSubscriptionsSuccess,
   loadTestResourceSuccess,
-  loadProfileResourceSuccess
+  loadProfileResourceSuccess,
+  uploadProfileResourceSuccess
 } from '../actions';
 import apiRequest from '../utils/request';
 
@@ -65,10 +67,29 @@ export function* loadProfileResourceSaga() {
   }
 }
 
+export function* updateProfileResourceSaga() {
+  while (true) {
+    yield take(UPDATE_PROFILE_RESOURCE_START);
+
+    const profile = store.getState().profileResource.profile;
+    console.log("saga update profile: " + JSON.stringify(profile));
+
+    console.log("JSON stringify 'bodyParams' " + JSON.stringify(bodyParams));
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Profile/Update/';
+    const result = yield call(apiRequest, url, 'POST', profile); // simple put 'profile' as parameter - because it is json (not form data)
+    const resultData = result.data;
+
+    // yield put(loadProfileResourceSuccess(resultData));
+  }
+}
+
 export function* rootSaga() {
   yield [
     loadTestResourceSaga(),
     loadSubscriptionsSaga(),
-    loadProfileResourceSaga()
+
+    loadProfileResourceSaga(),
+    updateProfileResourceSaga()
   ]
 }

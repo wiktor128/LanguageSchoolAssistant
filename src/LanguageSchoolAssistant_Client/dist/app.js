@@ -43381,6 +43381,7 @@
 	exports.loadSubscriptionsSaga = loadSubscriptionsSaga;
 	exports.loadTestResourceSaga = loadTestResourceSaga;
 	exports.loadProfileResourceSaga = loadProfileResourceSaga;
+	exports.updateProfileResourceSaga = updateProfileResourceSaga;
 	exports.rootSaga = rootSaga;
 	
 	var _effects = __webpack_require__(592);
@@ -43399,7 +43400,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, rootSaga].map(regeneratorRuntime.mark);
+	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, updateProfileResourceSaga, rootSaga].map(regeneratorRuntime.mark);
 	
 	function loadSubscriptionsSaga() {
 	  var url, result, channels, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, channel;
@@ -43568,20 +43569,58 @@
 	  }, _marked[2], this);
 	}
 	
-	function rootSaga() {
-	  return regeneratorRuntime.wrap(function rootSaga$(_context4) {
+	function updateProfileResourceSaga() {
+	  var profile, url, result, resultData;
+	  return regeneratorRuntime.wrap(function updateProfileResourceSaga$(_context4) {
 	    while (1) {
 	      switch (_context4.prev = _context4.next) {
 	        case 0:
-	          _context4.next = 2;
-	          return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga()];
+	          if (false) {
+	            _context4.next = 11;
+	            break;
+	          }
 	
-	        case 2:
+	          _context4.next = 3;
+	          return (0, _effects.take)(_constants.UPDATE_PROFILE_RESOURCE_START);
+	
+	        case 3:
+	          profile = _store2.default.getState().profileResource.profile;
+	          url = _constants.RESOURCE_SERVER_ADDRESS + '/Profile/Update/';
+	          _context4.next = 7;
+	          return (0, _effects.call)(_request2.default, url, 'POST', profile);
+	
+	        case 7:
+	          result = _context4.sent;
+	          // simple put 'profile' as parameter - because it is json (not form data)
+	          resultData = result.data;
+	
+	          // yield put(loadProfileResourceSuccess(resultData));
+	
+	          _context4.next = 0;
+	          break;
+	
+	        case 11:
 	        case 'end':
 	          return _context4.stop();
 	      }
 	    }
 	  }, _marked[3], this);
+	}
+	
+	function rootSaga() {
+	  return regeneratorRuntime.wrap(function rootSaga$(_context5) {
+	    while (1) {
+	      switch (_context5.prev = _context5.next) {
+	        case 0:
+	          _context5.next = 2;
+	          return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga()];
+	
+	        case 2:
+	        case 'end':
+	          return _context5.stop();
+	      }
+	    }
+	  }, _marked[4], this);
 	}
 
 /***/ },
@@ -43609,6 +43648,9 @@
 	
 	var LOAD_PROFILE_RESOURCE_START = exports.LOAD_PROFILE_RESOURCE_START = 'redux-oidc-sample/LOAD_PROFILE_RESOURCE_START';
 	var LOAD_PROFILE_RESOURCE_SUCCESS = exports.LOAD_PROFILE_RESOURCE_SUCCESS = 'redux-oidc-sample/LOAD_PROFILE_RESOURCE_SUCCESS';
+	
+	var UPDATE_PROFILE_RESOURCE_START = exports.UPDATE_PROFILE_RESOURCE_START = 'redux-oidc-sample/UPDATE_PROFILE_RESOURCE_START';
+	var UPDATE_PROFILE_RESOURCE_SUCCESS = exports.UPDATE_PROFILE_RESOURCE_SUCCESS = 'redux-oidc-sample/UPDATE_PROFILE_RESOURCE_SUCCESS';
 
 /***/ },
 /* 594 */
@@ -43625,6 +43667,8 @@
 	exports.loadTestResourceSuccess = loadTestResourceSuccess;
 	exports.loadProfileResourceStart = loadProfileResourceStart;
 	exports.loadProfileResourceSuccess = loadProfileResourceSuccess;
+	exports.updateProfileResourceStart = updateProfileResourceStart;
+	exports.updateProfileResourceSuccess = updateProfileResourceSuccess;
 	
 	var _constants = __webpack_require__(593);
 	
@@ -43660,6 +43704,18 @@
 	function loadProfileResourceSuccess(profile) {
 	  return {
 	    type: _constants.LOAD_PROFILE_RESOURCE_SUCCESS,
+	    payload: profile
+	  };
+	}
+	
+	function updateProfileResourceStart() {
+	  return {
+	    type: _constants.UPDATE_PROFILE_RESOURCE_START
+	  };
+	}
+	function updateProfileResourceSuccess(profile) {
+	  return {
+	    type: _constants.UPDATE_PROFILE_RESOURCE_SUCCESS,
 	    payload: profile
 	  };
 	}
@@ -43809,6 +43865,43 @@
 	    return { error: error };
 	  });
 	}
+	
+	// import store from '../store';
+	
+	// // a request helper which reads the access_token from the redux state and passes it in its HTTP request
+	// export default function apiRequest(url, method = 'GET', bodyData) { // improve headers to make it working
+	//   const token = store.getState().oidc.user.access_token;
+	//   const headers = new Headers();
+	//   headers.append('Accept', 'application/json');
+	//   headers.append('Authorization', `Bearer ${token}`);
+	//   headers.append('Access-Control-Allow-Origin', 'true');
+	
+	//   var formData = new FormData();
+	
+	//   if (bodyData) {
+	//     function* entries(obj) {
+	//       for (let key of Object.keys(obj)) {
+	//         yield [key, obj[key]];
+	//       }
+	//     }
+	//     for (let [key, value] of entries(bodyData)) {
+	//       formData.append( key, value);
+	//     }
+	//   }
+	
+	//   console.log('body data inside request: ' + JSON.stringify(bodyData));
+	
+	//   const options = {
+	//     method,
+	//     headers,
+	//     body: formData
+	//   };
+	
+	//   return fetch(url, options)
+	//     .then((res) => res.json())
+	//     .then((data) => ({data})) 
+	//     .catch((error) => ({ error }));
+	// }
 
 /***/ },
 /* 596 */
@@ -54464,6 +54557,8 @@
 	  value: true
 	});
 	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(300);
@@ -54524,8 +54619,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -54564,12 +54657,11 @@
 	    var _this2 = _possibleConstructorReturn(this, (MyProfilePage.__proto__ || Object.getPrototypeOf(MyProfilePage)).call(this, props));
 	
 	    _this2.state = {
-	      firstName: _this2.props.profile.firstName,
-	      secondName: _this2.props.profile.secondName,
-	      email: _this2.props.profile.email,
-	      telephone: _this2.props.profile.telephone
+	      profile: _this2.props.profile
 	    };
+	
 	    _this2.handleInputChange = _this2.handleInputChange.bind(_this2);
+	    _this2.handleSubmit = _this2.handleSubmit.bind(_this2);
 	    return _this2;
 	  }
 	
@@ -54587,20 +54679,15 @@
 	
 	      this.props.profile[name] = value;
 	
-	      this.setState(_defineProperty({}, name, event.target.value));
-	
-	      console.log("this.props.profile[name] " + this.props.profile[name]);
-	      console.log("value " + value);
-	      console.log("name " + name);
-	      console.log("target " + target);
-	
-	      console.log("this.props.profile.email " + this.props.profile.email);
+	      var profile = _extends({}, this.state.profile); // deconstruct state.abc into a new object-- effectively making a copy
+	      profile[name] = event.target.value;
+	      this.setState(profile);
 	    }
 	  }, {
-	    key: 'onSubmit',
-	    value: function onSubmit() {
-	      // update redux 'profile' state
-	      // start some redux action to send this
+	    key: 'handleSubmit',
+	    value: function handleSubmit(event) {
+	      event.preventDefault();
+	      this.props.dispatch((0, _actions.updateProfileResourceStart)());
 	    }
 	  }, {
 	    key: 'render',
@@ -54630,7 +54717,7 @@
 	                  { xs: 12, md: 8 },
 	                  _react2.default.createElement(
 	                    'form',
-	                    null,
+	                    { onSubmit: this.handleSubmit },
 	                    _react2.default.createElement(
 	                      _reactFlexboxGrid.Row,
 	                      { middle: 'xs' },

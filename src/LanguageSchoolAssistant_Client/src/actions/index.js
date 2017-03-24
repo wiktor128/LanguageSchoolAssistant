@@ -6,7 +6,10 @@ import {
   LOAD_TEST_RESOURCE_SUCCESS,
 
   LOAD_PROFILE_RESOURCE_START,
-  LOAD_PROFILE_RESOURCE_SUCCESS
+  LOAD_PROFILE_RESOURCE_SUCCESS,
+
+  UPDATE_PROFILE_RESOURCE_START,
+  UPDATE_PROFILE_RESOURCE_SUCCESS
 } from '../constants';
 
 
@@ -42,6 +45,18 @@ export function loadProfileResourceStart() {
 export function loadProfileResourceSuccess(profile) {
   return {
     type: LOAD_PROFILE_RESOURCE_SUCCESS,
+    payload: profile
+  }
+}
+
+export function updateProfileResourceStart() {
+  return {
+    type: UPDATE_PROFILE_RESOURCE_START
+  };
+}
+export function updateProfileResourceSuccess(profile) {
+  return {
+    type: UPDATE_PROFILE_RESOURCE_SUCCESS,
     payload: profile
   }
 }

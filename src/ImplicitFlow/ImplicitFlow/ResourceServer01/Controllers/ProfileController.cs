@@ -29,6 +29,13 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
+        public void Update(PersonalProfile profile)
+        {
+            var x = profile.Email;
+            ;
+        }
+
+        [HttpPost]
         public IActionResult Image()
         {
             return Json("Return Image here.....");

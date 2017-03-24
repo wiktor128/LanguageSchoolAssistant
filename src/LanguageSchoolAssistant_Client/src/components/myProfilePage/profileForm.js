@@ -7,7 +7,8 @@ import { reduxForm } from 'redux-form';
 import validateContact from './validateContact';
 
 import {
-  loadProfileResourceStart
+  loadProfileResourceStart,
+  uploadProfileResourceStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
