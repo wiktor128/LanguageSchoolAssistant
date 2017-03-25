@@ -15,5 +15,6 @@ namespace ResourceServer01.Models
         public string SecondName { get; set; }
         public string Email { get; set; }
         public string Telephone { get; set; }
+        public StudentsGroup StudentsGroup { get; set;}
     }
 }

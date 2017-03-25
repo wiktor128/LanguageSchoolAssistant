@@ -62,6 +62,28 @@ namespace ResourceServer01.Controllers
             }
         }
 
+        [Authorize( Roles = "LanguageInstructor" )]
+        public IActionResult GetAllStudents()
+        {
+            var allStudents = _context.PersonalProfiles
+                              .Where(x => x.IsLanguageInstructor == false);
+
+            return Json(allStudents);
+        }
+
+        [Authorize(Roles = "LanguageInstructor")]
+        public IActionResult GetAllStudents(StudentsGroup studentGroup)
+        { // check this
+
+            var studentsInGroup = from pp in _context.PersonalProfiles
+                                  where pp.StudentsGroup == studentGroup
+                                     && pp.IsLanguageInstructor == false
+                                  select pp;
+                                            
+
+            return Json(studentsInGroup);
+        }
+
         [HttpPost]
         public IActionResult Image()
         {

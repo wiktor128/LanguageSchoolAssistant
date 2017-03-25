@@ -81,6 +81,20 @@ export function* updateProfileResourceSaga() {
   }
 }
 
+// export function* loadGroupDetailsSaga() {
+//   while (true) {
+//     yield take(LOAD_GROUP_DETAILS_START);
+
+//     const profile = store.getState().profileResource.profile;
+
+//     const url = RESOURCE_SERVER_ADDRESS + '/Profile/Update/';
+//     const result = yield call(apiRequest, url, 'POST', profile); // simple put 'profile' as parameter - because it is json (not form data)
+//     const resultData = result.data;
+
+//     yield put(updateProfileResourceSuccess());
+//   }
+// }
+
 export function* rootSaga() {
   yield [
     loadTestResourceSaga(),

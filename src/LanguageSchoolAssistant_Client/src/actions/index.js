@@ -9,8 +9,23 @@ import {
   LOAD_PROFILE_RESOURCE_SUCCESS,
 
   UPDATE_PROFILE_RESOURCE_START,
-  UPDATE_PROFILE_RESOURCE_SUCCESS
+  UPDATE_PROFILE_RESOURCE_SUCCESS,
+
+  LOAD_GROUP_DETAILS_START,
+  LODD_GROUP_DETAILS_SUCCESS
 } from '../constants';
+
+export function loadGroupDetailsStart() {
+  return {
+    type: LOAD_GROUP_DETAILS_START
+  };
+}
+export function loadGroupDetailsSuccess(groupDetails) {
+  return {
+    type: LOAD_GROUP_DETAILS_SUCCESS,
+    payload: groupDetails
+  };
+}
 
 
 export function loadSubscriptionsStart() {

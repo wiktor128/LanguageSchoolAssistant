@@ -5,6 +5,7 @@ import subscriptionsReducer from './subscriptions';
 import testResourceReducer from './testResource';
 import profileResourceReducer from './profileResource';
 import { reducer as formReducer } from 'redux-form';
+import groupDetailsReducer from './groupDetails';
 
 const reducer = combineReducers(
   {
@@ -13,7 +14,8 @@ const reducer = combineReducers(
     subscriptions: subscriptionsReducer,
     testResource: testResourceReducer,
     profileResource: profileResourceReducer,
-    form: formReducer
+    form: formReducer,
+    groupDetails: groupDetailsReducer
   }
 );
 
