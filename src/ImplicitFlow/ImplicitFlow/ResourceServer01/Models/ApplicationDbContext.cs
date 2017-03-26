@@ -16,5 +16,6 @@ namespace ResourceServer01.Models
         public DbSet<Localization> Localization { get; set; }
         public DbSet<StudentsGroup> StudentsGroup { get; set; }
         public DbSet<UnitOfClasses> UnitOfClasses { get; set; }
+        public DbSet<UsefulLink> UsefulLinks { get; set; }
     }
 }

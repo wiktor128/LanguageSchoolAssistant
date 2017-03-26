@@ -7,7 +7,8 @@ import { reduxForm } from 'redux-form';
 
 import {
   loadProfileResourceStart,
-  updateProfileResourceStart
+  updateProfileResourceStart,
+  loadUsefulLinksStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
@@ -48,6 +49,18 @@ const iconButtonElement = (
 );
 
 class UsefulLinks extends React.Component {
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      usefulLinks: this.props.usefulLinks
+    };
+  }
+
+  componentWillMount() {
+    this.props.dispatch(loadUsefulLinksStart());
+  }
+
   render() {
     return (
 		<SimpleFrame
@@ -84,7 +97,9 @@ class UsefulLinks extends React.Component {
 function mapStateToProps(state) {
   return {
     user: state.oidc.user,
-    profile: state.profileResource.profile
+    profile: state.profileResource.profile,
+    usefulLinks: state.usefulLinks.usefulLinks,
+
   };
 }
 

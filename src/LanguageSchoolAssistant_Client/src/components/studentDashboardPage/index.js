@@ -27,7 +27,7 @@ import Divider from 'material-ui/Divider';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
 import UsefulLinks from './usefulLInks';
-
+import NextClasses from './nextClasses';
 
 
 class StudentDashboardPage extends React.Component {
@@ -81,16 +81,10 @@ class StudentDashboardPage extends React.Component {
     return (
       <Grid fluid>
         <Row center='xs'>
-          <Col xs={12} md={3}>
-            <SimpleFrame
-              title="Next class"
-              /*iconElementRight = {<FeatureButton />}*/
-            >
-              Next class
-            </SimpleFrame>
-
+          <Col xs={12} md={3} style={styles.leftAlign}>
+            <NextClasses />
           </Col>
-          <Col xs={12} md={3}>
+          <Col xs={12} md={6}>
             <SimpleFrame
               title="List of Subjects"
               /*iconElementRight = {<FeatureButton />}*/

@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import userManager from '../../utils/userManager';
 import { browserHistory } from 'react-router';
 
+import {
+  loadProfileResourceStart
+} from '../../actions';
+
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
@@ -15,6 +19,7 @@ import NavigationClose from 'material-ui/svg-icons/navigation/close';
 
 class Login extends React.Component {
   static muiName = 'FlatButton';
+
 
   onLoginButtonClick = (event) => {
     event.preventDefault();

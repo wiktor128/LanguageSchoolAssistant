@@ -4,7 +4,13 @@ import { CallbackComponent } from 'redux-oidc';
 import { push } from 'react-router-redux';
 import userManager from '../../utils/userManager';
 
+import {
+  loadProfileResourceStart,
+  updateProfileResourceStart
+} from '../../actions';
+
 class CallbackPage extends React.Component {
+
   successCallback = () => {
     this.props.dispatch(push('/'));
   }

@@ -14,3 +14,10 @@ export const UPDATE_PROFILE_RESOURCE_SUCCESS = 'redux-oidc-sample/UPDATE_PROFILE
 
 export const LOAD_GROUP_DETAILS_START = 'redux-oidc-sample/LOAD_GROUP_DETAILS_START';
 export const LOAD_GROUP_DETAILS_SUCCESS = 'redux-oidc-sample/LOAD_GROUP_DETAILS_SUCCESS';
+
+
+export const LOAD_USEFUL_LINKS_START = 'redux-oidc-sample/LOAD_USEFUL_LINKS_START';
+export const LOAD_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/LOAD_USEFUL_LINKS_SUCCESS';
+export const UPDATE_USEFUL_LINKS_START = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_START';
+export const UPDATE_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_SUCCESS';
+

@@ -85,6 +85,19 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
+        public IActionResult GetUsefulLinks(string loginName)
+        {
+            var personalProfile = _context.PersonalProfiles
+                                    .Where(x => x.LoginName == loginName);
+
+            var usefulLinks = _context.UsefulLinks
+                            .Where(x => x.PersonalProfile == personalProfile);
+
+
+            return Json(usefulLinks);
+        }
+
+        [HttpPost]
         public IActionResult Image()
         {
             return Json("Return Image here.....");
