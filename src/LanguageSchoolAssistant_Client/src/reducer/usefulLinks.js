@@ -2,7 +2,8 @@ import { LOAD_USEFUL_LINKS_SUCCESS } from '../constants';
 import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 
 const initialState = {
-  usefulLinks: []
+  usefulLinks: [],
+  newLink: {title: "", link: ""}
 };
 
 export default function reducer(state = initialState, action) {

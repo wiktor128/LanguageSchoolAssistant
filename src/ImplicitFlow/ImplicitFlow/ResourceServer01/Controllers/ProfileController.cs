@@ -88,14 +88,39 @@ namespace ResourceServer01.Controllers
         public IActionResult GetUsefulLinks(string loginName)
         {
             var personalProfile = _context.PersonalProfiles
-                                    .Where(x => x.LoginName == loginName);
+                                    .Where(x => x.LoginName == loginName)
+                                    .SingleOrDefault();
 
             var usefulLinks = _context.UsefulLinks
-                            .Where(x => x.PersonalProfile == personalProfile);
+                            .Where(x => x.PersonalProfile == personalProfile)
+                            .ToList();
 
 
             return Json(usefulLinks);
         }
+
+        [HttpPost]
+        public IActionResult AddUsefulLink(UsefulLink usefulLink)
+        {
+            var personalProfile = _context.PersonalProfiles
+                                    .Where(x => x.LoginName == User.Identity.Name)
+                                    .SingleOrDefault();
+
+            usefulLink.PersonalProfile = personalProfile;
+
+
+
+            _context.Add(usefulLink);
+
+            _context.SaveChanges();
+
+            var usefulLinks = _context.UsefulLinks
+                            .Where(x => x.PersonalProfile == personalProfile);
+
+            return Json(usefulLinks);
+        }
+
+
 
         [HttpPost]
         public IActionResult Image()

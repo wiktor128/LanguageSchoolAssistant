@@ -2,7 +2,7 @@ import { LOAD_PROFILE_RESOURCE_SUCCESS } from '../constants';
 import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 
 const initialState = {
-  profile: []
+  profile: {}
 };
 
 export default function reducer(state = initialState, action) {

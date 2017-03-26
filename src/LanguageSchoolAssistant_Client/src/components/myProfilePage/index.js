@@ -37,7 +37,6 @@ class FeatureButton extends React.Component {
 }
 
 class MyProfilePage extends React.Component {
-
   constructor (props) {
     super(props);
 
@@ -71,11 +70,12 @@ class MyProfilePage extends React.Component {
     const profile = {...this.state.profile}; // deconstruct state.abc into a new object-- effectively making a copy
     profile[name]=event.target.value;
     this.setState(profile);
+
+    console.log("this.state.profile" + JSON.stringify(this.state.profile));
+    console.log("this.props.profile" + JSON.stringify(this.props.profile));
   }
 
   handleSubmit(event) {
-    // update redux 'profile' state
-    // start some redux action to send this
     event.preventDefault();
     this.props.dispatch(updateProfileResourceStart());
 

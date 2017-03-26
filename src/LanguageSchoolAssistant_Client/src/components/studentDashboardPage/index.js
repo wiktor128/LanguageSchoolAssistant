@@ -26,7 +26,7 @@ import Divider from 'material-ui/Divider';
 
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
-import UsefulLinks from './usefulLInks';
+import UsefulLinks from './usefulLinks';
 import NextClasses from './nextClasses';
 
 

@@ -75,9 +75,6 @@ export function* loadProfileResourceSaga() {
     const result = yield call(apiRequest, url, 'POST', bodyParams);
     const resultData = result.data;
 
-    console.log("load profile resoruce success: " + JSON.stringify(resultData));
-    console.log("load profile resoruce store  : " + JSON.stringify(store.getState().profileResource.profile));
-
     yield put(loadProfileResourceSuccess(resultData));
   }
 }
@@ -89,9 +86,6 @@ export function* updateProfileResourceSaga() {
     console.log("updateProfileResourceSaga");
 
     const profile = store.getState().profileResource.profile;
-
-    console.log("update profile resoruce local: " + JSON.stringify(profile));
-    console.log("update profile resoruce store  : " + JSON.stringify(store.getState().profileResource.profile));
 
     const url = RESOURCE_SERVER_ADDRESS + '/Profile/Update/';
     const result = yield call(apiRequest, url, 'POST', profile); // simple put 'profile' as parameter - because it is json (not form data)
@@ -117,28 +111,31 @@ export function* loadUsefulLinksSaga() {
     const result = yield call(apiRequest, url, 'POST', bodyParams);
     const resultData = result.data;
 
-
     yield put(loadUsefulLinksSuccess(resultData));
   }
 }
 
-// export function* updateUsefulLinksSaga() {
-//   while (true) {
-//     yield take(LOAD_PROFILE_RESOURCE_START);
+export function* updateUsefulLinksSaga() {
+  while (true) {
+    yield take(UPDATE_USEFUL_LINKS_START);
 
-//     const userLoginName = store.getState().oidc.user.profile.name;
+    console.log("updateUsefulLinksSaga");
 
-//     var bodyParams = {
-//       loginName: userLoginName
-//     }
+    const usefulLink = store.getState().usefulLinks.newLink;
 
-//     const url = RESOURCE_SERVER_ADDRESS + '/Profile/Get/';
-//     const result = yield call(apiRequest, url, 'POST', bodyParams);
-//     const resultData = result.data;
+    console.log("useful Link: " + JSON.stringify(usefulLink));
 
-//     yield put(loadProfileResourceSuccess(resultData));
-//   }
-// }
+    // var bodyParams = {
+    //   usefulLink: usefulLink
+    // }
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Profile/AddUsefulLink/';
+    const result = yield call(apiRequest, url, 'POST', usefulLink);
+    const resultData = result.data;
+
+    yield put(loadUsefulLinksSuccess(resultData));
+  }
+}
 
 // export function* loadGroupDetailsSaga() {
 //   while (true) {
@@ -163,6 +160,6 @@ export function* rootSaga() {
     updateProfileResourceSaga(),
 
     loadUsefulLinksSaga(),
-    // updateUsefulLinksSaga()
+    updateUsefulLinksSaga()
   ]
 }
