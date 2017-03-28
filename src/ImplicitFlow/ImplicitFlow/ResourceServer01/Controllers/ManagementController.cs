@@ -9,11 +9,11 @@ using System.Linq;
 namespace ResourceServer01.Controllers
 {
     [Authorize(ActiveAuthenticationSchemes = OAuthIntrospectionDefaults.AuthenticationScheme)]
-    public class ProfileController : Controller
+    public class ManagementController : Controller
     {
         private ApplicationDbContext _context;
 
-        public ProfileController(ApplicationDbContext applicationDbContext)
+        public ManagementController(ApplicationDbContext applicationDbContext)
         {
             _context = applicationDbContext;
         }

@@ -54195,7 +54195,7 @@
 	var _reduxOidc = __webpack_require__(507);
 	
 	var initialState = {
-	  groupDetails: []
+	  groupDetails: {}
 	};
 	
 	function reducer() {
@@ -54233,7 +54233,7 @@
 	
 	var initialState = {
 	  usefulLinks: [],
-	  newLink: { title: "empty", link: "empty" }
+	  newLink: {}
 	};
 	
 	function reducer() {
@@ -72327,14 +72327,15 @@
 	  return FeatureButton;
 	}(_react2.default.Component);
 	
-	var iconButtonElement = _react2.default.createElement(
-	  _IconButton2.default,
-	  {
-	    touch: true,
-	    tooltip: 'Remove link'
-	  },
-	  _react2.default.createElement(_highlightOff2.default, { color: _colors.grey400 })
-	);
+	/*const iconButtonElement = (
+	  <IconButton
+	    touch={true}
+	    tooltip="Remove link"
+	    
+	  >
+	    <HighlightOffIcon color={grey400} />
+	  </IconButton>
+	);*/
 	
 	var UsefulLinks = function (_React$Component2) {
 	  _inherits(UsefulLinks, _React$Component2);
@@ -72360,6 +72361,7 @@
 	
 	    _this2.handleSubmit = _this2.handleSubmit.bind(_this2);
 	    _this2.handleInputChange = _this2.handleInputChange.bind(_this2);
+	    _this2.handleDeleteUsefulLink = _this2.handleDeleteUsefulLink.bind(_this2);
 	    return _this2;
 	  }
 	
@@ -72398,14 +72400,33 @@
 	      console.log("this.state.newLink: " + JSON.stringify(this.state.newLink));
 	    }
 	  }, {
+	    key: 'handleDeleteUsefulLink',
+	    value: function handleDeleteUsefulLink(event) {
+	      event.preventDefault();
+	      console.log("handleDeleteUsefulLink");
+	      console.log("event.target: " + JSON.stringify(event.target));
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this3 = this;
 	
 	      var actions = [_react2.default.createElement(_FlatButton2.default, {
 	        label: 'Cancel',
 	        primary: true,
 	        onTouchTap: this.handleCloseDialog
 	      })];
+	
+	      var iconButtonElement = _react2.default.createElement(
+	        _IconButton2.default,
+	        {
+	          touch: true,
+	          tooltip: 'Remove link',
+	          tooltipPosition: 'bottom-left',
+	          onTouchTap: this.handleDeleteUsefulLink
+	        },
+	        _react2.default.createElement(_highlightOff2.default, { color: _colors.grey400 })
+	      );
 	
 	      return _react2.default.createElement(
 	        _simpleFrame2.default,
@@ -72416,26 +72437,22 @@
 	        _react2.default.createElement(
 	          _List.List,
 	          null,
-	          _react2.default.createElement(_List.ListItem, {
-	            rightIconButton: iconButtonElement,
-	            primaryText: 'Brendan Lim',
-	            href: 'google.com'
-	          }),
-	          _react2.default.createElement(_List.ListItem, {
-	            rightIconButton: iconButtonElement,
-	            primaryText: 'me, Scott, Jennifer'
-	          }),
-	          _react2.default.createElement(_List.ListItem, {
-	            rightIconButton: iconButtonElement,
-	            primaryText: 'Grace Ng'
-	          }),
-	          _react2.default.createElement(_List.ListItem, {
-	            rightIconButton: iconButtonElement,
-	            primaryText: 'Kerem Suer'
-	          }),
-	          _react2.default.createElement(_List.ListItem, {
-	            rightIconButton: iconButtonElement,
-	            primaryText: 'Raquel Parrado'
+	          this.props.usefulLinks.map(function (item) {
+	            return _react2.default.createElement(_List.ListItem, {
+	              key: item.usefulLinkId,
+	              rightIconButton: _react2.default.createElement(
+	                _IconButton2.default,
+	                {
+	                  touch: true,
+	                  tooltip: 'Remove link',
+	                  tooltipPosition: 'bottom-left',
+	                  onTouchTap: _this3.handleDeleteUsefulLink
+	                },
+	                _react2.default.createElement(_highlightOff2.default, { color: _colors.grey400 })
+	              ),
+	              primaryText: item.title,
+	              href: item.link
+	            });
 	          })
 	        ),
 	        _react2.default.createElement(
@@ -72451,16 +72468,16 @@
 	            'form',
 	            { onSubmit: this.handleSubmit },
 	            _react2.default.createElement(_TextField2.default, {
-	              name: 'link',
-	              floatingLabelText: 'Link',
-	              value: this.props.newLink.link,
+	              name: 'title',
+	              value: this.props.newLink.title,
+	              floatingLabelText: 'Title',
 	              fullWidth: true,
 	              onChange: this.handleInputChange
 	            }),
 	            _react2.default.createElement(_TextField2.default, {
-	              name: 'title',
-	              value: this.props.newLink.title,
-	              floatingLabelText: 'Title',
+	              name: 'link',
+	              floatingLabelText: 'Link',
+	              value: this.props.newLink.link,
 	              fullWidth: true,
 	              onChange: this.handleInputChange
 	            }),

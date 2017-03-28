@@ -7,6 +7,7 @@ import CallbackPage from './components/callback';
 import LoginPage from './components/loginPage';
 import MyProfilePage from './components/myProfilePage';
 import StudentDashboardPage from './components/studentDashboardPage';
+import LanguageInstructorDashboardPage from './components/languageInstructorDashboardPage';
 
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -18,6 +19,7 @@ export default function Routes(props) {
       <Route path="/myprofile" component={MyProfilePage} />
       {/*<Route path="/groupPage" component={GroupPage} />*/}
       <Route path="/studentdashboard" component={StudentDashboardPage} />
+      <Route path="/dashboard" component={languageInstructorDashboardPage} />
     </Router>
   );
 }

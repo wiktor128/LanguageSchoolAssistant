@@ -2,7 +2,7 @@ import { LOAD_GROUP_DETAILS_SUCCESS } from '../constants';
 import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 
 const initialState = {
-  groupDetails: []
+  groupDetails: {}
 };
 
 export default function reducer(state = initialState, action) {

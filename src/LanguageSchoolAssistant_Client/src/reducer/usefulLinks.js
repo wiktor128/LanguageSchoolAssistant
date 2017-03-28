@@ -3,7 +3,7 @@ import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 
 const initialState = {
   usefulLinks: [],
-  newLink: {title: "", link: ""}
+  newLink: {}
 };
 
 export default function reducer(state = initialState, action) {
