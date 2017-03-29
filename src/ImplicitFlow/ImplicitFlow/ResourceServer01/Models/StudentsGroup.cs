@@ -12,5 +12,7 @@ namespace ResourceServer01.Models
         public string Name { get; set; }
         public string Language { get; set; }
         public string Level { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
     }
 }

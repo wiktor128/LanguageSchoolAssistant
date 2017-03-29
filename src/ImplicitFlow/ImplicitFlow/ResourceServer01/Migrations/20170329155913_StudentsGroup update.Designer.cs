@@ -8,9 +8,10 @@ using ResourceServer01.Models;
 namespace ResourceServer01.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170329155913_StudentsGroup update")]
+    partial class StudentsGroupupdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.1")
@@ -61,7 +62,7 @@ namespace ResourceServer01.Migrations
                     b.Property<int>("StudentsGroupId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime?>("EndDate");
+                    b.Property<DateTime>("EndDate");
 
                     b.Property<string>("Language");
 
@@ -69,7 +70,7 @@ namespace ResourceServer01.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<DateTime?>("StartDate");
+                    b.Property<DateTime>("StartDate");
 
                     b.HasKey("StudentsGroupId");
 

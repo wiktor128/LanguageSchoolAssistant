@@ -43397,6 +43397,7 @@
 	exports.updateProfileResourceSaga = updateProfileResourceSaga;
 	exports.loadUsefulLinksSaga = loadUsefulLinksSaga;
 	exports.updateUsefulLinksSaga = updateUsefulLinksSaga;
+	exports.updateGroupSaga = updateGroupSaga;
 	exports.rootSaga = rootSaga;
 	
 	var _effects = __webpack_require__(592);
@@ -43415,7 +43416,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, updateProfileResourceSaga, loadUsefulLinksSaga, updateUsefulLinksSaga, rootSaga].map(regeneratorRuntime.mark);
+	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, updateProfileResourceSaga, loadUsefulLinksSaga, updateUsefulLinksSaga, updateGroupSaga, rootSaga].map(regeneratorRuntime.mark);
 	
 	function loadSubscriptionsSaga() {
 	    var url, result, channels, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, channel;
@@ -43725,34 +43726,64 @@
 	    }, _marked[5], this);
 	}
 	
-	// export function* loadGroupDetailsSaga() {
-	//   while (true) {
-	//     yield take(LOAD_GROUP_DETAILS_START);
-	
-	//     const profile = store.getState().profileResource.profile;
-	
-	//     const url = RESOURCE_SERVER_ADDRESS + '/Profile/Update/';
-	//     const result = yield call(apiRequest, url, 'POST', profile); // simple put 'profile' as parameter - because it is json (not form data)
-	//     const resultData = result.data;
-	
-	//     yield put(updateProfileResourceSuccess());
-	//   }
-	// }
-	
-	function rootSaga() {
-	    return regeneratorRuntime.wrap(function rootSaga$(_context7) {
+	function updateGroupSaga() {
+	    var group, url, result, resultData;
+	    return regeneratorRuntime.wrap(function updateGroupSaga$(_context7) {
 	        while (1) {
 	            switch (_context7.prev = _context7.next) {
 	                case 0:
-	                    _context7.next = 2;
-	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga()];
+	                    if (false) {
+	                        _context7.next = 13;
+	                        break;
+	                    }
 	
-	                case 2:
+	                    _context7.next = 3;
+	                    return (0, _effects.take)(_constants.UPDATE_GROUP_START);
+	
+	                case 3:
+	
+	                    console.log("updateGroupSaga");
+	
+	                    group = _store2.default.getState().groupResource.temporaryGroup;
+	
+	
+	                    console.log("temporary group to post: " + JSON.stringify(group));
+	
+	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateGroup/';
+	                    _context7.next = 9;
+	                    return (0, _effects.call)(_request2.default, url, 'POST', group);
+	
+	                case 9:
+	                    result = _context7.sent;
+	                    resultData = result.data;
+	
+	                    //yield put(loadGroupsSuccess(resultData));
+	
+	                    _context7.next = 0;
+	                    break;
+	
+	                case 13:
 	                case 'end':
 	                    return _context7.stop();
 	            }
 	        }
 	    }, _marked[6], this);
+	}
+	
+	function rootSaga() {
+	    return regeneratorRuntime.wrap(function rootSaga$(_context8) {
+	        while (1) {
+	            switch (_context8.prev = _context8.next) {
+	                case 0:
+	                    _context8.next = 2;
+	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), updateGroupSaga()];
+	
+	                case 2:
+	                case 'end':
+	                    return _context8.stop();
+	            }
+	        }
+	    }, _marked[7], this);
 	}
 
 /***/ },
@@ -43791,6 +43822,14 @@
 	var LOAD_USEFUL_LINKS_SUCCESS = exports.LOAD_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/LOAD_USEFUL_LINKS_SUCCESS';
 	var UPDATE_USEFUL_LINKS_START = exports.UPDATE_USEFUL_LINKS_START = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_START';
 	var UPDATE_USEFUL_LINKS_SUCCESS = exports.UPDATE_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_SUCCESS';
+	
+	var LOAD_GROUPS_START = exports.LOAD_GROUPS_START = 'redux-oidc-sample/LOAD_GROUPS_START';
+	var LOAD_GROUPS_SUCCESS = exports.LOAD_GROUPS_SUCCESS = 'redux-oidc-sample/LOAD_GROUPS_SUCCESS';
+	var UPDATE_GROUP_START = exports.UPDATE_GROUP_START = 'redux-oidc-sample/UPDATE_GROUPS_START';
+	var UPDATE_GROUP_SUCCESS = exports.UPDATE_GROUP_SUCCESS = 'redux-oidc-sample/UPDATE_GROUPS_SUCCESS';
+	
+	var LOAD_LANGUAGE_INSTRUCTORS_START = exports.LOAD_LANGUAGE_INSTRUCTORS_START = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_START';
+	var LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = exports.LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_SUCCESS';
 
 /***/ },
 /* 594 */
@@ -43803,8 +43842,11 @@
 	});
 	exports.loadUsefulLinksStart = loadUsefulLinksStart;
 	exports.loadUsefulLinksSuccess = loadUsefulLinksSuccess;
-	exports.loadGroupDetailsStart = loadGroupDetailsStart;
-	exports.loadGroupDetailsSuccess = loadGroupDetailsSuccess;
+	exports.loadGroupsStart = loadGroupsStart;
+	exports.loadGroupsSuccess = loadGroupsSuccess;
+	exports.updateGroupStart = updateGroupStart;
+	exports.loadLanguageInstructorsStart = loadLanguageInstructorsStart;
+	exports.loadLanguageInstructorsSuccess = loadLanguageInstructorsSuccess;
 	exports.updateUsefulLinksStart = updateUsefulLinksStart;
 	exports.updateUsefulLinksSuccess = updateUsefulLinksSuccess;
 	exports.loadSubscriptionsStart = loadSubscriptionsStart;
@@ -43830,15 +43872,32 @@
 	  };
 	}
 	
-	function loadGroupDetailsStart() {
+	function loadGroupsStart() {
 	  return {
-	    type: _constants.LOAD_GROUP_DETAILS_START
+	    type: _constants.LOAD_GROUPS_START
 	  };
 	}
-	function loadGroupDetailsSuccess(groupDetails) {
+	function loadGroupsSuccess(existingGroups) {
 	  return {
-	    type: LOAD_GROUP_DETAILS_SUCCESS,
-	    payload: groupDetails
+	    type: _constants.LOAD_GROUPS_SUCCESS,
+	    payload: existingGroups
+	  };
+	}
+	function updateGroupStart() {
+	  return {
+	    type: _constants.UPDATE_GROUP_START
+	  };
+	}
+	
+	function loadLanguageInstructorsStart() {
+	  return {
+	    type: _constants.LOAD_LANGUAGE_INSTRUCTORS_START
+	  };
+	}
+	function loadLanguageInstructorsSuccess(existingLanguageInstructors) {
+	  return {
+	    type: _constants.LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
+	    payload: existingLanguageInstructors
 	  };
 	}
 	
@@ -44078,13 +44137,13 @@
 	
 	var _reduxForm = __webpack_require__(600);
 	
-	var _groupDetails = __webpack_require__(800);
-	
-	var _groupDetails2 = _interopRequireDefault(_groupDetails);
-	
-	var _usefulLinks = __webpack_require__(801);
+	var _usefulLinks = __webpack_require__(800);
 	
 	var _usefulLinks2 = _interopRequireDefault(_usefulLinks);
+	
+	var _groupsResource = __webpack_require__(801);
+	
+	var _groupsResource2 = _interopRequireDefault(_groupsResource);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -44095,7 +44154,7 @@
 	  testResource: _testResource2.default,
 	  profileResource: _profileResource2.default,
 	  form: _reduxForm.reducer,
-	  groupDetails: _groupDetails2.default,
+	  groupResource: _groupsResource2.default,
 	  usefulLinks: _usefulLinks2.default
 	});
 	
@@ -54205,7 +54264,8 @@
 	var _reduxOidc = __webpack_require__(507);
 	
 	var initialState = {
-	  groupDetails: {}
+	  usefulLinks: [],
+	  newLink: {}
 	};
 	
 	function reducer() {
@@ -54215,9 +54275,9 @@
 	  switch (action.type) {
 	    case _reduxOidc.SESSION_TERMINATED:
 	    case _reduxOidc.USER_EXPIRED:
-	      return Object.assign({}, _extends({}, state), { groupDetails: [] });
-	    case _constants.LOAD_GROUP_DETAILS_SUCCESS:
-	      return Object.assign({}, _extends({}, state), { groupDetails: action.payload });
+	      return Object.assign({}, _extends({}, state), { usefulLinks: [] });
+	    case _constants.LOAD_USEFUL_LINKS_SUCCESS:
+	      return Object.assign({}, _extends({}, state), { usefulLinks: action.payload });
 	    default:
 	      return state;
 	  }
@@ -54242,8 +54302,9 @@
 	var _reduxOidc = __webpack_require__(507);
 	
 	var initialState = {
-	  usefulLinks: [],
-	  newLink: {}
+	  existingGroups: [],
+	  existingLanguageInstructors: [],
+	  temporaryGroup: {}
 	};
 	
 	function reducer() {
@@ -54253,9 +54314,17 @@
 	  switch (action.type) {
 	    case _reduxOidc.SESSION_TERMINATED:
 	    case _reduxOidc.USER_EXPIRED:
-	      return Object.assign({}, _extends({}, state), { usefulLinks: [] });
-	    case _constants.LOAD_USEFUL_LINKS_SUCCESS:
-	      return Object.assign({}, _extends({}, state), { usefulLinks: action.payload });
+	      return Object.assign({}, _extends({}, state), {
+	        temporaryGroup: {}
+	      });
+	    case _constants.LOAD_GROUPS_SUCCESS:
+	      return Object.assign({}, _extends({}, state), {
+	        existingGroups: action.payload
+	      });
+	    case _constants.LOAD_LANGUAGE_INSTRUCTORS_SUCCESS:
+	      return Object.assign({}, _extends({}, state), {
+	        existingLanguageInstructors: action.payload
+	      });
 	    default:
 	      return state;
 	  }
@@ -78839,9 +78908,16 @@
 	    };
 	
 	    _this.state = {
-	      profile: _this.props.profile,
-	      value: null
+	      value: null,
+	      startDate: _this.props.temporaryGroup.startDate,
+	      endDate: _this.props.temporaryGroup.endDate
 	    };
+	
+	    _this.handleNewGroupSubmit = _this.handleNewGroupSubmit.bind(_this);
+	    _this.handleInputChange = _this.handleInputChange.bind(_this);
+	    _this.handleStartDateChange = _this.handleStartDateChange.bind(_this);
+	    _this.handleEndDateChange = _this.handleEndDateChange.bind(_this);
+	    _this.handleLevelSelectChange = _this.handleLevelSelectChange.bind(_this);
 	
 	    return _this;
 	  }
@@ -78850,6 +78926,83 @@
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      this.props.dispatch((0, _actions.loadProfileResourceStart)());
+	      this.props.dispatch((0, _actions.loadGroupsStart)());
+	      this.props.dispatch((0, _actions.loadLanguageInstructorsStart)());
+	    }
+	  }, {
+	    key: 'handleStartDateChange',
+	    value: function handleStartDateChange(event, date) {
+	      console.log("start date change");
+	      this.props.temporaryGroup["startDate"] = date;
+	    }
+	  }, {
+	    key: 'handleEndDateChange',
+	    value: function handleEndDateChange(event, date) {
+	      console.log("end date change");
+	      this.props.temporaryGroup["endDate"] = date;
+	    }
+	  }, {
+	    key: 'handleLevelSelectChange',
+	    value: function handleLevelSelectChange(event, index, value) {
+	      console.log("handle level select change");
+	      console.log("index,value: " + index + " " + value);
+	      this.props.temporaryGroup["level"] = value;
+	    }
+	
+	    // handleInputChange(event, date) {
+	    //   console.log("handle Input Change");
+	
+	    //   for (var i=0; i < arguments.length; i++) {
+	    //       console.log('arguments[' + i + ']' + arguments[i]) ;
+	    //   }
+	
+	
+	    //   var target, name, value;
+	    //   if (!date) { // check wheather input is build with datePicker component
+	    //     value = (target.type === 'checkbox') ? target.checked : target.value;
+	    //     target = event.target;
+	    //     name = target.name;
+	    //   } else {
+	    //     console.log("elsee");
+	    //     value = date;
+	    //     target = event.target;
+	    //     name = target.name;
+	    //   }
+	
+	
+	    //   this.props.temporaryGroup[name] = value;
+	
+	    //   console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+	    // }
+	
+	  }, {
+	    key: 'handleInputChange',
+	    value: function handleInputChange(event) {
+	
+	      console.log("handle Input Change");
+	
+	      for (var i = 0; i < arguments.length; i++) {
+	        console.log('arguments[' + i + ']' + arguments[i]);
+	      }
+	
+	      var target = event.target;
+	      var value = target.type === 'checkbox' ? target.checked : target.value;
+	      var name = target.name;
+	
+	      this.props.temporaryGroup[name] = value;
+	
+	      console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+	    }
+	  }, {
+	    key: 'handleNewGroupSubmit',
+	    value: function handleNewGroupSubmit(event) {
+	      event.preventDefault();
+	      console.log("handle new group submit function");
+	      console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
+	      console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
+	      console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+	
+	      this.props.dispatch((0, _actions.updateGroupStart)());
 	    }
 	  }, {
 	    key: 'render',
@@ -78911,11 +79064,6 @@
 	                      null,
 	                      'End Date'
 	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableHeaderColumn,
-	                      null,
-	                      'Lead Teacher'
-	                    ),
 	                    _react2.default.createElement(_Table.TableHeaderColumn, null)
 	                  )
 	                ),
@@ -78947,11 +79095,6 @@
 	                      _Table.TableRowColumn,
 	                      null,
 	                      'John Smith'
-	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableRowColumn,
-	                      null,
-	                      'Employed'
 	                    ),
 	                    _react2.default.createElement(
 	                      _Table.TableRowColumn,
@@ -78996,11 +79139,6 @@
 	                    _react2.default.createElement(
 	                      _Table.TableRowColumn,
 	                      null,
-	                      'Employed'
-	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableRowColumn,
-	                      null,
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Edit', primary: true }),
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Delete', secondary: true })
 	                    )
@@ -79027,11 +79165,6 @@
 	                      _Table.TableRowColumn,
 	                      null,
 	                      'John Smith'
-	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableRowColumn,
-	                      null,
-	                      'Employed'
 	                    ),
 	                    _react2.default.createElement(
 	                      _Table.TableRowColumn,
@@ -79076,11 +79209,6 @@
 	                    _react2.default.createElement(
 	                      _Table.TableRowColumn,
 	                      null,
-	                      'Employed'
-	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableRowColumn,
-	                      null,
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Edit', primary: true }),
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Delete', secondary: true })
 	                    )
@@ -79112,11 +79240,6 @@
 	                      _Table.TableRowColumn,
 	                      null,
 	                      'John Smith'
-	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableRowColumn,
-	                      null,
-	                      'Employed'
 	                    ),
 	                    _react2.default.createElement(
 	                      _Table.TableRowColumn,
@@ -79156,11 +79279,6 @@
 	                    _react2.default.createElement(
 	                      _Table.TableRowColumn,
 	                      null,
-	                      'Employed'
-	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableRowColumn,
-	                      null,
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Edit', primary: true }),
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Delete', secondary: true })
 	                    )
@@ -79196,11 +79314,6 @@
 	                    _react2.default.createElement(
 	                      _Table.TableRowColumn,
 	                      null,
-	                      'Employed'
-	                    ),
-	                    _react2.default.createElement(
-	                      _Table.TableRowColumn,
-	                      null,
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Edit', primary: true }),
 	                      _react2.default.createElement(_FlatButton2.default, { label: 'Delete', secondary: true })
 	                    )
@@ -79220,7 +79333,7 @@
 	              },
 	              _react2.default.createElement(
 	                'form',
-	                null,
+	                { onSubmit: this.handleNewGroupSubmit },
 	                _react2.default.createElement(
 	                  _reactFlexboxGrid.Row,
 	                  { center: 'xs', bottom: 'xs', around: 'xs' },
@@ -79228,16 +79341,22 @@
 	                    _reactFlexboxGrid.Col,
 	                    { xs: 12, md: true },
 	                    _react2.default.createElement(_TextField2.default, {
+	                      value: this.props.temporaryGroup.name,
 	                      fullWidth: true,
-	                      floatingLabelText: 'Group Name'
+	                      floatingLabelText: 'Group Name',
+	                      name: 'name',
+	                      onChange: this.handleInputChange
 	                    })
 	                  ),
 	                  _react2.default.createElement(
 	                    _reactFlexboxGrid.Col,
 	                    { xs: 12, md: true },
 	                    _react2.default.createElement(_TextField2.default, {
+	                      value: this.props.temporaryGroup.language,
 	                      fullWidth: true,
-	                      floatingLabelText: 'Language'
+	                      floatingLabelText: 'Language',
+	                      name: 'language',
+	                      onChange: this.handleInputChange
 	                    })
 	                  ),
 	                  _react2.default.createElement(
@@ -79248,8 +79367,8 @@
 	                      {
 	                        fullWidth: true,
 	                        floatingLabelText: 'Level',
-	                        value: this.state.value,
-	                        onChange: this.handleChange,
+	                        name: 'level',
+	                        onChange: this.handleLevelSelectChange,
 	                        style: styles.leftAlign
 	                      },
 	                      _react2.default.createElement(_MenuItem2.default, { value: null, primaryText: '' }),
@@ -79265,32 +79384,31 @@
 	                    _reactFlexboxGrid.Col,
 	                    { xs: 12, md: true },
 	                    _react2.default.createElement(_DatePicker2.default, {
+	
 	                      fullWidth: true,
 	                      floatingLabelText: 'Start Date',
-	                      mode: 'landscape'
+	                      mode: 'landscape',
+	                      name: 'startDate',
+	                      onChange: this.handleStartDateChange
 	                    })
 	                  ),
 	                  _react2.default.createElement(
 	                    _reactFlexboxGrid.Col,
 	                    { xs: 12, md: true },
 	                    _react2.default.createElement(_DatePicker2.default, {
+	
 	                      fullWidth: true,
 	                      floatingLabelText: 'End Date',
-	                      mode: 'landscape'
-	                    })
-	                  ),
-	                  _react2.default.createElement(
-	                    _reactFlexboxGrid.Col,
-	                    { xs: 12, md: true },
-	                    _react2.default.createElement(_TextField2.default, {
-	                      fullWidth: true,
-	                      floatingLabelText: 'Lead Teacher'
+	                      mode: 'landscape',
+	                      name: 'endDate',
+	                      onChange: this.handleEndDateChange
 	                    })
 	                  ),
 	                  _react2.default.createElement(
 	                    _reactFlexboxGrid.Col,
 	                    { xs: 12, md: 1 },
 	                    _react2.default.createElement(_FlatButton2.default, {
+	                      type: 'submit',
 	                      style: styles.btnGreen,
 	                      label: 'Add',
 	                      icon: _react2.default.createElement(_add2.default, null)
@@ -79330,7 +79448,10 @@
 	function mapStateToProps(state) {
 	  return {
 	    user: state.oidc.user,
-	    profile: state.profileResource.profile
+	    profile: state.profileResource.profile,
+	    existingGroups: state.groupResource.existingGroups,
+	    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
+	    temporaryGroup: state.groupResource.temporaryGroup
 	  };
 	}
 	

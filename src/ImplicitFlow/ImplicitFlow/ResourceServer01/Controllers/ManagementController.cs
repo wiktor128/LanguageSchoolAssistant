@@ -44,45 +44,19 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
-        public void Update(PersonalProfile profile)
+        public void UpdateGroup(StudentsGroup group)
         {
-            var localStoredProfile =    _context.PersonalProfiles
-                                        .Where(x => x.LoginName == profile.LoginName)
-                                        .SingleOrDefault();
+            var x = group;
 
-            //if (localStoredProfile == null)
-            //{
-            //    _context.Add(profile);
-            //}
-            /*else*/
-            if ( !string.IsNullOrWhiteSpace(profile.LoginName))
+            if (x.Name == null)
             {
-                _context.Entry(localStoredProfile).CurrentValues.SetValues(profile);
-                _context.SaveChanges();
+                ;
+            } else
+            {
+                ;
             }
         }
 
-        //[Authorize( Roles = "LanguageInstructor" )]
-        //public IActionResult GetAllStudents()
-        //{
-        //    var allStudents = _context.PersonalProfiles
-        //                      .Where(x => x.IsLanguageInstructor == false);
-
-        //    return Json(allStudents);
-        //}
-
-        //[Authorize(Roles = "LanguageInstructor")]
-        //public IActionResult GetAllStudents(StudentsGroup studentGroup)
-        //{ // check this
-
-        //    var studentsInGroup = from pp in _context.PersonalProfiles
-        //                          where pp.StudentsGroup == studentGroup
-        //                             && pp.IsLanguageInstructor == false
-        //                          select pp;
-                                            
-
-        //    return Json(studentsInGroup);
-        //}
 
         [HttpPost]
         public IActionResult GetUsefulLinks(string loginName)
@@ -122,10 +96,5 @@ namespace ResourceServer01.Controllers
 
 
 
-        [HttpPost]
-        public IActionResult Image()
-        {
-            return Json("Return Image here.....");
-        }
     }
 }

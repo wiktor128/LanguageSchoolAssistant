@@ -5,8 +5,8 @@ import subscriptionsReducer from './subscriptions';
 import testResourceReducer from './testResource';
 import profileResourceReducer from './profileResource';
 import { reducer as formReducer } from 'redux-form';
-import groupDetailsReducer from './groupDetails';
 import usefulLinksReducer from './usefulLinks';
+import groupsReducer from './groupsResource';
 
 const reducer = combineReducers(
   {
@@ -16,7 +16,7 @@ const reducer = combineReducers(
     testResource: testResourceReducer,
     profileResource: profileResourceReducer,
     form: formReducer,
-    groupDetails: groupDetailsReducer,
+    groupResource: groupsReducer,
     usefulLinks: usefulLinksReducer
   }
 );

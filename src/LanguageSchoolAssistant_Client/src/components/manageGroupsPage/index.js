@@ -7,7 +7,12 @@ import { reduxForm } from 'redux-form';
 
 import {
   loadProfileResourceStart,
-  updateProfileResourceStart
+  updateProfileResourceStart,
+
+  loadGroupsStart,
+  loadLanguageInstructorsStart,
+  updateGroupStart
+
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
@@ -39,17 +44,94 @@ class ManageGroupsPage extends React.Component {
     super(props);
 
     this.state = {
-      profile: this.props.profile,
-      value: null
+      value: null,
+      startDate: this.props.temporaryGroup.startDate,
+      endDate: this.props.temporaryGroup.endDate,
     };
+
+    this.handleNewGroupSubmit = this.handleNewGroupSubmit.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleStartDateChange = this.handleStartDateChange.bind(this);
+    this.handleEndDateChange = this.handleEndDateChange.bind(this);
+    this.handleLevelSelectChange = this.handleLevelSelectChange.bind(this);
 
   }
 
   componentWillMount() {
-    this.props.dispatch(loadProfileResourceStart())
+    this.props.dispatch(loadProfileResourceStart());
+    this.props.dispatch(loadGroupsStart());
+    this.props.dispatch(loadLanguageInstructorsStart());
   }
 
   handleChange = (event, index, value) => this.setState({value});
+
+  handleStartDateChange(event, date) {
+    console.log("start date change");
+    this.props.temporaryGroup["startDate"] = date;
+  }
+
+  handleEndDateChange(event, date) {
+    console.log("end date change");
+    this.props.temporaryGroup["endDate"] = date;
+  }
+
+  handleLevelSelectChange(event, index, value) {
+    console.log("handle level select change");
+    console.log("index,value: " + index + " " + value);
+    this.props.temporaryGroup["level"] = value;
+  }
+
+  // handleInputChange(event, date) {
+  //   console.log("handle Input Change");
+
+  //   for (var i=0; i < arguments.length; i++) {
+  //       console.log('arguments[' + i + ']' + arguments[i]) ;
+  //   }
+
+
+  //   var target, name, value;
+  //   if (!date) { // check wheather input is build with datePicker component
+  //     value = (target.type === 'checkbox') ? target.checked : target.value;
+  //     target = event.target;
+  //     name = target.name;
+  //   } else {
+  //     console.log("elsee");
+  //     value = date;
+  //     target = event.target;
+  //     name = target.name;
+  //   }
+    
+
+  //   this.props.temporaryGroup[name] = value;
+
+  //   console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+  // }
+  handleInputChange(event) {
+
+    console.log("handle Input Change");
+
+    for (var i=0; i < arguments.length; i++) {
+        console.log('arguments[' + i + ']' + arguments[i]) ;
+    }
+
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.props.temporaryGroup[name] = value;
+
+    console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+  }
+
+  handleNewGroupSubmit(event) {
+    event.preventDefault();
+    console.log("handle new group submit function");
+    console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
+    console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
+    console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+
+    this.props.dispatch(updateGroupStart());
+  }
 
   render() {
 
@@ -76,7 +158,6 @@ class ManageGroupsPage extends React.Component {
                       <TableHeaderColumn>Level</TableHeaderColumn>
                       <TableHeaderColumn>Start Date</TableHeaderColumn>
                       <TableHeaderColumn>End Date</TableHeaderColumn>
-                      <TableHeaderColumn>Lead Teacher</TableHeaderColumn>
                       <TableHeaderColumn></TableHeaderColumn>
                     </TableRow>
                   </TableHeader>
@@ -90,7 +171,6 @@ class ManageGroupsPage extends React.Component {
                       <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
                       <TableRowColumn>Employed</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>
                         <FlatButton label="Edit" primary={true} />
                         <FlatButton label="Delete" secondary={true} />
@@ -101,7 +181,6 @@ class ManageGroupsPage extends React.Component {
                       <TableRowColumn>Randal White</TableRowColumn>
                       <TableRowColumn>Unemployed</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>
                         <FlatButton label="Edit" primary={true} />
@@ -114,7 +193,6 @@ class ManageGroupsPage extends React.Component {
                       <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
                       <TableRowColumn>Employed</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>
                         <FlatButton label="Edit" primary={true} />
                         <FlatButton label="Delete" secondary={true} />
@@ -126,7 +204,6 @@ class ManageGroupsPage extends React.Component {
                       <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>
                         <FlatButton label="Edit" primary={true} />
                         <FlatButton label="Delete" secondary={true} />
@@ -138,7 +215,6 @@ class ManageGroupsPage extends React.Component {
                       <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>
                         <FlatButton label="Edit" primary={true} />
                         <FlatButton label="Delete" secondary={true} />
@@ -150,7 +226,6 @@ class ManageGroupsPage extends React.Component {
                       <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>
                         <FlatButton label="Edit" primary={true} />
                         <FlatButton label="Delete" secondary={true} />
@@ -162,7 +237,6 @@ class ManageGroupsPage extends React.Component {
                       <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
                       <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
                       <TableRowColumn>
                         <FlatButton label="Edit" primary={true} />
                         <FlatButton label="Delete" secondary={true} />
@@ -177,26 +251,32 @@ class ManageGroupsPage extends React.Component {
               title="New Course Group"
               /*iconElementRight = {<FeatureButton />}*/
             >
-              <form>
+              <form onSubmit={this.handleNewGroupSubmit}>
                 <Row center='xs' bottom='xs' around='xs'>
                   <Col xs={12} md>
                     <TextField
+                      value={this.props.temporaryGroup.name}
                       fullWidth={true}
                       floatingLabelText="Group Name"
+                      name="name"
+                      onChange={this.handleInputChange}
                     />
                   </Col>
                   <Col xs={12} md>
                     <TextField
+                      value={this.props.temporaryGroup.language}
                       fullWidth={true}
                       floatingLabelText="Language"
+                      name="language"
+                      onChange={this.handleInputChange}
                     />
                   </Col>
                   <Col xs={12} md>
                     <SelectField
                       fullWidth={true}
                       floatingLabelText="Level"
-                      value={this.state.value}
-                      onChange={this.handleChange}
+                      name="level"
+                      onChange={this.handleLevelSelectChange}
                       style={styles.leftAlign}
                     >
                       <MenuItem value={null} primaryText="" />
@@ -210,26 +290,27 @@ class ManageGroupsPage extends React.Component {
                   </Col>
                   <Col xs={12} md>
                     <DatePicker 
+             
                       fullWidth={true}
                       floatingLabelText="Start Date"
-                      mode="landscape" 
+                      mode="landscape"  
+                      name="startDate"
+                      onChange={this.handleStartDateChange}
                     />
                   </Col>
                   <Col xs={12} md>
-                    <DatePicker 
+                    <DatePicker
+                  
                       fullWidth={true}
                       floatingLabelText="End Date"
                       mode="landscape" 
-                    />
-                  </Col>
-                  <Col xs={12} md>
-                    <TextField
-                      fullWidth={true}
-                      floatingLabelText="Lead Teacher"
+                      name="endDate"
+                      onChange={this.handleEndDateChange}
                     />
                   </Col>
                   <Col xs={12} md={1}>
                     <FlatButton 
+                      type='submit'
                       style={styles.btnGreen}
                       label="Add" 
                       icon={<AddIcon />}
@@ -267,7 +348,10 @@ const styles = {
 function mapStateToProps(state) {
   return {
     user: state.oidc.user,
-    profile: state.profileResource.profile
+    profile: state.profileResource.profile,
+    existingGroups: state.groupResource.existingGroups,
+    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
+    temporaryGroup: state.groupResource.temporaryGroup
   };
 }
 

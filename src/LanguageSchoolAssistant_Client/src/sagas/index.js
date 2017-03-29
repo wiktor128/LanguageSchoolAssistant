@@ -10,6 +10,15 @@ import {
   LOAD_USEFUL_LINKS_SUCCESS,
   UPDATE_USEFUL_LINKS_START,
   UPDATE_USEFUL_LINKS_SUCCESS,
+
+  LOAD_GROUPS_START,
+  LOAD_GROUPS_SUCCESS,
+  UPDATE_GROUP_START,
+  UPDATE_GROUP_SUCCESS,
+
+  LOAD_LANGUAGE_INSTRUCTORS_START,
+  LOAD_LANGUAGE_INSTRUCTORS_SUCCESS
+
 } from '../constants';
 import { 
   loadSubscriptionsSuccess,
@@ -19,7 +28,14 @@ import {
   loadUsefulLinksStart,
   loadUsefulLinksSuccess,
   updateUsefulLinksStart,
-  updateUsefulLinksSuccess
+  updateUsefulLinksSuccess,
+
+  loadGroupsStart,
+  loadGroupsSuccess,
+  updateGroupStart,
+  loadLanguageInstructorsStart,
+  loadLanguageInstructorsSuccess
+
 } from '../actions';
 import apiRequest from '../utils/request';
 
@@ -137,19 +153,23 @@ export function* updateUsefulLinksSaga() {
   }
 }
 
-// export function* loadGroupDetailsSaga() {
-//   while (true) {
-//     yield take(LOAD_GROUP_DETAILS_START);
+export function* updateGroupSaga() {
+  while (true) {
+    yield take(UPDATE_GROUP_START);
 
-//     const profile = store.getState().profileResource.profile;
+    console.log("updateGroupSaga");
 
-//     const url = RESOURCE_SERVER_ADDRESS + '/Profile/Update/';
-//     const result = yield call(apiRequest, url, 'POST', profile); // simple put 'profile' as parameter - because it is json (not form data)
-//     const resultData = result.data;
+    const group = store.getState().groupResource.temporaryGroup;
 
-//     yield put(updateProfileResourceSuccess());
-//   }
-// }
+    console.log("temporary group to post: " + JSON.stringify(group));
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateGroup/';
+    const result = yield call(apiRequest, url, 'POST', group);
+    const resultData = result.data;
+
+    //yield put(loadGroupsSuccess(resultData));
+  }
+}
 
 export function* rootSaga() {
   yield [
@@ -160,6 +180,8 @@ export function* rootSaga() {
     updateProfileResourceSaga(),
 
     loadUsefulLinksSaga(),
-    updateUsefulLinksSaga()
+    updateUsefulLinksSaga(),
+
+    updateGroupSaga()
   ]
 }

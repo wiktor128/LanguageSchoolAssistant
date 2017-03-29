@@ -15,9 +15,16 @@ export const UPDATE_PROFILE_RESOURCE_SUCCESS = 'redux-oidc-sample/UPDATE_PROFILE
 export const LOAD_GROUP_DETAILS_START = 'redux-oidc-sample/LOAD_GROUP_DETAILS_START';
 export const LOAD_GROUP_DETAILS_SUCCESS = 'redux-oidc-sample/LOAD_GROUP_DETAILS_SUCCESS';
 
-
 export const LOAD_USEFUL_LINKS_START = 'redux-oidc-sample/LOAD_USEFUL_LINKS_START';
 export const LOAD_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/LOAD_USEFUL_LINKS_SUCCESS';
 export const UPDATE_USEFUL_LINKS_START = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_START';
 export const UPDATE_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_SUCCESS';
+
+export const LOAD_GROUPS_START = 'redux-oidc-sample/LOAD_GROUPS_START';
+export const LOAD_GROUPS_SUCCESS = 'redux-oidc-sample/LOAD_GROUPS_SUCCESS';
+export const UPDATE_GROUP_START = 'redux-oidc-sample/UPDATE_GROUPS_START';
+export const UPDATE_GROUP_SUCCESS = 'redux-oidc-sample/UPDATE_GROUPS_SUCCESS';
+
+export const LOAD_LANGUAGE_INSTRUCTORS_START = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_START';
+export const LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_SUCCESS';
 

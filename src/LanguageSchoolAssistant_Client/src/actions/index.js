@@ -18,6 +18,15 @@ import {
   LOAD_USEFUL_LINKS_SUCCESS,
   UPDATE_USEFUL_LINKS_START,
   UPDATE_USEFUL_LINKS_SUCCESS,
+
+  LOAD_GROUPS_START,
+  LOAD_GROUPS_SUCCESS,
+  UPDATE_GROUP_START,
+  UPDATE_GROUP_SUCCESS,
+
+  LOAD_LANGUAGE_INSTRUCTORS_START,
+  LOAD_LANGUAGE_INSTRUCTORS_SUCCESS
+  
 } from '../constants';
 
 export function loadUsefulLinksStart() {
@@ -32,15 +41,32 @@ export function loadUsefulLinksSuccess(usefulLinks) {
   };
 }
 
-export function loadGroupDetailsStart() {
+export function loadGroupsStart() {
   return {
-    type: LOAD_GROUP_DETAILS_START
+    type: LOAD_GROUPS_START
   };
 }
-export function loadGroupDetailsSuccess(groupDetails) {
+export function loadGroupsSuccess(existingGroups) {
   return {
-    type: LOAD_GROUP_DETAILS_SUCCESS,
-    payload: groupDetails
+    type: LOAD_GROUPS_SUCCESS,
+    payload: existingGroups
+  };
+}
+export function updateGroupStart() {
+  return {
+    type: UPDATE_GROUP_START
+  };
+}
+
+export function loadLanguageInstructorsStart() {
+  return {
+    type: LOAD_LANGUAGE_INSTRUCTORS_START
+  };
+}
+export function loadLanguageInstructorsSuccess(existingLanguageInstructors) {
+  return {
+    type: LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
+    payload: existingLanguageInstructors
   };
 }
 
