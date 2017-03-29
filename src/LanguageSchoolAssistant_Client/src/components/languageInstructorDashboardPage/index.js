@@ -51,20 +51,76 @@ class LanguageInstructorDashboardPage extends React.Component {
     return (
       <Grid fluid>
         <Row center='xs'>
-          <Col xs={12} md={3} style={styles.leftAlign}>
-            <NextClasses />
-          </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={9}>
             <SimpleFrame
-              title="List of Subjects"
+              title="Schedule"
               /*iconElementRight = {<FeatureButton />}*/
             >
-              Lecteur Dashboard
+                <Table
+                  selectable={false}
+                >
+                  <TableHeader
+                    displaySelectAll={false}
+                    adjustForCheckbox={false}
+                    displayRowCheckbox={false}
+                  >
+                    <TableRow>
+                      <TableHeaderColumn>Monday</TableHeaderColumn>
+                      <TableHeaderColumn>Tuesday</TableHeaderColumn>
+                      <TableHeaderColumn>Wednesday</TableHeaderColumn>
+                      <TableHeaderColumn>Thursday</TableHeaderColumn>
+                      <TableHeaderColumn>Friday</TableHeaderColumn>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody
+                    showRowHover={true}
+                    displayRowCheckbox={false}
+                  >
+                    <TableRow>
+                      <TableRowColumn>1</TableRowColumn>
+                      <TableRowColumn>John Smith</TableRowColumn>
+                      <TableRowColumn>Employed</TableRowColumn>
+                      <TableRowColumn>John Smith</TableRowColumn>
+                      <TableRowColumn>Employed</TableRowColumn>
+                    </TableRow>
+                    <TableRow>
+                      <TableRowColumn>2</TableRowColumn>
+                      <TableRowColumn>Randal White</TableRowColumn>
+                      <TableRowColumn>Unemployed</TableRowColumn>
+                      <TableRowColumn>John Smith</TableRowColumn>
+                      <TableRowColumn>Employed</TableRowColumn>
+                    </TableRow>
+                    <TableRow>
+                      <TableRowColumn>3</TableRowColumn>
+                      <TableRowColumn>Stephanie Sanders</TableRowColumn>
+                      <TableRowColumn>Employed</TableRowColumn>
+                      <TableRowColumn>John Smith</TableRowColumn>
+                      <TableRowColumn>Employed</TableRowColumn>
+                    </TableRow>
+                    <TableRow>
+                      <TableRowColumn>4</TableRowColumn>
+                      <TableRowColumn>Steve Brown</TableRowColumn>
+                      <TableRowColumn>Employed</TableRowColumn>
+                      <TableRowColumn>John Smith</TableRowColumn>
+                      <TableRowColumn>John Smith</TableRowColumn>
+                    </TableRow>
+                  </TableBody>
+                </Table>
             </SimpleFrame>
 
           </Col>
           <Col xs={12} md={3} style={styles.leftAlign}>
-              <UsefulLinks />
+              <SimpleFrame
+                title="Quick Actions"
+              >
+                <RaisedButton secondary={true} label="Schedule Next Classes" fullWidth={true} />
+                <br /><br />
+                <RaisedButton primary={true} label="Manage Student Groups" fullWidth={true} />
+                <br /><br />
+                <RaisedButton primary={true} label="Add New Content" fullWidth={true} />
+                <br /><br />
+                <RaisedButton primary={true} label="Contact Students" fullWidth={true} />
+              </SimpleFrame>
           </Col>
         </Row>
       </Grid>
