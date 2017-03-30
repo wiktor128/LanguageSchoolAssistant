@@ -9,7 +9,8 @@ const initialState = {
     "name": "",
     "startDate": "",
     "endDate": "",
-    "language": ""
+    "language": "",
+    "studentsGroupId": null
   }
 };
 

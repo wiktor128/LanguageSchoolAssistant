@@ -19,42 +19,29 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
-        public IActionResult Get(string loginName)
+        public IActionResult GetAllGroups()
         {
-            var profile = _context.PersonalProfiles
-                            .Where( x => x.LoginName == loginName)
-                            .SingleOrDefault();
+            var allGroups = _context.StudentsGroup.ToList();
 
-            if (profile == null && !string.IsNullOrWhiteSpace(loginName))
-            {
-                PersonalProfile newProfile = new PersonalProfile() {
-                    FirstName = "",
-                    SecondName = "",
-                    IsLanguageInstructor = User.IsInRole("LanguageInstructor"),
-                    LoginName = loginName,
-                    Email = loginName,
-                    Telephone = ""
-                };
-                _context.Add(newProfile);
-                _context.SaveChanges();
-
-                return Json(newProfile);
-            }
-            return Json(profile);
+            return Json(allGroups);
         }
 
         [HttpPost]
-        public void UpdateGroup(StudentsGroup group)
+        public void UpdateGroup(StudentsGroup group) // TODO
         {
             var x = group;
-
-            if (x.Name == null)
+            if (group.StudentsGroupId == 0)
             {
-                ;
-            } else
+                _context.Add(group);
+                // create new
+            }
+            else
             {
+                // update existing
                 ;
             }
+            _context.SaveChanges();
+            return;
         }
 
 

@@ -171,6 +171,22 @@ export function* updateGroupSaga() {
   }
 }
 
+export function* loadGroupsSaga() {
+  while (true) {
+    yield take(LOAD_GROUPS_START);
+
+    console.log("loadGroupsSaga");
+
+    const userLoginName = store.getState().groupResource.existingGroups;
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/GetAllGroups/';
+    const result = yield call(apiRequest, url, 'POST');
+    const resultData = result.data;
+
+    yield put(loadUsefulLinksSuccess(resultData));
+  }
+}
+
 export function* rootSaga() {
   yield [
     loadTestResourceSaga(),
