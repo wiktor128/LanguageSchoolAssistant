@@ -4,7 +4,13 @@ import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 const initialState = {
   existingGroups: [],
   existingLanguageInstructors: [],
-  temporaryGroup: { }
+  temporaryGroup: { 
+    "level": "",
+    "name": "",
+    "startDate": "",
+    "endDate": "",
+    "language": ""
+  }
 };
 
 export default function reducer(state = initialState, action) {

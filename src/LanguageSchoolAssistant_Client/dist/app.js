@@ -54304,7 +54304,13 @@
 	var initialState = {
 	  existingGroups: [],
 	  existingLanguageInstructors: [],
-	  temporaryGroup: {}
+	  temporaryGroup: {
+	    "level": "",
+	    "name": "",
+	    "startDate": "",
+	    "endDate": "",
+	    "language": ""
+	  }
 	};
 	
 	function reducer() {
@@ -78910,7 +78916,8 @@
 	    _this.state = {
 	      value: null,
 	      startDate: _this.props.temporaryGroup.startDate,
-	      endDate: _this.props.temporaryGroup.endDate
+	      endDate: _this.props.temporaryGroup.endDate,
+	      levelSelectboxValue: null
 	    };
 	
 	    _this.handleNewGroupSubmit = _this.handleNewGroupSubmit.bind(_this);
@@ -78932,49 +78939,24 @@
 	  }, {
 	    key: 'handleStartDateChange',
 	    value: function handleStartDateChange(event, date) {
-	      console.log("start date change");
-	      this.props.temporaryGroup["startDate"] = date;
+	      this.props.temporaryGroup["startDate"] = JSON.stringify(date).substr(1, 10);
 	    }
 	  }, {
 	    key: 'handleEndDateChange',
 	    value: function handleEndDateChange(event, date) {
 	      console.log("end date change");
-	      this.props.temporaryGroup["endDate"] = date;
+	      this.props.temporaryGroup["endDate"] = JSON.stringify(date).substr(1, 10);
 	    }
 	  }, {
 	    key: 'handleLevelSelectChange',
 	    value: function handleLevelSelectChange(event, index, value) {
 	      console.log("handle level select change");
 	      console.log("index,value: " + index + " " + value);
-	      this.props.temporaryGroup["level"] = value;
+	
+	      this.props.temporaryGroup['level'] = value;
+	
+	      this.setState({ levelSelectboxValue: value });
 	    }
-	
-	    // handleInputChange(event, date) {
-	    //   console.log("handle Input Change");
-	
-	    //   for (var i=0; i < arguments.length; i++) {
-	    //       console.log('arguments[' + i + ']' + arguments[i]) ;
-	    //   }
-	
-	
-	    //   var target, name, value;
-	    //   if (!date) { // check wheather input is build with datePicker component
-	    //     value = (target.type === 'checkbox') ? target.checked : target.value;
-	    //     target = event.target;
-	    //     name = target.name;
-	    //   } else {
-	    //     console.log("elsee");
-	    //     value = date;
-	    //     target = event.target;
-	    //     name = target.name;
-	    //   }
-	
-	
-	    //   this.props.temporaryGroup[name] = value;
-	
-	    //   console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
-	    // }
-	
 	  }, {
 	    key: 'handleInputChange',
 	    value: function handleInputChange(event) {
@@ -78988,9 +78970,12 @@
 	      var target = event.target;
 	      var value = target.type === 'checkbox' ? target.checked : target.value;
 	      var name = target.name;
+	      console.log("value: " + value);
+	      console.log("name: " + name);
 	
 	      this.props.temporaryGroup[name] = value;
 	
+	      this.forceUpdate();
 	      console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
 	    }
 	  }, {
@@ -79367,17 +79352,17 @@
 	                      {
 	                        fullWidth: true,
 	                        floatingLabelText: 'Level',
+	                        value: this.state.levelSelectboxValue,
 	                        name: 'level',
 	                        onChange: this.handleLevelSelectChange,
 	                        style: styles.leftAlign
 	                      },
-	                      _react2.default.createElement(_MenuItem2.default, { value: null, primaryText: '' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 'A1', primaryText: 'A1' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 'A2', primaryText: 'A2' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 'B1', primaryText: 'B1' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 'B2', primaryText: 'B2' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 'C1', primaryText: 'C1' }),
-	                      _react2.default.createElement(_MenuItem2.default, { value: 'C2', primaryText: 'C2' })
+	                      _react2.default.createElement(_MenuItem2.default, { value: 'A1', key: 'A1', primaryText: 'A1' }),
+	                      _react2.default.createElement(_MenuItem2.default, { value: 'A2', key: 'A2', primaryText: 'A2' }),
+	                      _react2.default.createElement(_MenuItem2.default, { value: 'B1', key: 'B1', primaryText: 'B1' }),
+	                      _react2.default.createElement(_MenuItem2.default, { value: 'B2', key: 'B2', primaryText: 'B2' }),
+	                      _react2.default.createElement(_MenuItem2.default, { value: 'C1', key: 'C1', primaryText: 'C1' }),
+	                      _react2.default.createElement(_MenuItem2.default, { value: 'C2', key: 'C2', primaryText: 'C2' })
 	                    )
 	                  ),
 	                  _react2.default.createElement(
