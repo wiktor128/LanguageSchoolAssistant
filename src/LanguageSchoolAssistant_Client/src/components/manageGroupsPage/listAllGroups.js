@@ -39,9 +39,8 @@ import Divider from 'material-ui/Divider';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
 import AddGroupForm from './addGroupForm';
-import ListAllGroups from './listAllGroups';
 
-class ManageGroupsPage extends React.Component {
+class ListAllGroups extends React.Component {
 
   constructor (props) {
     super(props);
@@ -55,25 +54,59 @@ class ManageGroupsPage extends React.Component {
   }
 
   componentWillMount() {
-    this.props.dispatch(loadProfileResourceStart());
     this.props.dispatch(loadGroupsStart());
     this.props.dispatch(loadLanguageInstructorsStart());
+
+    console.log("list all groups, component will mount");
+    console.log("this.props.existingGroups : " + this.props.existingGroups);
   }
 
 
   render() {
 
     return (
-      <Grid fluid>
-        <Row center='xs'>
-          <Col xs={12} md={12}>
-            <ListAllGroups />
-          </Col>
-          <Col xs={12} md={12}>
-            <AddGroupForm />
-          </Col>
-        </Row>
-      </Grid>
+      <SimpleFrame
+        title="Manage Course Groups"
+        /*iconElementRight = {<FeatureButton />}*/
+      >
+          <Table
+            selectable={false}
+            height='300px'
+          >
+            <TableHeader
+              displaySelectAll={false}
+              adjustForCheckbox={false}
+              displayRowCheckbox={false}
+            >
+              <TableRow>
+                <TableHeaderColumn>Group Name</TableHeaderColumn>
+                <TableHeaderColumn>Language</TableHeaderColumn>
+                <TableHeaderColumn>Level</TableHeaderColumn>
+                <TableHeaderColumn>Start Date</TableHeaderColumn>
+                <TableHeaderColumn>End Date</TableHeaderColumn>
+                <TableHeaderColumn></TableHeaderColumn>
+              </TableRow>
+            </TableHeader>
+            <TableBody
+              showRowHover={true}
+              displayRowCheckbox={false}
+            >
+              {this.props.existingGroups.map((item) =>
+                <TableRow rowNumber={item.studentsGroupId} key={item.studentsGroupId}>
+                  <TableRowColumn>{item.name}</TableRowColumn>
+                  <TableRowColumn>{item.level}</TableRowColumn>
+                  <TableRowColumn>{item.language}</TableRowColumn>
+                  <TableRowColumn>{item.startDate}</TableRowColumn>
+                  <TableRowColumn>{item.endDate}</TableRowColumn>
+                  <TableRowColumn>
+                    <FlatButton label="Edit" primary={true} />
+                    <FlatButton label="Delete" secondary={true} />
+                  </TableRowColumn>
+                </TableRow>
+              )}
+            </TableBody>
+          </Table>
+      </SimpleFrame>
     );
   }
 }
@@ -103,4 +136,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ManageGroupsPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ListAllGroups);

@@ -167,7 +167,7 @@ export function* updateGroupSaga() {
     const result = yield call(apiRequest, url, 'POST', group);
     const resultData = result.data;
 
-    //yield put(loadGroupsSuccess(resultData));
+    yield put(loadGroupsStart());
   }
 }
 
@@ -183,7 +183,9 @@ export function* loadGroupsSaga() {
     const result = yield call(apiRequest, url, 'POST');
     const resultData = result.data;
 
-    yield put(loadUsefulLinksSuccess(resultData));
+    console.log("result data: " + JSON.stringify(resultData));
+
+    yield put(loadGroupsSuccess(resultData));
   }
 }
 
@@ -198,6 +200,7 @@ export function* rootSaga() {
     loadUsefulLinksSaga(),
     updateUsefulLinksSaga(),
 
-    updateGroupSaga()
+    updateGroupSaga(),
+    loadGroupsSaga()
   ]
 }

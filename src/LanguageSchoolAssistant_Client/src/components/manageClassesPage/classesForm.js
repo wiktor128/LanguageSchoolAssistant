@@ -23,7 +23,7 @@ import TextField from 'material-ui/TextField';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 
-class AddGroupForm extends React.Component {
+class ClassesForm extends React.Component {
 
   constructor (props) {
     super(props);
@@ -33,9 +33,19 @@ class AddGroupForm extends React.Component {
       startDate: this.props.temporaryGroup.startDate,
       endDate: this.props.temporaryGroup.endDate,
       levelSelectboxValue: null,
+
+      unitOfClassesId: undefined,
+      subject: undefined,
+      shortDescription: undefined,
+      startTime: undefined,
+      duration: undefined,
+      studentGroupId: undefined,
+      languageInstructorPersonalProfileId: undefined,
+      localizationId: undefined
+
     };
 
-    this.handleNewGroupSubmit = this.handleNewGroupSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleStartDateChange = this.handleStartDateChange.bind(this);
     this.handleEndDateChange = this.handleEndDateChange.bind(this);
@@ -48,8 +58,6 @@ class AddGroupForm extends React.Component {
     this.props.dispatch(loadGroupsStart());
     this.props.dispatch(loadLanguageInstructorsStart());
   }
-
-  handleChange = (event, index, value) => this.setState({value});
 
   handleStartDateChange(event, date) {
     this.props.temporaryGroup["startDate"] = JSON.stringify(date).substr(1, 10);
@@ -89,7 +97,7 @@ class AddGroupForm extends React.Component {
     console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
   }
 
-  handleNewGroupSubmit(event) {
+  handleSubmit(event) {
     event.preventDefault();
     console.log("handle new group submit function");
     console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
@@ -105,10 +113,10 @@ class AddGroupForm extends React.Component {
 
     return (
             <SimpleFrame
-              title="New Course Group"
+              title="Classes Creator"
               /*iconElementRight = {<FeatureButton />}*/
             >
-              <form onSubmit={this.handleNewGroupSubmit}>
+              <form onSubmit={this.handleSubmit}>
                 <Row center='xs' bottom='xs' around='xs'>
                   <Col xs={12} md>
                     <TextField
@@ -205,4 +213,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AddGroupForm);
+export default connect(mapStateToProps, mapDispatchToProps)(ClassesForm);

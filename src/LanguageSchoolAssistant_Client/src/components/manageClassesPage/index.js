@@ -38,26 +38,26 @@ import Divider from 'material-ui/Divider';
 
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
-import AddGroupForm from './addGroupForm';
-import ListAllGroups from './listAllGroups';
+import ClassesForm from './classesForm';
+// import ListAllGroups from './listAllGroups';
 
-class ManageGroupsPage extends React.Component {
+class ManageClassesPage extends React.Component {
 
   constructor (props) {
     super(props);
 
-    this.state = {
-      value: null,
-      startDate: this.props.temporaryGroup.startDate,
-      endDate: this.props.temporaryGroup.endDate,
-      levelSelectboxValue: null,
-    };
+    // this.state = {
+    //   value: null,
+    //   startDate: this.props.temporaryGroup.startDate,
+    //   endDate: this.props.temporaryGroup.endDate,
+    //   levelSelectboxValue: null,
+    // };
   }
 
   componentWillMount() {
-    this.props.dispatch(loadProfileResourceStart());
-    this.props.dispatch(loadGroupsStart());
-    this.props.dispatch(loadLanguageInstructorsStart());
+    // this.props.dispatch(loadProfileResourceStart());
+    // this.props.dispatch(loadGroupsStart());
+    // this.props.dispatch(loadLanguageInstructorsStart());
   }
 
 
@@ -66,11 +66,8 @@ class ManageGroupsPage extends React.Component {
     return (
       <Grid fluid>
         <Row center='xs'>
-          <Col xs={12} md={12}>
-            <ListAllGroups />
-          </Col>
-          <Col xs={12} md={12}>
-            <AddGroupForm />
+          <Col xs={12} md={9}>
+            <ClassesForm />
           </Col>
         </Row>
       </Grid>
@@ -89,11 +86,11 @@ const styles = {
 
 function mapStateToProps(state) {
   return {
-    user: state.oidc.user,
-    profile: state.profileResource.profile,
-    existingGroups: state.groupResource.existingGroups,
-    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
-    temporaryGroup: state.groupResource.temporaryGroup
+    // user: state.oidc.user,
+    // profile: state.profileResource.profile,
+    // existingGroups: state.groupResource.existingGroups,
+    // existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
+    // temporaryGroup: state.groupResource.temporaryGroup
   };
 }
 
@@ -103,4 +100,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ManageGroupsPage);
+export default connect(mapStateToProps, mapDispatchToProps)(ManageClassesPage);

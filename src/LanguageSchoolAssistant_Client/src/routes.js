@@ -8,7 +8,8 @@ import LoginPage from './components/loginPage';
 import MyProfilePage from './components/myProfilePage';
 import StudentDashboardPage from './components/studentDashboardPage';
 import LanguageInstructorDashboardPage from './components/languageInstructorDashboardPage';
-import ManageGroupsPage from './components/manageGroupsPage'
+import ManageGroupsPage from './components/manageGroupsPage';
+import ManageClasses from './components/manageClassesPage';
 
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -22,6 +23,7 @@ export default function Routes(props) {
       <Route path="/studentdashboard" component={StudentDashboardPage} />
       <Route path="/dashboard" component={LanguageInstructorDashboardPage} />
       <Route path="/managegroups" component={ManageGroupsPage} />
+      <Route path="/manageclasses" component={ManageClasses} />
     </Router>
   );
 }

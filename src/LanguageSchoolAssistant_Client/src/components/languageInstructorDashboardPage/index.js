@@ -2,6 +2,7 @@ import React from 'react';
 import { createStyleSheet } from 'jss-theme-reactor';
 import userManager from '../../utils/userManager';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 
 import { reduxForm } from 'redux-form';
 
@@ -113,13 +114,27 @@ class LanguageInstructorDashboardPage extends React.Component {
               <SimpleFrame
                 title="Quick Actions"
               >
-                <RaisedButton secondary={true} label="Schedule Next Classes" fullWidth={true} />
+                <RaisedButton 
+                  secondary={true} 
+                  label="Schedule Next Classes" 
+                  onTouchTap = {() => browserHistory.push('/manageclasses')} 
+                  fullWidth={true} />
                 <br /><br />
-                <RaisedButton primary={true} label="Manage Student Groups" fullWidth={true} />
+                <RaisedButton 
+                  primary={true} 
+                  label="Manage Student Groups" 
+                  onTouchTap = {() => browserHistory.push('/managegroups')} 
+                  fullWidth={true} />
                 <br /><br />
-                <RaisedButton primary={true} label="Add New Content" fullWidth={true} />
+                <RaisedButton 
+                  primary={true} 
+                  label="Add New Content" 
+                  fullWidth={true} />
                 <br /><br />
-                <RaisedButton primary={true} label="Contact Students" fullWidth={true} />
+                <RaisedButton 
+                  primary={true} 
+                  label="Contact Students" 
+                  fullWidth={true} />
               </SimpleFrame>
           </Col>
         </Row>
