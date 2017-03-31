@@ -17,7 +17,12 @@ import {
   UPDATE_GROUP_SUCCESS,
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
-  LOAD_LANGUAGE_INSTRUCTORS_SUCCESS
+  LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
+
+  LOAD_CLASSES_START,
+  LOAD_CLASSES_END,
+  UPDATE_CLASSES_START,
+  UPDATE_CLASSES_END
 
 } from '../constants';
 import { 
@@ -34,7 +39,11 @@ import {
   loadGroupsSuccess,
   updateGroupStart,
   loadLanguageInstructorsStart,
-  loadLanguageInstructorsSuccess
+  loadLanguageInstructorsSuccess,
+
+  loadClassesStart,
+  loadClassesSuccess,
+  updateClassesStart,
 
 } from '../actions';
 import apiRequest from '../utils/request';
@@ -164,8 +173,8 @@ export function* updateGroupSaga() {
     console.log("temporary group to post: " + JSON.stringify(group));
 
     const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateGroup/';
-    const result = yield call(apiRequest, url, 'POST', group);
-    const resultData = result.data;
+
+    yield call(apiRequest, url, 'POST', group);
 
     yield put(loadGroupsStart());
   }
@@ -186,6 +195,23 @@ export function* loadGroupsSaga() {
     console.log("result data: " + JSON.stringify(resultData));
 
     yield put(loadGroupsSuccess(resultData));
+  }
+}
+
+export function* updateClassesSaga() {
+  while (true) {
+    yield take(UPDATE_GROUP_START);
+
+    console.log("updateClassesSaga");
+
+    const group = store.getState().classesResource.temporaryClasses;
+
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateGroup/';
+    
+    yield call(apiRequest, url, 'POST', group);
+
+    yield put(loadGroupsStart());
   }
 }
 

@@ -25,9 +25,39 @@ import {
   UPDATE_GROUP_SUCCESS,
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
-  LOAD_LANGUAGE_INSTRUCTORS_SUCCESS
+  LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
+
+  LOAD_CLASSES_START,
+  LOAD_CLASSES_END,
+  UPDATE_CLASSES_START,
+  UPDATE_CLASSES_END
   
 } from '../constants';
+
+
+export function loadClassesStart() {
+  return {
+    type: LOAD_CLASSES_START
+  };
+}
+export function loadClassesSuccess(classes) {
+  return {
+    type: LOAD_CLASSES_SUCCESS,
+    payload: classes
+  };
+}
+export function updateClassesStart() {
+  return {
+    type: UPDATE_CLASSES_START
+  };
+}
+export function updateClassesSuccess(classes) {
+  return {
+    type: UPDATE_CLASSES_SUCCESS,
+    payload: classes
+  };
+}
+
 
 export function loadUsefulLinksStart() {
   return {

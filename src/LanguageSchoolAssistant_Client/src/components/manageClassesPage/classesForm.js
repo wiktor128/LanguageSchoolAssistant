@@ -6,22 +6,23 @@ import {
   loadProfileResourceStart,
   loadGroupsStart,
   loadLanguageInstructorsStart,
-  updateGroupStart
+  updateClassesStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
 import {lightGreen500} from 'material-ui/styles/colors'
 import FlatButton from 'material-ui/FlatButton';
 import DatePicker from 'material-ui/DatePicker';
+import TimePicker from 'material-ui/TimePicker';
 import IconButton from 'material-ui/IconButton';
 import AddIcon from 'material-ui/svg-icons/content/add';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import Snackbar from 'material-ui/Snackbar';
 import TextField from 'material-ui/TextField';
+import AutoComplete from 'material-ui/AutoComplete';
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
-
 
 class ClassesForm extends React.Component {
 
@@ -30,27 +31,28 @@ class ClassesForm extends React.Component {
 
     this.state = {
       value: null,
-      startDate: this.props.temporaryGroup.startDate,
-      endDate: this.props.temporaryGroup.endDate,
-      levelSelectboxValue: null,
+
+      existingStudentsGroups: this.props.existingGroups,
+
+
 
       unitOfClassesId: undefined,
       subject: undefined,
       shortDescription: undefined,
+      startDate: undefined, // should be copied to startTime [redundant value, just for input purposes]
       startTime: undefined,
-      duration: undefined,
-      studentGroupId: undefined,
-      languageInstructorPersonalProfileId: undefined,
-      localizationId: undefined
-
+      endTime: undefined,
+      studentsGroupId: null,
+      languageInstructorPersonalProfileId: this.props.profile.PersonalProfileId,
+      localizationId: undefined,
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleStartDateChange = this.handleStartDateChange.bind(this);
-    this.handleEndDateChange = this.handleEndDateChange.bind(this);
-    this.handleLevelSelectChange = this.handleLevelSelectChange.bind(this);
-
+    this.handleStartTimeChange = this.handleStartTimeChange.bind(this);
+    this.handleEndTimeChange = this.handleEndTimeChange.bind(this);
+    this.handleStudentGroupChange = this.handleStudentGroupChange.bind(this);
   }
 
   componentWillMount() {
@@ -58,23 +60,33 @@ class ClassesForm extends React.Component {
     this.props.dispatch(loadGroupsStart());
     this.props.dispatch(loadLanguageInstructorsStart());
   }
+  componentDidMount() {
+    console.log("component did mount");
+
+    console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
+    console.log("this.state.existingGroups: " + JSON.stringify(this.state.existingGroups));
+  }
 
   handleStartDateChange(event, date) {
-    this.props.temporaryGroup["startDate"] = JSON.stringify(date).substr(1, 10);
+    console.log("start date change");
+    this.setState({startDate: JSON.stringify(date).substr(1, 10)});
   }
 
-  handleEndDateChange(event, date) {
-    console.log("end date change");
-    this.props.temporaryGroup["endDate"] = JSON.stringify(date).substr(1, 10);
+  handleStartTimeChange(event, date) {
+    console.log("start time change");
+    this.setState({startTime: JSON.stringify(date)});
   }
 
-  handleLevelSelectChange(event, index, value) {
+  handleEndTimeChange(event, date) {
+    console.log("end time change");
+    this.setState({endTime: JSON.stringify(date)});
+  }
+
+  handleStudentGroupChange(event, index, value) {
     console.log("handle level select change");
     console.log("index,value: " + index + " " + value);
-
-    this.props.temporaryGroup['level'] = value;
     
-    this.setState({levelSelectboxValue: value})
+    this.setState({studentsGroupId: value})
   }
 
   handleInputChange(event) {
@@ -91,99 +103,128 @@ class ClassesForm extends React.Component {
     console.log("value: " + value);
     console.log("name: " + name);
 
-    this.props.temporaryGroup[name] = value;
+    this.state[name] = value;
 
     this.forceUpdate();
-    console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log("handle new group submit function");
-    console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
-    console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
-    console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+    console.log("handle submit");
+    console.log("this.state: " + JSON.stringify(this.state));
+    
+    this.props.temporaryClasses.unitOfClassesId = this.state.unitOfClassesId,
+    this.props.temporaryClasses.subject = this.state.subject,
+    this.props.temporaryClasses.shortDescription = this.state.shortDescription,
+    this.props.temporaryClasses.startDate = this.state.startDate, // should be copied to startTime [redundant value, just for input purposes]
+    this.props.temporaryClasses.startTime = this.state.startTime,
+    this.props.temporaryClasses.endTime = this.state.endTime,
+    this.props.temporaryClasses.studentsGroupId = this.state.studentsGroupId,
+    this.props.temporaryClasses.languageInstructorPersonalProfileId = this.state.languageInstructorPersonalProfileId,
+    this.props.temporaryClasses.localizationId = this.state.localizationId,
 
-    this.props.dispatch(updateGroupStart());
-    this.reset(); //TODO Add Snackbar
+    console.log("this.props.temporaryClasses: " + JSON.stringify(this.props.temporaryClasses) );
 
+    this.props.dispatch(updateClassesStart());
+                  //TODO Add Snackbar
+    this.reset();
   }
 
   render() {
 
     return (
-            <SimpleFrame
-              title="Classes Creator"
-              /*iconElementRight = {<FeatureButton />}*/
+      <SimpleFrame
+        title="Schedule Classes"
+        /*iconElementRight = {<FeatureButton />}*/
+      >
+        <form onSubmit={this.handleSubmit}>
+          <Row center='xs' start='md' bottom='xs' around='xs'>
+            <Col xs={12} md={6}>
+              <TextField
+                value={this.state.subject}
+                fullWidth={true}
+                floatingLabelText="Subject"
+                name="subject"
+                onChange={this.handleInputChange}
+              />
+            </Col>
+          </Row>
+          <Row center='xs' start='md' bottom='xs' around='xs'>
+            <Col xs={12} md={12}>
+              <TextField
+                value={this.state.shortDescription}
+                fullWidth={true}
+                multiLine={true}
+                rows={2}
+                rowsMax={4}
+                floatingLabelText="Short Description"
+                name="shortDescription"
+                onChange={this.handleInputChange}
+                style={styles.leftAlign}
+              />
+            </Col>
+          </Row>
+          <Row center='xs' start='md' bottom='xs' around='xs'>
+            <Col xs={12} md={4}>
+              <DatePicker 
+                fullWidth={true}
+                floatingLabelText="Date"
+                mode="landscape"  
+                name="startDate"
+                onChange={this.handleStartDateChange}
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <TimePicker
+                fullWidth={true}
+                floatingLabelText="Start Time"
+                format="24hr"
+                hintText="24hr Format"
+                onChange={this.handleStartTimeChange}
+              />
+            </Col>
+            <Col xs={12} md={4}>
+              <TimePicker
+                fullWidth={true}
+                floatingLabelText="End Time"
+                format="24hr"
+                hintText="24hr Format"
+                onChange={this.handleEndTimeChange}
+              />
+            </Col>
+          </Row>
+          <Row center='xs' start='md' bottom='xs' around='xs'>
+            <Col xs={12} md={12}>
+            <SelectField
+              fullWidth={true}
+              floatingLabelText="Student Group"
+              value={this.state.studentsGroupId}
+              onChange={this.handleStudentGroupChange}
+              autoWidth={true}
             >
-              <form onSubmit={this.handleSubmit}>
-                <Row center='xs' bottom='xs' around='xs'>
-                  <Col xs={12} md>
-                    <TextField
-                      value={this.props.temporaryGroup.name}
-                      fullWidth={true}
-                      floatingLabelText="Group Name"
-                      name="name"
-                      onChange={this.handleInputChange}
-                    />
-                  </Col>
-                  <Col xs={12} md>
-                    <TextField
-                      value={this.props.temporaryGroup.language}
-                      fullWidth={true}
-                      floatingLabelText="Language"
-                      name="language"
-                      onChange={this.handleInputChange}
-                    />
-                  </Col>
-                  <Col xs={12} md>
-                    <SelectField
-                      fullWidth={true}
-                      floatingLabelText="Level"
-                      value={this.state.levelSelectboxValue}
-                      name="level"
-                      onChange={this.handleLevelSelectChange}
-                      style={styles.leftAlign}
-                    >
-                      <MenuItem value='A1' key='A1' primaryText='A1' />
-                      <MenuItem value='A2' key='A2' primaryText='A2' />
-                      <MenuItem value='B1' key='B1' primaryText='B1' />
-                      <MenuItem value='B2' key='B2' primaryText='B2' />
-                      <MenuItem value='C1' key='C1' primaryText='C1' />
-                      <MenuItem value='C2' key='C2' primaryText='C2' />
-                    </SelectField>
-                  </Col>
-                  <Col xs={12} md>
-                    <DatePicker 
-             
-                      fullWidth={true}
-                      floatingLabelText="Start Date"
-                      mode="landscape"  
-                      name="startDate"
-                      onChange={this.handleStartDateChange}
-                    />
-                  </Col>
-                  <Col xs={12} md>
-                    <DatePicker
-                  
-                      fullWidth={true}
-                      floatingLabelText="End Date"
-                      mode="landscape" 
-                      name="endDate"
-                      onChange={this.handleEndDateChange}
-                    />
-                  </Col>
-                  <Col xs={12} md={1}>
-                    <FlatButton 
-                      type='submit'
-                      style={styles.btnGreen}
-                      label="Add" 
-                      icon={<AddIcon />}
-                    />
-                  </Col>
-                </Row>
-              </form>
-            </SimpleFrame >
+            {this.props.existingGroups.map((item) =>
+              <MenuItem key={item.studentsGroupId}
+                value={item.studentsGroupId} 
+                primaryText={item.language + ', ' + item.name + " " } //secodaryText is not included during width calculating
+                secondaryText={ '' + item.level}
+              />
+            )}
+              
+            </SelectField>
+            </Col>
+          </Row>
+          <Row center='xs' end='md' bottom='xs'>
+            <Col xs={12} mdOffset={9} md={3}>
+              <FlatButton 
+                type='submit'
+                style={styles.btnGreen}
+                label="Create" 
+                icon={<AddIcon />}
+              />
+            </Col>
+          </Row>
+        </form>
+      </SimpleFrame>
     );
   }
 }
@@ -194,7 +235,10 @@ const styles = {
   },
   btnGreen: {
     color: lightGreen500
-  }
+  },
+  customWidth: {
+    width: 400,
+  },
 }
 
 function mapStateToProps(state) {
@@ -203,7 +247,7 @@ function mapStateToProps(state) {
     profile: state.profileResource.profile,
     existingGroups: state.groupResource.existingGroups,
     existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
-    temporaryGroup: state.groupResource.temporaryGroup
+    temporaryClasses: state.classesResource.temporaryClasses
   };
 }
 

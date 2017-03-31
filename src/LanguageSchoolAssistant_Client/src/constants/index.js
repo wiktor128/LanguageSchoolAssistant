@@ -28,3 +28,10 @@ export const UPDATE_GROUP_SUCCESS = 'redux-oidc-sample/UPDATE_GROUPS_SUCCESS';
 export const LOAD_LANGUAGE_INSTRUCTORS_START = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_START';
 export const LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_SUCCESS';
 
+export const LOAD_CLASSES_START = 'redux-oidc-sample/LOAD_CLASSES_START';
+export const LOAD_CLASSES_END = 'redux-oidc-sample/LOAD_CLASSES_END';
+
+
+export const UPDATE_CLASSES_START = 'redux-oidc-sample/UPDATE_CLASSES_START';
+export const UPDATE_CLASSES_END = 'redux-oidc-sample/UPDATE_CLASSES_END';
+

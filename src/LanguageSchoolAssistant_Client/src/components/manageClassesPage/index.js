@@ -66,7 +66,7 @@ class ManageClassesPage extends React.Component {
     return (
       <Grid fluid>
         <Row center='xs'>
-          <Col xs={12} md={9}>
+          <Col xs={12} md={6}>
             <ClassesForm />
           </Col>
         </Row>
