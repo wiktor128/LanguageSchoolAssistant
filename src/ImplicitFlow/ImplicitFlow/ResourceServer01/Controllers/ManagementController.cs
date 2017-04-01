@@ -44,6 +44,23 @@ namespace ResourceServer01.Controllers
             return;
         }
 
+        [HttpPost]
+        public void UpdateClasses([Bind("UnitOfClassesId, Subject, ShortDescription, StartTime, Duration, LanguageInstructor, Localization, StudentsGroupId")]UnitOfClasses classes) // TODO
+        {
+            var x = classes;
+            if (classes.UnitOfClassesId == 0)
+            {
+                _context.Add(classes);
+                // create new
+            }
+            else
+            {
+                // update existing
+                ;
+            }
+            _context.SaveChanges();
+            return;
+        }
 
         [HttpPost]
         public IActionResult GetUsefulLinks(string loginName)

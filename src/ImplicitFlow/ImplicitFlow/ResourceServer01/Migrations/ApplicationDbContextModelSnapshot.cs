@@ -83,9 +83,9 @@ namespace ResourceServer01.Migrations
 
                     b.Property<DateTime>("Duration");
 
-                    b.Property<int?>("LanguageInstructorPersonalProfileId");
-
                     b.Property<int?>("LocalizationId");
+
+                    b.Property<int?>("PersonalProfileId");
 
                     b.Property<string>("ShortDescription");
 
@@ -97,9 +97,9 @@ namespace ResourceServer01.Migrations
 
                     b.HasKey("UnitOfClassesId");
 
-                    b.HasIndex("LanguageInstructorPersonalProfileId");
-
                     b.HasIndex("LocalizationId");
+
+                    b.HasIndex("PersonalProfileId");
 
                     b.HasIndex("StudentsGroupId");
 
@@ -135,13 +135,13 @@ namespace ResourceServer01.Migrations
 
             modelBuilder.Entity("ResourceServer01.Models.UnitOfClasses", b =>
                 {
-                    b.HasOne("ResourceServer01.Models.PersonalProfile", "LanguageInstructor")
-                        .WithMany()
-                        .HasForeignKey("LanguageInstructorPersonalProfileId");
-
                     b.HasOne("ResourceServer01.Models.Localization", "Localization")
                         .WithMany()
                         .HasForeignKey("LocalizationId");
+
+                    b.HasOne("ResourceServer01.Models.PersonalProfile", "LanguageInstructor")
+                        .WithMany()
+                        .HasForeignKey("PersonalProfileId");
 
                     b.HasOne("ResourceServer01.Models.StudentsGroup", "StudentsGroup")
                         .WithMany()

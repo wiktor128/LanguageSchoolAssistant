@@ -43,7 +43,7 @@ class ClassesForm extends React.Component {
       startTime: undefined,
       endTime: undefined,
       studentsGroupId: null,
-      languageInstructorPersonalProfileId: this.props.profile.PersonalProfileId,
+      personalProfileId: this.props.profile.PersonalProfileId,
       localizationId: undefined,
     };
 
@@ -120,7 +120,7 @@ class ClassesForm extends React.Component {
     this.props.temporaryClasses.startTime = this.state.startTime,
     this.props.temporaryClasses.endTime = this.state.endTime,
     this.props.temporaryClasses.studentsGroupId = this.state.studentsGroupId,
-    this.props.temporaryClasses.languageInstructorPersonalProfileId = this.state.languageInstructorPersonalProfileId,
+    this.props.temporaryClasses.PersonalProfileId = this.state.personalProfileId,
     this.props.temporaryClasses.localizationId = this.state.localizationId,
 
     console.log("this.props.temporaryClasses: " + JSON.stringify(this.props.temporaryClasses) );

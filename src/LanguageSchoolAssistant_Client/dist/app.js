@@ -43822,37 +43822,33 @@
 	}
 	
 	function updateClassesSaga() {
-	    var group, url;
+	    var classes, url;
 	    return regeneratorRuntime.wrap(function updateClassesSaga$(_context9) {
 	        while (1) {
 	            switch (_context9.prev = _context9.next) {
 	                case 0:
 	                    if (false) {
-	                        _context9.next = 12;
+	                        _context9.next = 10;
 	                        break;
 	                    }
 	
 	                    _context9.next = 3;
-	                    return (0, _effects.take)(_constants.UPDATE_GROUP_START);
+	                    return (0, _effects.take)(_constants.UPDATE_CLASSES_START);
 	
 	                case 3:
 	
 	                    console.log("updateClassesSaga");
 	
-	                    group = _store2.default.getState().classesResource.temporaryClasses;
-	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateGroup/';
+	                    classes = _store2.default.getState().classesResource.temporaryClasses;
+	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateClasses/';
 	                    _context9.next = 8;
-	                    return (0, _effects.call)(_request2.default, url, 'POST', group);
+	                    return (0, _effects.call)(_request2.default, url, 'POST', classes);
 	
 	                case 8:
-	                    _context9.next = 10;
-	                    return (0, _effects.put)((0, _actions.loadGroupsStart)());
-	
-	                case 10:
 	                    _context9.next = 0;
 	                    break;
 	
-	                case 12:
+	                case 10:
 	                case 'end':
 	                    return _context9.stop();
 	            }
@@ -43866,7 +43862,7 @@
 	            switch (_context10.prev = _context10.next) {
 	                case 0:
 	                    _context10.next = 2;
-	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), updateGroupSaga(), loadGroupsSaga()];
+	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), updateGroupSaga(), loadGroupsSaga(), updateClassesSaga()];
 	
 	                case 2:
 	                case 'end':
@@ -84047,7 +84043,7 @@
 	      startTime: undefined,
 	      endTime: undefined,
 	      studentsGroupId: null,
-	      languageInstructorPersonalProfileId: _this.props.profile.PersonalProfileId,
+	      personalProfileId: _this.props.profile.PersonalProfileId,
 	      localizationId: undefined
 	    };
 	
@@ -84129,10 +84125,10 @@
 	      console.log("this.state: " + JSON.stringify(this.state));
 	
 	      this.props.temporaryClasses.unitOfClassesId = this.state.unitOfClassesId, this.props.temporaryClasses.subject = this.state.subject, this.props.temporaryClasses.shortDescription = this.state.shortDescription, this.props.temporaryClasses.startDate = this.state.startDate, // should be copied to startTime [redundant value, just for input purposes]
-	      this.props.temporaryClasses.startTime = this.state.startTime, this.props.temporaryClasses.endTime = this.state.endTime, this.props.temporaryClasses.studentsGroupId = this.state.studentsGroupId, this.props.temporaryClasses.languageInstructorPersonalProfileId = this.state.languageInstructorPersonalProfileId, this.props.temporaryClasses.localizationId = this.state.localizationId, console.log("this.props.temporaryClasses: " + JSON.stringify(this.props.temporaryClasses));
+	      this.props.temporaryClasses.startTime = this.state.startTime, this.props.temporaryClasses.endTime = this.state.endTime, this.props.temporaryClasses.studentsGroupId = this.state.studentsGroupId, this.props.temporaryClasses.PersonalProfileId = this.state.personalProfileId, this.props.temporaryClasses.localizationId = this.state.localizationId, console.log("this.props.temporaryClasses: " + JSON.stringify(this.props.temporaryClasses));
 	
 	      this.props.dispatch((0, _actions.updateClassesStart)());
-	      event.target.reset(); //TODO Add Snackbar
+	      //TODO Add Snackbar
 	      this.reset();
 	    }
 	  }, {

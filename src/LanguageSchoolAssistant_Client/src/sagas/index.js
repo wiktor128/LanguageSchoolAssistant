@@ -200,18 +200,18 @@ export function* loadGroupsSaga() {
 
 export function* updateClassesSaga() {
   while (true) {
-    yield take(UPDATE_GROUP_START);
+    yield take(UPDATE_CLASSES_START);
 
     console.log("updateClassesSaga");
 
-    const group = store.getState().classesResource.temporaryClasses;
+    const classes = store.getState().classesResource.temporaryClasses;
 
 
-    const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateGroup/';
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateClasses/';
     
-    yield call(apiRequest, url, 'POST', group);
+    yield call(apiRequest, url, 'POST', classes);
 
-    yield put(loadGroupsStart());
+    //yield put(loadClassesStart());
   }
 }
 
@@ -227,6 +227,8 @@ export function* rootSaga() {
     updateUsefulLinksSaga(),
 
     updateGroupSaga(),
-    loadGroupsSaga()
+    loadGroupsSaga(),
+
+    updateClassesSaga(),
   ]
 }

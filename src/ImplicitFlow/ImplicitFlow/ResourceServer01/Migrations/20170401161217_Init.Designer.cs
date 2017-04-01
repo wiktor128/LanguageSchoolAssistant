@@ -8,8 +8,8 @@ using ResourceServer01.Models;
 namespace ResourceServer01.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20170325101559_basic structure")]
-    partial class basicstructure
+    [Migration("20170401161217_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -62,11 +62,15 @@ namespace ResourceServer01.Migrations
                     b.Property<int>("StudentsGroupId")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<DateTime?>("EndDate");
+
                     b.Property<string>("Language");
 
                     b.Property<string>("Level");
 
                     b.Property<string>("Name");
+
+                    b.Property<DateTime?>("StartDate");
 
                     b.HasKey("StudentsGroupId");
 
@@ -80,9 +84,9 @@ namespace ResourceServer01.Migrations
 
                     b.Property<DateTime>("Duration");
 
-                    b.Property<int?>("LanguageInstructorPersonalProfileId");
-
                     b.Property<int?>("LocalizationId");
+
+                    b.Property<int?>("PersonalProfileId");
 
                     b.Property<string>("ShortDescription");
 
@@ -94,13 +98,33 @@ namespace ResourceServer01.Migrations
 
                     b.HasKey("UnitOfClassesId");
 
-                    b.HasIndex("LanguageInstructorPersonalProfileId");
-
                     b.HasIndex("LocalizationId");
+
+                    b.HasIndex("PersonalProfileId");
 
                     b.HasIndex("StudentsGroupId");
 
                     b.ToTable("UnitOfClasses");
+                });
+
+            modelBuilder.Entity("ResourceServer01.Models.UsefulLink", b =>
+                {
+                    b.Property<int>("UsefulLinkId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Color");
+
+                    b.Property<string>("Link");
+
+                    b.Property<int?>("PersonalProfileId");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("UsefulLinkId");
+
+                    b.HasIndex("PersonalProfileId");
+
+                    b.ToTable("UsefulLinks");
                 });
 
             modelBuilder.Entity("ResourceServer01.Models.PersonalProfile", b =>
@@ -112,17 +136,24 @@ namespace ResourceServer01.Migrations
 
             modelBuilder.Entity("ResourceServer01.Models.UnitOfClasses", b =>
                 {
-                    b.HasOne("ResourceServer01.Models.PersonalProfile", "LanguageInstructor")
-                        .WithMany()
-                        .HasForeignKey("LanguageInstructorPersonalProfileId");
-
                     b.HasOne("ResourceServer01.Models.Localization", "Localization")
                         .WithMany()
                         .HasForeignKey("LocalizationId");
 
+                    b.HasOne("ResourceServer01.Models.PersonalProfile", "LanguageInstructor")
+                        .WithMany()
+                        .HasForeignKey("PersonalProfileId");
+
                     b.HasOne("ResourceServer01.Models.StudentsGroup", "StudentsGroup")
                         .WithMany()
                         .HasForeignKey("StudentsGroupId");
+                });
+
+            modelBuilder.Entity("ResourceServer01.Models.UsefulLink", b =>
+                {
+                    b.HasOne("ResourceServer01.Models.PersonalProfile", "PersonalProfile")
+                        .WithMany()
+                        .HasForeignKey("PersonalProfileId");
                 });
         }
     }
