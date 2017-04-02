@@ -1,77 +1,55 @@
 import React from 'react';
-import { createStyleSheet } from 'jss-theme-reactor';
-import userManager from '../../utils/userManager';
 import { connect } from 'react-redux';
 
-import { reduxForm } from 'redux-form';
-
 import {
-  loadProfileResourceStart,
-  updateProfileResourceStart,
-
   loadGroupsStart,
-  loadLanguageInstructorsStart,
-  updateGroupStart
-
+  updateGroupStart,
+  deleteGroupStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
-import { Grid, Row, Col } from 'react-flexbox-grid';
-import Paper from 'material-ui/Paper';
-
 import {lightGreen500} from 'material-ui/styles/colors'
-
-import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
-import DatePicker from 'material-ui/DatePicker';
-import IconButton from 'material-ui/IconButton';
-import AddIcon from 'material-ui/svg-icons/content/add';
-
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
-
 import Snackbar from 'material-ui/Snackbar';
 
-import {List, ListItem} from 'material-ui/List';
-import TextField from 'material-ui/TextField';
-import Divider from 'material-ui/Divider';
-
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
-
-import AddGroupForm from './addGroupForm';
 
 class ListAllGroups extends React.Component {
 
   constructor (props) {
     super(props);
-
     this.state = {
-      value: null,
-      startDate: this.props.temporaryGroup.startDate,
-      endDate: this.props.temporaryGroup.endDate,
-      levelSelectboxValue: null,
+
     };
+
+    this.handleDeleteGroup = this.handleDeleteGroup.bind(this);
   }
 
   componentWillMount() {
     this.props.dispatch(loadGroupsStart());
-    this.props.dispatch(loadLanguageInstructorsStart());
-
-    console.log("list all groups, component will mount");
-    console.log("this.props.existingGroups : " + this.props.existingGroups);
   }
 
+  handleDeleteGroup(id) {
+    console.log("handle delete group");
+
+    // for (var i=0; i < arguments.length; i++) {
+    //     console.log('arguments[' + i + ']' + arguments[i]) ;
+    // }
+
+    this.props.temporaryGroup.studentsGroupId = id;
+    this.props.dispatch(deleteGroupStart());
+    
+    console.log("id: " + id);
+  }
 
   render() {
-
     return (
       <SimpleFrame
         title="Manage Course Groups"
-        /*iconElementRight = {<FeatureButton />}*/
       >
           <Table
             selectable={false}
-            height='300px'
+            height='290px'
           >
             <TableHeader
               displaySelectAll={false}
@@ -94,13 +72,18 @@ class ListAllGroups extends React.Component {
               {this.props.existingGroups.map((item) =>
                 <TableRow rowNumber={item.studentsGroupId} key={item.studentsGroupId}>
                   <TableRowColumn>{item.name}</TableRowColumn>
-                  <TableRowColumn>{item.level}</TableRowColumn>
                   <TableRowColumn>{item.language}</TableRowColumn>
+                  <TableRowColumn>{item.level}</TableRowColumn>
                   <TableRowColumn>{item.startDate}</TableRowColumn>
                   <TableRowColumn>{item.endDate}</TableRowColumn>
                   <TableRowColumn>
-                    <FlatButton label="Edit" primary={true} />
-                    <FlatButton label="Delete" secondary={true} />
+                    <FlatButton 
+                      label="Edit" 
+                      primary={true} />
+                    <FlatButton 
+                      label="Delete" 
+                      secondary={true} 
+                      onTouchTap={this.handleDeleteGroup.bind(this, item.studentsGroupId)} />
                   </TableRowColumn>
                 </TableRow>
               )}
@@ -115,15 +98,10 @@ const styles = {
   leftAlign: {
     textAlign: 'left',
   },
-  btnGreen: {
-    color: lightGreen500
-  }
 }
 
 function mapStateToProps(state) {
   return {
-    user: state.oidc.user,
-    profile: state.profileResource.profile,
     existingGroups: state.groupResource.existingGroups,
     existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
     temporaryGroup: state.groupResource.temporaryGroup

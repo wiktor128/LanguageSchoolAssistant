@@ -41,7 +41,20 @@ namespace ResourceServer01.Controllers
                 ;
             }
             _context.SaveChanges();
-            return;
+        }
+
+        [HttpPost]
+        public void DeleteGroup(int? id)
+        {
+            var group = _context.StudentsGroup
+                .AsNoTracking()
+                .SingleOrDefault( g => g.StudentsGroupId == id);
+
+            if (group != null)
+            {
+                _context.StudentsGroup.Remove(group);
+                _context.SaveChanges();
+            }
         }
 
         [HttpPost]

@@ -15,6 +15,7 @@ import {
   LOAD_GROUPS_SUCCESS,
   UPDATE_GROUP_START,
   UPDATE_GROUP_SUCCESS,
+  DELETE_GROUP_START,
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
@@ -38,6 +39,7 @@ import {
   loadGroupsStart,
   loadGroupsSuccess,
   updateGroupStart,
+  deleteGroupStart,
   loadLanguageInstructorsStart,
   loadLanguageInstructorsSuccess,
 
@@ -180,6 +182,24 @@ export function* updateGroupSaga() {
   }
 }
 
+export function* deleteGroupSaga() {
+  while (true) {
+    yield take(DELETE_GROUP_START);
+
+    console.log("deleteGroupSaga");
+
+    const id = {id: store.getState().groupResource.temporaryGroup.studentsGroupId };
+
+    console.log("temporary group ID to post: " + JSON.stringify(id));
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/DeleteGroup/';
+
+    yield call(apiRequest, url, 'POST', id);
+
+    yield put(loadGroupsStart());
+  }
+}
+
 export function* loadGroupsSaga() {
   while (true) {
     yield take(LOAD_GROUPS_START);
@@ -228,6 +248,7 @@ export function* rootSaga() {
 
     updateGroupSaga(),
     loadGroupsSaga(),
+    deleteGroupSaga(),
 
     updateClassesSaga(),
   ]

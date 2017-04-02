@@ -43403,6 +43403,7 @@
 	exports.loadUsefulLinksSaga = loadUsefulLinksSaga;
 	exports.updateUsefulLinksSaga = updateUsefulLinksSaga;
 	exports.updateGroupSaga = updateGroupSaga;
+	exports.deleteGroupSaga = deleteGroupSaga;
 	exports.loadGroupsSaga = loadGroupsSaga;
 	exports.updateClassesSaga = updateClassesSaga;
 	exports.rootSaga = rootSaga;
@@ -43423,7 +43424,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, updateProfileResourceSaga, loadUsefulLinksSaga, updateUsefulLinksSaga, updateGroupSaga, loadGroupsSaga, updateClassesSaga, rootSaga].map(regeneratorRuntime.mark);
+	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, updateProfileResourceSaga, loadUsefulLinksSaga, updateUsefulLinksSaga, updateGroupSaga, deleteGroupSaga, loadGroupsSaga, updateClassesSaga, rootSaga].map(regeneratorRuntime.mark);
 	
 	function loadSubscriptionsSaga() {
 	    var url, result, channels, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, channel;
@@ -43776,18 +43777,61 @@
 	    }, _marked[6], this);
 	}
 	
-	function loadGroupsSaga() {
-	    var userLoginName, url, result, resultData;
-	    return regeneratorRuntime.wrap(function loadGroupsSaga$(_context8) {
+	function deleteGroupSaga() {
+	    var id, url;
+	    return regeneratorRuntime.wrap(function deleteGroupSaga$(_context8) {
 	        while (1) {
 	            switch (_context8.prev = _context8.next) {
 	                case 0:
 	                    if (false) {
-	                        _context8.next = 15;
+	                        _context8.next = 13;
 	                        break;
 	                    }
 	
 	                    _context8.next = 3;
+	                    return (0, _effects.take)(_constants.DELETE_GROUP_START);
+	
+	                case 3:
+	
+	                    console.log("deleteGroupSaga");
+	
+	                    id = { id: _store2.default.getState().groupResource.temporaryGroup.studentsGroupId };
+	
+	
+	                    console.log("temporary group ID to post: " + JSON.stringify(id));
+	
+	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/DeleteGroup/';
+	                    _context8.next = 9;
+	                    return (0, _effects.call)(_request2.default, url, 'POST', id);
+	
+	                case 9:
+	                    _context8.next = 11;
+	                    return (0, _effects.put)((0, _actions.loadGroupsStart)());
+	
+	                case 11:
+	                    _context8.next = 0;
+	                    break;
+	
+	                case 13:
+	                case 'end':
+	                    return _context8.stop();
+	            }
+	        }
+	    }, _marked[7], this);
+	}
+	
+	function loadGroupsSaga() {
+	    var userLoginName, url, result, resultData;
+	    return regeneratorRuntime.wrap(function loadGroupsSaga$(_context9) {
+	        while (1) {
+	            switch (_context9.prev = _context9.next) {
+	                case 0:
+	                    if (false) {
+	                        _context9.next = 15;
+	                        break;
+	                    }
+	
+	                    _context9.next = 3;
 	                    return (0, _effects.take)(_constants.LOAD_GROUPS_START);
 	
 	                case 3:
@@ -43796,43 +43840,43 @@
 	
 	                    userLoginName = _store2.default.getState().groupResource.existingGroups;
 	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/GetAllGroups/';
-	                    _context8.next = 8;
+	                    _context9.next = 8;
 	                    return (0, _effects.call)(_request2.default, url, 'POST');
 	
 	                case 8:
-	                    result = _context8.sent;
+	                    result = _context9.sent;
 	                    resultData = result.data;
 	
 	
 	                    console.log("result data: " + JSON.stringify(resultData));
 	
-	                    _context8.next = 13;
+	                    _context9.next = 13;
 	                    return (0, _effects.put)((0, _actions.loadGroupsSuccess)(resultData));
 	
 	                case 13:
-	                    _context8.next = 0;
+	                    _context9.next = 0;
 	                    break;
 	
 	                case 15:
 	                case 'end':
-	                    return _context8.stop();
+	                    return _context9.stop();
 	            }
 	        }
-	    }, _marked[7], this);
+	    }, _marked[8], this);
 	}
 	
 	function updateClassesSaga() {
 	    var classes, url;
-	    return regeneratorRuntime.wrap(function updateClassesSaga$(_context9) {
+	    return regeneratorRuntime.wrap(function updateClassesSaga$(_context10) {
 	        while (1) {
-	            switch (_context9.prev = _context9.next) {
+	            switch (_context10.prev = _context10.next) {
 	                case 0:
 	                    if (false) {
-	                        _context9.next = 10;
+	                        _context10.next = 10;
 	                        break;
 	                    }
 	
-	                    _context9.next = 3;
+	                    _context10.next = 3;
 	                    return (0, _effects.take)(_constants.UPDATE_CLASSES_START);
 	
 	                case 3:
@@ -43841,35 +43885,35 @@
 	
 	                    classes = _store2.default.getState().classesResource.temporaryClasses;
 	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateClasses/';
-	                    _context9.next = 8;
+	                    _context10.next = 8;
 	                    return (0, _effects.call)(_request2.default, url, 'POST', classes);
 	
 	                case 8:
-	                    _context9.next = 0;
+	                    _context10.next = 0;
 	                    break;
 	
 	                case 10:
-	                case 'end':
-	                    return _context9.stop();
-	            }
-	        }
-	    }, _marked[8], this);
-	}
-	
-	function rootSaga() {
-	    return regeneratorRuntime.wrap(function rootSaga$(_context10) {
-	        while (1) {
-	            switch (_context10.prev = _context10.next) {
-	                case 0:
-	                    _context10.next = 2;
-	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), updateGroupSaga(), loadGroupsSaga(), updateClassesSaga()];
-	
-	                case 2:
 	                case 'end':
 	                    return _context10.stop();
 	            }
 	        }
 	    }, _marked[9], this);
+	}
+	
+	function rootSaga() {
+	    return regeneratorRuntime.wrap(function rootSaga$(_context11) {
+	        while (1) {
+	            switch (_context11.prev = _context11.next) {
+	                case 0:
+	                    _context11.next = 2;
+	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), updateGroupSaga(), loadGroupsSaga(), deleteGroupSaga(), updateClassesSaga()];
+	
+	                case 2:
+	                case 'end':
+	                    return _context11.stop();
+	            }
+	        }
+	    }, _marked[10], this);
 	}
 
 /***/ },
@@ -43911,8 +43955,12 @@
 	
 	var LOAD_GROUPS_START = exports.LOAD_GROUPS_START = 'redux-oidc-sample/LOAD_GROUPS_START';
 	var LOAD_GROUPS_SUCCESS = exports.LOAD_GROUPS_SUCCESS = 'redux-oidc-sample/LOAD_GROUPS_SUCCESS';
+	
 	var UPDATE_GROUP_START = exports.UPDATE_GROUP_START = 'redux-oidc-sample/UPDATE_GROUPS_START';
 	var UPDATE_GROUP_SUCCESS = exports.UPDATE_GROUP_SUCCESS = 'redux-oidc-sample/UPDATE_GROUPS_SUCCESS';
+	
+	var DELETE_GROUP_START = exports.DELETE_GROUP_START = 'redux-oidc-sample/DELETE_GROUP_START';
+	var DELETE_GROUP_SUCCESS = exports.DELETE_GROUP_SUCCESS = 'redux-oidc-sample/DELETE_GROUP_SUCCESS';
 	
 	var LOAD_LANGUAGE_INSTRUCTORS_START = exports.LOAD_LANGUAGE_INSTRUCTORS_START = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_START';
 	var LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = exports.LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_SUCCESS';
@@ -43941,6 +43989,7 @@
 	exports.loadGroupsStart = loadGroupsStart;
 	exports.loadGroupsSuccess = loadGroupsSuccess;
 	exports.updateGroupStart = updateGroupStart;
+	exports.deleteGroupStart = deleteGroupStart;
 	exports.loadLanguageInstructorsStart = loadLanguageInstructorsStart;
 	exports.loadLanguageInstructorsSuccess = loadLanguageInstructorsSuccess;
 	exports.updateUsefulLinksStart = updateUsefulLinksStart;
@@ -44005,6 +44054,11 @@
 	function updateGroupStart() {
 	  return {
 	    type: _constants.UPDATE_GROUP_START
+	  };
+	}
+	function deleteGroupStart() {
+	  return {
+	    type: _constants.DELETE_GROUP_START
 	  };
 	}
 	
@@ -44112,6 +44166,7 @@
 	  headers.append('Access-Control-Allow-Origin', 'true');
 	
 	  var formData = new FormData();
+	  console.log("request bodyData: " + JSON.stringify(bodyData));
 	
 	  if (bodyData) {
 	    var entries = regeneratorRuntime.mark(function entries(obj) {
@@ -79076,14 +79131,6 @@
 	
 	var _List = __webpack_require__(1036);
 	
-	var _TextField = __webpack_require__(1010);
-	
-	var _TextField2 = _interopRequireDefault(_TextField);
-	
-	var _Divider = __webpack_require__(1016);
-	
-	var _Divider2 = _interopRequireDefault(_Divider);
-	
 	var _Table = __webpack_require__(1018);
 	
 	var _addGroupForm = __webpack_require__(1102);
@@ -79129,7 +79176,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	
 	      return _react2.default.createElement(
 	        _reactFlexboxGrid.Grid,
 	        { fluid: true },
@@ -83267,10 +83313,6 @@
 	
 	var _DatePicker2 = _interopRequireDefault(_DatePicker);
 	
-	var _IconButton = __webpack_require__(976);
-	
-	var _IconButton2 = _interopRequireDefault(_IconButton);
-	
 	var _add = __webpack_require__(1035);
 	
 	var _add2 = _interopRequireDefault(_add);
@@ -83309,15 +83351,18 @@
 	
 	    var _this = _possibleConstructorReturn(this, (AddGroupForm.__proto__ || Object.getPrototypeOf(AddGroupForm)).call(this, props));
 	
-	    _this.handleChange = function (event, index, value) {
-	      return _this.setState({ value: value });
-	    };
-	
 	    _this.state = {
-	      value: null,
-	      startDate: _this.props.temporaryGroup.startDate,
-	      endDate: _this.props.temporaryGroup.endDate,
-	      levelSelectboxValue: null
+	      // value: null,
+	      // startDate: this.props.temporaryGroup.startDate,
+	      // endDate: this.props.temporaryGroup.endDate,
+	      // levelSelectboxValue: null,
+	
+	      level: "",
+	      name: "",
+	      startDate: "",
+	      endDate: "",
+	      language: "",
+	      studentsGroupId: ""
 	    };
 	
 	    _this.handleNewGroupSubmit = _this.handleNewGroupSubmit.bind(_this);
@@ -83332,20 +83377,22 @@
 	  _createClass(AddGroupForm, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
-	      this.props.dispatch((0, _actions.loadProfileResourceStart)());
+	      //this.props.dispatch(loadProfileResourceStart());
 	      this.props.dispatch((0, _actions.loadGroupsStart)());
 	      this.props.dispatch((0, _actions.loadLanguageInstructorsStart)());
 	    }
 	  }, {
 	    key: 'handleStartDateChange',
 	    value: function handleStartDateChange(event, date) {
-	      this.props.temporaryGroup["startDate"] = JSON.stringify(date).substr(1, 10);
+	      //this.props.temporaryGroup["startDate"] = JSON.stringify(date).substr(1, 10);
+	      this.setState({ startDate: JSON.stringify(date).substr(1, 10) });
 	    }
 	  }, {
 	    key: 'handleEndDateChange',
 	    value: function handleEndDateChange(event, date) {
 	      console.log("end date change");
-	      this.props.temporaryGroup["endDate"] = JSON.stringify(date).substr(1, 10);
+	      //this.props.temporaryGroup["endDate"] = JSON.stringify(date).substr(1, 10);
+	      this.setState({ endDate: JSON.stringify(date).substr(1, 10) });
 	    }
 	  }, {
 	    key: 'handleLevelSelectChange',
@@ -83353,9 +83400,9 @@
 	      console.log("handle level select change");
 	      console.log("index,value: " + index + " " + value);
 	
-	      this.props.temporaryGroup['level'] = value;
+	      //this.props.temporaryGroup['level'] = value;
 	
-	      this.setState({ levelSelectboxValue: value });
+	      this.setState({ level: value });
 	    }
 	  }, {
 	    key: 'handleInputChange',
@@ -83363,20 +83410,16 @@
 	
 	      console.log("handle Input Change");
 	
-	      for (var i = 0; i < arguments.length; i++) {
-	        console.log('arguments[' + i + ']' + arguments[i]);
-	      }
-	
 	      var target = event.target;
 	      var value = target.type === 'checkbox' ? target.checked : target.value;
 	      var name = target.name;
 	      console.log("value: " + value);
 	      console.log("name: " + name);
 	
-	      this.props.temporaryGroup[name] = value;
+	      //this.props.temporaryGroup[name] = value;
+	      this.state[name] = value;
 	
 	      this.forceUpdate();
-	      console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
 	    }
 	  }, {
 	    key: 'handleNewGroupSubmit',
@@ -83386,6 +83429,8 @@
 	      console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
 	      console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
 	      console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+	
+	      this.props.temporaryGroup.name = this.state.name, this.props.temporaryGroup.language = this.state.language, this.props.temporaryGroup.level = this.state.level, this.props.temporaryGroup.startDate = this.state.startDate, this.props.temporaryGroup.endDate = this.state.endDate;
 	
 	      this.props.dispatch((0, _actions.updateGroupStart)());
 	      this.reset(); //TODO Add Snackbar
@@ -83410,7 +83455,7 @@
 	              _reactFlexboxGrid.Col,
 	              { xs: 12, md: true },
 	              _react2.default.createElement(_TextField2.default, {
-	                value: this.props.temporaryGroup.name,
+	                value: this.state.name,
 	                fullWidth: true,
 	                floatingLabelText: 'Group Name',
 	                name: 'name',
@@ -83421,7 +83466,7 @@
 	              _reactFlexboxGrid.Col,
 	              { xs: 12, md: true },
 	              _react2.default.createElement(_TextField2.default, {
-	                value: this.props.temporaryGroup.language,
+	                value: this.state.language,
 	                fullWidth: true,
 	                floatingLabelText: 'Language',
 	                name: 'language',
@@ -83436,7 +83481,7 @@
 	                {
 	                  fullWidth: true,
 	                  floatingLabelText: 'Level',
-	                  value: this.state.levelSelectboxValue,
+	                  value: this.state.level,
 	                  name: 'level',
 	                  onChange: this.handleLevelSelectChange,
 	                  style: styles.leftAlign
@@ -83503,8 +83548,8 @@
 	
 	function mapStateToProps(state) {
 	  return {
-	    user: state.oidc.user,
-	    profile: state.profileResource.profile,
+	    // user: state.oidc.user,
+	    // profile: state.profileResource.profile,
 	    existingGroups: state.groupResource.existingGroups,
 	    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
 	    temporaryGroup: state.groupResource.temporaryGroup
@@ -83535,15 +83580,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jssThemeReactor = __webpack_require__(810);
-	
-	var _userManager = __webpack_require__(803);
-	
-	var _userManager2 = _interopRequireDefault(_userManager);
-	
 	var _reactRedux = __webpack_require__(477);
-	
-	var _reduxForm = __webpack_require__(600);
 	
 	var _actions = __webpack_require__(594);
 	
@@ -83551,61 +83588,17 @@
 	
 	var _simpleFrame2 = _interopRequireDefault(_simpleFrame);
 	
-	var _reactFlexboxGrid = __webpack_require__(928);
-	
-	var _Paper = __webpack_require__(924);
-	
-	var _Paper2 = _interopRequireDefault(_Paper);
-	
 	var _colors = __webpack_require__(1051);
-	
-	var _RaisedButton = __webpack_require__(944);
-	
-	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
 	var _FlatButton = __webpack_require__(1007);
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _DatePicker = __webpack_require__(1080);
-	
-	var _DatePicker2 = _interopRequireDefault(_DatePicker);
-	
-	var _IconButton = __webpack_require__(976);
-	
-	var _IconButton2 = _interopRequireDefault(_IconButton);
-	
-	var _add = __webpack_require__(1035);
-	
-	var _add2 = _interopRequireDefault(_add);
-	
-	var _SelectField = __webpack_require__(1097);
-	
-	var _SelectField2 = _interopRequireDefault(_SelectField);
-	
-	var _MenuItem = __webpack_require__(1062);
-	
-	var _MenuItem2 = _interopRequireDefault(_MenuItem);
-	
 	var _Snackbar = __webpack_require__(994);
 	
 	var _Snackbar2 = _interopRequireDefault(_Snackbar);
 	
-	var _List = __webpack_require__(1036);
-	
-	var _TextField = __webpack_require__(1010);
-	
-	var _TextField2 = _interopRequireDefault(_TextField);
-	
-	var _Divider = __webpack_require__(1016);
-	
-	var _Divider2 = _interopRequireDefault(_Divider);
-	
 	var _Table = __webpack_require__(1018);
-	
-	var _addGroupForm = __webpack_require__(1102);
-	
-	var _addGroupForm2 = _interopRequireDefault(_addGroupForm);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -83623,12 +83616,9 @@
 	
 	    var _this = _possibleConstructorReturn(this, (ListAllGroups.__proto__ || Object.getPrototypeOf(ListAllGroups)).call(this, props));
 	
-	    _this.state = {
-	      value: null,
-	      startDate: _this.props.temporaryGroup.startDate,
-	      endDate: _this.props.temporaryGroup.endDate,
-	      levelSelectboxValue: null
-	    };
+	    _this.state = {};
+	
+	    _this.handleDeleteGroup = _this.handleDeleteGroup.bind(_this);
 	    return _this;
 	  }
 	
@@ -83636,26 +83626,36 @@
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      this.props.dispatch((0, _actions.loadGroupsStart)());
-	      this.props.dispatch((0, _actions.loadLanguageInstructorsStart)());
+	    }
+	  }, {
+	    key: 'handleDeleteGroup',
+	    value: function handleDeleteGroup(id) {
+	      console.log("handle delete group");
 	
-	      console.log("list all groups, component will mount");
-	      console.log("this.props.existingGroups : " + this.props.existingGroups);
+	      // for (var i=0; i < arguments.length; i++) {
+	      //     console.log('arguments[' + i + ']' + arguments[i]) ;
+	      // }
+	
+	      this.props.temporaryGroup.studentsGroupId = id;
+	      this.props.dispatch((0, _actions.deleteGroupStart)());
+	
+	      console.log("id: " + id);
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
 	
 	      return _react2.default.createElement(
 	        _simpleFrame2.default,
 	        {
 	          title: 'Manage Course Groups'
-	          /*iconElementRight = {<FeatureButton />}*/
 	        },
 	        _react2.default.createElement(
 	          _Table.Table,
 	          {
 	            selectable: false,
-	            height: '300px'
+	            height: '290px'
 	          },
 	          _react2.default.createElement(
 	            _Table.TableHeader,
@@ -83713,12 +83713,12 @@
 	                _react2.default.createElement(
 	                  _Table.TableRowColumn,
 	                  null,
-	                  item.level
+	                  item.language
 	                ),
 	                _react2.default.createElement(
 	                  _Table.TableRowColumn,
 	                  null,
-	                  item.language
+	                  item.level
 	                ),
 	                _react2.default.createElement(
 	                  _Table.TableRowColumn,
@@ -83733,8 +83733,13 @@
 	                _react2.default.createElement(
 	                  _Table.TableRowColumn,
 	                  null,
-	                  _react2.default.createElement(_FlatButton2.default, { label: 'Edit', primary: true }),
-	                  _react2.default.createElement(_FlatButton2.default, { label: 'Delete', secondary: true })
+	                  _react2.default.createElement(_FlatButton2.default, {
+	                    label: 'Edit',
+	                    primary: true }),
+	                  _react2.default.createElement(_FlatButton2.default, {
+	                    label: 'Delete',
+	                    secondary: true,
+	                    onTouchTap: _this2.handleDeleteGroup.bind(_this2, item.studentsGroupId) })
 	                )
 	              );
 	            })
@@ -83750,16 +83755,11 @@
 	var styles = {
 	  leftAlign: {
 	    textAlign: 'left'
-	  },
-	  btnGreen: {
-	    color: _colors.lightGreen500
 	  }
 	};
 	
 	function mapStateToProps(state) {
 	  return {
-	    user: state.oidc.user,
-	    profile: state.profileResource.profile,
 	    existingGroups: state.groupResource.existingGroups,
 	    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
 	    temporaryGroup: state.groupResource.temporaryGroup

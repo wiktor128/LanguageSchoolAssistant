@@ -33,8 +33,6 @@ import MenuItem from 'material-ui/MenuItem';
 import Snackbar from 'material-ui/Snackbar';
 
 import {List, ListItem} from 'material-ui/List';
-import TextField from 'material-ui/TextField';
-import Divider from 'material-ui/Divider';
 
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn} from 'material-ui/Table';
 
@@ -60,9 +58,7 @@ class ManageGroupsPage extends React.Component {
     this.props.dispatch(loadLanguageInstructorsStart());
   }
 
-
   render() {
-
     return (
       <Grid fluid>
         <Row center='xs'>

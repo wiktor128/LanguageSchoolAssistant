@@ -23,6 +23,8 @@ import {
   LOAD_GROUPS_SUCCESS,
   UPDATE_GROUP_START,
   UPDATE_GROUP_SUCCESS,
+  DELETE_GROUP_START,
+  DELETE_GROUP_SUCCESS,
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
@@ -85,6 +87,11 @@ export function loadGroupsSuccess(existingGroups) {
 export function updateGroupStart() {
   return {
     type: UPDATE_GROUP_START
+  };
+}
+export function deleteGroupStart() {
+  return {
+    type: DELETE_GROUP_START
   };
 }
 

@@ -3,7 +3,7 @@ import { createStyleSheet } from 'jss-theme-reactor';
 import { connect } from 'react-redux';
 
 import {
-  loadProfileResourceStart,
+  // loadProfileResourceStart,
   loadGroupsStart,
   loadLanguageInstructorsStart,
   updateGroupStart
@@ -13,7 +13,6 @@ import SimpleFrame from '../simpleFrame';
 import {lightGreen500} from 'material-ui/styles/colors'
 import FlatButton from 'material-ui/FlatButton';
 import DatePicker from 'material-ui/DatePicker';
-import IconButton from 'material-ui/IconButton';
 import AddIcon from 'material-ui/svg-icons/content/add';
 import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
@@ -29,10 +28,17 @@ class AddGroupForm extends React.Component {
     super(props);
 
     this.state = {
-      value: null,
-      startDate: this.props.temporaryGroup.startDate,
-      endDate: this.props.temporaryGroup.endDate,
-      levelSelectboxValue: null,
+      // value: null,
+      // startDate: this.props.temporaryGroup.startDate,
+      // endDate: this.props.temporaryGroup.endDate,
+      // levelSelectboxValue: null,
+
+      level: "",
+      name: "",
+      startDate: "",
+      endDate: "",
+      language: "",
+      studentsGroupId: ""
     };
 
     this.handleNewGroupSubmit = this.handleNewGroupSubmit.bind(this);
@@ -44,38 +50,34 @@ class AddGroupForm extends React.Component {
   }
 
   componentWillMount() {
-    this.props.dispatch(loadProfileResourceStart());
+    //this.props.dispatch(loadProfileResourceStart());
     this.props.dispatch(loadGroupsStart());
     this.props.dispatch(loadLanguageInstructorsStart());
   }
 
-  handleChange = (event, index, value) => this.setState({value});
-
   handleStartDateChange(event, date) {
-    this.props.temporaryGroup["startDate"] = JSON.stringify(date).substr(1, 10);
+    //this.props.temporaryGroup["startDate"] = JSON.stringify(date).substr(1, 10);
+    this.setState({startDate: JSON.stringify(date).substr(1, 10)});
   }
 
   handleEndDateChange(event, date) {
     console.log("end date change");
-    this.props.temporaryGroup["endDate"] = JSON.stringify(date).substr(1, 10);
+    //this.props.temporaryGroup["endDate"] = JSON.stringify(date).substr(1, 10);
+    this.setState({endDate: JSON.stringify(date).substr(1, 10)});
   }
 
   handleLevelSelectChange(event, index, value) {
     console.log("handle level select change");
     console.log("index,value: " + index + " " + value);
 
-    this.props.temporaryGroup['level'] = value;
+    //this.props.temporaryGroup['level'] = value;
     
-    this.setState({levelSelectboxValue: value})
+    this.setState({level: value});
   }
 
   handleInputChange(event) {
 
     console.log("handle Input Change");
-
-    for (var i=0; i < arguments.length; i++) {
-        console.log('arguments[' + i + ']' + arguments[i]) ;
-    }
 
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -83,10 +85,10 @@ class AddGroupForm extends React.Component {
     console.log("value: " + value);
     console.log("name: " + name);
 
-    this.props.temporaryGroup[name] = value;
+    //this.props.temporaryGroup[name] = value;
+    this.state[name] = value;
 
     this.forceUpdate();
-    console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
   }
 
   handleNewGroupSubmit(event) {
@@ -95,6 +97,14 @@ class AddGroupForm extends React.Component {
     console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
     console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
     console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+
+
+
+    this.props.temporaryGroup.name = this.state.name,
+    this.props.temporaryGroup.language = this.state.language,
+    this.props.temporaryGroup.level = this.state.level,
+    this.props.temporaryGroup.startDate = this.state.startDate,
+    this.props.temporaryGroup.endDate = this.state.endDate;
 
     this.props.dispatch(updateGroupStart());
     this.reset(); //TODO Add Snackbar
@@ -112,7 +122,7 @@ class AddGroupForm extends React.Component {
                 <Row center='xs' bottom='xs' around='xs'>
                   <Col xs={12} md>
                     <TextField
-                      value={this.props.temporaryGroup.name}
+                      value={this.state.name}
                       fullWidth={true}
                       floatingLabelText="Group Name"
                       name="name"
@@ -121,7 +131,7 @@ class AddGroupForm extends React.Component {
                   </Col>
                   <Col xs={12} md>
                     <TextField
-                      value={this.props.temporaryGroup.language}
+                      value={this.state.language}
                       fullWidth={true}
                       floatingLabelText="Language"
                       name="language"
@@ -132,7 +142,7 @@ class AddGroupForm extends React.Component {
                     <SelectField
                       fullWidth={true}
                       floatingLabelText="Level"
-                      value={this.state.levelSelectboxValue}
+                      value={this.state.level}
                       name="level"
                       onChange={this.handleLevelSelectChange}
                       style={styles.leftAlign}
@@ -191,8 +201,8 @@ const styles = {
 
 function mapStateToProps(state) {
   return {
-    user: state.oidc.user,
-    profile: state.profileResource.profile,
+    // user: state.oidc.user,
+    // profile: state.profileResource.profile,
     existingGroups: state.groupResource.existingGroups,
     existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
     temporaryGroup: state.groupResource.temporaryGroup
