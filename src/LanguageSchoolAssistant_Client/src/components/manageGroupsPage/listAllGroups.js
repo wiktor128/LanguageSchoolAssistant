@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 
 import {
   loadGroupsStart,
   updateGroupStart,
   deleteGroupStart
 } from '../../actions';
+
 
 import SimpleFrame from '../simpleFrame';
 import {lightGreen500} from 'material-ui/styles/colors'
@@ -79,7 +81,9 @@ class ListAllGroups extends React.Component {
                   <TableRowColumn>
                     <FlatButton 
                       label="Edit" 
-                      primary={true} />
+                      primary={true} 
+                      onTouchTap={() => browserHistory.push("/editgroup?id=" + item.studentsGroupId)}
+                    />
                     <FlatButton 
                       label="Delete" 
                       secondary={true} 

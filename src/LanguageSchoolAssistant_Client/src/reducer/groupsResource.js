@@ -1,16 +1,12 @@
-import { LOAD_GROUPS_SUCCESS, LOAD_LANGUAGE_INSTRUCTORS_SUCCESS } from '../constants';
+import { LOAD_GROUP_SUCCESS, LOAD_GROUPS_SUCCESS, LOAD_LANGUAGE_INSTRUCTORS_SUCCESS } from '../constants';
 import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 
 const initialState = {
   existingGroups: [],
   existingLanguageInstructors: [],
   temporaryGroup: { 
-    "level": "",
-    "name": "",
-    "startDate": "",
-    "endDate": "",
-    "language": "",
-    "studentsGroupId": null
+    startDate: new Date(),
+    endDate: new Date()
   }
 };
 
@@ -23,6 +19,14 @@ export default function reducer(state = initialState, action) {
         {...state}, 
         {
           temporaryGroup: {}
+        }
+      );
+    case LOAD_GROUP_SUCCESS:
+      return Object.assign(
+        {}, 
+        {...state}, 
+        {
+          temporaryGroup: action.payload
         }
       );
     case LOAD_GROUPS_SUCCESS:

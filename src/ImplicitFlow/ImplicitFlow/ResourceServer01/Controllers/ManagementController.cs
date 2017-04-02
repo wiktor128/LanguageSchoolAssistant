@@ -27,6 +27,14 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
+        public IActionResult GetGroup(int? id)
+        {
+            var group = _context.StudentsGroup.Where(x => x.StudentsGroupId == id).SingleOrDefault();
+
+            return Json(group);
+        }
+
+        [HttpPost]
         public void UpdateGroup(StudentsGroup group) // TODO
         {
             var x = group;

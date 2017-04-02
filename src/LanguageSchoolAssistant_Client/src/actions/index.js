@@ -19,6 +19,8 @@ import {
   UPDATE_USEFUL_LINKS_START,
   UPDATE_USEFUL_LINKS_SUCCESS,
 
+  LOAD_GROUP_START,
+  LOAD_GROUP_SUCCESS,
   LOAD_GROUPS_START,
   LOAD_GROUPS_SUCCESS,
   UPDATE_GROUP_START,
@@ -82,6 +84,17 @@ export function loadGroupsSuccess(existingGroups) {
   return {
     type: LOAD_GROUPS_SUCCESS,
     payload: existingGroups
+  };
+}
+export function loadGroupStart() {
+  return {
+    type: LOAD_GROUP_START
+  };
+}
+export function loadGroupSuccess(temporaryGroup) {
+  return {
+    type: LOAD_GROUP_SUCCESS,
+    payload: temporaryGroup
   };
 }
 export function updateGroupStart() {

@@ -11,6 +11,8 @@ import {
   UPDATE_USEFUL_LINKS_START,
   UPDATE_USEFUL_LINKS_SUCCESS,
 
+  LOAD_GROUP_START,
+  LOAD_GROUP_SUCCESS,
   LOAD_GROUPS_START,
   LOAD_GROUPS_SUCCESS,
   UPDATE_GROUP_START,
@@ -36,6 +38,8 @@ import {
   updateUsefulLinksStart,
   updateUsefulLinksSuccess,
 
+  loadGroupStart,
+  loadGroupSuccess,
   loadGroupsStart,
   loadGroupsSuccess,
   updateGroupStart,
@@ -200,6 +204,27 @@ export function* deleteGroupSaga() {
   }
 }
 
+export function* loadGroupSaga() {
+  while (true) {
+    yield take(LOAD_GROUP_START);
+
+    console.log("loadGroupSaga");
+
+    const id = {id: store.getState().groupResource.temporaryGroup.studentsGroupId };
+
+    console.log("temporary group ID to post: " + JSON.stringify(id));
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/GetGroup/';
+
+    
+
+    const result = yield call(apiRequest, url, 'POST', id);
+    const resultData = result.data;
+
+    yield put(loadGroupSuccess(resultData));
+  }
+}
+
 export function* loadGroupsSaga() {
   while (true) {
     yield take(LOAD_GROUPS_START);
@@ -247,6 +272,7 @@ export function* rootSaga() {
     updateUsefulLinksSaga(),
 
     updateGroupSaga(),
+    loadGroupSaga(),
     loadGroupsSaga(),
     deleteGroupSaga(),
 

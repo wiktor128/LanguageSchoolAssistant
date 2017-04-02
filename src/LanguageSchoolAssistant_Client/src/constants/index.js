@@ -20,12 +20,13 @@ export const LOAD_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/LOAD_USEFUL_LINKS_SU
 export const UPDATE_USEFUL_LINKS_START = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_START';
 export const UPDATE_USEFUL_LINKS_SUCCESS = 'redux-oidc-sample/UPDATE_USEFUL_LINKS_SUCCESS';
 
+
+export const LOAD_GROUP_START = 'redux-oidc-sample/LOAD_GROUP_START';
+export const LOAD_GROUP_SUCCESS = 'redux-oidc-sample/LOAD_GROUP_SUCCESS';
 export const LOAD_GROUPS_START = 'redux-oidc-sample/LOAD_GROUPS_START';
 export const LOAD_GROUPS_SUCCESS = 'redux-oidc-sample/LOAD_GROUPS_SUCCESS';
-
 export const UPDATE_GROUP_START = 'redux-oidc-sample/UPDATE_GROUPS_START';
 export const UPDATE_GROUP_SUCCESS = 'redux-oidc-sample/UPDATE_GROUPS_SUCCESS';
-
 export const DELETE_GROUP_START = 'redux-oidc-sample/DELETE_GROUP_START';
 export const DELETE_GROUP_SUCCESS = 'redux-oidc-sample/DELETE_GROUP_SUCCESS';
 

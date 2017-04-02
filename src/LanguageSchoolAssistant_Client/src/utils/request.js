@@ -10,7 +10,6 @@ export default function apiRequest(url, method = 'GET', bodyData) { // improve h
   headers.append('Access-Control-Allow-Origin', 'true');
 
   var formData = new FormData();
-  console.log("request bodyData: " + JSON.stringify(bodyData));
 
   if (bodyData) {
     

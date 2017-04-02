@@ -2,8 +2,7 @@ import React from 'react';
 import { createStyleSheet } from 'jss-theme-reactor';
 import userManager from '../../utils/userManager';
 import { connect } from 'react-redux';
-
-import { reduxForm } from 'redux-form';
+import { browserHistory } from 'react-router';
 
 import {
   loadProfileResourceStart,
