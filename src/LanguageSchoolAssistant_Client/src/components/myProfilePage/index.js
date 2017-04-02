@@ -50,7 +50,7 @@ class MyProfilePage extends React.Component {
   }
 
   componentWillMount() {
-    this.props.dispatch(loadProfileResourceStart())
+    this.props.dispatch(loadProfileResourceStart());
   }
 
   

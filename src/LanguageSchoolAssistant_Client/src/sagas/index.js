@@ -19,6 +19,9 @@ import {
   UPDATE_GROUP_SUCCESS,
   DELETE_GROUP_START,
 
+  LOAD_STUDENTS_START,
+  LOAD_STUDENTS_SUCCESS,
+
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
 
@@ -44,6 +47,9 @@ import {
   loadGroupsSuccess,
   updateGroupStart,
   deleteGroupStart,
+
+  loadStudentsStart,
+  loadStudentsSuccess,
   loadLanguageInstructorsStart,
   loadLanguageInstructorsSuccess,
 
@@ -243,6 +249,22 @@ export function* loadGroupsSaga() {
   }
 }
 
+export function* loadStudentsSaga() {
+  while (true) {
+    yield take(LOAD_STUDENTS_START);
+
+    console.log("loadStudentsSaga");
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/GetAllStudents/';
+    const result = yield call(apiRequest, url, 'POST');
+    const resultData = result.data;
+
+    console.log("result data: " + JSON.stringify(resultData));
+
+    yield put(loadStudentsSuccess(resultData));
+  }
+}
+
 export function* updateClassesSaga() {
   while (true) {
     yield take(UPDATE_CLASSES_START);
@@ -270,6 +292,8 @@ export function* rootSaga() {
 
     loadUsefulLinksSaga(),
     updateUsefulLinksSaga(),
+
+    loadStudentsSaga(),
 
     updateGroupSaga(),
     loadGroupSaga(),

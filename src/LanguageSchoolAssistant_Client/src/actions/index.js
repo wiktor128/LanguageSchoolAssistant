@@ -28,6 +28,9 @@ import {
   DELETE_GROUP_START,
   DELETE_GROUP_SUCCESS,
 
+  LOAD_STUDENTS_START,
+  LOAD_STUDENTS_SUCCESS,
+
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
 
@@ -105,6 +108,18 @@ export function updateGroupStart() {
 export function deleteGroupStart() {
   return {
     type: DELETE_GROUP_START
+  };
+}
+
+export function loadStudentsStart() {
+  return {
+    type: LOAD_STUDENTS_START
+  };
+}
+export function loadStudentsSuccess(existingStudents) {
+  return {
+    type: LOAD_STUDENTS_SUCCESS,
+    payload: existingStudents
   };
 }
 

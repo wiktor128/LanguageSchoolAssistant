@@ -19,6 +19,14 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
+        public IActionResult GetGroup(int? id)
+        {
+            var group = _context.StudentsGroup.Where(x => x.StudentsGroupId == id).SingleOrDefault();
+
+            return Json(group);
+        }
+
+        [HttpPost]
         public IActionResult GetAllGroups()
         {
             var allGroups = _context.StudentsGroup.ToList();
@@ -27,11 +35,11 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
-        public IActionResult GetGroup(int? id)
+        public IActionResult GetAllStudents()
         {
-            var group = _context.StudentsGroup.Where(x => x.StudentsGroupId == id).SingleOrDefault();
+            var allStudents = _context.PersonalProfiles.Where(x => x.IsLanguageInstructor == false).ToList();
 
-            return Json(group);
+            return Json(allStudents);
         }
 
         [HttpPost]

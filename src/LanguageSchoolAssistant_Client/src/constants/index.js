@@ -30,6 +30,9 @@ export const UPDATE_GROUP_SUCCESS = 'redux-oidc-sample/UPDATE_GROUPS_SUCCESS';
 export const DELETE_GROUP_START = 'redux-oidc-sample/DELETE_GROUP_START';
 export const DELETE_GROUP_SUCCESS = 'redux-oidc-sample/DELETE_GROUP_SUCCESS';
 
+export const LOAD_STUDENTS_START = 'redux-oidc-sample/LOAD_STUDENTS_START';
+export const LOAD_STUDENTS_SUCCESS = 'redux-oidc-sample/LOAD_STUDENTS_SUCCESS';
+
 export const LOAD_LANGUAGE_INSTRUCTORS_START = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_START';
 export const LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_SUCCESS';
 

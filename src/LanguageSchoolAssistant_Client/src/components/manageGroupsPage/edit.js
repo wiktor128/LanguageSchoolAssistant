@@ -6,6 +6,7 @@ import {
   // loadProfileResourceStart,
   loadGroupStart,
   loadGroupsStart,
+  loadStudentsStart,
   loadLanguageInstructorsStart,
   updateGroupStart
 } from '../../actions';
@@ -54,6 +55,7 @@ class EditGroupPage extends React.Component {
     this.props.temporaryGroup.studentsGroupId = this.props.location.query['id'];
 
     this.props.dispatch(loadGroupStart());
+    this.props.dispatch(loadStudentsStart());
     this.props.dispatch(loadLanguageInstructorsStart());
 
 
@@ -117,10 +119,10 @@ class EditGroupPage extends React.Component {
     console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
     console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
     console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
+    console.log("this.props.existingStudents: " + JSON.stringify(this.props.existingStudents));
 
 
-    this.props.dispatch(updateGroupStart());
-    //this.reset(); //TODO Add Snackbar
+    //this.props.dispatch(updateGroupStart());
 
   }
 
@@ -248,7 +250,8 @@ function mapStateToProps(state) {
   return {
     existingGroups: state.groupResource.existingGroups,
     existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
-    temporaryGroup: state.groupResource.temporaryGroup
+    temporaryGroup: state.groupResource.temporaryGroup,
+    existingStudents: state.groupResource.existingStudents,
   };
 }
 

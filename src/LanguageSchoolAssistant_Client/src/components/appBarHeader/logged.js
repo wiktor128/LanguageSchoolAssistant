@@ -17,28 +17,13 @@ import Toggle from 'material-ui/Toggle';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 
-import Logged from './logged';
 
-class Login extends React.Component {
-  static muiName = 'FlatButton';
-
-
-  onLoginButtonClick = (event) => {
-    event.preventDefault();
-    userManager.signinRedirect();
-  };
-
-  render() {
-    return (
-      <FlatButton onClick={this.onLoginButtonClick} {...this.props} label="Login" />
-    );
-  }
-}
-
-/*class Logged extends React.Component {
+class Logged extends React.Component {
   static muiName = "IconMenu";
 
-
+  componentWillMount() {
+      this.props.dispatch(loadProfileResourceStart());
+  }
 
   // log out
   onLogoutButtonClicked = (event) => {
@@ -65,28 +50,6 @@ class Login extends React.Component {
       </IconMenu>
     );
   }
-}*/
-
-class AppBarHeader extends React.Component {
-
-  // componentWillMount() {
-  //     this.props.dispatch(loadProfileResourceStart());
-  // }
-
-  render() {
-    const { user } = this.props;
-    
-    return (
-      <div>
-        <AppBar
-          title={<span style={styles.title}>Language School Assistant</span>}
-          onTitleTouchTap={() => browserHistory.push('/')}
-          showMenuIconButton={false}
-          iconElementRight={ !user || user.expired ? <Login /> : <Logged />}
-        />
-      </div>
-    );
-  }
 }
 
 const styles = {
@@ -97,7 +60,6 @@ const styles = {
 
 function mapStateToProps(state) {
   return {
-    user: state.oidc.user,
     profile: state.profileResource.profile
   };
 }
@@ -108,4 +70,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AppBarHeader);
+export default connect(mapStateToProps, mapDispatchToProps)(Logged);
