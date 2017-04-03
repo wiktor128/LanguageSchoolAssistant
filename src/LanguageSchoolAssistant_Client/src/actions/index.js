@@ -30,6 +30,8 @@ import {
 
   LOAD_STUDENTS_START,
   LOAD_STUDENTS_SUCCESS,
+  UPDATE_STUDENTS_GROUP_START,
+  UPDATE_STUDENTS_GROUP_SUCCESS,
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
@@ -120,6 +122,11 @@ export function loadStudentsSuccess(existingStudents) {
   return {
     type: LOAD_STUDENTS_SUCCESS,
     payload: existingStudents
+  };
+}
+export function updateStudentsGroupStart() {
+  return {
+    type: UPDATE_STUDENTS_GROUP_START
   };
 }
 

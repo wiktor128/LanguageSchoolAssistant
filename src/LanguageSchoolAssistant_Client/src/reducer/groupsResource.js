@@ -5,6 +5,7 @@ const initialState = {
   existingGroups: [],
   existingLanguageInstructors: [],
   existingStudents: [],
+  temporaryStudentsToUpdateGroup: [],
   temporaryGroup: { 
     startDate: new Date(),
     endDate: new Date()

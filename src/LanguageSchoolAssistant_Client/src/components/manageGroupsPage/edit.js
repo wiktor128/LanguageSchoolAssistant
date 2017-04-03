@@ -23,6 +23,8 @@ import TextField from 'material-ui/TextField';
 
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
+import ChipInput from 'material-ui-chip-input'
+
 
 class EditGroupPage extends React.Component {
 
@@ -41,6 +43,8 @@ class EditGroupPage extends React.Component {
       // endDate: this.props.temporaryGroup.endDate,
       // language: this.props.temporaryGroup.language,
       // studentsGroupId: ""
+      studentsGroupId: null,
+      studentsInGroup: [],
     };
 
     this.handleEditGroupSubmit = this.handleEditGroupSubmit.bind(this);
@@ -48,11 +52,14 @@ class EditGroupPage extends React.Component {
     this.handleStartDateChange = this.handleStartDateChange.bind(this);
     this.handleEndDateChange = this.handleEndDateChange.bind(this);
     this.handleLevelSelectChange = this.handleLevelSelectChange.bind(this);
+    this.handleAddChip = this.handleAddChip.bind(this);
+    this.handleDeleteChip = this.handleDeleteChip.bind(this);
 
   }
 
   componentWillMount() {
     this.props.temporaryGroup.studentsGroupId = this.props.location.query['id'];
+    this.setState({studentsGroupId: this.props.location.query['id']});
 
     this.props.dispatch(loadGroupStart());
     this.props.dispatch(loadStudentsStart());
@@ -111,6 +118,25 @@ class EditGroupPage extends React.Component {
     //this.state[name] = value;
 
     this.forceUpdate();
+  }
+
+  handleAddChip(chip) {
+    chip['studentsGroupId'] = this.state.studentsGroupId;
+    this.setState({studentsInGroup: this.state.studentsInGroup.concat([chip])});
+
+    console.log("chip: " + JSON.stringify(chip));
+    console.log("this.state.studentsInGroup: " + JSON.stringify(this.state.studentsInGroup));
+  }
+
+  handleDeleteChip(chip, index) {
+
+    var newData = this.state.studentsInGroup.slice(); //copy array
+    newData.splice(index, 1); //remove element
+    this.setState({studentsInGroup: newData}); //update state
+
+    console.log("chip: " + JSON.stringify(chip));
+    console.log("index: " + JSON.stringify(index));
+    console.log("this.state.studentsInGroup: " + JSON.stringify(this.state.studentsInGroup));
   }
 
   handleEditGroupSubmit(event) {
@@ -217,6 +243,30 @@ class EditGroupPage extends React.Component {
           </Row>
           <Row start='xs' middle='xs'>
             <Col xs={12} mdOffset={1} md={3} >
+              Students In Group: 
+            </Col>
+            <Col xs={12} md={8}>
+              <ChipInput
+                fullWidth={true}
+                fullWidthInput={true}
+                openOnFocus={true}
+
+                dataSourceConfig={
+                  {
+                    text: 'email', 
+                    value:'personalProfileId'
+                  }
+                }
+                dataSource={this.props.existingStudents}
+                value={this.state.studentsInGroup}
+                onRequestAdd={(chip) => this.handleAddChip(chip)}
+                onRequestDelete={(chip, index) => this.handleDeleteChip(chip, index)}
+                /*onChange={(chips) => handleChange(chips)}*/
+              />
+            </Col>
+          </Row>
+          <Row start='xs' middle='xs'>
+            <Col xs={12} mdOffset={1} md={3} >
               
             </Col>
             <Col xs={12} md={8}>
@@ -252,6 +302,7 @@ function mapStateToProps(state) {
     existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
     temporaryGroup: state.groupResource.temporaryGroup,
     existingStudents: state.groupResource.existingStudents,
+    temporaryStudentsToUpdateGroup: state.groupResource.temporaryStudentsToUpdateGroup
   };
 }
 

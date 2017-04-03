@@ -761,7 +761,7 @@
 
 /***/ },
 /* 4 */
-[1188, 5, 6, 7, 9, 19, 23, 8, 24, 25, 20, 26, 27, 28, 30, 43, 46, 13, 33, 17, 18, 47, 50, 52, 12, 31, 51, 45, 44, 29, 11],
+[1192, 5, 6, 7, 9, 19, 23, 8, 24, 25, 20, 26, 27, 28, 30, 43, 46, 13, 33, 17, 18, 47, 50, 52, 12, 31, 51, 45, 44, 29, 11],
 /* 5 */
 /***/ function(module, exports) {
 
@@ -781,7 +781,7 @@
 
 /***/ },
 /* 7 */
-[1189, 8],
+[1193, 8],
 /* 8 */
 /***/ function(module, exports) {
 
@@ -850,11 +850,11 @@
 
 /***/ },
 /* 11 */
-[1190, 12, 18, 7],
+[1194, 12, 18, 7],
 /* 12 */
-[1191, 13, 15, 17, 7],
+[1195, 13, 15, 17, 7],
 /* 13 */
-[1192, 14],
+[1196, 14],
 /* 14 */
 /***/ function(module, exports) {
 
@@ -864,11 +864,11 @@
 
 /***/ },
 /* 15 */
-[1193, 7, 8, 16],
+[1197, 7, 8, 16],
 /* 16 */
-[1194, 14, 5],
+[1198, 14, 5],
 /* 17 */
-[1195, 14],
+[1199, 14],
 /* 18 */
 /***/ function(module, exports) {
 
@@ -930,7 +930,7 @@
 
 /***/ },
 /* 21 */
-[1196, 22],
+[1200, 22],
 /* 22 */
 /***/ function(module, exports) {
 
@@ -941,17 +941,17 @@
 
 /***/ },
 /* 23 */
-[1197, 20, 14, 6, 12, 8],
+[1201, 20, 14, 6, 12, 8],
 /* 24 */
-[1198, 5],
+[1202, 5],
 /* 25 */
-[1199, 12, 6, 26],
+[1203, 12, 6, 26],
 /* 26 */
-[1200, 24, 20, 5],
+[1204, 24, 20, 5],
 /* 27 */
-[1201, 26],
+[1205, 26],
 /* 28 */
-[1202, 5, 10, 29, 27, 12],
+[1206, 5, 10, 29, 27, 12],
 /* 29 */
 /***/ function(module, exports) {
 
@@ -959,15 +959,15 @@
 
 /***/ },
 /* 30 */
-[1203, 31, 33],
+[1207, 31, 33],
 /* 31 */
-[1204, 32, 42],
+[1208, 32, 42],
 /* 32 */
-[1205, 6, 33, 37, 41],
+[1209, 6, 33, 37, 41],
 /* 33 */
-[1206, 34, 36],
+[1210, 34, 36],
 /* 34 */
-[1207, 35],
+[1211, 35],
 /* 35 */
 /***/ function(module, exports) {
 
@@ -989,9 +989,9 @@
 
 /***/ },
 /* 37 */
-[1208, 33, 38, 40],
+[1212, 33, 38, 40],
 /* 38 */
-[1209, 39],
+[1213, 39],
 /* 39 */
 /***/ function(module, exports) {
 
@@ -1004,9 +1004,9 @@
 
 /***/ },
 /* 40 */
-[1210, 39],
+[1214, 39],
 /* 41 */
-[1211, 24, 20],
+[1215, 24, 20],
 /* 42 */
 /***/ function(module, exports) {
 
@@ -1017,7 +1017,7 @@
 
 /***/ },
 /* 43 */
-[1212, 31, 44, 45],
+[1216, 31, 44, 45],
 /* 44 */
 /***/ function(module, exports) {
 
@@ -1031,23 +1031,23 @@
 
 /***/ },
 /* 46 */
-[1213, 35],
+[1217, 35],
 /* 47 */
-[1214, 13, 48, 42, 41, 16, 49],
+[1218, 13, 48, 42, 41, 16, 49],
 /* 48 */
-[1215, 12, 13, 31, 7],
+[1219, 12, 13, 31, 7],
 /* 49 */
-[1216, 5],
+[1220, 5],
 /* 50 */
-[1217, 33, 51],
+[1221, 33, 51],
 /* 51 */
-[1218, 32, 42],
+[1222, 32, 42],
 /* 52 */
-[1219, 45, 18, 33, 17, 6, 15, 7],
+[1223, 45, 18, 33, 17, 6, 15, 7],
 /* 53 */
-[1220, 9, 47],
+[1224, 9, 47],
 /* 54 */
-[1221, 9, 7, 12],
+[1225, 9, 7, 12],
 /* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1071,15 +1071,15 @@
 
 /***/ },
 /* 57 */
-[1222, 9, 10, 8],
+[1226, 9, 10, 8],
 /* 58 */
-[1223, 59, 60, 57],
+[1227, 59, 60, 57],
 /* 59 */
-[1224, 36],
+[1228, 36],
 /* 60 */
-[1225, 6, 59, 41],
+[1229, 6, 59, 41],
 /* 61 */
-[1226, 59, 31, 57],
+[1230, 59, 31, 57],
 /* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1171,9 +1171,9 @@
 
 /***/ },
 /* 69 */
-[1227, 9, 70],
+[1231, 9, 70],
 /* 70 */
-[1228, 31, 44, 45, 59, 34, 8],
+[1232, 31, 44, 45, 59, 34, 8],
 /* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1192,9 +1192,9 @@
 
 /***/ },
 /* 73 */
-[1229, 9, 74],
+[1233, 9, 74],
 /* 74 */
-[1230, 14, 13, 21, 52],
+[1234, 14, 13, 21, 52],
 /* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1211,7 +1211,7 @@
 
 /***/ },
 /* 76 */
-[1231, 35, 26],
+[1235, 35, 26],
 /* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2146,11 +2146,11 @@
 
 /***/ },
 /* 127 */
-[1232, 128, 129],
+[1236, 128, 129],
 /* 128 */
-[1233, 39, 36],
+[1237, 39, 36],
 /* 129 */
-[1234, 29, 9, 19, 11, 6, 130, 131, 25, 60, 26],
+[1238, 29, 9, 19, 11, 6, 130, 131, 25, 60, 26],
 /* 130 */
 /***/ function(module, exports) {
 
@@ -2158,7 +2158,7 @@
 
 /***/ },
 /* 131 */
-[1235, 47, 18, 25, 11, 26],
+[1239, 47, 18, 25, 11, 26],
 /* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2582,17 +2582,17 @@
 
 /***/ },
 /* 161 */
-[1236, 21, 9, 59, 162, 163, 38, 164, 165, 166],
+[1240, 21, 9, 59, 162, 163, 38, 164, 165, 166],
 /* 162 */
-[1237, 13],
+[1241, 13],
 /* 163 */
-[1238, 130, 26],
+[1242, 130, 26],
 /* 164 */
-[1239, 12, 18],
+[1243, 12, 18],
 /* 165 */
-[1240, 76, 26, 130, 10],
+[1244, 76, 26, 130, 10],
 /* 166 */
-[1241, 26],
+[1245, 26],
 /* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -3122,7 +3122,7 @@
 
 /***/ },
 /* 194 */
-[1242, 187, 195, 130, 33, 129],
+[1246, 187, 195, 130, 33, 129],
 /* 195 */
 /***/ function(module, exports) {
 
@@ -5774,9 +5774,9 @@
 
 /***/ },
 /* 256 */
-[1243, 28],
+[1247, 28],
 /* 257 */
-[1244, 28],
+[1248, 28],
 /* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -7586,7 +7586,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// you'll need this for older browsers
-	__webpack_require__(1185).polyfill();
+	__webpack_require__(1189).polyfill();
 	
 	// import { Log } from 'oidc-client';
 	
@@ -8003,7 +8003,7 @@
 
 /***/ },
 /* 304 */
-[1245, 305],
+[1249, 305],
 /* 305 */
 /***/ function(module, exports) {
 
@@ -13715,7 +13715,7 @@
 
 /***/ },
 /* 348 */
-[1245, 333],
+[1249, 333],
 /* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -28426,7 +28426,7 @@
 	
 	var _userManager2 = _interopRequireDefault(_userManager);
 	
-	var _root = __webpack_require__(1124);
+	var _root = __webpack_require__(1128);
 	
 	var _root2 = _interopRequireDefault(_root);
 	
@@ -35563,7 +35563,7 @@
 	
 	var _edit2 = _interopRequireDefault(_edit);
 	
-	var _manageClassesPage = __webpack_require__(1105);
+	var _manageClassesPage = __webpack_require__(1111);
 	
 	var _manageClassesPage2 = _interopRequireDefault(_manageClassesPage);
 	
@@ -43412,6 +43412,7 @@
 	exports.loadGroupSaga = loadGroupSaga;
 	exports.loadGroupsSaga = loadGroupsSaga;
 	exports.loadStudentsSaga = loadStudentsSaga;
+	exports.updateStudentsGroupSaga = updateStudentsGroupSaga;
 	exports.updateClassesSaga = updateClassesSaga;
 	exports.rootSaga = rootSaga;
 	
@@ -43431,7 +43432,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, updateProfileResourceSaga, loadUsefulLinksSaga, updateUsefulLinksSaga, updateGroupSaga, deleteGroupSaga, loadGroupSaga, loadGroupsSaga, loadStudentsSaga, updateClassesSaga, rootSaga].map(regeneratorRuntime.mark);
+	var _marked = [loadSubscriptionsSaga, loadTestResourceSaga, loadProfileResourceSaga, updateProfileResourceSaga, loadUsefulLinksSaga, updateUsefulLinksSaga, updateGroupSaga, deleteGroupSaga, loadGroupSaga, loadGroupsSaga, loadStudentsSaga, updateStudentsGroupSaga, updateClassesSaga, rootSaga].map(regeneratorRuntime.mark);
 	
 	function loadSubscriptionsSaga() {
 	    var url, result, channels, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, channel;
@@ -43961,9 +43962,9 @@
 	    }, _marked[10], this);
 	}
 	
-	function updateClassesSaga() {
-	    var classes, url;
-	    return regeneratorRuntime.wrap(function updateClassesSaga$(_context12) {
+	function updateStudentsGroupSaga() {
+	    var students, url;
+	    return regeneratorRuntime.wrap(function updateStudentsGroupSaga$(_context12) {
 	        while (1) {
 	            switch (_context12.prev = _context12.next) {
 	                case 0:
@@ -43973,16 +43974,16 @@
 	                    }
 	
 	                    _context12.next = 3;
-	                    return (0, _effects.take)(_constants.UPDATE_CLASSES_START);
+	                    return (0, _effects.take)(_constants.UPDATE_STUDENTS_GROUP_START);
 	
 	                case 3:
 	
-	                    console.log("updateClassesSaga");
+	                    console.log("updateStudentsGroupSaga");
 	
-	                    classes = _store2.default.getState().classesResource.temporaryClasses;
-	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateClasses/';
+	                    students = _store2.default.getState().groupResource.temporaryStudentsToUpdateGroup;
+	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateStudentsGroup/';
 	                    _context12.next = 8;
-	                    return (0, _effects.call)(_request2.default, url, 'POST', classes);
+	                    return (0, _effects.call)(_request2.default, url, 'POST', students);
 	
 	                case 8:
 	                    _context12.next = 0;
@@ -43996,20 +43997,55 @@
 	    }, _marked[11], this);
 	}
 	
-	function rootSaga() {
-	    return regeneratorRuntime.wrap(function rootSaga$(_context13) {
+	function updateClassesSaga() {
+	    var classes, url;
+	    return regeneratorRuntime.wrap(function updateClassesSaga$(_context13) {
 	        while (1) {
 	            switch (_context13.prev = _context13.next) {
 	                case 0:
-	                    _context13.next = 2;
-	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), loadStudentsSaga(), updateGroupSaga(), loadGroupSaga(), loadGroupsSaga(), deleteGroupSaga(), updateClassesSaga()];
+	                    if (false) {
+	                        _context13.next = 10;
+	                        break;
+	                    }
 	
-	                case 2:
+	                    _context13.next = 3;
+	                    return (0, _effects.take)(_constants.UPDATE_CLASSES_START);
+	
+	                case 3:
+	
+	                    console.log("updateClassesSaga");
+	
+	                    classes = _store2.default.getState().classesResource.temporaryClasses;
+	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateClasses/';
+	                    _context13.next = 8;
+	                    return (0, _effects.call)(_request2.default, url, 'POST', classes);
+	
+	                case 8:
+	                    _context13.next = 0;
+	                    break;
+	
+	                case 10:
 	                case 'end':
 	                    return _context13.stop();
 	            }
 	        }
 	    }, _marked[12], this);
+	}
+	
+	function rootSaga() {
+	    return regeneratorRuntime.wrap(function rootSaga$(_context14) {
+	        while (1) {
+	            switch (_context14.prev = _context14.next) {
+	                case 0:
+	                    _context14.next = 2;
+	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), loadStudentsSaga(), updateGroupSaga(), loadGroupSaga(), loadGroupsSaga(), deleteGroupSaga(), updateClassesSaga()];
+	
+	                case 2:
+	                case 'end':
+	                    return _context14.stop();
+	            }
+	        }
+	    }, _marked[13], this);
 	}
 
 /***/ },
@@ -44061,6 +44097,9 @@
 	var LOAD_STUDENTS_START = exports.LOAD_STUDENTS_START = 'redux-oidc-sample/LOAD_STUDENTS_START';
 	var LOAD_STUDENTS_SUCCESS = exports.LOAD_STUDENTS_SUCCESS = 'redux-oidc-sample/LOAD_STUDENTS_SUCCESS';
 	
+	var UPDATE_STUDENTS_GROUP_START = exports.UPDATE_STUDENTS_GROUP_START = 'redux-oidc-sample/UPDATE_STUDENTS_GROUP_START';
+	var UPDATE_STUDENTS_GROUP_SUCCESS = exports.UPDATE_STUDENTS_GROUP_SUCCESS = 'redux-oidc-sample/UPDATE_STUDENTS_GROUP_SUCCESS';
+	
 	var LOAD_LANGUAGE_INSTRUCTORS_START = exports.LOAD_LANGUAGE_INSTRUCTORS_START = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_START';
 	var LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = exports.LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = 'redux-oidc-sample/LOAD_LANGUAGE_INSTRUCTORS_SUCCESS';
 	
@@ -44093,6 +44132,7 @@
 	exports.deleteGroupStart = deleteGroupStart;
 	exports.loadStudentsStart = loadStudentsStart;
 	exports.loadStudentsSuccess = loadStudentsSuccess;
+	exports.updateStudentsGroupStart = updateStudentsGroupStart;
 	exports.loadLanguageInstructorsStart = loadLanguageInstructorsStart;
 	exports.loadLanguageInstructorsSuccess = loadLanguageInstructorsSuccess;
 	exports.updateUsefulLinksStart = updateUsefulLinksStart;
@@ -44185,6 +44225,11 @@
 	  return {
 	    type: _constants.LOAD_STUDENTS_SUCCESS,
 	    payload: existingStudents
+	  };
+	}
+	function updateStudentsGroupStart() {
+	  return {
+	    type: _constants.UPDATE_STUDENTS_GROUP_START
 	  };
 	}
 	
@@ -54609,6 +54654,7 @@
 	  existingGroups: [],
 	  existingLanguageInstructors: [],
 	  existingStudents: [],
+	  temporaryStudentsToUpdateGroup: [],
 	  temporaryGroup: {
 	    startDate: new Date(),
 	    endDate: new Date()
@@ -56689,7 +56735,7 @@
 
 /***/ },
 /* 829 */
-[1227, 830, 845],
+[1231, 830, 845],
 /* 830 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -56761,57 +56807,57 @@
 /* 832 */
 10,
 /* 833 */
-[1196, 834],
+[1200, 834],
 /* 834 */
 22,
 /* 835 */
-[1190, 836, 844, 840],
+[1194, 836, 844, 840],
 /* 836 */
-[1191, 837, 839, 843, 840],
+[1195, 837, 839, 843, 840],
 /* 837 */
-[1192, 838],
+[1196, 838],
 /* 838 */
 14,
 /* 839 */
-[1193, 840, 841, 842],
+[1197, 840, 841, 842],
 /* 840 */
-[1189, 841],
+[1193, 841],
 /* 841 */
 8,
 /* 842 */
-[1194, 838, 831],
+[1198, 838, 831],
 /* 843 */
-[1195, 838],
+[1199, 838],
 /* 844 */
 18,
 /* 845 */
-[1228, 846, 861, 862, 863, 850, 841],
+[1232, 846, 861, 862, 863, 850, 841],
 /* 846 */
-[1204, 847, 860],
+[1208, 847, 860],
 /* 847 */
-[1205, 848, 849, 853, 857],
+[1209, 848, 849, 853, 857],
 /* 848 */
 6,
 /* 849 */
-[1206, 850, 852],
+[1210, 850, 852],
 /* 850 */
-[1207, 851],
+[1211, 851],
 /* 851 */
 35,
 /* 852 */
 36,
 /* 853 */
-[1208, 849, 854, 856],
+[1212, 849, 854, 856],
 /* 854 */
-[1209, 855],
+[1213, 855],
 /* 855 */
 39,
 /* 856 */
-[1210, 855],
+[1214, 855],
 /* 857 */
-[1211, 858, 859],
+[1215, 858, 859],
 /* 858 */
-[1198, 831],
+[1202, 831],
 /* 859 */
 20,
 /* 860 */
@@ -56821,7 +56867,7 @@
 /* 862 */
 45,
 /* 863 */
-[1224, 852],
+[1228, 852],
 /* 864 */
 /***/ function(module, exports) {
 
@@ -56856,11 +56902,11 @@
 
 /***/ },
 /* 867 */
-[1223, 863, 868, 869],
+[1227, 863, 868, 869],
 /* 868 */
-[1225, 848, 863, 857],
+[1229, 848, 863, 857],
 /* 869 */
-[1222, 830, 832, 841],
+[1226, 830, 832, 841],
 /* 870 */
 /***/ function(module, exports) {
 
@@ -56924,7 +56970,7 @@
 
 /***/ },
 /* 874 */
-[1221, 830, 840, 836],
+[1225, 830, 840, 836],
 /* 875 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -56988,11 +57034,11 @@
 
 /***/ },
 /* 879 */
-[1232, 880, 881],
+[1236, 880, 881],
 /* 880 */
-[1233, 855, 852],
+[1237, 855, 852],
 /* 881 */
-[1234, 882, 830, 883, 835, 848, 884, 885, 889, 868, 890],
+[1238, 882, 830, 883, 835, 848, 884, 885, 889, 868, 890],
 /* 882 */
 /***/ function(module, exports) {
 
@@ -57008,17 +57054,17 @@
 /* 884 */
 130,
 /* 885 */
-[1235, 886, 844, 889, 835, 890],
+[1239, 886, 844, 889, 835, 890],
 /* 886 */
-[1214, 837, 887, 860, 857, 842, 888],
+[1218, 837, 887, 860, 857, 842, 888],
 /* 887 */
-[1215, 836, 837, 846, 840],
+[1219, 836, 837, 846, 840],
 /* 888 */
-[1216, 831],
+[1220, 831],
 /* 889 */
-[1199, 836, 848, 890],
+[1203, 836, 848, 890],
 /* 890 */
-[1200, 858, 859, 831],
+[1204, 858, 859, 831],
 /* 891 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -57038,7 +57084,7 @@
 
 /***/ },
 /* 892 */
-[1242, 893, 894, 884, 849, 881],
+[1246, 893, 894, 884, 849, 881],
 /* 893 */
 /***/ function(module, exports) {
 
@@ -57048,7 +57094,7 @@
 /* 894 */
 195,
 /* 895 */
-[1201, 890],
+[1205, 890],
 /* 896 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -57066,23 +57112,23 @@
 
 /***/ },
 /* 898 */
-[1188, 831, 848, 840, 830, 883, 899, 841, 858, 889, 859, 890, 895, 900, 901, 902, 903, 837, 849, 843, 844, 886, 904, 906, 836, 846, 905, 862, 861, 882, 835],
+[1192, 831, 848, 840, 830, 883, 899, 841, 858, 889, 859, 890, 895, 900, 901, 902, 903, 837, 849, 843, 844, 886, 904, 906, 836, 846, 905, 862, 861, 882, 835],
 /* 899 */
-[1197, 859, 838, 848, 836, 841],
+[1201, 859, 838, 848, 836, 841],
 /* 900 */
-[1202, 831, 832, 882, 895, 836],
+[1206, 831, 832, 882, 895, 836],
 /* 901 */
-[1203, 846, 849],
+[1207, 846, 849],
 /* 902 */
-[1212, 846, 861, 862],
+[1216, 846, 861, 862],
 /* 903 */
-[1213, 851],
+[1217, 851],
 /* 904 */
-[1217, 849, 905],
+[1221, 849, 905],
 /* 905 */
-[1218, 847, 860],
+[1222, 847, 860],
 /* 906 */
-[1219, 862, 844, 849, 843, 848, 839, 840],
+[1223, 862, 844, 849, 843, 848, 839, 840],
 /* 907 */
 /***/ function(module, exports) {
 
@@ -57090,9 +57136,9 @@
 
 /***/ },
 /* 908 */
-[1243, 900],
+[1247, 900],
 /* 909 */
-[1244, 900],
+[1248, 900],
 /* 910 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -57145,9 +57191,9 @@
 
 /***/ },
 /* 913 */
-[1229, 830, 914],
+[1233, 830, 914],
 /* 914 */
-[1230, 838, 837, 833, 906],
+[1234, 838, 837, 833, 906],
 /* 915 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -57165,7 +57211,7 @@
 
 /***/ },
 /* 917 */
-[1220, 830, 886],
+[1224, 830, 886],
 /* 918 */
 /***/ function(module, exports) {
 
@@ -63748,19 +63794,19 @@
 
 /***/ },
 /* 966 */
-[1236, 833, 830, 863, 967, 968, 854, 969, 970, 972],
+[1240, 833, 830, 863, 967, 968, 854, 969, 970, 972],
 /* 967 */
-[1237, 837],
+[1241, 837],
 /* 968 */
-[1238, 884, 890],
+[1242, 884, 890],
 /* 969 */
-[1239, 836, 844],
+[1243, 836, 844],
 /* 970 */
-[1240, 971, 890, 884, 832],
+[1244, 971, 890, 884, 832],
 /* 971 */
-[1231, 851, 890],
+[1235, 851, 890],
 /* 972 */
-[1241, 890],
+[1245, 890],
 /* 973 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -66362,7 +66408,7 @@
 
 /***/ },
 /* 1002 */
-[1226, 863, 846, 869],
+[1230, 863, 846, 869],
 /* 1003 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -83967,6 +84013,10 @@
 	
 	var _reactFlexboxGrid = __webpack_require__(928);
 	
+	var _materialUiChipInput = __webpack_require__(1105);
+	
+	var _materialUiChipInput2 = _interopRequireDefault(_materialUiChipInput);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -83995,6 +84045,8 @@
 	      // endDate: this.props.temporaryGroup.endDate,
 	      // language: this.props.temporaryGroup.language,
 	      // studentsGroupId: ""
+	      studentsGroupId: null,
+	      studentsInGroup: []
 	    };
 	
 	    _this.handleEditGroupSubmit = _this.handleEditGroupSubmit.bind(_this);
@@ -84002,6 +84054,8 @@
 	    _this.handleStartDateChange = _this.handleStartDateChange.bind(_this);
 	    _this.handleEndDateChange = _this.handleEndDateChange.bind(_this);
 	    _this.handleLevelSelectChange = _this.handleLevelSelectChange.bind(_this);
+	    _this.handleAddChip = _this.handleAddChip.bind(_this);
+	    _this.handleDeleteChip = _this.handleDeleteChip.bind(_this);
 	
 	    return _this;
 	  }
@@ -84010,6 +84064,7 @@
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      this.props.temporaryGroup.studentsGroupId = this.props.location.query['id'];
+	      this.setState({ studentsGroupId: this.props.location.query['id'] });
 	
 	      this.props.dispatch((0, _actions.loadGroupStart)());
 	      this.props.dispatch((0, _actions.loadStudentsStart)());
@@ -84073,6 +84128,27 @@
 	      this.forceUpdate();
 	    }
 	  }, {
+	    key: 'handleAddChip',
+	    value: function handleAddChip(chip) {
+	      chip['studentsGroupId'] = this.state.studentsGroupId;
+	      this.setState({ studentsInGroup: this.state.studentsInGroup.concat([chip]) });
+	
+	      console.log("chip: " + JSON.stringify(chip));
+	      console.log("this.state.studentsInGroup: " + JSON.stringify(this.state.studentsInGroup));
+	    }
+	  }, {
+	    key: 'handleDeleteChip',
+	    value: function handleDeleteChip(chip, index) {
+	
+	      var newData = this.state.studentsInGroup.slice(); //copy array
+	      newData.splice(index, 1); //remove element
+	      this.setState({ studentsInGroup: newData }); //update state
+	
+	      console.log("chip: " + JSON.stringify(chip));
+	      console.log("index: " + JSON.stringify(index));
+	      console.log("this.state.studentsInGroup: " + JSON.stringify(this.state.studentsInGroup));
+	    }
+	  }, {
 	    key: 'handleEditGroupSubmit',
 	    value: function handleEditGroupSubmit(event) {
 	      event.preventDefault();
@@ -84087,6 +84163,8 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+	
 	      return _react2.default.createElement(
 	        _reactFlexboxGrid.Grid,
 	        { fluid: true },
@@ -84219,6 +84297,38 @@
 	                _react2.default.createElement(
 	                  _reactFlexboxGrid.Row,
 	                  { start: 'xs', middle: 'xs' },
+	                  _react2.default.createElement(
+	                    _reactFlexboxGrid.Col,
+	                    { xs: 12, mdOffset: 1, md: 3 },
+	                    'Students In Group:'
+	                  ),
+	                  _react2.default.createElement(
+	                    _reactFlexboxGrid.Col,
+	                    { xs: 12, md: 8 },
+	                    _react2.default.createElement(_materialUiChipInput2.default, {
+	                      fullWidth: true,
+	                      fullWidthInput: true,
+	                      openOnFocus: true,
+	
+	                      dataSourceConfig: {
+	                        text: 'email',
+	                        value: 'personalProfileId'
+	                      },
+	                      dataSource: this.props.existingStudents,
+	                      value: this.state.studentsInGroup,
+	                      onRequestAdd: function onRequestAdd(chip) {
+	                        return _this2.handleAddChip(chip);
+	                      },
+	                      onRequestDelete: function onRequestDelete(chip, index) {
+	                        return _this2.handleDeleteChip(chip, index);
+	                      }
+	                      /*onChange={(chips) => handleChange(chips)}*/
+	                    })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  _reactFlexboxGrid.Row,
+	                  { start: 'xs', middle: 'xs' },
 	                  _react2.default.createElement(_reactFlexboxGrid.Col, { xs: 12, mdOffset: 1, md: 3 }),
 	                  _react2.default.createElement(
 	                    _reactFlexboxGrid.Col,
@@ -84280,236 +84390,51 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _react = __webpack_require__(300);
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; /**
+	                                                                                                                                                                                                                                                                   * Notice: Some code was adapted from Material-UI's text field.
+	                                                                                                                                                                                                                                                                   *         Copyright (c) 2014 Call-Em-All (https://github.com/callemall/material-ui)
+	                                                                                                                                                                                                                                                                   */
 	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _jssThemeReactor = __webpack_require__(810);
-	
-	var _userManager = __webpack_require__(803);
-	
-	var _userManager2 = _interopRequireDefault(_userManager);
-	
-	var _reactRedux = __webpack_require__(477);
-	
-	var _reduxForm = __webpack_require__(600);
-	
-	var _actions = __webpack_require__(594);
-	
-	var _simpleFrame = __webpack_require__(822);
-	
-	var _simpleFrame2 = _interopRequireDefault(_simpleFrame);
-	
-	var _reactFlexboxGrid = __webpack_require__(928);
-	
-	var _Paper = __webpack_require__(924);
-	
-	var _Paper2 = _interopRequireDefault(_Paper);
-	
-	var _colors = __webpack_require__(1051);
-	
-	var _RaisedButton = __webpack_require__(944);
-	
-	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
-	
-	var _FlatButton = __webpack_require__(1007);
-	
-	var _FlatButton2 = _interopRequireDefault(_FlatButton);
-	
-	var _DatePicker = __webpack_require__(1080);
-	
-	var _DatePicker2 = _interopRequireDefault(_DatePicker);
-	
-	var _IconButton = __webpack_require__(976);
-	
-	var _IconButton2 = _interopRequireDefault(_IconButton);
-	
-	var _add = __webpack_require__(1035);
-	
-	var _add2 = _interopRequireDefault(_add);
-	
-	var _SelectField = __webpack_require__(1097);
-	
-	var _SelectField2 = _interopRequireDefault(_SelectField);
-	
-	var _MenuItem = __webpack_require__(1062);
-	
-	var _MenuItem2 = _interopRequireDefault(_MenuItem);
-	
-	var _Snackbar = __webpack_require__(994);
-	
-	var _Snackbar2 = _interopRequireDefault(_Snackbar);
-	
-	var _List = __webpack_require__(1036);
-	
-	var _TextField = __webpack_require__(1010);
-	
-	var _TextField2 = _interopRequireDefault(_TextField);
-	
-	var _Divider = __webpack_require__(1016);
-	
-	var _Divider2 = _interopRequireDefault(_Divider);
-	
-	var _Table = __webpack_require__(1018);
-	
-	var _classesForm = __webpack_require__(1106);
-	
-	var _classesForm2 = _interopRequireDefault(_classesForm);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// import ListAllGroups from './listAllGroups';
-	
-	var ManageClassesPage = function (_React$Component) {
-	  _inherits(ManageClassesPage, _React$Component);
-	
-	  function ManageClassesPage(props) {
-	    _classCallCheck(this, ManageClassesPage);
-	
-	    return _possibleConstructorReturn(this, (ManageClassesPage.__proto__ || Object.getPrototypeOf(ManageClassesPage)).call(this, props));
-	
-	    // this.state = {
-	    //   value: null,
-	    //   startDate: this.props.temporaryGroup.startDate,
-	    //   endDate: this.props.temporaryGroup.endDate,
-	    //   levelSelectboxValue: null,
-	    // };
-	  }
-	
-	  _createClass(ManageClassesPage, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      // this.props.dispatch(loadProfileResourceStart());
-	      // this.props.dispatch(loadGroupsStart());
-	      // this.props.dispatch(loadLanguageInstructorsStart());
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	
-	      return _react2.default.createElement(
-	        _reactFlexboxGrid.Grid,
-	        { fluid: true },
-	        _react2.default.createElement(
-	          _reactFlexboxGrid.Row,
-	          { center: 'xs' },
-	          _react2.default.createElement(
-	            _reactFlexboxGrid.Col,
-	            { xs: 12, md: 6 },
-	            _react2.default.createElement(_classesForm2.default, null)
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return ManageClassesPage;
-	}(_react2.default.Component);
-	
-	var styles = {
-	  leftAlign: {
-	    textAlign: 'left'
-	  },
-	  btnGreen: {
-	    color: _colors.lightGreen500
-	  }
-	};
-	
-	function mapStateToProps(state) {
-	  return {
-	    // user: state.oidc.user,
-	    // profile: state.profileResource.profile,
-	    // existingGroups: state.groupResource.existingGroups,
-	    // existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
-	    // temporaryGroup: state.groupResource.temporaryGroup
-	  };
-	}
-	
-	function mapDispatchToProps(dispatch) {
-	  return {
-	    dispatch: dispatch
-	  };
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(ManageClassesPage);
-
-/***/ },
-/* 1106 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(300);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jssThemeReactor = __webpack_require__(810);
+	var _TextFieldUnderline = __webpack_require__(1015);
 	
-	var _reactRedux = __webpack_require__(477);
+	var _TextFieldUnderline2 = _interopRequireDefault(_TextFieldUnderline);
 	
-	var _actions = __webpack_require__(594);
+	var _TextFieldHint = __webpack_require__(1013);
 	
-	var _simpleFrame = __webpack_require__(822);
+	var _TextFieldHint2 = _interopRequireDefault(_TextFieldHint);
 	
-	var _simpleFrame2 = _interopRequireDefault(_simpleFrame);
+	var _TextFieldLabel = __webpack_require__(1014);
 	
-	var _colors = __webpack_require__(1051);
+	var _TextFieldLabel2 = _interopRequireDefault(_TextFieldLabel);
 	
-	var _FlatButton = __webpack_require__(1007);
-	
-	var _FlatButton2 = _interopRequireDefault(_FlatButton);
-	
-	var _DatePicker = __webpack_require__(1080);
-	
-	var _DatePicker2 = _interopRequireDefault(_DatePicker);
-	
-	var _TimePicker = __webpack_require__(1107);
-	
-	var _TimePicker2 = _interopRequireDefault(_TimePicker);
-	
-	var _IconButton = __webpack_require__(976);
-	
-	var _IconButton2 = _interopRequireDefault(_IconButton);
-	
-	var _add = __webpack_require__(1035);
-	
-	var _add2 = _interopRequireDefault(_add);
-	
-	var _SelectField = __webpack_require__(1097);
-	
-	var _SelectField2 = _interopRequireDefault(_SelectField);
-	
-	var _MenuItem = __webpack_require__(1062);
-	
-	var _MenuItem2 = _interopRequireDefault(_MenuItem);
-	
-	var _Snackbar = __webpack_require__(994);
-	
-	var _Snackbar2 = _interopRequireDefault(_Snackbar);
-	
-	var _TextField = __webpack_require__(1010);
-	
-	var _TextField2 = _interopRequireDefault(_TextField);
-	
-	var _AutoComplete = __webpack_require__(1121);
+	var _AutoComplete = __webpack_require__(1106);
 	
 	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
 	
-	var _reactFlexboxGrid = __webpack_require__(928);
+	var _transitions = __webpack_require__(927);
+	
+	var _transitions2 = _interopRequireDefault(_transitions);
+	
+	var _Chip = __webpack_require__(1108);
+	
+	var _Chip2 = _interopRequireDefault(_Chip);
+	
+	var _colors = __webpack_require__(1051);
+	
+	var _colorManipulator = __webpack_require__(946);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+	
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -84517,2253 +84442,631 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var ClassesForm = function (_React$Component) {
-	  _inherits(ClassesForm, _React$Component);
+	var getStyles = function getStyles(props, context, state) {
+	  var _context$muiTheme = context.muiTheme,
+	      baseTheme = _context$muiTheme.baseTheme,
+	      _context$muiTheme$tex = _context$muiTheme.textField,
+	      floatingLabelColor = _context$muiTheme$tex.floatingLabelColor,
+	      focusColor = _context$muiTheme$tex.focusColor,
+	      textColor = _context$muiTheme$tex.textColor,
+	      disabledTextColor = _context$muiTheme$tex.disabledTextColor,
+	      backgroundColor = _context$muiTheme$tex.backgroundColor,
+	      errorColor = _context$muiTheme$tex.errorColor;
 	
-	  function ClassesForm(props) {
-	    _classCallCheck(this, ClassesForm);
 	
-	    var _this = _possibleConstructorReturn(this, (ClassesForm.__proto__ || Object.getPrototypeOf(ClassesForm)).call(this, props));
+	  var styles = {
+	    root: {
+	      fontSize: 16,
+	      lineHeight: '24px',
+	      width: props.fullWidth ? '100%' : 256,
+	      display: 'inline-block',
+	      position: 'relative',
+	      backgroundColor: backgroundColor,
+	      fontFamily: baseTheme.fontFamily,
+	      transition: _transitions2.default.easeOut('200ms', 'height'),
+	      cursor: 'text'
+	    },
+	    input: {
+	      padding: 0,
+	      marginTop: 0,
+	      marginBottom: 24,
+	      lineHeight: '32px',
+	      height: 32,
+	      position: 'relative',
+	      display: 'inline-block',
+	      border: 'none',
+	      outline: 'none',
+	      backgroundColor: 'rgba(0,0,0,0)',
+	      color: props.disabled ? disabledTextColor : textColor,
+	      cursor: props.disabled ? 'not-allowed' : 'initial',
+	      font: 'inherit',
+	      appearance: 'none', // Remove border in Safari, doesn't seem to break anything in other browsers
+	      WebkitTapHighlightColor: 'rgba(0,0,0,0)', // Remove mobile color flashing (deprecated style).
+	      float: 'left'
+	    },
+	    error: {
+	      position: 'absolute',
+	      bottom: -10,
+	      fontSize: 12,
+	      lineHeight: '12px',
+	      color: errorColor,
+	      transition: _transitions2.default.easeOut()
+	    },
+	    floatingLabel: {
+	      color: props.disabled ? disabledTextColor : floatingLabelColor,
+	      pointerEvents: 'none',
+	      top: 28
+	    },
+	    floatingLabelFocusStyle: {
+	      transform: 'scale(0.75) translate(0, -36px)'
+	    },
+	    defaultChip: {
+	      margin: '8px 8px 0 0',
+	      float: 'left'
+	    }
+	  };
 	
-	    _this.state = {
-	      value: null,
-	
-	      existingStudentsGroups: _this.props.existingGroups,
-	
-	      unitOfClassesId: undefined,
-	      subject: undefined,
-	      shortDescription: undefined,
-	      startDate: undefined, // should be copied to startTime [redundant value, just for input purposes]
-	      startTime: undefined,
-	      endTime: undefined,
-	      studentsGroupId: null,
-	      personalProfileId: _this.props.profile.PersonalProfileId,
-	      localizationId: undefined
-	    };
-	
-	    _this.handleSubmit = _this.handleSubmit.bind(_this);
-	    _this.handleInputChange = _this.handleInputChange.bind(_this);
-	    _this.handleStartDateChange = _this.handleStartDateChange.bind(_this);
-	    _this.handleStartTimeChange = _this.handleStartTimeChange.bind(_this);
-	    _this.handleEndTimeChange = _this.handleEndTimeChange.bind(_this);
-	    _this.handleStudentGroupChange = _this.handleStudentGroupChange.bind(_this);
-	    return _this;
+	  if (state.isFocused) {
+	    styles.floatingLabel.color = focusColor;
 	  }
 	
-	  _createClass(ClassesForm, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      this.props.dispatch((0, _actions.loadProfileResourceStart)());
-	      this.props.dispatch((0, _actions.loadGroupsStart)());
-	      this.props.dispatch((0, _actions.loadLanguageInstructorsStart)());
-	    }
-	  }, {
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      console.log("component did mount");
-	
-	      console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
-	      console.log("this.state.existingGroups: " + JSON.stringify(this.state.existingGroups));
-	    }
-	  }, {
-	    key: 'handleStartDateChange',
-	    value: function handleStartDateChange(event, date) {
-	      console.log("start date change");
-	      this.setState({ startDate: JSON.stringify(date).substr(1, 10) });
-	    }
-	  }, {
-	    key: 'handleStartTimeChange',
-	    value: function handleStartTimeChange(event, date) {
-	      console.log("start time change");
-	      this.setState({ startTime: JSON.stringify(date) });
-	    }
-	  }, {
-	    key: 'handleEndTimeChange',
-	    value: function handleEndTimeChange(event, date) {
-	      console.log("end time change");
-	      this.setState({ endTime: JSON.stringify(date) });
-	    }
-	  }, {
-	    key: 'handleStudentGroupChange',
-	    value: function handleStudentGroupChange(event, index, value) {
-	      console.log("handle level select change");
-	      console.log("index,value: " + index + " " + value);
-	
-	      this.setState({ studentsGroupId: value });
-	    }
-	  }, {
-	    key: 'handleInputChange',
-	    value: function handleInputChange(event) {
-	
-	      console.log("handle Input Change");
-	
-	      for (var i = 0; i < arguments.length; i++) {
-	        console.log('arguments[' + i + ']' + arguments[i]);
-	      }
-	
-	      var target = event.target;
-	      var value = target.type === 'checkbox' ? target.checked : target.value;
-	      var name = target.name;
-	      console.log("value: " + value);
-	      console.log("name: " + name);
-	
-	      this.state[name] = value;
-	
-	      this.forceUpdate();
-	    }
-	  }, {
-	    key: 'handleSubmit',
-	    value: function handleSubmit(event) {
-	      event.preventDefault();
-	      console.log("handle submit");
-	      console.log("this.state: " + JSON.stringify(this.state));
-	
-	      this.props.temporaryClasses.unitOfClassesId = this.state.unitOfClassesId, this.props.temporaryClasses.subject = this.state.subject, this.props.temporaryClasses.shortDescription = this.state.shortDescription, this.props.temporaryClasses.startDate = this.state.startDate, // should be copied to startTime [redundant value, just for input purposes]
-	      this.props.temporaryClasses.startTime = this.state.startTime, this.props.temporaryClasses.endTime = this.state.endTime, this.props.temporaryClasses.studentsGroupId = this.state.studentsGroupId, this.props.temporaryClasses.PersonalProfileId = this.state.personalProfileId, this.props.temporaryClasses.localizationId = this.state.localizationId, console.log("this.props.temporaryClasses: " + JSON.stringify(this.props.temporaryClasses));
-	
-	      this.props.dispatch((0, _actions.updateClassesStart)());
-	      //TODO Add Snackbar
-	      this.reset();
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	
-	      return _react2.default.createElement(
-	        _simpleFrame2.default,
-	        {
-	          title: 'Schedule Classes'
-	          /*iconElementRight = {<FeatureButton />}*/
-	        },
-	        _react2.default.createElement(
-	          'form',
-	          { onSubmit: this.handleSubmit },
-	          _react2.default.createElement(
-	            _reactFlexboxGrid.Row,
-	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
-	            _react2.default.createElement(
-	              _reactFlexboxGrid.Col,
-	              { xs: 12, md: 6 },
-	              _react2.default.createElement(_TextField2.default, {
-	                value: this.state.subject,
-	                fullWidth: true,
-	                floatingLabelText: 'Subject',
-	                name: 'subject',
-	                onChange: this.handleInputChange
-	              })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactFlexboxGrid.Row,
-	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
-	            _react2.default.createElement(
-	              _reactFlexboxGrid.Col,
-	              { xs: 12, md: 12 },
-	              _react2.default.createElement(_TextField2.default, {
-	                value: this.state.shortDescription,
-	                fullWidth: true,
-	                multiLine: true,
-	                rows: 2,
-	                rowsMax: 4,
-	                floatingLabelText: 'Short Description',
-	                name: 'shortDescription',
-	                onChange: this.handleInputChange,
-	                style: styles.leftAlign
-	              })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactFlexboxGrid.Row,
-	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
-	            _react2.default.createElement(
-	              _reactFlexboxGrid.Col,
-	              { xs: 12, md: 4 },
-	              _react2.default.createElement(_DatePicker2.default, {
-	                fullWidth: true,
-	                floatingLabelText: 'Date',
-	                mode: 'landscape',
-	                name: 'startDate',
-	                onChange: this.handleStartDateChange
-	              })
-	            ),
-	            _react2.default.createElement(
-	              _reactFlexboxGrid.Col,
-	              { xs: 12, md: 4 },
-	              _react2.default.createElement(_TimePicker2.default, {
-	                fullWidth: true,
-	                floatingLabelText: 'Start Time',
-	                format: '24hr',
-	                hintText: '24hr Format',
-	                onChange: this.handleStartTimeChange
-	              })
-	            ),
-	            _react2.default.createElement(
-	              _reactFlexboxGrid.Col,
-	              { xs: 12, md: 4 },
-	              _react2.default.createElement(_TimePicker2.default, {
-	                fullWidth: true,
-	                floatingLabelText: 'End Time',
-	                format: '24hr',
-	                hintText: '24hr Format',
-	                onChange: this.handleEndTimeChange
-	              })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactFlexboxGrid.Row,
-	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
-	            _react2.default.createElement(
-	              _reactFlexboxGrid.Col,
-	              { xs: 12, md: 12 },
-	              _react2.default.createElement(
-	                _SelectField2.default,
-	                {
-	                  fullWidth: true,
-	                  floatingLabelText: 'Student Group',
-	                  value: this.state.studentsGroupId,
-	                  onChange: this.handleStudentGroupChange,
-	                  autoWidth: true
-	                },
-	                this.props.existingGroups.map(function (item) {
-	                  return _react2.default.createElement(_MenuItem2.default, { key: item.studentsGroupId,
-	                    value: item.studentsGroupId,
-	                    primaryText: item.language + ', ' + item.name + " " //secodaryText is not included during width calculating
-	                    , secondaryText: '' + item.level
-	                  });
-	                })
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactFlexboxGrid.Row,
-	            { center: 'xs', end: 'md', bottom: 'xs' },
-	            _react2.default.createElement(
-	              _reactFlexboxGrid.Col,
-	              { xs: 12, mdOffset: 9, md: 3 },
-	              _react2.default.createElement(_FlatButton2.default, {
-	                type: 'submit',
-	                style: styles.btnGreen,
-	                label: 'Create',
-	                icon: _react2.default.createElement(_add2.default, null)
-	              })
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return ClassesForm;
-	}(_react2.default.Component);
-	
-	var styles = {
-	  leftAlign: {
-	    textAlign: 'left'
-	  },
-	  btnGreen: {
-	    color: _colors.lightGreen500
-	  },
-	  customWidth: {
-	    width: 400
+	  if (props.floatingLabelText) {
+	    styles.input.boxSizing = 'border-box';
 	  }
+	
+	  if (state.errorText) {
+	    if (state.isFocused) {
+	      styles.floatingLabel.color = styles.error.color;
+	    }
+	  }
+	
+	  return styles;
 	};
 	
-	function mapStateToProps(state) {
-	  return {
-	    user: state.oidc.user,
-	    profile: state.profileResource.profile,
-	    existingGroups: state.groupResource.existingGroups,
-	    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
-	    temporaryClasses: state.classesResource.temporaryClasses
-	  };
-	}
+	var defaultChipRenderer = function defaultChipRenderer(_ref, key) {
+	  var value = _ref.value,
+	      text = _ref.text,
+	      isFocused = _ref.isFocused,
+	      isDisabled = _ref.isDisabled,
+	      handleClick = _ref.handleClick,
+	      handleRequestDelete = _ref.handleRequestDelete,
+	      defaultStyle = _ref.defaultStyle;
+	  return _react2.default.createElement(
+	    _Chip2.default,
+	    {
+	      key: key,
+	      style: _extends({}, defaultStyle, { pointerEvents: isDisabled ? 'none' : undefined }),
+	      backgroundColor: isFocused ? _colors.blue300 : null,
+	      onTouchTap: handleClick,
+	      onRequestDelete: handleRequestDelete
+	    },
+	    text
+	  );
+	};
 	
-	function mapDispatchToProps(dispatch) {
-	  return {
-	    dispatch: dispatch
-	  };
-	}
+	var ChipInput = function (_React$Component) {
+	  _inherits(ChipInput, _React$Component);
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(ClassesForm);
-
-/***/ },
-/* 1107 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
+	  function ChipInput(props) {
+	    _classCallCheck(this, ChipInput);
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
+	    var _this = _possibleConstructorReturn(this, (ChipInput.__proto__ || Object.getPrototypeOf(ChipInput)).call(this, props));
 	
-	var _TimePicker = __webpack_require__(1108);
+	    _this.state = {
+	      isFocused: false,
+	      errorText: undefined,
+	      isClean: true,
+	      chips: [],
+	      focusedChip: null,
+	      inputValue: ''
+	    };
 	
-	var _TimePicker2 = _interopRequireDefault(_TimePicker);
+	    _this.handleInputBlur = function (event) {
+	      if (_this.props.onBlur) {
+	        _this.props.onBlur(event);
+	      }
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	      // A momentary delay is required to support openOnFocus. We must give time for the autocomplete
+	      // menu to close before checking the current status. Otherwise, tabbing off the input while the
+	      // menu is open results in the input keeping its focus styles. Note that the ref might not be set
+	      // yet, so this.autocomplete might be null.
+	      setTimeout(function () {
+	        if (_this.autoComplete && (!_this.autoComplete.state.open || _this.autoComplete.requestsList.length === 0)) {
+	          if (_this.props.clearOnBlur) {
+	            _this.clearInput();
+	          }
+	          _this.setState({ isFocused: false });
+	        }
+	      }, 0);
+	    };
 	
-	exports.default = _TimePicker2.default;
-
-/***/ },
-/* 1108 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends2 = __webpack_require__(826);
-	
-	var _extends3 = _interopRequireDefault(_extends2);
-	
-	var _objectWithoutProperties2 = __webpack_require__(864);
-	
-	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _simpleAssign = __webpack_require__(918);
-	
-	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _TimePickerDialog = __webpack_require__(1109);
-	
-	var _TimePickerDialog2 = _interopRequireDefault(_TimePickerDialog);
-	
-	var _TextField = __webpack_require__(1010);
-	
-	var _TextField2 = _interopRequireDefault(_TextField);
-	
-	var _timeUtils = __webpack_require__(1118);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var emptyTime = new Date();
-	emptyTime.setHours(0);
-	emptyTime.setMinutes(0);
-	emptyTime.setSeconds(0);
-	emptyTime.setMilliseconds(0);
-	
-	var TimePicker = function (_Component) {
-	  (0, _inherits3.default)(TimePicker, _Component);
-	
-	  function TimePicker() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    (0, _classCallCheck3.default)(this, TimePicker);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = TimePicker.__proto__ || (0, _getPrototypeOf2.default)(TimePicker)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      time: null,
-	      dialogTime: new Date()
-	    }, _this.handleAcceptDialog = function (time) {
-	      _this.setState({
-	        time: time
-	      });
-	      if (_this.props.onChange) _this.props.onChange(null, time);
-	    }, _this.handleFocusInput = function (event) {
-	      event.target.blur();
+	    _this.handleInputFocus = function (event) {
+	      if (_this.props.disabled) {
+	        return;
+	      }
+	      _this.setState({ isFocused: true });
 	      if (_this.props.onFocus) {
 	        _this.props.onFocus(event);
 	      }
-	    }, _this.handleTouchTapInput = function (event) {
-	      event.preventDefault();
+	    };
 	
-	      if (!_this.props.disabled) {
-	        _this.openDialog();
+	    _this.handleKeyDown = function (event) {
+	      if (_this.props.newChipKeyCodes.indexOf(event.keyCode) >= 0) {
+	        _this.handleAddChip(event.target.value);
+	      } else if (event.keyCode === 8 || event.keyCode === 46) {
+	        if (event.target.value === '') {
+	          var chips = _this.props.value || _this.state.chips;
+	          if (_this.state.focusedChip == null && event.keyCode === 8) {
+	            _this.setState({ focusedChip: chips[chips.length - 1] });
+	          } else if (_this.state.focusedChip) {
+	            var index = chips.indexOf(_this.state.focusedChip);
+	            var value = _this.props.dataSourceConfig ? _this.state.focusedChip[_this.props.dataSourceConfig.value] : _this.state.focusedChip;
+	            _this.handleDeleteChip(value, index);
+	            if (event.keyCode === 8 && index > 0) {
+	              _this.setState({ focusedChip: chips[index - 1] });
+	            } else if (event.keyCode === 46 && index < chips.length - 1) {
+	              _this.setState({ focusedChip: chips[index + 1] });
+	            }
+	          }
+	        }
+	      } else if (event.keyCode === 37) {
+	        var _chips = _this.props.value || _this.state.chips;
+	        var _index = _chips.indexOf(_this.state.focusedChip);
+	        if (_index > 0) {
+	          _this.setState({ focusedChip: _chips[_index - 1] });
+	        }
+	      } else if (event.keyCode === 39) {
+	        var _chips2 = _this.props.value || _this.state.chips;
+	        var _index2 = _chips2.indexOf(_this.state.focusedChip);
+	        if (_index2 >= 0 && _index2 < _chips2.length - 1) {
+	          _this.setState({ focusedChip: _chips2[_index2 + 1] });
+	        } else {
+	          _this.setState({ focusedChip: null });
+	        }
+	      } else {
+	        _this.setState({ focusedChip: null });
 	      }
+	    };
 	
-	      if (_this.props.onTouchTap) {
-	        _this.props.onTouchTap(event);
+	    _this.handleKeyUp = function (event) {
+	      if (_this.props.newChipKeyCodes.indexOf(event.keyCode) < 0) {
+	        _this.setState({ inputValue: event.target.value });
+	      } else {
+	        _this.clearInput();
 	      }
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	    };
+	
+	    _this.setAutoComplete = function (autoComplete) {
+	      _this.autoComplete = autoComplete;
+	    };
+	
+	    if (props.defaultValue) {
+	      _this.state.chips = props.defaultValue;
+	    }
+	    return _this;
 	  }
 	
-	  (0, _createClass3.default)(TimePicker, [{
+	  _createClass(ChipInput, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
+	      var _props = this.props,
+	          name = _props.name,
+	          hintText = _props.hintText,
+	          floatingLabelText = _props.floatingLabelText;
+	
+	
 	      this.setState({
-	        time: this.isControlled() ? this.getControlledTime() : this.props.defaultTime
+	        errorText: this.props.errorText
 	      });
+	
+	      var uniqueId = name + '-' + hintText + '-' + floatingLabelText + '-' + Math.floor(Math.random() * 0xFFFF);
+	      this.uniqueId = uniqueId.replace(/[^A-Za-z0-9-]/gi, '');
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var _this2 = this;
+	
+	      var handleKeyDown = this.autoComplete.handleKeyDown;
+	      this.autoComplete.handleKeyDown = function (event) {
+	        if (_this2.props.newChipKeyCodes.indexOf(event.keyCode) >= 0) {
+	          _this2.handleAddChip(event.target.value);
+	          _this2.autoComplete.setState({ searchText: '' });
+	          _this2.autoComplete.forceUpdate();
+	        } else {
+	          handleKeyDown(event);
+	        }
+	      };
+	
+	      this.autoComplete.handleItemTouchTap = function (event, child) {
+	        var dataSource = _this2.autoComplete.props.dataSource;
+	
+	        var index = parseInt(child.key, 10);
+	        var chosenRequest = dataSource[index];
+	        _this2.handleAddChip(chosenRequest);
+	
+	        _this2.autoComplete.setState({
+	          searchText: ''
+	        });
+	        _this2.autoComplete.forceUpdate();
+	        _this2.autoComplete.close();
+	
+	        setTimeout(function () {
+	          return _this2.focus();
+	        }, 1);
+	      };
+	
+	      // force update autocomplete to ensure that it uses the new handlers
+	      this.autoComplete.forceUpdate();
 	    }
 	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
-	      if (nextProps.value !== this.props.value) {
+	      if (nextProps.disabled) {
+	        this.setState({ focusedChip: null });
+	      }
+	      if (nextProps.errorText !== this.props.errorText) {
 	        this.setState({
-	          time: this.getControlledTime(nextProps)
+	          errorText: nextProps.errorText
 	        });
 	      }
 	    }
-	
-	    /**
-	     * Alias for `openDialog()` for an api consistent with TextField.
-	     */
-	
+	  }, {
+	    key: 'blur',
+	    value: function blur() {
+	      if (this.input) this.getInputNode().blur();
+	    }
 	  }, {
 	    key: 'focus',
 	    value: function focus() {
-	      this.openDialog();
-	    }
-	  }, {
-	    key: 'openDialog',
-	    value: function openDialog() {
-	      this.setState({
-	        dialogTime: this.state.time
-	      });
-	      this.refs.dialogWindow.show();
-	    }
-	  }, {
-	    key: 'isControlled',
-	    value: function isControlled() {
-	      return this.props.value !== null;
-	    }
-	  }, {
-	    key: 'getControlledTime',
-	    value: function getControlledTime() {
-	      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props;
-	
-	      var result = null;
-	      if (props.value instanceof Date) {
-	        result = props.value;
-	      }
-	      return result;
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _props = this.props,
-	          autoOk = _props.autoOk,
-	          cancelLabel = _props.cancelLabel,
-	          defaultTime = _props.defaultTime,
-	          dialogBodyStyle = _props.dialogBodyStyle,
-	          dialogStyle = _props.dialogStyle,
-	          format = _props.format,
-	          okLabel = _props.okLabel,
-	          onFocus = _props.onFocus,
-	          onTouchTap = _props.onTouchTap,
-	          onShow = _props.onShow,
-	          onDismiss = _props.onDismiss,
-	          pedantic = _props.pedantic,
-	          style = _props.style,
-	          textFieldStyle = _props.textFieldStyle,
-	          other = (0, _objectWithoutProperties3.default)(_props, ['autoOk', 'cancelLabel', 'defaultTime', 'dialogBodyStyle', 'dialogStyle', 'format', 'okLabel', 'onFocus', 'onTouchTap', 'onShow', 'onDismiss', 'pedantic', 'style', 'textFieldStyle']);
-	      var prepareStyles = this.context.muiTheme.prepareStyles;
-	      var time = this.state.time;
-	
-	
-	      return _react2.default.createElement(
-	        'div',
-	        { style: prepareStyles((0, _simpleAssign2.default)({}, style)) },
-	        _react2.default.createElement(_TextField2.default, (0, _extends3.default)({}, other, {
-	          style: textFieldStyle,
-	          ref: 'input',
-	          value: time === emptyTime ? null : (0, _timeUtils.formatTime)(time, format, pedantic),
-	          onFocus: this.handleFocusInput,
-	          onTouchTap: this.handleTouchTapInput
-	        })),
-	        _react2.default.createElement(_TimePickerDialog2.default, {
-	          ref: 'dialogWindow',
-	          bodyStyle: dialogBodyStyle,
-	          initialTime: this.state.dialogTime,
-	          onAccept: this.handleAcceptDialog,
-	          onShow: onShow,
-	          onDismiss: onDismiss,
-	          format: format,
-	          okLabel: okLabel,
-	          cancelLabel: cancelLabel,
-	          autoOk: autoOk,
-	          style: dialogStyle
-	        })
-	      );
-	    }
-	  }]);
-	  return TimePicker;
-	}(_react.Component);
-	
-	TimePicker.defaultProps = {
-	  autoOk: false,
-	  cancelLabel: 'Cancel',
-	  defaultTime: null,
-	  disabled: false,
-	  format: 'ampm',
-	  okLabel: 'OK',
-	  pedantic: false,
-	  style: {},
-	  value: null
-	};
-	TimePicker.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
-	};
-	process.env.NODE_ENV !== "production" ? TimePicker.propTypes = {
-	  /**
-	   * If true, automatically accept and close the picker on set minutes.
-	   */
-	  autoOk: _react.PropTypes.bool,
-	  /**
-	   * Override the label of the 'Cancel' button.
-	   */
-	  cancelLabel: _react.PropTypes.node,
-	  /**
-	   * The initial time value of the TimePicker.
-	   */
-	  defaultTime: _react.PropTypes.object,
-	  /**
-	   * Override the inline-styles of TimePickerDialog's body element.
-	   */
-	  dialogBodyStyle: _react.PropTypes.object,
-	  /**
-	   * Override the inline-styles of TimePickerDialog's root element.
-	   */
-	  dialogStyle: _react.PropTypes.object,
-	  /**
-	   * If true, the TimePicker is disabled.
-	   */
-	  disabled: _react.PropTypes.bool,
-	  /**
-	   * Tells the component to display the picker in `ampm` (12hr) format or `24hr` format.
-	   */
-	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
-	  /**
-	   * Override the label of the 'OK' button.
-	   */
-	  okLabel: _react.PropTypes.node,
-	  /**
-	   * Callback function that is fired when the time value changes. The time value is passed in a Date Object.
-	   * Since there is no particular event associated with the change the first argument will always be null
-	   * and the second argument will be the new Date instance.
-	   */
-	  onChange: _react.PropTypes.func,
-	  /**
-	   * Callback function fired when the TimePicker dialog is dismissed.
-	   */
-	  onDismiss: _react.PropTypes.func,
-	  /**
-	   * Callback function fired when the TimePicker `TextField` gains focus.
-	   */
-	  onFocus: _react.PropTypes.func,
-	  /**
-	   * Callback function fired when the TimePicker dialog is shown.
-	   */
-	  onShow: _react.PropTypes.func,
-	  /**
-	   * Callback function fired when the TimePicker is tapped or clicked.
-	   */
-	  onTouchTap: _react.PropTypes.func,
-	  /**
-	   * If true, uses ("noon" / "midnight") instead of ("12 a.m." / "12 p.m.").
-	   *
-	   * It's technically more correct to refer to "12 noon" and "12 midnight" rather than "12 a.m." and "12 p.m."
-	   * and it avoids confusion between different locales. By default (for compatibility reasons) TimePicker uses
-	   * ("12 a.m." / "12 p.m.").
-	   */
-	  pedantic: _react.PropTypes.bool,
-	  /**
-	   * Override the inline-styles of the root element.
-	   */
-	  style: _react.PropTypes.object,
-	  /**
-	   * Override the inline-styles of TimePicker's TextField element.
-	   */
-	  textFieldStyle: _react.PropTypes.object,
-	  /**
-	   * Sets the time for the Time Picker programmatically.
-	   */
-	  value: _react.PropTypes.object
-	} : void 0;
-	exports.default = TimePicker;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
-
-/***/ },
-/* 1109 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends2 = __webpack_require__(826);
-	
-	var _extends3 = _interopRequireDefault(_extends2);
-	
-	var _objectWithoutProperties2 = __webpack_require__(864);
-	
-	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _simpleAssign = __webpack_require__(918);
-	
-	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactEventListener = __webpack_require__(999);
-	
-	var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
-	
-	var _keycode = __webpack_require__(952);
-	
-	var _keycode2 = _interopRequireDefault(_keycode);
-	
-	var _Clock = __webpack_require__(1110);
-	
-	var _Clock2 = _interopRequireDefault(_Clock);
-	
-	var _Dialog = __webpack_require__(1046);
-	
-	var _Dialog2 = _interopRequireDefault(_Dialog);
-	
-	var _FlatButton = __webpack_require__(1007);
-	
-	var _FlatButton2 = _interopRequireDefault(_FlatButton);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var TimePickerDialog = function (_Component) {
-	  (0, _inherits3.default)(TimePickerDialog, _Component);
-	
-	  function TimePickerDialog() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    (0, _classCallCheck3.default)(this, TimePickerDialog);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = TimePickerDialog.__proto__ || (0, _getPrototypeOf2.default)(TimePickerDialog)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      open: false
-	    }, _this.handleRequestClose = function () {
-	      _this.dismiss();
-	    }, _this.handleTouchTapCancel = function () {
-	      _this.dismiss();
-	    }, _this.handleTouchTapOK = function () {
-	      if (_this.props.onAccept) {
-	        _this.props.onAccept(_this.refs.clock.getSelectedTime());
-	      }
-	      _this.setState({
-	        open: false
-	      });
-	    }, _this.handleKeyUp = function (event) {
-	      switch ((0, _keycode2.default)(event)) {
-	        case 'enter':
-	          _this.handleTouchTapOK();
-	          break;
-	      }
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-	  }
-	
-	  (0, _createClass3.default)(TimePickerDialog, [{
-	    key: 'show',
-	    value: function show() {
-	      if (this.props.onShow && !this.state.open) this.props.onShow();
-	      this.setState({
-	        open: true
-	      });
-	    }
-	  }, {
-	    key: 'dismiss',
-	    value: function dismiss() {
-	      if (this.props.onDismiss && this.state.open) this.props.onDismiss();
-	      this.setState({
-	        open: false
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _props = this.props,
-	          bodyStyle = _props.bodyStyle,
-	          initialTime = _props.initialTime,
-	          onAccept = _props.onAccept,
-	          format = _props.format,
-	          autoOk = _props.autoOk,
-	          okLabel = _props.okLabel,
-	          cancelLabel = _props.cancelLabel,
-	          style = _props.style,
-	          other = (0, _objectWithoutProperties3.default)(_props, ['bodyStyle', 'initialTime', 'onAccept', 'format', 'autoOk', 'okLabel', 'cancelLabel', 'style']);
-	
-	
-	      var styles = {
-	        root: {
-	          fontSize: 14,
-	          color: this.context.muiTheme.timePicker.clockColor
-	        },
-	        dialogContent: {
-	          width: 280
-	        },
-	        body: {
-	          padding: 0
-	        }
-	      };
-	
-	      var actions = [_react2.default.createElement(_FlatButton2.default, {
-	        key: 0,
-	        label: cancelLabel,
-	        primary: true,
-	        onTouchTap: this.handleTouchTapCancel
-	      }), _react2.default.createElement(_FlatButton2.default, {
-	        key: 1,
-	        label: okLabel,
-	        primary: true,
-	        onTouchTap: this.handleTouchTapOK
-	      })];
-	
-	      var onClockChangeMinutes = autoOk === true ? this.handleTouchTapOK : undefined;
-	      var open = this.state.open;
-	
-	      return _react2.default.createElement(
-	        _Dialog2.default,
-	        (0, _extends3.default)({}, other, {
-	          style: (0, _simpleAssign2.default)(styles.root, style),
-	          bodyStyle: (0, _simpleAssign2.default)(styles.body, bodyStyle),
-	          actions: actions,
-	          contentStyle: styles.dialogContent,
-	          repositionOnUpdate: false,
-	          open: open,
-	          onRequestClose: this.handleRequestClose
-	        }),
-	        open && _react2.default.createElement(_reactEventListener2.default, { target: 'window', onKeyUp: this.handleKeyUp }),
-	        open && _react2.default.createElement(_Clock2.default, {
-	          ref: 'clock',
-	          format: format,
-	          initialTime: initialTime,
-	          onChangeMinutes: onClockChangeMinutes
-	        })
-	      );
-	    }
-	  }]);
-	  return TimePickerDialog;
-	}(_react.Component);
-	
-	TimePickerDialog.defaultProps = {
-	  okLabel: 'OK',
-	  cancelLabel: 'Cancel'
-	};
-	TimePickerDialog.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
-	};
-	process.env.NODE_ENV !== "production" ? TimePickerDialog.propTypes = {
-	  autoOk: _react.PropTypes.bool,
-	  bodyStyle: _react.PropTypes.object,
-	  cancelLabel: _react.PropTypes.node,
-	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
-	  initialTime: _react.PropTypes.object,
-	  okLabel: _react.PropTypes.node,
-	  onAccept: _react.PropTypes.func,
-	  onDismiss: _react.PropTypes.func,
-	  onShow: _react.PropTypes.func,
-	  style: _react.PropTypes.object
-	} : void 0;
-	exports.default = TimePickerDialog;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
-
-/***/ },
-/* 1110 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _TimeDisplay = __webpack_require__(1111);
-	
-	var _TimeDisplay2 = _interopRequireDefault(_TimeDisplay);
-	
-	var _ClockHours = __webpack_require__(1116);
-	
-	var _ClockHours2 = _interopRequireDefault(_ClockHours);
-	
-	var _ClockMinutes = __webpack_require__(1120);
-	
-	var _ClockMinutes2 = _interopRequireDefault(_ClockMinutes);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Clock = function (_Component) {
-	  (0, _inherits3.default)(Clock, _Component);
-	
-	  function Clock() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    (0, _classCallCheck3.default)(this, Clock);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Clock.__proto__ || (0, _getPrototypeOf2.default)(Clock)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      selectedTime: null,
-	      mode: 'hour'
-	    }, _this.setMode = function (mode) {
-	      setTimeout(function () {
-	        _this.setState({
-	          mode: mode
-	        });
-	      }, 100);
-	    }, _this.handleSelectAffix = function (affix) {
-	      if (affix === _this.getAffix()) return;
-	
-	      var hours = _this.state.selectedTime.getHours();
-	
-	      if (affix === 'am') {
-	        _this.handleChangeHours(hours - 12, affix);
-	        return;
-	      }
-	
-	      _this.handleChangeHours(hours + 12, affix);
-	    }, _this.handleChangeHours = function (hours, finished) {
-	      var time = new Date(_this.state.selectedTime);
-	      var affix = void 0;
-	
-	      if (typeof finished === 'string') {
-	        affix = finished;
-	        finished = undefined;
-	      }
-	      if (!affix) {
-	        affix = _this.getAffix();
-	      }
-	      if (affix === 'pm' && hours < 12) {
-	        hours += 12;
-	      }
-	
-	      time.setHours(hours);
-	      _this.setState({
-	        selectedTime: time
-	      });
-	
-	      if (finished) {
-	        setTimeout(function () {
-	          _this.setState({
-	            mode: 'minute'
+	      if (this.autoComplete) {
+	        this.getInputNode().focus();
+	        if (this.props.openOnFocus) {
+	          this.autoComplete.setState({
+	            open: true,
+	            anchorEl: this.getInputNode()
 	          });
 	
-	          var onChangeHours = _this.props.onChangeHours;
+	          this.autoComplete.forceUpdate();
+	        }
+	      }
+	      if (this.state.focusedChip) {
+	        this.setState({ focusedChip: null });
+	      }
+	    }
+	  }, {
+	    key: 'select',
+	    value: function select() {
+	      if (this.input) this.getInputNode().select();
+	    }
+	  }, {
+	    key: 'getValue',
+	    value: function getValue() {
+	      return this.input ? this.getInputNode().value : undefined;
+	    }
+	  }, {
+	    key: 'getInputNode',
+	    value: function getInputNode() {
+	      return this.autoComplete.refs.searchTextField.getInputNode();
+	    }
+	  }, {
+	    key: 'handleAddChip',
+	    value: function handleAddChip(chip) {
+	      var _this3 = this;
 	
-	          if (onChangeHours) {
-	            onChangeHours(time);
+	      this.autoComplete.setState({ searchText: '' });
+	      var chips = this.props.value || this.state.chips;
+	
+	      if (this.props.dataSourceConfig) {
+	        if (typeof chip === 'string') {
+	          var _chip;
+	
+	          chip = (_chip = {}, _defineProperty(_chip, this.props.dataSourceConfig.text, chip), _defineProperty(_chip, this.props.dataSourceConfig.value, chip), _chip);
+	        }
+	
+	        if (!chips.find(function (c) {
+	          return c[_this3.props.dataSourceConfig.value] === chip[_this3.props.dataSourceConfig.value];
+	        })) {
+	          if (this.props.value) {
+	            if (this.props.onRequestAdd) {
+	              this.props.onRequestAdd(chip);
+	            }
+	          } else {
+	            this.setState({ chips: [].concat(_toConsumableArray(this.state.chips), [chip]) });
+	            if (this.props.onChange) {
+	              this.props.onChange([].concat(_toConsumableArray(this.state.chips), [chip]));
+	            }
 	          }
-	        }, 100);
-	      }
-	    }, _this.handleChangeMinutes = function (minutes, finished) {
-	      var time = new Date(_this.state.selectedTime);
-	      time.setMinutes(minutes);
-	      _this.setState({
-	        selectedTime: time
-	      });
-	
-	      var onChangeMinutes = _this.props.onChangeMinutes;
-	
-	      if (onChangeMinutes && finished) {
-	        setTimeout(function () {
-	          onChangeMinutes(time);
-	        }, 0);
-	      }
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-	  }
-	
-	  (0, _createClass3.default)(Clock, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      this.setState({
-	        selectedTime: this.props.initialTime || new Date()
-	      });
-	    }
-	  }, {
-	    key: 'getAffix',
-	    value: function getAffix() {
-	      if (this.props.format !== 'ampm') return '';
-	
-	      var hours = this.state.selectedTime.getHours();
-	      if (hours < 12) {
-	        return 'am';
-	      }
-	
-	      return 'pm';
-	    }
-	  }, {
-	    key: 'getSelectedTime',
-	    value: function getSelectedTime() {
-	      return this.state.selectedTime;
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var clock = null;
-	
-	      var _context$muiTheme = this.context.muiTheme,
-	          prepareStyles = _context$muiTheme.prepareStyles,
-	          timePicker = _context$muiTheme.timePicker;
-	
-	
-	      var styles = {
-	        root: {
-	          userSelect: 'none'
-	        },
-	        container: {
-	          height: 280,
-	          padding: 10,
-	          position: 'relative',
-	          boxSizing: 'content-box'
-	        },
-	        circle: {
-	          position: 'absolute',
-	          top: 20,
-	          width: 260,
-	          height: 260,
-	          borderRadius: '100%',
-	          backgroundColor: timePicker.clockCircleColor
-	        }
-	      };
-	
-	      if (this.state.mode === 'hour') {
-	        clock = _react2.default.createElement(_ClockHours2.default, {
-	          key: 'hours',
-	          format: this.props.format,
-	          onChange: this.handleChangeHours,
-	          initialHours: this.state.selectedTime.getHours()
-	        });
-	      } else {
-	        clock = _react2.default.createElement(_ClockMinutes2.default, {
-	          key: 'minutes',
-	          onChange: this.handleChangeMinutes,
-	          initialMinutes: this.state.selectedTime.getMinutes()
-	        });
-	      }
-	
-	      return _react2.default.createElement(
-	        'div',
-	        { style: prepareStyles(styles.root) },
-	        _react2.default.createElement(_TimeDisplay2.default, {
-	          selectedTime: this.state.selectedTime,
-	          mode: this.state.mode,
-	          format: this.props.format,
-	          affix: this.getAffix(),
-	          onSelectAffix: this.handleSelectAffix,
-	          onSelectHour: this.setMode.bind(this, 'hour'),
-	          onSelectMin: this.setMode.bind(this, 'minute')
-	        }),
-	        _react2.default.createElement(
-	          'div',
-	          { style: prepareStyles(styles.container) },
-	          _react2.default.createElement('div', { style: prepareStyles(styles.circle) }),
-	          clock
-	        )
-	      );
-	    }
-	  }]);
-	  return Clock;
-	}(_react.Component);
-	
-	Clock.defaultProps = {
-	  initialTime: new Date()
-	};
-	Clock.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
-	};
-	process.env.NODE_ENV !== "production" ? Clock.propTypes = {
-	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
-	  initialTime: _react.PropTypes.object,
-	  onChangeHours: _react.PropTypes.func,
-	  onChangeMinutes: _react.PropTypes.func
-	} : void 0;
-	exports.default = Clock;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
-
-/***/ },
-/* 1111 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _extends2 = __webpack_require__(826);
-	
-	var _extends3 = _interopRequireDefault(_extends2);
-	
-	var _slicedToArray2 = __webpack_require__(1112);
-	
-	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
-	
-	var _objectWithoutProperties2 = __webpack_require__(864);
-	
-	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _simpleAssign = __webpack_require__(918);
-	
-	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var TimeDisplay = function (_Component) {
-	  (0, _inherits3.default)(TimeDisplay, _Component);
-	
-	  function TimeDisplay() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    (0, _classCallCheck3.default)(this, TimeDisplay);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = TimeDisplay.__proto__ || (0, _getPrototypeOf2.default)(TimeDisplay)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      transitionDirection: 'up'
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-	  }
-	
-	  (0, _createClass3.default)(TimeDisplay, [{
-	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps(nextProps) {
-	      if (nextProps.selectedTime !== this.props.selectedTime) {
-	        var direction = nextProps.selectedTime > this.props.selectedTime ? 'up' : 'down';
-	
-	        this.setState({
-	          transitionDirection: direction
-	        });
-	      }
-	    }
-	  }, {
-	    key: 'sanitizeTime',
-	    value: function sanitizeTime() {
-	      var hour = this.props.selectedTime.getHours();
-	      var min = this.props.selectedTime.getMinutes().toString();
-	
-	      if (this.props.format === 'ampm') {
-	        hour %= 12;
-	        hour = hour || 12;
-	      }
-	
-	      hour = hour.toString();
-	      if (hour.length < 2) hour = '0' + hour;
-	      if (min.length < 2) min = '0' + min;
-	
-	      return [hour, min];
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _props = this.props,
-	          affix = _props.affix,
-	          format = _props.format,
-	          mode = _props.mode,
-	          onSelectAffix = _props.onSelectAffix,
-	          onSelectHour = _props.onSelectHour,
-	          onSelectMin = _props.onSelectMin,
-	          selectedTime = _props.selectedTime,
-	          other = (0, _objectWithoutProperties3.default)(_props, ['affix', 'format', 'mode', 'onSelectAffix', 'onSelectHour', 'onSelectMin', 'selectedTime']);
-	      var _context$muiTheme = this.context.muiTheme,
-	          prepareStyles = _context$muiTheme.prepareStyles,
-	          timePicker = _context$muiTheme.timePicker;
-	
-	
-	      var styles = {
-	        root: {
-	          padding: '14px 0',
-	          borderTopLeftRadius: 2,
-	          borderTopRightRadius: 2,
-	          backgroundColor: timePicker.headerColor,
-	          color: timePicker.textColor
-	        },
-	        text: {
-	          margin: '6px 0',
-	          lineHeight: '58px',
-	          height: 58,
-	          fontSize: 58,
-	          display: 'flex',
-	          justifyContent: 'center',
-	          alignItems: 'baseline'
-	        },
-	        time: {
-	          margin: '0 10px'
-	        },
-	        affix: {
-	          flex: 1,
-	          position: 'relative',
-	          lineHeight: '17px',
-	          height: 17,
-	          fontSize: 17
-	        },
-	        affixTop: {
-	          position: 'absolute',
-	          top: -20,
-	          left: 0
-	        },
-	        clickable: {
-	          cursor: 'pointer'
-	        },
-	        inactive: {
-	          opacity: 0.7
-	        }
-	      };
-	
-	      var _sanitizeTime = this.sanitizeTime(),
-	          _sanitizeTime2 = (0, _slicedToArray3.default)(_sanitizeTime, 2),
-	          hour = _sanitizeTime2[0],
-	          min = _sanitizeTime2[1];
-	
-	      var buttons = [];
-	      if (format === 'ampm') {
-	        buttons = [_react2.default.createElement(
-	          'div',
-	          {
-	            key: 'pm',
-	            style: prepareStyles((0, _simpleAssign2.default)({}, styles.clickable, affix === 'pm' ? {} : styles.inactive)),
-	            onTouchTap: function onTouchTap() {
-	              return onSelectAffix('pm');
-	            }
-	          },
-	          'PM'
-	        ), _react2.default.createElement(
-	          'div',
-	          {
-	            key: 'am',
-	            style: prepareStyles((0, _simpleAssign2.default)({}, styles.affixTop, styles.clickable, affix === 'am' ? {} : styles.inactive)),
-	            onTouchTap: function onTouchTap() {
-	              return onSelectAffix('am');
-	            }
-	          },
-	          'AM'
-	        )];
-	      }
-	
-	      return _react2.default.createElement(
-	        'div',
-	        (0, _extends3.default)({}, other, { style: prepareStyles(styles.root) }),
-	        _react2.default.createElement(
-	          'div',
-	          { style: prepareStyles(styles.text) },
-	          _react2.default.createElement('div', { style: prepareStyles((0, _simpleAssign2.default)({}, styles.affix)) }),
-	          _react2.default.createElement(
-	            'div',
-	            { style: prepareStyles(styles.time) },
-	            _react2.default.createElement(
-	              'span',
-	              {
-	                style: prepareStyles((0, _simpleAssign2.default)({}, styles.clickable, mode === 'hour' ? {} : styles.inactive)),
-	                onTouchTap: onSelectHour
-	              },
-	              hour
-	            ),
-	            _react2.default.createElement(
-	              'span',
-	              null,
-	              ':'
-	            ),
-	            _react2.default.createElement(
-	              'span',
-	              {
-	                style: prepareStyles((0, _simpleAssign2.default)({}, styles.clickable, mode === 'minute' ? {} : styles.inactive)),
-	                onTouchTap: onSelectMin
-	              },
-	              min
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { style: prepareStyles((0, _simpleAssign2.default)({}, styles.affix)) },
-	            buttons
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	  return TimeDisplay;
-	}(_react.Component);
-	
-	TimeDisplay.defaultProps = {
-	  affix: '',
-	  mode: 'hour'
-	};
-	TimeDisplay.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
-	};
-	process.env.NODE_ENV !== "production" ? TimeDisplay.propTypes = {
-	  affix: _react.PropTypes.oneOf(['', 'pm', 'am']),
-	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
-	  mode: _react.PropTypes.oneOf(['hour', 'minute']),
-	  onSelectAffix: _react.PropTypes.func,
-	  onSelectHour: _react.PropTypes.func,
-	  onSelectMin: _react.PropTypes.func,
-	  selectedTime: _react.PropTypes.object.isRequired
-	} : void 0;
-	exports.default = TimeDisplay;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
-
-/***/ },
-/* 1112 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	exports.__esModule = true;
-	
-	var _isIterable2 = __webpack_require__(1113);
-	
-	var _isIterable3 = _interopRequireDefault(_isIterable2);
-	
-	var _getIterator2 = __webpack_require__(1021);
-	
-	var _getIterator3 = _interopRequireDefault(_getIterator2);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function () {
-	  function sliceIterator(arr, i) {
-	    var _arr = [];
-	    var _n = true;
-	    var _d = false;
-	    var _e = undefined;
-	
-	    try {
-	      for (var _i = (0, _getIterator3.default)(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
-	        _arr.push(_s.value);
-	
-	        if (i && _arr.length === i) break;
-	      }
-	    } catch (err) {
-	      _d = true;
-	      _e = err;
-	    } finally {
-	      try {
-	        if (!_n && _i["return"]) _i["return"]();
-	      } finally {
-	        if (_d) throw _e;
-	      }
-	    }
-	
-	    return _arr;
-	  }
-	
-	  return function (arr, i) {
-	    if (Array.isArray(arr)) {
-	      return arr;
-	    } else if ((0, _isIterable3.default)(Object(arr))) {
-	      return sliceIterator(arr, i);
-	    } else {
-	      throw new TypeError("Invalid attempt to destructure non-iterable instance");
-	    }
-	  };
-	}();
-
-/***/ },
-/* 1113 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(1114), __esModule: true };
-
-/***/ },
-/* 1114 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(891);
-	__webpack_require__(879);
-	module.exports = __webpack_require__(1115);
-
-/***/ },
-/* 1115 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var classof   = __webpack_require__(971)
-	  , ITERATOR  = __webpack_require__(890)('iterator')
-	  , Iterators = __webpack_require__(884);
-	module.exports = __webpack_require__(832).isIterable = function(it){
-	  var O = Object(it);
-	  return O[ITERATOR] !== undefined
-	    || '@@iterator' in O
-	    || Iterators.hasOwnProperty(classof(O));
-	};
-
-/***/ },
-/* 1116 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(330);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _ClockNumber = __webpack_require__(1117);
-	
-	var _ClockNumber2 = _interopRequireDefault(_ClockNumber);
-	
-	var _ClockPointer = __webpack_require__(1119);
-	
-	var _ClockPointer2 = _interopRequireDefault(_ClockPointer);
-	
-	var _timeUtils = __webpack_require__(1118);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var ClockHours = function (_Component) {
-	  (0, _inherits3.default)(ClockHours, _Component);
-	
-	  function ClockHours() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    (0, _classCallCheck3.default)(this, ClockHours);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ClockHours.__proto__ || (0, _getPrototypeOf2.default)(ClockHours)).call.apply(_ref, [this].concat(args))), _this), _this.handleUp = function (event) {
-	      event.preventDefault();
-	      _this.setClock(event.nativeEvent, true);
-	    }, _this.handleMove = function (event) {
-	      event.preventDefault();
-	      if (_this.isMousePressed(event) !== 1) return;
-	      _this.setClock(event.nativeEvent, false);
-	    }, _this.handleTouchMove = function (event) {
-	      event.preventDefault();
-	      _this.setClock(event.changedTouches[0], false);
-	    }, _this.handleTouchEnd = function (event) {
-	      event.preventDefault();
-	      _this.setClock(event.changedTouches[0], true);
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-	  }
-	
-	  (0, _createClass3.default)(ClockHours, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var clockElement = _reactDom2.default.findDOMNode(this.refs.mask);
-	
-	      this.center = {
-	        x: clockElement.offsetWidth / 2,
-	        y: clockElement.offsetHeight / 2
-	      };
-	
-	      this.basePoint = {
-	        x: this.center.x,
-	        y: 0
-	      };
-	    }
-	  }, {
-	    key: 'isMousePressed',
-	    value: function isMousePressed(event) {
-	      if (typeof event.buttons === 'undefined') {
-	        return event.nativeEvent.which;
-	      }
-	
-	      return event.buttons;
-	    }
-	  }, {
-	    key: 'setClock',
-	    value: function setClock(event, finish) {
-	      if (typeof event.offsetX === 'undefined') {
-	        var offset = (0, _timeUtils.getTouchEventOffsetValues)(event);
-	
-	        event.offsetX = offset.offsetX;
-	        event.offsetY = offset.offsetY;
-	      }
-	
-	      var hours = this.getHours(event.offsetX, event.offsetY);
-	
-	      this.props.onChange(hours, finish);
-	    }
-	  }, {
-	    key: 'getHours',
-	    value: function getHours(offsetX, offsetY) {
-	      var step = 30;
-	      var x = offsetX - this.center.x;
-	      var y = offsetY - this.center.y;
-	      var cx = this.basePoint.x - this.center.x;
-	      var cy = this.basePoint.y - this.center.y;
-	
-	      var atan = Math.atan2(cx, cy) - Math.atan2(x, y);
-	
-	      var deg = (0, _timeUtils.rad2deg)(atan);
-	      deg = Math.round(deg / step) * step;
-	      deg %= 360;
-	
-	      var value = Math.floor(deg / step) || 0;
-	
-	      var delta = Math.pow(x, 2) + Math.pow(y, 2);
-	      var distance = Math.sqrt(delta);
-	
-	      value = value || 12;
-	      if (this.props.format === '24hr') {
-	        if (distance < 90) {
-	          value += 12;
-	          value %= 24;
 	        }
 	      } else {
-	        value %= 12;
-	      }
-	
-	      return value;
-	    }
-	  }, {
-	    key: 'getSelected',
-	    value: function getSelected() {
-	      var hour = this.props.initialHours;
-	
-	      if (this.props.format === 'ampm') {
-	        hour %= 12;
-	        hour = hour || 12;
-	      }
-	
-	      return hour;
-	    }
-	  }, {
-	    key: 'getHourNumbers',
-	    value: function getHourNumbers() {
-	      var _this2 = this;
-	
-	      var style = {
-	        pointerEvents: 'none'
-	      };
-	      var hourSize = this.props.format === 'ampm' ? 12 : 24;
-	
-	      var hours = [];
-	      for (var i = 1; i <= hourSize; i++) {
-	        hours.push(i % 24);
-	      }
-	
-	      return hours.map(function (hour) {
-	        var isSelected = _this2.getSelected() === hour;
-	        return _react2.default.createElement(_ClockNumber2.default, {
-	          key: hour,
-	          style: style,
-	          isSelected: isSelected,
-	          type: 'hour',
-	          value: hour
-	        });
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var styles = {
-	        root: {
-	          height: '100%',
-	          width: '100%',
-	          borderRadius: '100%',
-	          position: 'relative',
-	          pointerEvents: 'none',
-	          boxSizing: 'border-box'
-	        },
-	
-	        hitMask: {
-	          height: '100%',
-	          width: '100%',
-	          pointerEvents: 'auto'
+	        if (chip.trim().length > 0) {
+	          if (chips.indexOf(chip) === -1) {
+	            if (this.props.value) {
+	              if (this.props.onRequestAdd) {
+	                this.props.onRequestAdd(chip);
+	              }
+	            } else {
+	              this.setState({ chips: [].concat(_toConsumableArray(this.state.chips), [chip]) });
+	              if (this.props.onChange) {
+	                this.props.onChange([].concat(_toConsumableArray(this.state.chips), [chip]));
+	              }
+	            }
+	          }
 	        }
-	      };
-	
-	      var prepareStyles = this.context.muiTheme.prepareStyles;
-	
-	      var hours = this.getSelected();
-	      var numbers = this.getHourNumbers();
-	
-	      return _react2.default.createElement(
-	        'div',
-	        { ref: 'clock', style: prepareStyles(styles.root) },
-	        _react2.default.createElement(_ClockPointer2.default, { hasSelected: true, value: hours, type: 'hour' }),
-	        numbers,
-	        _react2.default.createElement('div', {
-	          ref: 'mask', style: prepareStyles(styles.hitMask), onTouchMove: this.handleTouchMove,
-	          onTouchEnd: this.handleTouchEnd, onMouseUp: this.handleUp, onMouseMove: this.handleMove
-	        })
-	      );
-	    }
-	  }]);
-	  return ClockHours;
-	}(_react.Component);
-	
-	ClockHours.defaultProps = {
-	  initialHours: new Date().getHours(),
-	  onChange: function onChange() {},
-	  format: 'ampm'
-	};
-	ClockHours.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
-	};
-	process.env.NODE_ENV !== "production" ? ClockHours.propTypes = {
-	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
-	  initialHours: _react.PropTypes.number,
-	  onChange: _react.PropTypes.func
-	} : void 0;
-	exports.default = ClockHours;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
-
-/***/ },
-/* 1117 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _slicedToArray2 = __webpack_require__(1112);
-	
-	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _timeUtils = __webpack_require__(1118);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function getStyles(props, context) {
-	  var styles = {
-	    root: {
-	      directionInvariant: true,
-	      display: 'inline-block',
-	      position: 'absolute',
-	      width: 32,
-	      height: 32,
-	      borderRadius: '100%',
-	      left: 'calc(50% - 16px)',
-	      top: 10,
-	      textAlign: 'center',
-	      paddingTop: 5,
-	      userSelect: 'none', /* Chrome all / Safari all */
-	      fontSize: '1.1em',
-	      pointerEvents: 'none',
-	      boxSizing: 'border-box'
-	    }
-	  };
-	
-	  var muiTheme = context.muiTheme;
-	
-	
-	  var pos = props.value;
-	
-	  if (props.type === 'hour') {
-	    pos %= 12;
-	  } else {
-	    pos = pos / 5;
-	  }
-	
-	  var positions = [[0, 5], [54.5, 16.6], [94.4, 59.5], [109, 114], [94.4, 168.5], [54.5, 208.4], [0, 223], [-54.5, 208.4], [-94.4, 168.5], [-109, 114], [-94.4, 59.5], [-54.5, 19.6]];
-	
-	  var innerPositions = [[0, 40], [36.9, 49.9], [64, 77], [74, 114], [64, 151], [37, 178], [0, 188], [-37, 178], [-64, 151], [-74, 114], [-64, 77], [-37, 50]];
-	
-	  if (props.isSelected) {
-	    styles.root.backgroundColor = muiTheme.timePicker.accentColor;
-	    styles.root.color = muiTheme.timePicker.selectTextColor;
-	  }
-	
-	  var transformPos = positions[pos];
-	
-	  if ((0, _timeUtils.isInner)(props)) {
-	    styles.root.width = 28;
-	    styles.root.height = 28;
-	    styles.root.left = 'calc(50% - 14px)';
-	    transformPos = innerPositions[pos];
-	  }
-	
-	  var _transformPos = transformPos,
-	      _transformPos2 = (0, _slicedToArray3.default)(_transformPos, 2),
-	      x = _transformPos2[0],
-	      y = _transformPos2[1];
-	
-	  styles.root.transform = 'translate(' + x + 'px, ' + y + 'px)';
-	
-	  return styles;
-	}
-	
-	var ClockNumber = function (_Component) {
-	  (0, _inherits3.default)(ClockNumber, _Component);
-	
-	  function ClockNumber() {
-	    (0, _classCallCheck3.default)(this, ClockNumber);
-	    return (0, _possibleConstructorReturn3.default)(this, (ClockNumber.__proto__ || (0, _getPrototypeOf2.default)(ClockNumber)).apply(this, arguments));
-	  }
-	
-	  (0, _createClass3.default)(ClockNumber, [{
-	    key: 'render',
-	    value: function render() {
-	      var prepareStyles = this.context.muiTheme.prepareStyles;
-	
-	      var styles = getStyles(this.props, this.context);
-	      var clockNumber = this.props.value === 0 ? '00' : this.props.value;
-	
-	      return _react2.default.createElement(
-	        'span',
-	        { style: prepareStyles(styles.root) },
-	        clockNumber
-	      );
-	    }
-	  }]);
-	  return ClockNumber;
-	}(_react.Component);
-	
-	ClockNumber.defaultProps = {
-	  value: 0,
-	  type: 'minute',
-	  isSelected: false
-	};
-	ClockNumber.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
-	};
-	process.env.NODE_ENV !== "production" ? ClockNumber.propTypes = {
-	  isSelected: _react.PropTypes.bool,
-	  onSelected: _react.PropTypes.func,
-	  type: _react.PropTypes.oneOf(['hour', 'minute']),
-	  value: _react.PropTypes.number
-	} : void 0;
-	exports.default = ClockNumber;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
-
-/***/ },
-/* 1118 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.addHours = addHours;
-	exports.addMinutes = addMinutes;
-	exports.addSeconds = addSeconds;
-	exports.formatTime = formatTime;
-	exports.rad2deg = rad2deg;
-	exports.getTouchEventOffsetValues = getTouchEventOffsetValues;
-	exports.isInner = isInner;
-	function addHours(d, hours) {
-	  var newDate = clone(d);
-	  newDate.setHours(d.getHours() + hours);
-	  return newDate;
-	}
-	
-	function addMinutes(d, minutes) {
-	  var newDate = clone(d);
-	  newDate.setMinutes(d.getMinutes() + minutes);
-	  return newDate;
-	}
-	
-	function addSeconds(d, seconds) {
-	  var newDate = clone(d);
-	  newDate.setSeconds(d.getMinutes() + seconds);
-	  return newDate;
-	}
-	
-	function clone(d) {
-	  return new Date(d.getTime());
-	}
-	
-	/**
-	 * @param date [Date] A Date object.
-	 * @param format [String] One of 'ampm', '24hr', defaults to 'ampm'.
-	 * @param pedantic [Boolean] Check time-picker/time-picker.jsx file.
-	 *
-	 * @return String A string representing the formatted time.
-	 */
-	function formatTime(date) {
-	  var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'ampm';
-	  var pedantic = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-	
-	  if (!date) return '';
-	  var hours = date.getHours();
-	  var mins = date.getMinutes().toString();
-	
-	  if (format === 'ampm') {
-	    var isAM = hours < 12;
-	    hours = hours % 12;
-	    var additional = isAM ? ' am' : ' pm';
-	    hours = (hours || 12).toString();
-	
-	    if (mins.length < 2) mins = '0' + mins;
-	
-	    if (pedantic) {
-	      // Treat midday/midnight specially http://www.nist.gov/pml/div688/times.cfm
-	      if (hours === '12' && mins === '00') {
-	        return additional === ' pm' ? '12 noon' : '12 midnight';
 	      }
 	    }
+	  }, {
+	    key: 'handleDeleteChip',
+	    value: function handleDeleteChip(chip, i) {
+	      var _this4 = this;
 	
-	    return hours + (mins === '00' ? '' : ':' + mins) + additional;
-	  }
-	
-	  hours = hours.toString();
-	
-	  if (hours.length < 2) hours = '0' + hours;
-	  if (mins.length < 2) mins = '0' + mins;
-	
-	  return hours + ':' + mins;
-	}
-	
-	function rad2deg(rad) {
-	  return rad * 57.29577951308232;
-	}
-	
-	function getTouchEventOffsetValues(event) {
-	  var el = event.target;
-	  var boundingRect = el.getBoundingClientRect();
-	
-	  return {
-	    offsetX: event.clientX - boundingRect.left,
-	    offsetY: event.clientY - boundingRect.top
-	  };
-	}
-	
-	function isInner(props) {
-	  if (props.type !== 'hour') {
-	    return false;
-	  }
-	  return props.value < 1 || props.value > 12;
-	}
-
-/***/ },
-/* 1119 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _timeUtils = __webpack_require__(1118);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function calcAngle(value, base) {
-	  value %= base;
-	  var angle = 360 / base * value;
-	  return angle;
-	}
-	
-	function getStyles(props, context, state) {
-	  var hasSelected = props.hasSelected,
-	      type = props.type,
-	      value = props.value;
-	  var inner = state.inner;
-	  var timePicker = context.muiTheme.timePicker;
-	
-	  var angle = type === 'hour' ? calcAngle(value, 12) : calcAngle(value, 60);
-	
-	  var styles = {
-	    root: {
-	      height: inner ? '30%' : '40%',
-	      background: timePicker.accentColor,
-	      width: 2,
-	      left: 'calc(50% - 1px)',
-	      position: 'absolute',
-	      bottom: '50%',
-	      transformOrigin: 'bottom',
-	      pointerEvents: 'none',
-	      transform: 'rotateZ(' + angle + 'deg)'
-	    },
-	    mark: {
-	      boxSizing: 'content-box',
-	      background: timePicker.selectTextColor,
-	      border: '4px solid ' + timePicker.accentColor,
-	      display: hasSelected && 'none',
-	      width: 7,
-	      height: 7,
-	      position: 'absolute',
-	      top: -5,
-	      left: -6,
-	      borderRadius: '100%'
-	    }
-	  };
-	
-	  return styles;
-	}
-	
-	var ClockPointer = function (_Component) {
-	  (0, _inherits3.default)(ClockPointer, _Component);
-	
-	  function ClockPointer() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    (0, _classCallCheck3.default)(this, ClockPointer);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ClockPointer.__proto__ || (0, _getPrototypeOf2.default)(ClockPointer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      inner: false
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-	  }
-	
-	  (0, _createClass3.default)(ClockPointer, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      this.setState({
-	        inner: (0, _timeUtils.isInner)(this.props)
-	      });
+	      if (this.props.value) {
+	        if (this.props.onRequestDelete) {
+	          this.props.onRequestDelete(chip, i);
+	        }
+	      } else {
+	        if (this.props.dataSourceConfig) {
+	          var chips = this.state.chips.filter(function (c) {
+	            return c[_this4.props.dataSourceConfig.value] !== chip;
+	          });
+	          if (chips.length !== this.state.chips.length) {
+	            this.setState({
+	              chips: chips,
+	              focusedChip: this.state.focusedChip && this.state.focusedChip[this.props.dataSourceConfig.value] === chip ? null : this.state.focusedChip
+	            });
+	            if (this.props.onChange) {
+	              this.props.onChange(chips);
+	            }
+	          }
+	        } else {
+	          var _chips3 = this.state.chips.filter(function (c) {
+	            return c !== chip;
+	          });
+	          if (_chips3.length !== this.state.chips.length) {
+	            this.setState({
+	              chips: _chips3,
+	              focusedChip: this.state.focusedChip === chip ? null : this.state.focusedChip
+	            });
+	            if (this.props.onChange) {
+	              this.props.onChange(_chips3);
+	            }
+	          }
+	        }
+	      }
 	    }
 	  }, {
-	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps(nextProps) {
-	      this.setState({
-	        inner: (0, _timeUtils.isInner)(nextProps)
-	      });
+	    key: 'clearInput',
+	    value: function clearInput() {
+	      this.setState({ inputValue: '' });
 	    }
+	
+	    /**
+	     * Sets a reference to the AutoComplete instance.
+	     *
+	     * Using a bound class method here to set `autoComplete` to avoid it being set
+	     * to null by an inline ref callback.
+	     *
+	     * See [Issue #71](https://github.com/TeamWertarbyte/material-ui-chip-input/issues/71)
+	     *
+	     * @param {Object} autoComplete - The AutoComplete DOM element or null
+	     */
+	
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      if (this.props.value === null) {
-	        return _react2.default.createElement('span', null);
-	      }
+	      var _this5 = this;
+	
+	      var _props2 = this.props,
+	          children = _props2.children,
+	          className = _props2.className,
+	          dataSourceConfig = _props2.dataSourceConfig,
+	          disabled = _props2.disabled,
+	          errorStyle = _props2.errorStyle,
+	          errorText = _props2.errorText,
+	          fullWidth = _props2.fullWidth,
+	          fullWidthInput = _props2.fullWidthInput,
+	          hintText = _props2.hintText,
+	          hintStyle = _props2.hintStyle,
+	          id = _props2.id,
+	          inputStyle = _props2.inputStyle,
+	          clearOnBlur = _props2.clearOnBlur,
+	          onBlur = _props2.onBlur,
+	          onChange = _props2.onChange,
+	          onFocus = _props2.onFocus,
+	          style = _props2.style,
+	          underlineDisabledStyle = _props2.underlineDisabledStyle,
+	          underlineFocusStyle = _props2.underlineFocusStyle,
+	          underlineShow = _props2.underlineShow,
+	          underlineStyle = _props2.underlineStyle,
+	          _props2$defaultValue = _props2.defaultValue,
+	          defaultValue = _props2$defaultValue === undefined ? [] : _props2$defaultValue,
+	          filter = _props2.filter,
+	          value = _props2.value,
+	          dataSource = _props2.dataSource,
+	          floatingLabelFixed = _props2.floatingLabelFixed,
+	          floatingLabelFocusStyle = _props2.floatingLabelFocusStyle,
+	          floatingLabelStyle = _props2.floatingLabelStyle,
+	          floatingLabelText = _props2.floatingLabelText,
+	          onRequestAdd = _props2.onRequestAdd,
+	          onRequestDelete = _props2.onRequestDelete,
+	          _props2$chipRenderer = _props2.chipRenderer,
+	          chipRenderer = _props2$chipRenderer === undefined ? defaultChipRenderer : _props2$chipRenderer,
+	          newChipKeyCodes = _props2.newChipKeyCodes,
+	          other = _objectWithoutProperties(_props2, ['children', 'className', 'dataSourceConfig', 'disabled', 'errorStyle', 'errorText', 'fullWidth', 'fullWidthInput', 'hintText', 'hintStyle', 'id', 'inputStyle', 'clearOnBlur', 'onBlur', 'onChange', 'onFocus', 'style', 'underlineDisabledStyle', 'underlineFocusStyle', 'underlineShow', 'underlineStyle', 'defaultValue', 'filter', 'value', 'dataSource', 'floatingLabelFixed', 'floatingLabelFocusStyle', 'floatingLabelStyle', 'floatingLabelText', 'onRequestAdd', 'onRequestDelete', 'chipRenderer', 'newChipKeyCodes']);
+	
+	      var prepareStyles = this.context.muiTheme.prepareStyles;
 	
 	      var styles = getStyles(this.props, this.context, this.state);
-	      var prepareStyles = this.context.muiTheme.prepareStyles;
+	      var inputId = id || this.uniqueId;
 	
+	      var inputProps = {
+	        id: inputId,
+	        ref: function ref(elem) {
+	          return _this5.input = elem;
+	        },
+	        disabled: !!this.props.disabled,
+	        onBlur: this.handleInputBlur,
+	        onFocus: this.handleInputFocus,
+	        onKeyDown: this.handleKeyDown,
+	        fullWidth: !!fullWidthInput
+	      };
 	
-	      return _react2.default.createElement(
+	      var inputStyleMerged = _extends(styles.input, inputStyle);
+	
+	      var hasInput = (this.props.value || this.state.chips).length > 0 || this.state.inputValue.length > 0;
+	      var showHintText = hintText && !hasInput;
+	      var shrinkFloatingLabel = floatingLabelText && (hasInput || this.state.isFocused || floatingLabelFixed);
+	
+	      var errorTextElement = this.state.errorText && _react2.default.createElement(
 	        'div',
-	        { style: prepareStyles(styles.root) },
-	        _react2.default.createElement('div', { style: prepareStyles(styles.mark) })
+	        { style: prepareStyles(styles.error) },
+	        this.state.errorText
 	      );
-	    }
-	  }]);
-	  return ClockPointer;
-	}(_react.Component);
 	
-	ClockPointer.defaultProps = {
-	  hasSelected: false,
-	  value: null,
-	  type: 'minute'
-	};
-	ClockPointer.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
-	};
-	process.env.NODE_ENV !== "production" ? ClockPointer.propTypes = {
-	  hasSelected: _react.PropTypes.bool,
-	  type: _react.PropTypes.oneOf(['hour', 'minute']),
-	  value: _react.PropTypes.number
-	} : void 0;
-	exports.default = ClockPointer;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
-
-/***/ },
-/* 1120 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	      var floatingLabelTextElement = floatingLabelText && _react2.default.createElement(
+	        _TextFieldLabel2.default,
+	        {
+	          muiTheme: this.context.muiTheme,
+	          style: _extends(styles.floatingLabel, this.props.floatingLabelStyle),
+	          shrinkStyle: _extends(styles.floatingLabelFocusStyle, this.props.floatingLabelFocusStyle),
+	          htmlFor: inputId,
+	          shrink: shrinkFloatingLabel,
+	          disabled: disabled
+	        },
+	        floatingLabelText
+	      );
 	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _getPrototypeOf = __webpack_require__(865);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	var _classCallCheck2 = __webpack_require__(870);
-	
-	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-	
-	var _createClass2 = __webpack_require__(871);
-	
-	var _createClass3 = _interopRequireDefault(_createClass2);
-	
-	var _possibleConstructorReturn2 = __webpack_require__(875);
-	
-	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-	
-	var _inherits2 = __webpack_require__(910);
-	
-	var _inherits3 = _interopRequireDefault(_inherits2);
-	
-	var _react = __webpack_require__(300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _ClockNumber = __webpack_require__(1117);
-	
-	var _ClockNumber2 = _interopRequireDefault(_ClockNumber);
-	
-	var _ClockPointer = __webpack_require__(1119);
-	
-	var _ClockPointer2 = _interopRequireDefault(_ClockPointer);
-	
-	var _timeUtils = __webpack_require__(1118);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var ClockMinutes = function (_Component) {
-	  (0, _inherits3.default)(ClockMinutes, _Component);
-	
-	  function ClockMinutes() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
-	    (0, _classCallCheck3.default)(this, ClockMinutes);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ClockMinutes.__proto__ || (0, _getPrototypeOf2.default)(ClockMinutes)).call.apply(_ref, [this].concat(args))), _this), _this.handleUp = function (event) {
-	      event.preventDefault();
-	      _this.setClock(event.nativeEvent, true);
-	    }, _this.handleMove = function (event) {
-	      event.preventDefault();
-	      if (_this.isMousePressed(event) !== 1) {
-	        return;
+	      var overrideRootStyles = {};
+	      if (floatingLabelText) {
+	        overrideRootStyles.marginTop = 14;
 	      }
-	      _this.setClock(event.nativeEvent, false);
-	    }, _this.handleTouch = function (event) {
-	      event.preventDefault();
-	      _this.setClock(event.changedTouches[0], event.type === 'touchend');
-	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-	  }
-	
-	  (0, _createClass3.default)(ClockMinutes, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var clockElement = this.refs.mask;
-	
-	      this.center = {
-	        x: clockElement.offsetWidth / 2,
-	        y: clockElement.offsetHeight / 2
-	      };
-	
-	      this.basePoint = {
-	        x: this.center.x,
-	        y: 0
-	      };
-	    }
-	  }, {
-	    key: 'isMousePressed',
-	    value: function isMousePressed(event) {
-	      if (typeof event.buttons === 'undefined') {
-	        return event.nativeEvent.which;
+	      if (fullWidth) {
+	        overrideRootStyles.width = '100%';
 	      }
-	      return event.buttons;
-	    }
-	  }, {
-	    key: 'setClock',
-	    value: function setClock(event, finish) {
-	      if (typeof event.offsetX === 'undefined') {
-	        var offset = (0, _timeUtils.getTouchEventOffsetValues)(event);
-	
-	        event.offsetX = offset.offsetX;
-	        event.offsetY = offset.offsetY;
+	      if (disabled) {
+	        overrideRootStyles.cursor = 'not-allowed';
 	      }
 	
-	      var minutes = this.getMinutes(event.offsetX, event.offsetY);
-	
-	      this.props.onChange(minutes, finish);
-	    }
-	  }, {
-	    key: 'getMinutes',
-	    value: function getMinutes(offsetX, offsetY) {
-	      var step = 6;
-	      var x = offsetX - this.center.x;
-	      var y = offsetY - this.center.y;
-	      var cx = this.basePoint.x - this.center.x;
-	      var cy = this.basePoint.y - this.center.y;
-	
-	      var atan = Math.atan2(cx, cy) - Math.atan2(x, y);
-	
-	      var deg = (0, _timeUtils.rad2deg)(atan);
-	      deg = Math.round(deg / step) * step;
-	      deg %= 360;
-	
-	      var value = Math.floor(deg / step) || 0;
-	
-	      return value;
-	    }
-	  }, {
-	    key: 'getMinuteNumbers',
-	    value: function getMinuteNumbers() {
-	      var minutes = [];
-	      for (var i = 0; i < 12; i++) {
-	        minutes.push(i * 5);
-	      }
-	      var selectedMinutes = this.props.initialMinutes;
-	      var hasSelected = false;
-	
-	      var numbers = minutes.map(function (minute) {
-	        var isSelected = selectedMinutes === minute;
-	        if (isSelected) {
-	          hasSelected = true;
-	        }
-	        return _react2.default.createElement(_ClockNumber2.default, {
-	          key: minute,
-	          isSelected: isSelected,
-	          type: 'minute',
-	          value: minute
+	      var chips = this.props.value || this.state.chips;
+	      var autoCompleteData = dataSourceConfig ? (dataSource || []).filter(function (value) {
+	        return !chips.some(function (c) {
+	          return c[dataSourceConfig.value] === value[dataSourceConfig.value];
 	        });
+	      }) : (dataSource || []).filter(function (value) {
+	        return chips.indexOf(value) < 0;
 	      });
 	
-	      return {
-	        numbers: numbers,
-	        hasSelected: hasSelected,
-	        selected: selectedMinutes
-	      };
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var styles = {
-	        root: {
-	          height: '100%',
-	          width: '100%',
-	          borderRadius: '100%',
-	          position: 'relative',
-	          pointerEvents: 'none',
-	          boxSizing: 'border-box'
-	        },
-	
-	        hitMask: {
-	          height: '100%',
-	          width: '100%',
-	          pointerEvents: 'auto'
-	        }
-	      };
-	
-	      var prepareStyles = this.context.muiTheme.prepareStyles;
-	
-	      var minutes = this.getMinuteNumbers();
+	      var actualFilter = other.openOnFocus ? function (search, key) {
+	        return search === '' || filter(search, key);
+	      } : filter;
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { ref: 'clock', style: prepareStyles(styles.root) },
-	        _react2.default.createElement(_ClockPointer2.default, { value: minutes.selected, type: 'minute', hasSelected: minutes.hasSelected }),
-	        minutes.numbers,
-	        _react2.default.createElement('div', {
-	          ref: 'mask',
-	          style: prepareStyles(styles.hitMask),
-	          onTouchMove: this.handleTouch,
-	          onTouchEnd: this.handleTouch,
-	          onMouseUp: this.handleUp,
-	          onMouseMove: this.handleMove
-	        })
+	        {
+	          className: className,
+	          style: prepareStyles(_extends(styles.root, style, overrideRootStyles)),
+	          onTouchTap: function onTouchTap() {
+	            return _this5.focus();
+	          }
+	        },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          floatingLabelTextElement,
+	          _react2.default.createElement(
+	            'div',
+	            { style: { marginTop: floatingLabelText ? 12 : 0 } },
+	            chips.map(function (tag, i) {
+	              var value = dataSourceConfig ? tag[dataSourceConfig.value] : tag;
+	              return chipRenderer({
+	                value: value,
+	                text: dataSourceConfig ? tag[dataSourceConfig.text] : tag,
+	                isDisabled: disabled,
+	                isFocused: dataSourceConfig ? _this5.state.focusedChip && _this5.state.focusedChip[dataSourceConfig.value] === value : _this5.state.focusedChip === value,
+	                handleClick: function handleClick() {
+	                  return _this5.setState({ focusedChip: value });
+	                },
+	                handleRequestDelete: function handleRequestDelete() {
+	                  return _this5.handleDeleteChip(value, i);
+	                },
+	                defaultStyle: styles.defaultChip
+	              }, i);
+	            })
+	          )
+	        ),
+	        hintText ? _react2.default.createElement(_TextFieldHint2.default, {
+	          muiTheme: this.context.muiTheme,
+	          show: showHintText && !(floatingLabelText && !floatingLabelFixed && !this.state.isFocused),
+	          style: _extends({ bottom: 20, pointerEvents: 'none' }, hintStyle),
+	          text: hintText
+	        }) : null,
+	        _react2.default.createElement(_AutoComplete2.default, _extends({}, other, inputProps, {
+	          filter: actualFilter,
+	          style: inputStyleMerged,
+	          dataSource: autoCompleteData,
+	          dataSourceConfig: dataSourceConfig,
+	          searchText: this.state.inputValue,
+	          underlineShow: false,
+	          onKeyUp: this.handleKeyUp,
+	          ref: this.setAutoComplete
+	        })),
+	        underlineShow ? _react2.default.createElement(_TextFieldUnderline2.default, {
+	          disabled: disabled,
+	          disabledStyle: underlineDisabledStyle,
+	          error: !!this.state.errorText,
+	          errorStyle: errorStyle,
+	          focus: this.state.isFocused,
+	          focusStyle: underlineFocusStyle,
+	          muiTheme: this.context.muiTheme,
+	          style: underlineStyle
+	        }) : null,
+	        errorTextElement
 	      );
 	    }
 	  }]);
-	  return ClockMinutes;
-	}(_react.Component);
 	
-	ClockMinutes.defaultProps = {
-	  initialMinutes: new Date().getMinutes(),
-	  onChange: function onChange() {}
+	  return ChipInput;
+	}(_react2.default.Component);
+	
+	ChipInput.contextTypes = {
+	  muiTheme: _react2.default.PropTypes.object.isRequired
 	};
-	ClockMinutes.contextTypes = {
-	  muiTheme: _react.PropTypes.object.isRequired
+	
+	
+	ChipInput.propTypes = {
+	  style: _react.PropTypes.object,
+	  floatingLabelText: _react.PropTypes.node,
+	  hintText: _react.PropTypes.node,
+	  id: _react.PropTypes.string,
+	  dataSourceConfig: _react.PropTypes.shape({
+	    text: _react.PropTypes.string.isRequired,
+	    value: _react.PropTypes.string.isRequired
+	  }),
+	  disabled: _react.PropTypes.bool,
+	  defaultValue: _react.PropTypes.oneOfType([_react.PropTypes.arrayOf(_react.PropTypes.string), _react.PropTypes.arrayOf(_react.PropTypes.object)]),
+	  onChange: _react.PropTypes.func,
+	  value: _react.PropTypes.oneOfType([_react.PropTypes.arrayOf(_react.PropTypes.string), _react.PropTypes.arrayOf(_react.PropTypes.object)]),
+	  onRequestAdd: _react.PropTypes.func,
+	  onRequestDelete: _react.PropTypes.func,
+	  dataSource: _react.PropTypes.oneOfType([_react.PropTypes.arrayOf(_react.PropTypes.string), _react.PropTypes.arrayOf(_react.PropTypes.object)]),
+	  onUpdateInput: _react.PropTypes.func,
+	  openOnFocus: _react.PropTypes.bool,
+	  chipRenderer: _react.PropTypes.func,
+	  newChipKeyCodes: _react.PropTypes.arrayOf(_react.PropTypes.number),
+	  clearOnBlur: _react.PropTypes.bool
 	};
-	process.env.NODE_ENV !== "production" ? ClockMinutes.propTypes = {
-	  initialMinutes: _react.PropTypes.number,
-	  onChange: _react.PropTypes.func
-	} : void 0;
-	exports.default = ClockMinutes;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+	
+	ChipInput.defaultProps = {
+	  filter: _AutoComplete2.default.caseInsensitiveFilter,
+	  newChipKeyCodes: [13],
+	  clearOnBlur: true,
+	  underlineShow: true
+	};
+	
+	exports.default = ChipInput;
 
 /***/ },
-/* 1121 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = undefined;
-	
-	var _AutoComplete = __webpack_require__(1122);
-	
-	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = _AutoComplete2.default;
-
-/***/ },
-/* 1122 */
+/* 1106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -86824,7 +85127,7 @@
 	
 	var _TextField2 = _interopRequireDefault(_TextField);
 	
-	var _Menu = __webpack_require__(1123);
+	var _Menu = __webpack_require__(1107);
 	
 	var _Menu2 = _interopRequireDefault(_Menu);
 	
@@ -87446,7 +85749,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
-/* 1123 */
+/* 1107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -87471,7 +85774,375 @@
 	exports.default = _Menu3.default;
 
 /***/ },
-/* 1124 */
+/* 1108 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _Chip = __webpack_require__(1109);
+	
+	var _Chip2 = _interopRequireDefault(_Chip);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _Chip2.default;
+
+/***/ },
+/* 1109 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends2 = __webpack_require__(826);
+	
+	var _extends3 = _interopRequireDefault(_extends2);
+	
+	var _objectWithoutProperties2 = __webpack_require__(864);
+	
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _simpleAssign = __webpack_require__(918);
+	
+	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _keycode = __webpack_require__(952);
+	
+	var _keycode2 = _interopRequireDefault(_keycode);
+	
+	var _colorManipulator = __webpack_require__(946);
+	
+	var _EnhancedButton = __webpack_require__(950);
+	
+	var _EnhancedButton2 = _interopRequireDefault(_EnhancedButton);
+	
+	var _cancel = __webpack_require__(1110);
+	
+	var _cancel2 = _interopRequireDefault(_cancel);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function getStyles(props, context, state) {
+	  var chip = context.muiTheme.chip;
+	
+	
+	  var backgroundColor = props.backgroundColor || chip.backgroundColor;
+	  var focusColor = (0, _colorManipulator.emphasize)(backgroundColor, 0.08);
+	  var pressedColor = (0, _colorManipulator.emphasize)(backgroundColor, 0.12);
+	
+	  return {
+	    avatar: {
+	      marginRight: -4
+	    },
+	    deleteIcon: {
+	      color: state.deleteHovered ? (0, _colorManipulator.fade)(chip.deleteIconColor, 0.4) : chip.deleteIconColor,
+	      cursor: 'pointer',
+	      margin: '4px 4px 0px -8px'
+	    },
+	    label: {
+	      color: props.labelColor || chip.textColor,
+	      fontSize: chip.fontSize,
+	      fontWeight: chip.fontWeight,
+	      lineHeight: '32px',
+	      paddingLeft: 12,
+	      paddingRight: 12,
+	      userSelect: 'none',
+	      whiteSpace: 'nowrap'
+	    },
+	    root: {
+	      backgroundColor: state.clicked ? pressedColor : state.focused || state.hovered ? focusColor : backgroundColor,
+	      borderRadius: 16,
+	      boxShadow: state.clicked ? chip.shadow : null,
+	      cursor: props.onTouchTap ? 'pointer' : 'default',
+	      display: 'flex',
+	      whiteSpace: 'nowrap',
+	      width: 'fit-content'
+	    }
+	  };
+	}
+	
+	var Chip = function (_Component) {
+	  (0, _inherits3.default)(Chip, _Component);
+	
+	  function Chip() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, Chip);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Chip.__proto__ || (0, _getPrototypeOf2.default)(Chip)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      clicked: false,
+	      deleteHovered: false,
+	      focused: false,
+	      hovered: false
+	    }, _this.handleBlur = function (event) {
+	      _this.setState({ clicked: false, focused: false });
+	      _this.props.onBlur(event);
+	    }, _this.handleFocus = function (event) {
+	      if (_this.props.onTouchTap || _this.props.onRequestDelete) {
+	        _this.setState({ focused: true });
+	      }
+	      _this.props.onFocus(event);
+	    }, _this.handleKeyboardFocus = function (event, keyboardFocused) {
+	      if (keyboardFocused) {
+	        _this.handleFocus();
+	        _this.props.onFocus(event);
+	      } else {
+	        _this.handleBlur();
+	      }
+	
+	      _this.props.onKeyboardFocus(event, keyboardFocused);
+	    }, _this.handleKeyDown = function (event) {
+	      if ((0, _keycode2.default)(event) === 'backspace') {
+	        event.preventDefault();
+	        if (_this.props.onRequestDelete) {
+	          _this.props.onRequestDelete(event);
+	        }
+	      }
+	      _this.props.onKeyDown(event);
+	    }, _this.handleMouseDown = function (event) {
+	      // Only listen to left clicks
+	      if (event.button === 0) {
+	        event.stopPropagation();
+	        if (_this.props.onTouchTap) {
+	          _this.setState({ clicked: true });
+	        }
+	      }
+	      _this.props.onMouseDown(event);
+	    }, _this.handleMouseEnter = function (event) {
+	      if (_this.props.onTouchTap) {
+	        _this.setState({ hovered: true });
+	      }
+	      _this.props.onMouseEnter(event);
+	    }, _this.handleMouseEnterDeleteIcon = function () {
+	      _this.setState({ deleteHovered: true });
+	    }, _this.handleMouseLeave = function (event) {
+	      _this.setState({
+	        clicked: false,
+	        hovered: false
+	      });
+	      _this.props.onMouseLeave(event);
+	    }, _this.handleMouseLeaveDeleteIcon = function () {
+	      _this.setState({ deleteHovered: false });
+	    }, _this.handleMouseUp = function (event) {
+	      _this.setState({ clicked: false });
+	      _this.props.onMouseUp(event);
+	    }, _this.handleTouchTapDeleteIcon = function (event) {
+	      // Stop the event from bubbling up to the `Chip`
+	      event.stopPropagation();
+	      _this.props.onRequestDelete(event);
+	    }, _this.handleTouchEnd = function (event) {
+	      _this.setState({ clicked: false });
+	      _this.props.onTouchEnd(event);
+	    }, _this.handleTouchStart = function (event) {
+	      event.stopPropagation();
+	      if (_this.props.onTouchTap) {
+	        _this.setState({ clicked: true });
+	      }
+	      _this.props.onTouchStart(event);
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(Chip, [{
+	    key: 'render',
+	    value: function render() {
+	      var buttonEventHandlers = {
+	        onBlur: this.handleBlur,
+	        onFocus: this.handleFocus,
+	        onKeyDown: this.handleKeyDown,
+	        onMouseDown: this.handleMouseDown,
+	        onMouseEnter: this.handleMouseEnter,
+	        onMouseLeave: this.handleMouseLeave,
+	        onMouseUp: this.handleMouseUp,
+	        onTouchEnd: this.handleTouchEnd,
+	        onTouchStart: this.handleTouchStart,
+	        onKeyboardFocus: this.handleKeyboardFocus
+	      };
+	
+	      var prepareStyles = this.context.muiTheme.prepareStyles;
+	
+	      var styles = getStyles(this.props, this.context, this.state);
+	
+	      var _props = this.props,
+	          childrenProp = _props.children,
+	          containerElement = _props.containerElement,
+	          style = _props.style,
+	          className = _props.className,
+	          labelStyle = _props.labelStyle,
+	          labelColor = _props.labelColor,
+	          backgroundColor = _props.backgroundColor,
+	          onRequestDelete = _props.onRequestDelete,
+	          other = (0, _objectWithoutProperties3.default)(_props, ['children', 'containerElement', 'style', 'className', 'labelStyle', 'labelColor', 'backgroundColor', 'onRequestDelete']);
+	
+	
+	      var deletable = this.props.onRequestDelete;
+	      var avatar = null;
+	
+	      var deleteIcon = deletable ? _react2.default.createElement(_cancel2.default, {
+	        color: styles.deleteIcon.color,
+	        style: styles.deleteIcon,
+	        onTouchTap: this.handleTouchTapDeleteIcon,
+	        onMouseEnter: this.handleMouseEnterDeleteIcon,
+	        onMouseLeave: this.handleMouseLeaveDeleteIcon
+	      }) : null;
+	
+	      var children = childrenProp;
+	      var childCount = _react2.default.Children.count(children);
+	
+	      // If the first child is an avatar, extract it and style it
+	      if (childCount > 1) {
+	        children = _react2.default.Children.toArray(children);
+	
+	        if (_react2.default.isValidElement(children[0]) && children[0].type.muiName === 'Avatar') {
+	          avatar = children.shift();
+	
+	          avatar = _react2.default.cloneElement(avatar, {
+	            style: (0, _simpleAssign2.default)(styles.avatar, avatar.props.style),
+	            size: 32
+	          });
+	        }
+	      }
+	
+	      return _react2.default.createElement(
+	        _EnhancedButton2.default,
+	        (0, _extends3.default)({}, other, buttonEventHandlers, {
+	          className: className,
+	          containerElement: containerElement,
+	          disableTouchRipple: true,
+	          disableFocusRipple: true,
+	          style: (0, _simpleAssign2.default)(styles.root, style)
+	        }),
+	        avatar,
+	        _react2.default.createElement(
+	          'span',
+	          { style: prepareStyles((0, _simpleAssign2.default)(styles.label, labelStyle)) },
+	          children
+	        ),
+	        deleteIcon
+	      );
+	    }
+	  }]);
+	  return Chip;
+	}(_react.Component);
+	
+	Chip.defaultProps = {
+	  containerElement: 'div', // Firefox doesn't support nested buttons
+	  onBlur: function onBlur() {},
+	  onFocus: function onFocus() {},
+	  onKeyDown: function onKeyDown() {},
+	  onKeyboardFocus: function onKeyboardFocus() {},
+	  onMouseDown: function onMouseDown() {},
+	  onMouseEnter: function onMouseEnter() {},
+	  onMouseLeave: function onMouseLeave() {},
+	  onMouseUp: function onMouseUp() {},
+	  onTouchEnd: function onTouchEnd() {},
+	  onTouchStart: function onTouchStart() {}
+	};
+	Chip.contextTypes = { muiTheme: _react.PropTypes.object.isRequired };
+	process.env.NODE_ENV !== "production" ? Chip.propTypes = {
+	  /**
+	   * Override the background color of the chip.
+	   */
+	  backgroundColor: _react.PropTypes.string,
+	  /**
+	   * Used to render elements inside the Chip.
+	   */
+	  children: _react.PropTypes.node,
+	  /**
+	   * CSS `className` of the root element.
+	   */
+	  className: _react.PropTypes.node,
+	  /**
+	   * The element to use as the container for the Chip. Either a string to
+	   * use a DOM element or a ReactElement.
+	   */
+	  containerElement: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.element]),
+	  /**
+	   * Override the label color.
+	   */
+	  labelColor: _react.PropTypes.string,
+	  /**
+	   * Override the inline-styles of the label.
+	   */
+	  labelStyle: _react.PropTypes.object,
+	  /** @ignore */
+	  onBlur: _react.PropTypes.func,
+	  /** @ignore */
+	  onFocus: _react.PropTypes.func,
+	  /** @ignore */
+	  onKeyDown: _react.PropTypes.func,
+	  /** @ignore */
+	  onKeyboardFocus: _react.PropTypes.func,
+	  /** @ignore */
+	  onMouseDown: _react.PropTypes.func,
+	  /** @ignore */
+	  onMouseEnter: _react.PropTypes.func,
+	  /** @ignore */
+	  onMouseLeave: _react.PropTypes.func,
+	  /** @ignore */
+	  onMouseUp: _react.PropTypes.func,
+	  /**
+	   * Callback function fired when the delete icon is clicked. If set, the delete icon will be shown.
+	   * @param {object} event `touchTap` event targeting the element.
+	   */
+	  onRequestDelete: _react.PropTypes.func,
+	  /** @ignore */
+	  onTouchEnd: _react.PropTypes.func,
+	  /** @ignore */
+	  onTouchStart: _react.PropTypes.func,
+	  /**
+	   * Callback function fired when the `Chip` element is touch-tapped.
+	   *
+	   * @param {object} event TouchTap event targeting the element.
+	   */
+	  onTouchTap: _react.PropTypes.func,
+	  /**
+	   * Override the inline-styles of the root element.
+	   */
+	  style: _react.PropTypes.object
+	} : void 0;
+	exports.default = Chip;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -87484,11 +86155,2542 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactTapEventPlugin = __webpack_require__(1125);
+	var _pure = __webpack_require__(982);
+	
+	var _pure2 = _interopRequireDefault(_pure);
+	
+	var _SvgIcon = __webpack_require__(991);
+	
+	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var NavigationCancel = function NavigationCancel(props) {
+	  return _react2.default.createElement(
+	    _SvgIcon2.default,
+	    props,
+	    _react2.default.createElement('path', { d: 'M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z' })
+	  );
+	};
+	NavigationCancel = (0, _pure2.default)(NavigationCancel);
+	NavigationCancel.displayName = 'NavigationCancel';
+	NavigationCancel.muiName = 'SvgIcon';
+	
+	exports.default = NavigationCancel;
+
+/***/ },
+/* 1111 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jssThemeReactor = __webpack_require__(810);
+	
+	var _userManager = __webpack_require__(803);
+	
+	var _userManager2 = _interopRequireDefault(_userManager);
+	
+	var _reactRedux = __webpack_require__(477);
+	
+	var _reduxForm = __webpack_require__(600);
+	
+	var _actions = __webpack_require__(594);
+	
+	var _simpleFrame = __webpack_require__(822);
+	
+	var _simpleFrame2 = _interopRequireDefault(_simpleFrame);
+	
+	var _reactFlexboxGrid = __webpack_require__(928);
+	
+	var _Paper = __webpack_require__(924);
+	
+	var _Paper2 = _interopRequireDefault(_Paper);
+	
+	var _colors = __webpack_require__(1051);
+	
+	var _RaisedButton = __webpack_require__(944);
+	
+	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
+	
+	var _FlatButton = __webpack_require__(1007);
+	
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+	
+	var _DatePicker = __webpack_require__(1080);
+	
+	var _DatePicker2 = _interopRequireDefault(_DatePicker);
+	
+	var _IconButton = __webpack_require__(976);
+	
+	var _IconButton2 = _interopRequireDefault(_IconButton);
+	
+	var _add = __webpack_require__(1035);
+	
+	var _add2 = _interopRequireDefault(_add);
+	
+	var _SelectField = __webpack_require__(1097);
+	
+	var _SelectField2 = _interopRequireDefault(_SelectField);
+	
+	var _MenuItem = __webpack_require__(1062);
+	
+	var _MenuItem2 = _interopRequireDefault(_MenuItem);
+	
+	var _Snackbar = __webpack_require__(994);
+	
+	var _Snackbar2 = _interopRequireDefault(_Snackbar);
+	
+	var _List = __webpack_require__(1036);
+	
+	var _TextField = __webpack_require__(1010);
+	
+	var _TextField2 = _interopRequireDefault(_TextField);
+	
+	var _Divider = __webpack_require__(1016);
+	
+	var _Divider2 = _interopRequireDefault(_Divider);
+	
+	var _Table = __webpack_require__(1018);
+	
+	var _classesForm = __webpack_require__(1112);
+	
+	var _classesForm2 = _interopRequireDefault(_classesForm);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// import ListAllGroups from './listAllGroups';
+	
+	var ManageClassesPage = function (_React$Component) {
+	  _inherits(ManageClassesPage, _React$Component);
+	
+	  function ManageClassesPage(props) {
+	    _classCallCheck(this, ManageClassesPage);
+	
+	    return _possibleConstructorReturn(this, (ManageClassesPage.__proto__ || Object.getPrototypeOf(ManageClassesPage)).call(this, props));
+	
+	    // this.state = {
+	    //   value: null,
+	    //   startDate: this.props.temporaryGroup.startDate,
+	    //   endDate: this.props.temporaryGroup.endDate,
+	    //   levelSelectboxValue: null,
+	    // };
+	  }
+	
+	  _createClass(ManageClassesPage, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      // this.props.dispatch(loadProfileResourceStart());
+	      // this.props.dispatch(loadGroupsStart());
+	      // this.props.dispatch(loadLanguageInstructorsStart());
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	
+	      return _react2.default.createElement(
+	        _reactFlexboxGrid.Grid,
+	        { fluid: true },
+	        _react2.default.createElement(
+	          _reactFlexboxGrid.Row,
+	          { center: 'xs' },
+	          _react2.default.createElement(
+	            _reactFlexboxGrid.Col,
+	            { xs: 12, md: 6 },
+	            _react2.default.createElement(_classesForm2.default, null)
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return ManageClassesPage;
+	}(_react2.default.Component);
+	
+	var styles = {
+	  leftAlign: {
+	    textAlign: 'left'
+	  },
+	  btnGreen: {
+	    color: _colors.lightGreen500
+	  }
+	};
+	
+	function mapStateToProps(state) {
+	  return {
+	    // user: state.oidc.user,
+	    // profile: state.profileResource.profile,
+	    // existingGroups: state.groupResource.existingGroups,
+	    // existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
+	    // temporaryGroup: state.groupResource.temporaryGroup
+	  };
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	  return {
+	    dispatch: dispatch
+	  };
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(ManageClassesPage);
+
+/***/ },
+/* 1112 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jssThemeReactor = __webpack_require__(810);
+	
+	var _reactRedux = __webpack_require__(477);
+	
+	var _actions = __webpack_require__(594);
+	
+	var _simpleFrame = __webpack_require__(822);
+	
+	var _simpleFrame2 = _interopRequireDefault(_simpleFrame);
+	
+	var _colors = __webpack_require__(1051);
+	
+	var _FlatButton = __webpack_require__(1007);
+	
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+	
+	var _DatePicker = __webpack_require__(1080);
+	
+	var _DatePicker2 = _interopRequireDefault(_DatePicker);
+	
+	var _TimePicker = __webpack_require__(1113);
+	
+	var _TimePicker2 = _interopRequireDefault(_TimePicker);
+	
+	var _IconButton = __webpack_require__(976);
+	
+	var _IconButton2 = _interopRequireDefault(_IconButton);
+	
+	var _add = __webpack_require__(1035);
+	
+	var _add2 = _interopRequireDefault(_add);
+	
+	var _SelectField = __webpack_require__(1097);
+	
+	var _SelectField2 = _interopRequireDefault(_SelectField);
+	
+	var _MenuItem = __webpack_require__(1062);
+	
+	var _MenuItem2 = _interopRequireDefault(_MenuItem);
+	
+	var _Snackbar = __webpack_require__(994);
+	
+	var _Snackbar2 = _interopRequireDefault(_Snackbar);
+	
+	var _TextField = __webpack_require__(1010);
+	
+	var _TextField2 = _interopRequireDefault(_TextField);
+	
+	var _AutoComplete = __webpack_require__(1127);
+	
+	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
+	
+	var _reactFlexboxGrid = __webpack_require__(928);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ClassesForm = function (_React$Component) {
+	  _inherits(ClassesForm, _React$Component);
+	
+	  function ClassesForm(props) {
+	    _classCallCheck(this, ClassesForm);
+	
+	    var _this = _possibleConstructorReturn(this, (ClassesForm.__proto__ || Object.getPrototypeOf(ClassesForm)).call(this, props));
+	
+	    _this.state = {
+	      value: null,
+	
+	      existingStudentsGroups: _this.props.existingGroups,
+	
+	      unitOfClassesId: undefined,
+	      subject: undefined,
+	      shortDescription: undefined,
+	      startDate: undefined, // should be copied to startTime [redundant value, just for input purposes]
+	      startTime: undefined,
+	      endTime: undefined,
+	      studentsGroupId: null,
+	      personalProfileId: _this.props.profile.PersonalProfileId,
+	      localizationId: undefined
+	    };
+	
+	    _this.handleSubmit = _this.handleSubmit.bind(_this);
+	    _this.handleInputChange = _this.handleInputChange.bind(_this);
+	    _this.handleStartDateChange = _this.handleStartDateChange.bind(_this);
+	    _this.handleStartTimeChange = _this.handleStartTimeChange.bind(_this);
+	    _this.handleEndTimeChange = _this.handleEndTimeChange.bind(_this);
+	    _this.handleStudentGroupChange = _this.handleStudentGroupChange.bind(_this);
+	    return _this;
+	  }
+	
+	  _createClass(ClassesForm, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.props.dispatch((0, _actions.loadProfileResourceStart)());
+	      this.props.dispatch((0, _actions.loadGroupsStart)());
+	      this.props.dispatch((0, _actions.loadLanguageInstructorsStart)());
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      console.log("component did mount");
+	
+	      console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
+	      console.log("this.state.existingGroups: " + JSON.stringify(this.state.existingGroups));
+	    }
+	  }, {
+	    key: 'handleStartDateChange',
+	    value: function handleStartDateChange(event, date) {
+	      console.log("start date change");
+	      this.setState({ startDate: JSON.stringify(date).substr(1, 10) });
+	    }
+	  }, {
+	    key: 'handleStartTimeChange',
+	    value: function handleStartTimeChange(event, date) {
+	      console.log("start time change");
+	      this.setState({ startTime: JSON.stringify(date) });
+	    }
+	  }, {
+	    key: 'handleEndTimeChange',
+	    value: function handleEndTimeChange(event, date) {
+	      console.log("end time change");
+	      this.setState({ endTime: JSON.stringify(date) });
+	    }
+	  }, {
+	    key: 'handleStudentGroupChange',
+	    value: function handleStudentGroupChange(event, index, value) {
+	      console.log("handle level select change");
+	      console.log("index,value: " + index + " " + value);
+	
+	      this.setState({ studentsGroupId: value });
+	    }
+	  }, {
+	    key: 'handleInputChange',
+	    value: function handleInputChange(event) {
+	
+	      console.log("handle Input Change");
+	
+	      for (var i = 0; i < arguments.length; i++) {
+	        console.log('arguments[' + i + ']' + arguments[i]);
+	      }
+	
+	      var target = event.target;
+	      var value = target.type === 'checkbox' ? target.checked : target.value;
+	      var name = target.name;
+	      console.log("value: " + value);
+	      console.log("name: " + name);
+	
+	      this.state[name] = value;
+	
+	      this.forceUpdate();
+	    }
+	  }, {
+	    key: 'handleSubmit',
+	    value: function handleSubmit(event) {
+	      event.preventDefault();
+	      console.log("handle submit");
+	      console.log("this.state: " + JSON.stringify(this.state));
+	
+	      this.props.temporaryClasses.unitOfClassesId = this.state.unitOfClassesId, this.props.temporaryClasses.subject = this.state.subject, this.props.temporaryClasses.shortDescription = this.state.shortDescription, this.props.temporaryClasses.startDate = this.state.startDate, // should be copied to startTime [redundant value, just for input purposes]
+	      this.props.temporaryClasses.startTime = this.state.startTime, this.props.temporaryClasses.endTime = this.state.endTime, this.props.temporaryClasses.studentsGroupId = this.state.studentsGroupId, this.props.temporaryClasses.PersonalProfileId = this.state.personalProfileId, this.props.temporaryClasses.localizationId = this.state.localizationId, console.log("this.props.temporaryClasses: " + JSON.stringify(this.props.temporaryClasses));
+	
+	      this.props.dispatch((0, _actions.updateClassesStart)());
+	      //TODO Add Snackbar
+	      this.reset();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	
+	      return _react2.default.createElement(
+	        _simpleFrame2.default,
+	        {
+	          title: 'Schedule Classes'
+	          /*iconElementRight = {<FeatureButton />}*/
+	        },
+	        _react2.default.createElement(
+	          'form',
+	          { onSubmit: this.handleSubmit },
+	          _react2.default.createElement(
+	            _reactFlexboxGrid.Row,
+	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12, md: 6 },
+	              _react2.default.createElement(_TextField2.default, {
+	                value: this.state.subject,
+	                fullWidth: true,
+	                floatingLabelText: 'Subject',
+	                name: 'subject',
+	                onChange: this.handleInputChange
+	              })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactFlexboxGrid.Row,
+	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12, md: 12 },
+	              _react2.default.createElement(_TextField2.default, {
+	                value: this.state.shortDescription,
+	                fullWidth: true,
+	                multiLine: true,
+	                rows: 2,
+	                rowsMax: 4,
+	                floatingLabelText: 'Short Description',
+	                name: 'shortDescription',
+	                onChange: this.handleInputChange,
+	                style: styles.leftAlign
+	              })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactFlexboxGrid.Row,
+	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12, md: 4 },
+	              _react2.default.createElement(_DatePicker2.default, {
+	                fullWidth: true,
+	                floatingLabelText: 'Date',
+	                mode: 'landscape',
+	                name: 'startDate',
+	                onChange: this.handleStartDateChange
+	              })
+	            ),
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12, md: 4 },
+	              _react2.default.createElement(_TimePicker2.default, {
+	                fullWidth: true,
+	                floatingLabelText: 'Start Time',
+	                format: '24hr',
+	                hintText: '24hr Format',
+	                onChange: this.handleStartTimeChange
+	              })
+	            ),
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12, md: 4 },
+	              _react2.default.createElement(_TimePicker2.default, {
+	                fullWidth: true,
+	                floatingLabelText: 'End Time',
+	                format: '24hr',
+	                hintText: '24hr Format',
+	                onChange: this.handleEndTimeChange
+	              })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactFlexboxGrid.Row,
+	            { center: 'xs', start: 'md', bottom: 'xs', around: 'xs' },
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12, md: 12 },
+	              _react2.default.createElement(
+	                _SelectField2.default,
+	                {
+	                  fullWidth: true,
+	                  floatingLabelText: 'Student Group',
+	                  value: this.state.studentsGroupId,
+	                  onChange: this.handleStudentGroupChange,
+	                  autoWidth: true
+	                },
+	                this.props.existingGroups.map(function (item) {
+	                  return _react2.default.createElement(_MenuItem2.default, { key: item.studentsGroupId,
+	                    value: item.studentsGroupId,
+	                    primaryText: item.language + ', ' + item.name + " " //secodaryText is not included during width calculating
+	                    , secondaryText: '' + item.level
+	                  });
+	                })
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactFlexboxGrid.Row,
+	            { center: 'xs', end: 'md', bottom: 'xs' },
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12, mdOffset: 9, md: 3 },
+	              _react2.default.createElement(_FlatButton2.default, {
+	                type: 'submit',
+	                style: styles.btnGreen,
+	                label: 'Create',
+	                icon: _react2.default.createElement(_add2.default, null)
+	              })
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return ClassesForm;
+	}(_react2.default.Component);
+	
+	var styles = {
+	  leftAlign: {
+	    textAlign: 'left'
+	  },
+	  btnGreen: {
+	    color: _colors.lightGreen500
+	  },
+	  customWidth: {
+	    width: 400
+	  }
+	};
+	
+	function mapStateToProps(state) {
+	  return {
+	    user: state.oidc.user,
+	    profile: state.profileResource.profile,
+	    existingGroups: state.groupResource.existingGroups,
+	    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
+	    temporaryClasses: state.classesResource.temporaryClasses
+	  };
+	}
+	
+	function mapDispatchToProps(dispatch) {
+	  return {
+	    dispatch: dispatch
+	  };
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(ClassesForm);
+
+/***/ },
+/* 1113 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _TimePicker = __webpack_require__(1114);
+	
+	var _TimePicker2 = _interopRequireDefault(_TimePicker);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _TimePicker2.default;
+
+/***/ },
+/* 1114 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends2 = __webpack_require__(826);
+	
+	var _extends3 = _interopRequireDefault(_extends2);
+	
+	var _objectWithoutProperties2 = __webpack_require__(864);
+	
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _simpleAssign = __webpack_require__(918);
+	
+	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _TimePickerDialog = __webpack_require__(1115);
+	
+	var _TimePickerDialog2 = _interopRequireDefault(_TimePickerDialog);
+	
+	var _TextField = __webpack_require__(1010);
+	
+	var _TextField2 = _interopRequireDefault(_TextField);
+	
+	var _timeUtils = __webpack_require__(1124);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var emptyTime = new Date();
+	emptyTime.setHours(0);
+	emptyTime.setMinutes(0);
+	emptyTime.setSeconds(0);
+	emptyTime.setMilliseconds(0);
+	
+	var TimePicker = function (_Component) {
+	  (0, _inherits3.default)(TimePicker, _Component);
+	
+	  function TimePicker() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, TimePicker);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = TimePicker.__proto__ || (0, _getPrototypeOf2.default)(TimePicker)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      time: null,
+	      dialogTime: new Date()
+	    }, _this.handleAcceptDialog = function (time) {
+	      _this.setState({
+	        time: time
+	      });
+	      if (_this.props.onChange) _this.props.onChange(null, time);
+	    }, _this.handleFocusInput = function (event) {
+	      event.target.blur();
+	      if (_this.props.onFocus) {
+	        _this.props.onFocus(event);
+	      }
+	    }, _this.handleTouchTapInput = function (event) {
+	      event.preventDefault();
+	
+	      if (!_this.props.disabled) {
+	        _this.openDialog();
+	      }
+	
+	      if (_this.props.onTouchTap) {
+	        _this.props.onTouchTap(event);
+	      }
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(TimePicker, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.setState({
+	        time: this.isControlled() ? this.getControlledTime() : this.props.defaultTime
+	      });
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      if (nextProps.value !== this.props.value) {
+	        this.setState({
+	          time: this.getControlledTime(nextProps)
+	        });
+	      }
+	    }
+	
+	    /**
+	     * Alias for `openDialog()` for an api consistent with TextField.
+	     */
+	
+	  }, {
+	    key: 'focus',
+	    value: function focus() {
+	      this.openDialog();
+	    }
+	  }, {
+	    key: 'openDialog',
+	    value: function openDialog() {
+	      this.setState({
+	        dialogTime: this.state.time
+	      });
+	      this.refs.dialogWindow.show();
+	    }
+	  }, {
+	    key: 'isControlled',
+	    value: function isControlled() {
+	      return this.props.value !== null;
+	    }
+	  }, {
+	    key: 'getControlledTime',
+	    value: function getControlledTime() {
+	      var props = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props;
+	
+	      var result = null;
+	      if (props.value instanceof Date) {
+	        result = props.value;
+	      }
+	      return result;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          autoOk = _props.autoOk,
+	          cancelLabel = _props.cancelLabel,
+	          defaultTime = _props.defaultTime,
+	          dialogBodyStyle = _props.dialogBodyStyle,
+	          dialogStyle = _props.dialogStyle,
+	          format = _props.format,
+	          okLabel = _props.okLabel,
+	          onFocus = _props.onFocus,
+	          onTouchTap = _props.onTouchTap,
+	          onShow = _props.onShow,
+	          onDismiss = _props.onDismiss,
+	          pedantic = _props.pedantic,
+	          style = _props.style,
+	          textFieldStyle = _props.textFieldStyle,
+	          other = (0, _objectWithoutProperties3.default)(_props, ['autoOk', 'cancelLabel', 'defaultTime', 'dialogBodyStyle', 'dialogStyle', 'format', 'okLabel', 'onFocus', 'onTouchTap', 'onShow', 'onDismiss', 'pedantic', 'style', 'textFieldStyle']);
+	      var prepareStyles = this.context.muiTheme.prepareStyles;
+	      var time = this.state.time;
+	
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { style: prepareStyles((0, _simpleAssign2.default)({}, style)) },
+	        _react2.default.createElement(_TextField2.default, (0, _extends3.default)({}, other, {
+	          style: textFieldStyle,
+	          ref: 'input',
+	          value: time === emptyTime ? null : (0, _timeUtils.formatTime)(time, format, pedantic),
+	          onFocus: this.handleFocusInput,
+	          onTouchTap: this.handleTouchTapInput
+	        })),
+	        _react2.default.createElement(_TimePickerDialog2.default, {
+	          ref: 'dialogWindow',
+	          bodyStyle: dialogBodyStyle,
+	          initialTime: this.state.dialogTime,
+	          onAccept: this.handleAcceptDialog,
+	          onShow: onShow,
+	          onDismiss: onDismiss,
+	          format: format,
+	          okLabel: okLabel,
+	          cancelLabel: cancelLabel,
+	          autoOk: autoOk,
+	          style: dialogStyle
+	        })
+	      );
+	    }
+	  }]);
+	  return TimePicker;
+	}(_react.Component);
+	
+	TimePicker.defaultProps = {
+	  autoOk: false,
+	  cancelLabel: 'Cancel',
+	  defaultTime: null,
+	  disabled: false,
+	  format: 'ampm',
+	  okLabel: 'OK',
+	  pedantic: false,
+	  style: {},
+	  value: null
+	};
+	TimePicker.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? TimePicker.propTypes = {
+	  /**
+	   * If true, automatically accept and close the picker on set minutes.
+	   */
+	  autoOk: _react.PropTypes.bool,
+	  /**
+	   * Override the label of the 'Cancel' button.
+	   */
+	  cancelLabel: _react.PropTypes.node,
+	  /**
+	   * The initial time value of the TimePicker.
+	   */
+	  defaultTime: _react.PropTypes.object,
+	  /**
+	   * Override the inline-styles of TimePickerDialog's body element.
+	   */
+	  dialogBodyStyle: _react.PropTypes.object,
+	  /**
+	   * Override the inline-styles of TimePickerDialog's root element.
+	   */
+	  dialogStyle: _react.PropTypes.object,
+	  /**
+	   * If true, the TimePicker is disabled.
+	   */
+	  disabled: _react.PropTypes.bool,
+	  /**
+	   * Tells the component to display the picker in `ampm` (12hr) format or `24hr` format.
+	   */
+	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
+	  /**
+	   * Override the label of the 'OK' button.
+	   */
+	  okLabel: _react.PropTypes.node,
+	  /**
+	   * Callback function that is fired when the time value changes. The time value is passed in a Date Object.
+	   * Since there is no particular event associated with the change the first argument will always be null
+	   * and the second argument will be the new Date instance.
+	   */
+	  onChange: _react.PropTypes.func,
+	  /**
+	   * Callback function fired when the TimePicker dialog is dismissed.
+	   */
+	  onDismiss: _react.PropTypes.func,
+	  /**
+	   * Callback function fired when the TimePicker `TextField` gains focus.
+	   */
+	  onFocus: _react.PropTypes.func,
+	  /**
+	   * Callback function fired when the TimePicker dialog is shown.
+	   */
+	  onShow: _react.PropTypes.func,
+	  /**
+	   * Callback function fired when the TimePicker is tapped or clicked.
+	   */
+	  onTouchTap: _react.PropTypes.func,
+	  /**
+	   * If true, uses ("noon" / "midnight") instead of ("12 a.m." / "12 p.m.").
+	   *
+	   * It's technically more correct to refer to "12 noon" and "12 midnight" rather than "12 a.m." and "12 p.m."
+	   * and it avoids confusion between different locales. By default (for compatibility reasons) TimePicker uses
+	   * ("12 a.m." / "12 p.m.").
+	   */
+	  pedantic: _react.PropTypes.bool,
+	  /**
+	   * Override the inline-styles of the root element.
+	   */
+	  style: _react.PropTypes.object,
+	  /**
+	   * Override the inline-styles of TimePicker's TextField element.
+	   */
+	  textFieldStyle: _react.PropTypes.object,
+	  /**
+	   * Sets the time for the Time Picker programmatically.
+	   */
+	  value: _react.PropTypes.object
+	} : void 0;
+	exports.default = TimePicker;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1115 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends2 = __webpack_require__(826);
+	
+	var _extends3 = _interopRequireDefault(_extends2);
+	
+	var _objectWithoutProperties2 = __webpack_require__(864);
+	
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _simpleAssign = __webpack_require__(918);
+	
+	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactEventListener = __webpack_require__(999);
+	
+	var _reactEventListener2 = _interopRequireDefault(_reactEventListener);
+	
+	var _keycode = __webpack_require__(952);
+	
+	var _keycode2 = _interopRequireDefault(_keycode);
+	
+	var _Clock = __webpack_require__(1116);
+	
+	var _Clock2 = _interopRequireDefault(_Clock);
+	
+	var _Dialog = __webpack_require__(1046);
+	
+	var _Dialog2 = _interopRequireDefault(_Dialog);
+	
+	var _FlatButton = __webpack_require__(1007);
+	
+	var _FlatButton2 = _interopRequireDefault(_FlatButton);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var TimePickerDialog = function (_Component) {
+	  (0, _inherits3.default)(TimePickerDialog, _Component);
+	
+	  function TimePickerDialog() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, TimePickerDialog);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = TimePickerDialog.__proto__ || (0, _getPrototypeOf2.default)(TimePickerDialog)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      open: false
+	    }, _this.handleRequestClose = function () {
+	      _this.dismiss();
+	    }, _this.handleTouchTapCancel = function () {
+	      _this.dismiss();
+	    }, _this.handleTouchTapOK = function () {
+	      if (_this.props.onAccept) {
+	        _this.props.onAccept(_this.refs.clock.getSelectedTime());
+	      }
+	      _this.setState({
+	        open: false
+	      });
+	    }, _this.handleKeyUp = function (event) {
+	      switch ((0, _keycode2.default)(event)) {
+	        case 'enter':
+	          _this.handleTouchTapOK();
+	          break;
+	      }
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(TimePickerDialog, [{
+	    key: 'show',
+	    value: function show() {
+	      if (this.props.onShow && !this.state.open) this.props.onShow();
+	      this.setState({
+	        open: true
+	      });
+	    }
+	  }, {
+	    key: 'dismiss',
+	    value: function dismiss() {
+	      if (this.props.onDismiss && this.state.open) this.props.onDismiss();
+	      this.setState({
+	        open: false
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          bodyStyle = _props.bodyStyle,
+	          initialTime = _props.initialTime,
+	          onAccept = _props.onAccept,
+	          format = _props.format,
+	          autoOk = _props.autoOk,
+	          okLabel = _props.okLabel,
+	          cancelLabel = _props.cancelLabel,
+	          style = _props.style,
+	          other = (0, _objectWithoutProperties3.default)(_props, ['bodyStyle', 'initialTime', 'onAccept', 'format', 'autoOk', 'okLabel', 'cancelLabel', 'style']);
+	
+	
+	      var styles = {
+	        root: {
+	          fontSize: 14,
+	          color: this.context.muiTheme.timePicker.clockColor
+	        },
+	        dialogContent: {
+	          width: 280
+	        },
+	        body: {
+	          padding: 0
+	        }
+	      };
+	
+	      var actions = [_react2.default.createElement(_FlatButton2.default, {
+	        key: 0,
+	        label: cancelLabel,
+	        primary: true,
+	        onTouchTap: this.handleTouchTapCancel
+	      }), _react2.default.createElement(_FlatButton2.default, {
+	        key: 1,
+	        label: okLabel,
+	        primary: true,
+	        onTouchTap: this.handleTouchTapOK
+	      })];
+	
+	      var onClockChangeMinutes = autoOk === true ? this.handleTouchTapOK : undefined;
+	      var open = this.state.open;
+	
+	      return _react2.default.createElement(
+	        _Dialog2.default,
+	        (0, _extends3.default)({}, other, {
+	          style: (0, _simpleAssign2.default)(styles.root, style),
+	          bodyStyle: (0, _simpleAssign2.default)(styles.body, bodyStyle),
+	          actions: actions,
+	          contentStyle: styles.dialogContent,
+	          repositionOnUpdate: false,
+	          open: open,
+	          onRequestClose: this.handleRequestClose
+	        }),
+	        open && _react2.default.createElement(_reactEventListener2.default, { target: 'window', onKeyUp: this.handleKeyUp }),
+	        open && _react2.default.createElement(_Clock2.default, {
+	          ref: 'clock',
+	          format: format,
+	          initialTime: initialTime,
+	          onChangeMinutes: onClockChangeMinutes
+	        })
+	      );
+	    }
+	  }]);
+	  return TimePickerDialog;
+	}(_react.Component);
+	
+	TimePickerDialog.defaultProps = {
+	  okLabel: 'OK',
+	  cancelLabel: 'Cancel'
+	};
+	TimePickerDialog.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? TimePickerDialog.propTypes = {
+	  autoOk: _react.PropTypes.bool,
+	  bodyStyle: _react.PropTypes.object,
+	  cancelLabel: _react.PropTypes.node,
+	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
+	  initialTime: _react.PropTypes.object,
+	  okLabel: _react.PropTypes.node,
+	  onAccept: _react.PropTypes.func,
+	  onDismiss: _react.PropTypes.func,
+	  onShow: _react.PropTypes.func,
+	  style: _react.PropTypes.object
+	} : void 0;
+	exports.default = TimePickerDialog;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1116 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _TimeDisplay = __webpack_require__(1117);
+	
+	var _TimeDisplay2 = _interopRequireDefault(_TimeDisplay);
+	
+	var _ClockHours = __webpack_require__(1122);
+	
+	var _ClockHours2 = _interopRequireDefault(_ClockHours);
+	
+	var _ClockMinutes = __webpack_require__(1126);
+	
+	var _ClockMinutes2 = _interopRequireDefault(_ClockMinutes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Clock = function (_Component) {
+	  (0, _inherits3.default)(Clock, _Component);
+	
+	  function Clock() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, Clock);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Clock.__proto__ || (0, _getPrototypeOf2.default)(Clock)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      selectedTime: null,
+	      mode: 'hour'
+	    }, _this.setMode = function (mode) {
+	      setTimeout(function () {
+	        _this.setState({
+	          mode: mode
+	        });
+	      }, 100);
+	    }, _this.handleSelectAffix = function (affix) {
+	      if (affix === _this.getAffix()) return;
+	
+	      var hours = _this.state.selectedTime.getHours();
+	
+	      if (affix === 'am') {
+	        _this.handleChangeHours(hours - 12, affix);
+	        return;
+	      }
+	
+	      _this.handleChangeHours(hours + 12, affix);
+	    }, _this.handleChangeHours = function (hours, finished) {
+	      var time = new Date(_this.state.selectedTime);
+	      var affix = void 0;
+	
+	      if (typeof finished === 'string') {
+	        affix = finished;
+	        finished = undefined;
+	      }
+	      if (!affix) {
+	        affix = _this.getAffix();
+	      }
+	      if (affix === 'pm' && hours < 12) {
+	        hours += 12;
+	      }
+	
+	      time.setHours(hours);
+	      _this.setState({
+	        selectedTime: time
+	      });
+	
+	      if (finished) {
+	        setTimeout(function () {
+	          _this.setState({
+	            mode: 'minute'
+	          });
+	
+	          var onChangeHours = _this.props.onChangeHours;
+	
+	          if (onChangeHours) {
+	            onChangeHours(time);
+	          }
+	        }, 100);
+	      }
+	    }, _this.handleChangeMinutes = function (minutes, finished) {
+	      var time = new Date(_this.state.selectedTime);
+	      time.setMinutes(minutes);
+	      _this.setState({
+	        selectedTime: time
+	      });
+	
+	      var onChangeMinutes = _this.props.onChangeMinutes;
+	
+	      if (onChangeMinutes && finished) {
+	        setTimeout(function () {
+	          onChangeMinutes(time);
+	        }, 0);
+	      }
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(Clock, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.setState({
+	        selectedTime: this.props.initialTime || new Date()
+	      });
+	    }
+	  }, {
+	    key: 'getAffix',
+	    value: function getAffix() {
+	      if (this.props.format !== 'ampm') return '';
+	
+	      var hours = this.state.selectedTime.getHours();
+	      if (hours < 12) {
+	        return 'am';
+	      }
+	
+	      return 'pm';
+	    }
+	  }, {
+	    key: 'getSelectedTime',
+	    value: function getSelectedTime() {
+	      return this.state.selectedTime;
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var clock = null;
+	
+	      var _context$muiTheme = this.context.muiTheme,
+	          prepareStyles = _context$muiTheme.prepareStyles,
+	          timePicker = _context$muiTheme.timePicker;
+	
+	
+	      var styles = {
+	        root: {
+	          userSelect: 'none'
+	        },
+	        container: {
+	          height: 280,
+	          padding: 10,
+	          position: 'relative',
+	          boxSizing: 'content-box'
+	        },
+	        circle: {
+	          position: 'absolute',
+	          top: 20,
+	          width: 260,
+	          height: 260,
+	          borderRadius: '100%',
+	          backgroundColor: timePicker.clockCircleColor
+	        }
+	      };
+	
+	      if (this.state.mode === 'hour') {
+	        clock = _react2.default.createElement(_ClockHours2.default, {
+	          key: 'hours',
+	          format: this.props.format,
+	          onChange: this.handleChangeHours,
+	          initialHours: this.state.selectedTime.getHours()
+	        });
+	      } else {
+	        clock = _react2.default.createElement(_ClockMinutes2.default, {
+	          key: 'minutes',
+	          onChange: this.handleChangeMinutes,
+	          initialMinutes: this.state.selectedTime.getMinutes()
+	        });
+	      }
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { style: prepareStyles(styles.root) },
+	        _react2.default.createElement(_TimeDisplay2.default, {
+	          selectedTime: this.state.selectedTime,
+	          mode: this.state.mode,
+	          format: this.props.format,
+	          affix: this.getAffix(),
+	          onSelectAffix: this.handleSelectAffix,
+	          onSelectHour: this.setMode.bind(this, 'hour'),
+	          onSelectMin: this.setMode.bind(this, 'minute')
+	        }),
+	        _react2.default.createElement(
+	          'div',
+	          { style: prepareStyles(styles.container) },
+	          _react2.default.createElement('div', { style: prepareStyles(styles.circle) }),
+	          clock
+	        )
+	      );
+	    }
+	  }]);
+	  return Clock;
+	}(_react.Component);
+	
+	Clock.defaultProps = {
+	  initialTime: new Date()
+	};
+	Clock.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? Clock.propTypes = {
+	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
+	  initialTime: _react.PropTypes.object,
+	  onChangeHours: _react.PropTypes.func,
+	  onChangeMinutes: _react.PropTypes.func
+	} : void 0;
+	exports.default = Clock;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1117 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _extends2 = __webpack_require__(826);
+	
+	var _extends3 = _interopRequireDefault(_extends2);
+	
+	var _slicedToArray2 = __webpack_require__(1118);
+	
+	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
+	
+	var _objectWithoutProperties2 = __webpack_require__(864);
+	
+	var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _simpleAssign = __webpack_require__(918);
+	
+	var _simpleAssign2 = _interopRequireDefault(_simpleAssign);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var TimeDisplay = function (_Component) {
+	  (0, _inherits3.default)(TimeDisplay, _Component);
+	
+	  function TimeDisplay() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, TimeDisplay);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = TimeDisplay.__proto__ || (0, _getPrototypeOf2.default)(TimeDisplay)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      transitionDirection: 'up'
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(TimeDisplay, [{
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      if (nextProps.selectedTime !== this.props.selectedTime) {
+	        var direction = nextProps.selectedTime > this.props.selectedTime ? 'up' : 'down';
+	
+	        this.setState({
+	          transitionDirection: direction
+	        });
+	      }
+	    }
+	  }, {
+	    key: 'sanitizeTime',
+	    value: function sanitizeTime() {
+	      var hour = this.props.selectedTime.getHours();
+	      var min = this.props.selectedTime.getMinutes().toString();
+	
+	      if (this.props.format === 'ampm') {
+	        hour %= 12;
+	        hour = hour || 12;
+	      }
+	
+	      hour = hour.toString();
+	      if (hour.length < 2) hour = '0' + hour;
+	      if (min.length < 2) min = '0' + min;
+	
+	      return [hour, min];
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          affix = _props.affix,
+	          format = _props.format,
+	          mode = _props.mode,
+	          onSelectAffix = _props.onSelectAffix,
+	          onSelectHour = _props.onSelectHour,
+	          onSelectMin = _props.onSelectMin,
+	          selectedTime = _props.selectedTime,
+	          other = (0, _objectWithoutProperties3.default)(_props, ['affix', 'format', 'mode', 'onSelectAffix', 'onSelectHour', 'onSelectMin', 'selectedTime']);
+	      var _context$muiTheme = this.context.muiTheme,
+	          prepareStyles = _context$muiTheme.prepareStyles,
+	          timePicker = _context$muiTheme.timePicker;
+	
+	
+	      var styles = {
+	        root: {
+	          padding: '14px 0',
+	          borderTopLeftRadius: 2,
+	          borderTopRightRadius: 2,
+	          backgroundColor: timePicker.headerColor,
+	          color: timePicker.textColor
+	        },
+	        text: {
+	          margin: '6px 0',
+	          lineHeight: '58px',
+	          height: 58,
+	          fontSize: 58,
+	          display: 'flex',
+	          justifyContent: 'center',
+	          alignItems: 'baseline'
+	        },
+	        time: {
+	          margin: '0 10px'
+	        },
+	        affix: {
+	          flex: 1,
+	          position: 'relative',
+	          lineHeight: '17px',
+	          height: 17,
+	          fontSize: 17
+	        },
+	        affixTop: {
+	          position: 'absolute',
+	          top: -20,
+	          left: 0
+	        },
+	        clickable: {
+	          cursor: 'pointer'
+	        },
+	        inactive: {
+	          opacity: 0.7
+	        }
+	      };
+	
+	      var _sanitizeTime = this.sanitizeTime(),
+	          _sanitizeTime2 = (0, _slicedToArray3.default)(_sanitizeTime, 2),
+	          hour = _sanitizeTime2[0],
+	          min = _sanitizeTime2[1];
+	
+	      var buttons = [];
+	      if (format === 'ampm') {
+	        buttons = [_react2.default.createElement(
+	          'div',
+	          {
+	            key: 'pm',
+	            style: prepareStyles((0, _simpleAssign2.default)({}, styles.clickable, affix === 'pm' ? {} : styles.inactive)),
+	            onTouchTap: function onTouchTap() {
+	              return onSelectAffix('pm');
+	            }
+	          },
+	          'PM'
+	        ), _react2.default.createElement(
+	          'div',
+	          {
+	            key: 'am',
+	            style: prepareStyles((0, _simpleAssign2.default)({}, styles.affixTop, styles.clickable, affix === 'am' ? {} : styles.inactive)),
+	            onTouchTap: function onTouchTap() {
+	              return onSelectAffix('am');
+	            }
+	          },
+	          'AM'
+	        )];
+	      }
+	
+	      return _react2.default.createElement(
+	        'div',
+	        (0, _extends3.default)({}, other, { style: prepareStyles(styles.root) }),
+	        _react2.default.createElement(
+	          'div',
+	          { style: prepareStyles(styles.text) },
+	          _react2.default.createElement('div', { style: prepareStyles((0, _simpleAssign2.default)({}, styles.affix)) }),
+	          _react2.default.createElement(
+	            'div',
+	            { style: prepareStyles(styles.time) },
+	            _react2.default.createElement(
+	              'span',
+	              {
+	                style: prepareStyles((0, _simpleAssign2.default)({}, styles.clickable, mode === 'hour' ? {} : styles.inactive)),
+	                onTouchTap: onSelectHour
+	              },
+	              hour
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              {
+	                style: prepareStyles((0, _simpleAssign2.default)({}, styles.clickable, mode === 'minute' ? {} : styles.inactive)),
+	                onTouchTap: onSelectMin
+	              },
+	              min
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: prepareStyles((0, _simpleAssign2.default)({}, styles.affix)) },
+	            buttons
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return TimeDisplay;
+	}(_react.Component);
+	
+	TimeDisplay.defaultProps = {
+	  affix: '',
+	  mode: 'hour'
+	};
+	TimeDisplay.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? TimeDisplay.propTypes = {
+	  affix: _react.PropTypes.oneOf(['', 'pm', 'am']),
+	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
+	  mode: _react.PropTypes.oneOf(['hour', 'minute']),
+	  onSelectAffix: _react.PropTypes.func,
+	  onSelectHour: _react.PropTypes.func,
+	  onSelectMin: _react.PropTypes.func,
+	  selectedTime: _react.PropTypes.object.isRequired
+	} : void 0;
+	exports.default = TimeDisplay;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1118 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	exports.__esModule = true;
+	
+	var _isIterable2 = __webpack_require__(1119);
+	
+	var _isIterable3 = _interopRequireDefault(_isIterable2);
+	
+	var _getIterator2 = __webpack_require__(1021);
+	
+	var _getIterator3 = _interopRequireDefault(_getIterator2);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function () {
+	  function sliceIterator(arr, i) {
+	    var _arr = [];
+	    var _n = true;
+	    var _d = false;
+	    var _e = undefined;
+	
+	    try {
+	      for (var _i = (0, _getIterator3.default)(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+	        _arr.push(_s.value);
+	
+	        if (i && _arr.length === i) break;
+	      }
+	    } catch (err) {
+	      _d = true;
+	      _e = err;
+	    } finally {
+	      try {
+	        if (!_n && _i["return"]) _i["return"]();
+	      } finally {
+	        if (_d) throw _e;
+	      }
+	    }
+	
+	    return _arr;
+	  }
+	
+	  return function (arr, i) {
+	    if (Array.isArray(arr)) {
+	      return arr;
+	    } else if ((0, _isIterable3.default)(Object(arr))) {
+	      return sliceIterator(arr, i);
+	    } else {
+	      throw new TypeError("Invalid attempt to destructure non-iterable instance");
+	    }
+	  };
+	}();
+
+/***/ },
+/* 1119 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(1120), __esModule: true };
+
+/***/ },
+/* 1120 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(891);
+	__webpack_require__(879);
+	module.exports = __webpack_require__(1121);
+
+/***/ },
+/* 1121 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var classof   = __webpack_require__(971)
+	  , ITERATOR  = __webpack_require__(890)('iterator')
+	  , Iterators = __webpack_require__(884);
+	module.exports = __webpack_require__(832).isIterable = function(it){
+	  var O = Object(it);
+	  return O[ITERATOR] !== undefined
+	    || '@@iterator' in O
+	    || Iterators.hasOwnProperty(classof(O));
+	};
+
+/***/ },
+/* 1122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(330);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _ClockNumber = __webpack_require__(1123);
+	
+	var _ClockNumber2 = _interopRequireDefault(_ClockNumber);
+	
+	var _ClockPointer = __webpack_require__(1125);
+	
+	var _ClockPointer2 = _interopRequireDefault(_ClockPointer);
+	
+	var _timeUtils = __webpack_require__(1124);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ClockHours = function (_Component) {
+	  (0, _inherits3.default)(ClockHours, _Component);
+	
+	  function ClockHours() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, ClockHours);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ClockHours.__proto__ || (0, _getPrototypeOf2.default)(ClockHours)).call.apply(_ref, [this].concat(args))), _this), _this.handleUp = function (event) {
+	      event.preventDefault();
+	      _this.setClock(event.nativeEvent, true);
+	    }, _this.handleMove = function (event) {
+	      event.preventDefault();
+	      if (_this.isMousePressed(event) !== 1) return;
+	      _this.setClock(event.nativeEvent, false);
+	    }, _this.handleTouchMove = function (event) {
+	      event.preventDefault();
+	      _this.setClock(event.changedTouches[0], false);
+	    }, _this.handleTouchEnd = function (event) {
+	      event.preventDefault();
+	      _this.setClock(event.changedTouches[0], true);
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(ClockHours, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var clockElement = _reactDom2.default.findDOMNode(this.refs.mask);
+	
+	      this.center = {
+	        x: clockElement.offsetWidth / 2,
+	        y: clockElement.offsetHeight / 2
+	      };
+	
+	      this.basePoint = {
+	        x: this.center.x,
+	        y: 0
+	      };
+	    }
+	  }, {
+	    key: 'isMousePressed',
+	    value: function isMousePressed(event) {
+	      if (typeof event.buttons === 'undefined') {
+	        return event.nativeEvent.which;
+	      }
+	
+	      return event.buttons;
+	    }
+	  }, {
+	    key: 'setClock',
+	    value: function setClock(event, finish) {
+	      if (typeof event.offsetX === 'undefined') {
+	        var offset = (0, _timeUtils.getTouchEventOffsetValues)(event);
+	
+	        event.offsetX = offset.offsetX;
+	        event.offsetY = offset.offsetY;
+	      }
+	
+	      var hours = this.getHours(event.offsetX, event.offsetY);
+	
+	      this.props.onChange(hours, finish);
+	    }
+	  }, {
+	    key: 'getHours',
+	    value: function getHours(offsetX, offsetY) {
+	      var step = 30;
+	      var x = offsetX - this.center.x;
+	      var y = offsetY - this.center.y;
+	      var cx = this.basePoint.x - this.center.x;
+	      var cy = this.basePoint.y - this.center.y;
+	
+	      var atan = Math.atan2(cx, cy) - Math.atan2(x, y);
+	
+	      var deg = (0, _timeUtils.rad2deg)(atan);
+	      deg = Math.round(deg / step) * step;
+	      deg %= 360;
+	
+	      var value = Math.floor(deg / step) || 0;
+	
+	      var delta = Math.pow(x, 2) + Math.pow(y, 2);
+	      var distance = Math.sqrt(delta);
+	
+	      value = value || 12;
+	      if (this.props.format === '24hr') {
+	        if (distance < 90) {
+	          value += 12;
+	          value %= 24;
+	        }
+	      } else {
+	        value %= 12;
+	      }
+	
+	      return value;
+	    }
+	  }, {
+	    key: 'getSelected',
+	    value: function getSelected() {
+	      var hour = this.props.initialHours;
+	
+	      if (this.props.format === 'ampm') {
+	        hour %= 12;
+	        hour = hour || 12;
+	      }
+	
+	      return hour;
+	    }
+	  }, {
+	    key: 'getHourNumbers',
+	    value: function getHourNumbers() {
+	      var _this2 = this;
+	
+	      var style = {
+	        pointerEvents: 'none'
+	      };
+	      var hourSize = this.props.format === 'ampm' ? 12 : 24;
+	
+	      var hours = [];
+	      for (var i = 1; i <= hourSize; i++) {
+	        hours.push(i % 24);
+	      }
+	
+	      return hours.map(function (hour) {
+	        var isSelected = _this2.getSelected() === hour;
+	        return _react2.default.createElement(_ClockNumber2.default, {
+	          key: hour,
+	          style: style,
+	          isSelected: isSelected,
+	          type: 'hour',
+	          value: hour
+	        });
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var styles = {
+	        root: {
+	          height: '100%',
+	          width: '100%',
+	          borderRadius: '100%',
+	          position: 'relative',
+	          pointerEvents: 'none',
+	          boxSizing: 'border-box'
+	        },
+	
+	        hitMask: {
+	          height: '100%',
+	          width: '100%',
+	          pointerEvents: 'auto'
+	        }
+	      };
+	
+	      var prepareStyles = this.context.muiTheme.prepareStyles;
+	
+	      var hours = this.getSelected();
+	      var numbers = this.getHourNumbers();
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { ref: 'clock', style: prepareStyles(styles.root) },
+	        _react2.default.createElement(_ClockPointer2.default, { hasSelected: true, value: hours, type: 'hour' }),
+	        numbers,
+	        _react2.default.createElement('div', {
+	          ref: 'mask', style: prepareStyles(styles.hitMask), onTouchMove: this.handleTouchMove,
+	          onTouchEnd: this.handleTouchEnd, onMouseUp: this.handleUp, onMouseMove: this.handleMove
+	        })
+	      );
+	    }
+	  }]);
+	  return ClockHours;
+	}(_react.Component);
+	
+	ClockHours.defaultProps = {
+	  initialHours: new Date().getHours(),
+	  onChange: function onChange() {},
+	  format: 'ampm'
+	};
+	ClockHours.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? ClockHours.propTypes = {
+	  format: _react.PropTypes.oneOf(['ampm', '24hr']),
+	  initialHours: _react.PropTypes.number,
+	  onChange: _react.PropTypes.func
+	} : void 0;
+	exports.default = ClockHours;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1123 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _slicedToArray2 = __webpack_require__(1118);
+	
+	var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _timeUtils = __webpack_require__(1124);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function getStyles(props, context) {
+	  var styles = {
+	    root: {
+	      directionInvariant: true,
+	      display: 'inline-block',
+	      position: 'absolute',
+	      width: 32,
+	      height: 32,
+	      borderRadius: '100%',
+	      left: 'calc(50% - 16px)',
+	      top: 10,
+	      textAlign: 'center',
+	      paddingTop: 5,
+	      userSelect: 'none', /* Chrome all / Safari all */
+	      fontSize: '1.1em',
+	      pointerEvents: 'none',
+	      boxSizing: 'border-box'
+	    }
+	  };
+	
+	  var muiTheme = context.muiTheme;
+	
+	
+	  var pos = props.value;
+	
+	  if (props.type === 'hour') {
+	    pos %= 12;
+	  } else {
+	    pos = pos / 5;
+	  }
+	
+	  var positions = [[0, 5], [54.5, 16.6], [94.4, 59.5], [109, 114], [94.4, 168.5], [54.5, 208.4], [0, 223], [-54.5, 208.4], [-94.4, 168.5], [-109, 114], [-94.4, 59.5], [-54.5, 19.6]];
+	
+	  var innerPositions = [[0, 40], [36.9, 49.9], [64, 77], [74, 114], [64, 151], [37, 178], [0, 188], [-37, 178], [-64, 151], [-74, 114], [-64, 77], [-37, 50]];
+	
+	  if (props.isSelected) {
+	    styles.root.backgroundColor = muiTheme.timePicker.accentColor;
+	    styles.root.color = muiTheme.timePicker.selectTextColor;
+	  }
+	
+	  var transformPos = positions[pos];
+	
+	  if ((0, _timeUtils.isInner)(props)) {
+	    styles.root.width = 28;
+	    styles.root.height = 28;
+	    styles.root.left = 'calc(50% - 14px)';
+	    transformPos = innerPositions[pos];
+	  }
+	
+	  var _transformPos = transformPos,
+	      _transformPos2 = (0, _slicedToArray3.default)(_transformPos, 2),
+	      x = _transformPos2[0],
+	      y = _transformPos2[1];
+	
+	  styles.root.transform = 'translate(' + x + 'px, ' + y + 'px)';
+	
+	  return styles;
+	}
+	
+	var ClockNumber = function (_Component) {
+	  (0, _inherits3.default)(ClockNumber, _Component);
+	
+	  function ClockNumber() {
+	    (0, _classCallCheck3.default)(this, ClockNumber);
+	    return (0, _possibleConstructorReturn3.default)(this, (ClockNumber.__proto__ || (0, _getPrototypeOf2.default)(ClockNumber)).apply(this, arguments));
+	  }
+	
+	  (0, _createClass3.default)(ClockNumber, [{
+	    key: 'render',
+	    value: function render() {
+	      var prepareStyles = this.context.muiTheme.prepareStyles;
+	
+	      var styles = getStyles(this.props, this.context);
+	      var clockNumber = this.props.value === 0 ? '00' : this.props.value;
+	
+	      return _react2.default.createElement(
+	        'span',
+	        { style: prepareStyles(styles.root) },
+	        clockNumber
+	      );
+	    }
+	  }]);
+	  return ClockNumber;
+	}(_react.Component);
+	
+	ClockNumber.defaultProps = {
+	  value: 0,
+	  type: 'minute',
+	  isSelected: false
+	};
+	ClockNumber.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? ClockNumber.propTypes = {
+	  isSelected: _react.PropTypes.bool,
+	  onSelected: _react.PropTypes.func,
+	  type: _react.PropTypes.oneOf(['hour', 'minute']),
+	  value: _react.PropTypes.number
+	} : void 0;
+	exports.default = ClockNumber;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1124 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.addHours = addHours;
+	exports.addMinutes = addMinutes;
+	exports.addSeconds = addSeconds;
+	exports.formatTime = formatTime;
+	exports.rad2deg = rad2deg;
+	exports.getTouchEventOffsetValues = getTouchEventOffsetValues;
+	exports.isInner = isInner;
+	function addHours(d, hours) {
+	  var newDate = clone(d);
+	  newDate.setHours(d.getHours() + hours);
+	  return newDate;
+	}
+	
+	function addMinutes(d, minutes) {
+	  var newDate = clone(d);
+	  newDate.setMinutes(d.getMinutes() + minutes);
+	  return newDate;
+	}
+	
+	function addSeconds(d, seconds) {
+	  var newDate = clone(d);
+	  newDate.setSeconds(d.getMinutes() + seconds);
+	  return newDate;
+	}
+	
+	function clone(d) {
+	  return new Date(d.getTime());
+	}
+	
+	/**
+	 * @param date [Date] A Date object.
+	 * @param format [String] One of 'ampm', '24hr', defaults to 'ampm'.
+	 * @param pedantic [Boolean] Check time-picker/time-picker.jsx file.
+	 *
+	 * @return String A string representing the formatted time.
+	 */
+	function formatTime(date) {
+	  var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'ampm';
+	  var pedantic = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+	
+	  if (!date) return '';
+	  var hours = date.getHours();
+	  var mins = date.getMinutes().toString();
+	
+	  if (format === 'ampm') {
+	    var isAM = hours < 12;
+	    hours = hours % 12;
+	    var additional = isAM ? ' am' : ' pm';
+	    hours = (hours || 12).toString();
+	
+	    if (mins.length < 2) mins = '0' + mins;
+	
+	    if (pedantic) {
+	      // Treat midday/midnight specially http://www.nist.gov/pml/div688/times.cfm
+	      if (hours === '12' && mins === '00') {
+	        return additional === ' pm' ? '12 noon' : '12 midnight';
+	      }
+	    }
+	
+	    return hours + (mins === '00' ? '' : ':' + mins) + additional;
+	  }
+	
+	  hours = hours.toString();
+	
+	  if (hours.length < 2) hours = '0' + hours;
+	  if (mins.length < 2) mins = '0' + mins;
+	
+	  return hours + ':' + mins;
+	}
+	
+	function rad2deg(rad) {
+	  return rad * 57.29577951308232;
+	}
+	
+	function getTouchEventOffsetValues(event) {
+	  var el = event.target;
+	  var boundingRect = el.getBoundingClientRect();
+	
+	  return {
+	    offsetX: event.clientX - boundingRect.left,
+	    offsetY: event.clientY - boundingRect.top
+	  };
+	}
+	
+	function isInner(props) {
+	  if (props.type !== 'hour') {
+	    return false;
+	  }
+	  return props.value < 1 || props.value > 12;
+	}
+
+/***/ },
+/* 1125 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _timeUtils = __webpack_require__(1124);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function calcAngle(value, base) {
+	  value %= base;
+	  var angle = 360 / base * value;
+	  return angle;
+	}
+	
+	function getStyles(props, context, state) {
+	  var hasSelected = props.hasSelected,
+	      type = props.type,
+	      value = props.value;
+	  var inner = state.inner;
+	  var timePicker = context.muiTheme.timePicker;
+	
+	  var angle = type === 'hour' ? calcAngle(value, 12) : calcAngle(value, 60);
+	
+	  var styles = {
+	    root: {
+	      height: inner ? '30%' : '40%',
+	      background: timePicker.accentColor,
+	      width: 2,
+	      left: 'calc(50% - 1px)',
+	      position: 'absolute',
+	      bottom: '50%',
+	      transformOrigin: 'bottom',
+	      pointerEvents: 'none',
+	      transform: 'rotateZ(' + angle + 'deg)'
+	    },
+	    mark: {
+	      boxSizing: 'content-box',
+	      background: timePicker.selectTextColor,
+	      border: '4px solid ' + timePicker.accentColor,
+	      display: hasSelected && 'none',
+	      width: 7,
+	      height: 7,
+	      position: 'absolute',
+	      top: -5,
+	      left: -6,
+	      borderRadius: '100%'
+	    }
+	  };
+	
+	  return styles;
+	}
+	
+	var ClockPointer = function (_Component) {
+	  (0, _inherits3.default)(ClockPointer, _Component);
+	
+	  function ClockPointer() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, ClockPointer);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ClockPointer.__proto__ || (0, _getPrototypeOf2.default)(ClockPointer)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+	      inner: false
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(ClockPointer, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.setState({
+	        inner: (0, _timeUtils.isInner)(this.props)
+	      });
+	    }
+	  }, {
+	    key: 'componentWillReceiveProps',
+	    value: function componentWillReceiveProps(nextProps) {
+	      this.setState({
+	        inner: (0, _timeUtils.isInner)(nextProps)
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      if (this.props.value === null) {
+	        return _react2.default.createElement('span', null);
+	      }
+	
+	      var styles = getStyles(this.props, this.context, this.state);
+	      var prepareStyles = this.context.muiTheme.prepareStyles;
+	
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { style: prepareStyles(styles.root) },
+	        _react2.default.createElement('div', { style: prepareStyles(styles.mark) })
+	      );
+	    }
+	  }]);
+	  return ClockPointer;
+	}(_react.Component);
+	
+	ClockPointer.defaultProps = {
+	  hasSelected: false,
+	  value: null,
+	  type: 'minute'
+	};
+	ClockPointer.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? ClockPointer.propTypes = {
+	  hasSelected: _react.PropTypes.bool,
+	  type: _react.PropTypes.oneOf(['hour', 'minute']),
+	  value: _react.PropTypes.number
+	} : void 0;
+	exports.default = ClockPointer;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _getPrototypeOf = __webpack_require__(865);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	var _classCallCheck2 = __webpack_require__(870);
+	
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+	
+	var _createClass2 = __webpack_require__(871);
+	
+	var _createClass3 = _interopRequireDefault(_createClass2);
+	
+	var _possibleConstructorReturn2 = __webpack_require__(875);
+	
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+	
+	var _inherits2 = __webpack_require__(910);
+	
+	var _inherits3 = _interopRequireDefault(_inherits2);
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _ClockNumber = __webpack_require__(1123);
+	
+	var _ClockNumber2 = _interopRequireDefault(_ClockNumber);
+	
+	var _ClockPointer = __webpack_require__(1125);
+	
+	var _ClockPointer2 = _interopRequireDefault(_ClockPointer);
+	
+	var _timeUtils = __webpack_require__(1124);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ClockMinutes = function (_Component) {
+	  (0, _inherits3.default)(ClockMinutes, _Component);
+	
+	  function ClockMinutes() {
+	    var _ref;
+	
+	    var _temp, _this, _ret;
+	
+	    (0, _classCallCheck3.default)(this, ClockMinutes);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ClockMinutes.__proto__ || (0, _getPrototypeOf2.default)(ClockMinutes)).call.apply(_ref, [this].concat(args))), _this), _this.handleUp = function (event) {
+	      event.preventDefault();
+	      _this.setClock(event.nativeEvent, true);
+	    }, _this.handleMove = function (event) {
+	      event.preventDefault();
+	      if (_this.isMousePressed(event) !== 1) {
+	        return;
+	      }
+	      _this.setClock(event.nativeEvent, false);
+	    }, _this.handleTouch = function (event) {
+	      event.preventDefault();
+	      _this.setClock(event.changedTouches[0], event.type === 'touchend');
+	    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+	  }
+	
+	  (0, _createClass3.default)(ClockMinutes, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var clockElement = this.refs.mask;
+	
+	      this.center = {
+	        x: clockElement.offsetWidth / 2,
+	        y: clockElement.offsetHeight / 2
+	      };
+	
+	      this.basePoint = {
+	        x: this.center.x,
+	        y: 0
+	      };
+	    }
+	  }, {
+	    key: 'isMousePressed',
+	    value: function isMousePressed(event) {
+	      if (typeof event.buttons === 'undefined') {
+	        return event.nativeEvent.which;
+	      }
+	      return event.buttons;
+	    }
+	  }, {
+	    key: 'setClock',
+	    value: function setClock(event, finish) {
+	      if (typeof event.offsetX === 'undefined') {
+	        var offset = (0, _timeUtils.getTouchEventOffsetValues)(event);
+	
+	        event.offsetX = offset.offsetX;
+	        event.offsetY = offset.offsetY;
+	      }
+	
+	      var minutes = this.getMinutes(event.offsetX, event.offsetY);
+	
+	      this.props.onChange(minutes, finish);
+	    }
+	  }, {
+	    key: 'getMinutes',
+	    value: function getMinutes(offsetX, offsetY) {
+	      var step = 6;
+	      var x = offsetX - this.center.x;
+	      var y = offsetY - this.center.y;
+	      var cx = this.basePoint.x - this.center.x;
+	      var cy = this.basePoint.y - this.center.y;
+	
+	      var atan = Math.atan2(cx, cy) - Math.atan2(x, y);
+	
+	      var deg = (0, _timeUtils.rad2deg)(atan);
+	      deg = Math.round(deg / step) * step;
+	      deg %= 360;
+	
+	      var value = Math.floor(deg / step) || 0;
+	
+	      return value;
+	    }
+	  }, {
+	    key: 'getMinuteNumbers',
+	    value: function getMinuteNumbers() {
+	      var minutes = [];
+	      for (var i = 0; i < 12; i++) {
+	        minutes.push(i * 5);
+	      }
+	      var selectedMinutes = this.props.initialMinutes;
+	      var hasSelected = false;
+	
+	      var numbers = minutes.map(function (minute) {
+	        var isSelected = selectedMinutes === minute;
+	        if (isSelected) {
+	          hasSelected = true;
+	        }
+	        return _react2.default.createElement(_ClockNumber2.default, {
+	          key: minute,
+	          isSelected: isSelected,
+	          type: 'minute',
+	          value: minute
+	        });
+	      });
+	
+	      return {
+	        numbers: numbers,
+	        hasSelected: hasSelected,
+	        selected: selectedMinutes
+	      };
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var styles = {
+	        root: {
+	          height: '100%',
+	          width: '100%',
+	          borderRadius: '100%',
+	          position: 'relative',
+	          pointerEvents: 'none',
+	          boxSizing: 'border-box'
+	        },
+	
+	        hitMask: {
+	          height: '100%',
+	          width: '100%',
+	          pointerEvents: 'auto'
+	        }
+	      };
+	
+	      var prepareStyles = this.context.muiTheme.prepareStyles;
+	
+	      var minutes = this.getMinuteNumbers();
+	
+	      return _react2.default.createElement(
+	        'div',
+	        { ref: 'clock', style: prepareStyles(styles.root) },
+	        _react2.default.createElement(_ClockPointer2.default, { value: minutes.selected, type: 'minute', hasSelected: minutes.hasSelected }),
+	        minutes.numbers,
+	        _react2.default.createElement('div', {
+	          ref: 'mask',
+	          style: prepareStyles(styles.hitMask),
+	          onTouchMove: this.handleTouch,
+	          onTouchEnd: this.handleTouch,
+	          onMouseUp: this.handleUp,
+	          onMouseMove: this.handleMove
+	        })
+	      );
+	    }
+	  }]);
+	  return ClockMinutes;
+	}(_react.Component);
+	
+	ClockMinutes.defaultProps = {
+	  initialMinutes: new Date().getMinutes(),
+	  onChange: function onChange() {}
+	};
+	ClockMinutes.contextTypes = {
+	  muiTheme: _react.PropTypes.object.isRequired
+	};
+	process.env.NODE_ENV !== "production" ? ClockMinutes.propTypes = {
+	  initialMinutes: _react.PropTypes.number,
+	  onChange: _react.PropTypes.func
+	} : void 0;
+	exports.default = ClockMinutes;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
+
+/***/ },
+/* 1127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = undefined;
+	
+	var _AutoComplete = __webpack_require__(1106);
+	
+	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = _AutoComplete2.default;
+
+/***/ },
+/* 1128 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactTapEventPlugin = __webpack_require__(1129);
 	
 	var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
 	
-	var _appBarHeader = __webpack_require__(1131);
+	var _appBarHeader = __webpack_require__(1135);
 	
 	var _appBarHeader2 = _interopRequireDefault(_appBarHeader);
 	
@@ -87498,11 +88700,11 @@
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _getMuiTheme = __webpack_require__(1139);
+	var _getMuiTheme = __webpack_require__(1143);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
-	var _MuiThemeProvider = __webpack_require__(1184);
+	var _MuiThemeProvider = __webpack_require__(1188);
 	
 	var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 	
@@ -87555,11 +88757,11 @@
 	exports.default = Root;
 
 /***/ },
-/* 1125 */
+/* 1129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {var invariant = __webpack_require__(306);
-	var defaultClickRejectionStrategy = __webpack_require__(1126);
+	var defaultClickRejectionStrategy = __webpack_require__(1130);
 	
 	var alreadyInjected = false;
 	
@@ -87581,14 +88783,14 @@
 	  alreadyInjected = true;
 	
 	  __webpack_require__(340).injection.injectEventPluginsByName({
-	    'TapEventPlugin':       __webpack_require__(1127)(shouldRejectClick)
+	    'TapEventPlugin':       __webpack_require__(1131)(shouldRejectClick)
 	  });
 	};
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
-/* 1126 */
+/* 1130 */
 /***/ function(module, exports) {
 
 	module.exports = function(lastTouchEvent, clickTimestamp) {
@@ -87599,7 +88801,7 @@
 
 
 /***/ },
-/* 1127 */
+/* 1131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -87623,14 +88825,14 @@
 	
 	"use strict";
 	
-	var EventConstants = __webpack_require__(1128);
+	var EventConstants = __webpack_require__(1132);
 	var EventPluginUtils = __webpack_require__(342);
 	var EventPropagators = __webpack_require__(339);
 	var SyntheticUIEvent = __webpack_require__(373);
-	var TouchEventUtils = __webpack_require__(1129);
+	var TouchEventUtils = __webpack_require__(1133);
 	var ViewportMetrics = __webpack_require__(374);
 	
-	var keyOf = __webpack_require__(1130);
+	var keyOf = __webpack_require__(1134);
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
 	var isStartish = EventPluginUtils.isStartish;
@@ -87776,7 +88978,7 @@
 
 
 /***/ },
-/* 1128 */
+/* 1132 */
 /***/ function(module, exports) {
 
 	/**
@@ -87872,7 +89074,7 @@
 	module.exports = EventConstants;
 
 /***/ },
-/* 1129 */
+/* 1133 */
 /***/ function(module, exports) {
 
 	/**
@@ -87920,7 +89122,7 @@
 
 
 /***/ },
-/* 1130 */
+/* 1134 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -87959,7 +89161,7 @@
 	module.exports = keyOf;
 
 /***/ },
-/* 1131 */
+/* 1135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -87986,7 +89188,7 @@
 	
 	var _actions = __webpack_require__(594);
 	
-	var _AppBar = __webpack_require__(1132);
+	var _AppBar = __webpack_require__(1136);
 	
 	var _AppBar2 = _interopRequireDefault(_AppBar);
 	
@@ -88006,7 +89208,7 @@
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _Toggle = __webpack_require__(1135);
+	var _Toggle = __webpack_require__(1139);
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
@@ -88014,11 +89216,11 @@
 	
 	var _moreVert2 = _interopRequireDefault(_moreVert);
 	
-	var _close = __webpack_require__(1137);
+	var _close = __webpack_require__(1141);
 	
 	var _close2 = _interopRequireDefault(_close);
 	
-	var _logged = __webpack_require__(1138);
+	var _logged = __webpack_require__(1142);
 	
 	var _logged2 = _interopRequireDefault(_logged);
 	
@@ -88159,7 +89361,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(AppBarHeader);
 
 /***/ },
-/* 1132 */
+/* 1136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -88169,7 +89371,7 @@
 	});
 	exports.default = undefined;
 	
-	var _AppBar = __webpack_require__(1133);
+	var _AppBar = __webpack_require__(1137);
 	
 	var _AppBar2 = _interopRequireDefault(_AppBar);
 	
@@ -88178,7 +89380,7 @@
 	exports.default = _AppBar2.default;
 
 /***/ },
-/* 1133 */
+/* 1137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -88233,7 +89435,7 @@
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _menu = __webpack_require__(1134);
+	var _menu = __webpack_require__(1138);
 	
 	var _menu2 = _interopRequireDefault(_menu);
 	
@@ -88564,7 +89766,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
-/* 1134 */
+/* 1138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -88601,7 +89803,7 @@
 	exports.default = NavigationMenu;
 
 /***/ },
-/* 1135 */
+/* 1139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -88611,7 +89813,7 @@
 	});
 	exports.default = undefined;
 	
-	var _Toggle = __webpack_require__(1136);
+	var _Toggle = __webpack_require__(1140);
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
@@ -88620,7 +89822,7 @@
 	exports.default = _Toggle2.default;
 
 /***/ },
-/* 1136 */
+/* 1140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -88955,7 +90157,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
-/* 1137 */
+/* 1141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -88992,7 +90194,7 @@
 	exports.default = NavigationClose;
 
 /***/ },
-/* 1138 */
+/* 1142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -89019,7 +90221,7 @@
 	
 	var _actions = __webpack_require__(594);
 	
-	var _AppBar = __webpack_require__(1132);
+	var _AppBar = __webpack_require__(1136);
 	
 	var _AppBar2 = _interopRequireDefault(_AppBar);
 	
@@ -89039,7 +90241,7 @@
 	
 	var _FlatButton2 = _interopRequireDefault(_FlatButton);
 	
-	var _Toggle = __webpack_require__(1135);
+	var _Toggle = __webpack_require__(1139);
 	
 	var _Toggle2 = _interopRequireDefault(_Toggle);
 	
@@ -89047,7 +90249,7 @@
 	
 	var _moreVert2 = _interopRequireDefault(_moreVert);
 	
-	var _close = __webpack_require__(1137);
+	var _close = __webpack_require__(1141);
 	
 	var _close2 = _interopRequireDefault(_close);
 	
@@ -89140,7 +90342,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Logged);
 
 /***/ },
-/* 1139 */
+/* 1143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -89155,37 +90357,37 @@
 	
 	exports.default = getMuiTheme;
 	
-	var _lodash = __webpack_require__(1140);
+	var _lodash = __webpack_require__(1144);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
 	var _colorManipulator = __webpack_require__(946);
 	
-	var _lightBaseTheme = __webpack_require__(1141);
+	var _lightBaseTheme = __webpack_require__(1145);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _zIndex = __webpack_require__(1143);
+	var _zIndex = __webpack_require__(1147);
 	
 	var _zIndex2 = _interopRequireDefault(_zIndex);
 	
-	var _autoprefixer = __webpack_require__(1144);
+	var _autoprefixer = __webpack_require__(1148);
 	
 	var _autoprefixer2 = _interopRequireDefault(_autoprefixer);
 	
-	var _callOnce = __webpack_require__(1180);
+	var _callOnce = __webpack_require__(1184);
 	
 	var _callOnce2 = _interopRequireDefault(_callOnce);
 	
-	var _rtl = __webpack_require__(1181);
+	var _rtl = __webpack_require__(1185);
 	
 	var _rtl2 = _interopRequireDefault(_rtl);
 	
-	var _compose = __webpack_require__(1182);
+	var _compose = __webpack_require__(1186);
 	
 	var _compose2 = _interopRequireDefault(_compose);
 	
-	var _typography = __webpack_require__(1183);
+	var _typography = __webpack_require__(1187);
 	
 	var _typography2 = _interopRequireDefault(_typography);
 	
@@ -89524,7 +90726,7 @@
 	}
 
 /***/ },
-/* 1140 */
+/* 1144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -91738,7 +92940,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(498)(module)))
 
 /***/ },
-/* 1141 */
+/* 1145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -91751,7 +92953,7 @@
 	
 	var _colorManipulator = __webpack_require__(946);
 	
-	var _spacing = __webpack_require__(1142);
+	var _spacing = __webpack_require__(1146);
 	
 	var _spacing2 = _interopRequireDefault(_spacing);
 	
@@ -91788,7 +92990,7 @@
 	    */
 
 /***/ },
-/* 1142 */
+/* 1146 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -91812,7 +93014,7 @@
 	};
 
 /***/ },
-/* 1143 */
+/* 1147 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -91834,7 +93036,7 @@
 	};
 
 /***/ },
-/* 1144 */
+/* 1148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -91900,7 +93102,7 @@
 	  }
 	};
 	
-	var _inlineStylePrefixer = __webpack_require__(1145);
+	var _inlineStylePrefixer = __webpack_require__(1149);
 	
 	var _inlineStylePrefixer2 = _interopRequireDefault(_inlineStylePrefixer);
 	
@@ -91914,7 +93116,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
-/* 1145 */
+/* 1149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -91927,67 +93129,67 @@
 	// special flexbox specifications
 	
 	
-	var _prefixAll2 = __webpack_require__(1146);
+	var _prefixAll2 = __webpack_require__(1150);
 	
 	var _prefixAll3 = _interopRequireDefault(_prefixAll2);
 	
-	var _getBrowserInformation = __webpack_require__(1163);
+	var _getBrowserInformation = __webpack_require__(1167);
 	
 	var _getBrowserInformation2 = _interopRequireDefault(_getBrowserInformation);
 	
-	var _getPrefixedKeyframes = __webpack_require__(1166);
+	var _getPrefixedKeyframes = __webpack_require__(1170);
 	
 	var _getPrefixedKeyframes2 = _interopRequireDefault(_getPrefixedKeyframes);
 	
-	var _capitalizeString = __webpack_require__(1148);
+	var _capitalizeString = __webpack_require__(1152);
 	
 	var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 	
-	var _sortPrefixedStyle = __webpack_require__(1149);
+	var _sortPrefixedStyle = __webpack_require__(1153);
 	
 	var _sortPrefixedStyle2 = _interopRequireDefault(_sortPrefixedStyle);
 	
-	var _prefixProps = __webpack_require__(1167);
+	var _prefixProps = __webpack_require__(1171);
 	
 	var _prefixProps2 = _interopRequireDefault(_prefixProps);
 	
-	var _position = __webpack_require__(1168);
+	var _position = __webpack_require__(1172);
 	
 	var _position2 = _interopRequireDefault(_position);
 	
-	var _calc = __webpack_require__(1170);
+	var _calc = __webpack_require__(1174);
 	
 	var _calc2 = _interopRequireDefault(_calc);
 	
-	var _zoomCursor = __webpack_require__(1171);
+	var _zoomCursor = __webpack_require__(1175);
 	
 	var _zoomCursor2 = _interopRequireDefault(_zoomCursor);
 	
-	var _grabCursor = __webpack_require__(1172);
+	var _grabCursor = __webpack_require__(1176);
 	
 	var _grabCursor2 = _interopRequireDefault(_grabCursor);
 	
-	var _flex = __webpack_require__(1173);
+	var _flex = __webpack_require__(1177);
 	
 	var _flex2 = _interopRequireDefault(_flex);
 	
-	var _sizing = __webpack_require__(1174);
+	var _sizing = __webpack_require__(1178);
 	
 	var _sizing2 = _interopRequireDefault(_sizing);
 	
-	var _gradient = __webpack_require__(1175);
+	var _gradient = __webpack_require__(1179);
 	
 	var _gradient2 = _interopRequireDefault(_gradient);
 	
-	var _transition = __webpack_require__(1176);
+	var _transition = __webpack_require__(1180);
 	
 	var _transition2 = _interopRequireDefault(_transition);
 	
-	var _flexboxIE = __webpack_require__(1178);
+	var _flexboxIE = __webpack_require__(1182);
 	
 	var _flexboxIE2 = _interopRequireDefault(_flexboxIE);
 	
-	var _flexboxOld = __webpack_require__(1179);
+	var _flexboxOld = __webpack_require__(1183);
 	
 	var _flexboxOld2 = _interopRequireDefault(_flexboxOld);
 	
@@ -92148,7 +93350,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1146 */
+/* 1150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92158,51 +93360,51 @@
 	});
 	exports.default = prefixAll;
 	
-	var _prefixProps = __webpack_require__(1147);
+	var _prefixProps = __webpack_require__(1151);
 	
 	var _prefixProps2 = _interopRequireDefault(_prefixProps);
 	
-	var _capitalizeString = __webpack_require__(1148);
+	var _capitalizeString = __webpack_require__(1152);
 	
 	var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 	
-	var _sortPrefixedStyle = __webpack_require__(1149);
+	var _sortPrefixedStyle = __webpack_require__(1153);
 	
 	var _sortPrefixedStyle2 = _interopRequireDefault(_sortPrefixedStyle);
 	
-	var _position = __webpack_require__(1151);
+	var _position = __webpack_require__(1155);
 	
 	var _position2 = _interopRequireDefault(_position);
 	
-	var _calc = __webpack_require__(1152);
+	var _calc = __webpack_require__(1156);
 	
 	var _calc2 = _interopRequireDefault(_calc);
 	
-	var _cursor = __webpack_require__(1155);
+	var _cursor = __webpack_require__(1159);
 	
 	var _cursor2 = _interopRequireDefault(_cursor);
 	
-	var _flex = __webpack_require__(1156);
+	var _flex = __webpack_require__(1160);
 	
 	var _flex2 = _interopRequireDefault(_flex);
 	
-	var _sizing = __webpack_require__(1157);
+	var _sizing = __webpack_require__(1161);
 	
 	var _sizing2 = _interopRequireDefault(_sizing);
 	
-	var _gradient = __webpack_require__(1158);
+	var _gradient = __webpack_require__(1162);
 	
 	var _gradient2 = _interopRequireDefault(_gradient);
 	
-	var _transition = __webpack_require__(1159);
+	var _transition = __webpack_require__(1163);
 	
 	var _transition2 = _interopRequireDefault(_transition);
 	
-	var _flexboxIE = __webpack_require__(1161);
+	var _flexboxIE = __webpack_require__(1165);
 	
 	var _flexboxIE2 = _interopRequireDefault(_flexboxIE);
 	
-	var _flexboxOld = __webpack_require__(1162);
+	var _flexboxOld = __webpack_require__(1166);
 	
 	var _flexboxOld2 = _interopRequireDefault(_flexboxOld);
 	
@@ -92268,7 +93470,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1147 */
+/* 1151 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -92280,7 +93482,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 1148 */
+/* 1152 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -92297,7 +93499,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 1149 */
+/* 1153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92307,7 +93509,7 @@
 	});
 	exports.default = sortPrefixedStyle;
 	
-	var _isPrefixedProperty = __webpack_require__(1150);
+	var _isPrefixedProperty = __webpack_require__(1154);
 	
 	var _isPrefixedProperty2 = _interopRequireDefault(_isPrefixedProperty);
 	
@@ -92329,7 +93531,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1150 */
+/* 1154 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -92345,7 +93547,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 1151 */
+/* 1155 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -92362,7 +93564,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1152 */
+/* 1156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92372,11 +93574,11 @@
 	});
 	exports.default = calc;
 	
-	var _joinPrefixedValue = __webpack_require__(1153);
+	var _joinPrefixedValue = __webpack_require__(1157);
 	
 	var _joinPrefixedValue2 = _interopRequireDefault(_joinPrefixedValue);
 	
-	var _isPrefixedValue = __webpack_require__(1154);
+	var _isPrefixedValue = __webpack_require__(1158);
 	
 	var _isPrefixedValue2 = _interopRequireDefault(_isPrefixedValue);
 	
@@ -92392,7 +93594,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1153 */
+/* 1157 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -92417,7 +93619,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1154 */
+/* 1158 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -92435,7 +93637,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1155 */
+/* 1159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92445,7 +93647,7 @@
 	});
 	exports.default = cursor;
 	
-	var _joinPrefixedValue = __webpack_require__(1153);
+	var _joinPrefixedValue = __webpack_require__(1157);
 	
 	var _joinPrefixedValue2 = _interopRequireDefault(_joinPrefixedValue);
 	
@@ -92466,7 +93668,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1156 */
+/* 1160 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -92487,7 +93689,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1157 */
+/* 1161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92497,7 +93699,7 @@
 	});
 	exports.default = sizing;
 	
-	var _joinPrefixedValue = __webpack_require__(1153);
+	var _joinPrefixedValue = __webpack_require__(1157);
 	
 	var _joinPrefixedValue2 = _interopRequireDefault(_joinPrefixedValue);
 	
@@ -92528,7 +93730,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1158 */
+/* 1162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92538,11 +93740,11 @@
 	});
 	exports.default = gradient;
 	
-	var _joinPrefixedValue = __webpack_require__(1153);
+	var _joinPrefixedValue = __webpack_require__(1157);
 	
 	var _joinPrefixedValue2 = _interopRequireDefault(_joinPrefixedValue);
 	
-	var _isPrefixedValue = __webpack_require__(1154);
+	var _isPrefixedValue = __webpack_require__(1158);
 	
 	var _isPrefixedValue2 = _interopRequireDefault(_isPrefixedValue);
 	
@@ -92558,7 +93760,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1159 */
+/* 1163 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92568,19 +93770,19 @@
 	});
 	exports.default = transition;
 	
-	var _hyphenateStyleName = __webpack_require__(1160);
+	var _hyphenateStyleName = __webpack_require__(1164);
 	
 	var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
 	
-	var _capitalizeString = __webpack_require__(1148);
+	var _capitalizeString = __webpack_require__(1152);
 	
 	var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 	
-	var _isPrefixedValue = __webpack_require__(1154);
+	var _isPrefixedValue = __webpack_require__(1158);
 	
 	var _isPrefixedValue2 = _interopRequireDefault(_isPrefixedValue);
 	
-	var _prefixProps = __webpack_require__(1147);
+	var _prefixProps = __webpack_require__(1151);
 	
 	var _prefixProps2 = _interopRequireDefault(_prefixProps);
 	
@@ -92645,7 +93847,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1160 */
+/* 1164 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -92667,7 +93869,7 @@
 
 
 /***/ },
-/* 1161 */
+/* 1165 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -92704,7 +93906,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1162 */
+/* 1166 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -92745,7 +93947,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1163 */
+/* 1167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -92754,7 +93956,7 @@
 	  value: true
 	});
 	
-	var _bowser = __webpack_require__(1164);
+	var _bowser = __webpack_require__(1168);
 	
 	var _bowser2 = _interopRequireDefault(_bowser);
 	
@@ -92858,7 +94060,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1164 */
+/* 1168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*!
@@ -92869,7 +94071,7 @@
 	
 	!function (root, name, definition) {
 	  if (typeof module != 'undefined' && module.exports) module.exports = definition()
-	  else if (true) __webpack_require__(1165)(name, definition)
+	  else if (true) __webpack_require__(1169)(name, definition)
 	  else root[name] = definition()
 	}(this, 'bowser', function () {
 	  /**
@@ -93444,14 +94646,14 @@
 
 
 /***/ },
-/* 1165 */
+/* 1169 */
 /***/ function(module, exports) {
 
 	module.exports = function() { throw new Error("define cannot be used indirect"); };
 
 
 /***/ },
-/* 1166 */
+/* 1170 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -93476,7 +94678,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1167 */
+/* 1171 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -93488,7 +94690,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 1168 */
+/* 1172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93498,7 +94700,7 @@
 	});
 	exports.default = position;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93520,7 +94722,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1169 */
+/* 1173 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -93536,7 +94738,7 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 1170 */
+/* 1174 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93546,7 +94748,7 @@
 	});
 	exports.default = calc;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93570,7 +94772,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1171 */
+/* 1175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93580,7 +94782,7 @@
 	});
 	exports.default = zoomCursor;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93606,7 +94808,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1172 */
+/* 1176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93616,7 +94818,7 @@
 	});
 	exports.default = grabCursor;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93641,7 +94843,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1173 */
+/* 1177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93651,7 +94853,7 @@
 	});
 	exports.default = flex;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93677,7 +94879,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1174 */
+/* 1178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93687,7 +94889,7 @@
 	});
 	exports.default = sizing;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93727,7 +94929,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1175 */
+/* 1179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93737,7 +94939,7 @@
 	});
 	exports.default = gradient;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93763,7 +94965,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1176 */
+/* 1180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93776,11 +94978,11 @@
 	
 	exports.default = transition;
 	
-	var _hyphenateStyleName = __webpack_require__(1160);
+	var _hyphenateStyleName = __webpack_require__(1164);
 	
 	var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
 	
-	var _unprefixProperty = __webpack_require__(1177);
+	var _unprefixProperty = __webpack_require__(1181);
 	
 	var _unprefixProperty2 = _interopRequireDefault(_unprefixProperty);
 	
@@ -93829,7 +95031,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1177 */
+/* 1181 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -93846,7 +95048,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1178 */
+/* 1182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93856,7 +95058,7 @@
 	});
 	exports.default = flexboxIE;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93910,7 +95112,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1179 */
+/* 1183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -93920,7 +95122,7 @@
 	});
 	exports.default = flexboxOld;
 	
-	var _getPrefixedValue = __webpack_require__(1169);
+	var _getPrefixedValue = __webpack_require__(1173);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -93981,7 +95183,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 1180 */
+/* 1184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -94013,7 +95215,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
-/* 1181 */
+/* 1185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -94115,7 +95317,7 @@
 	}
 
 /***/ },
-/* 1182 */
+/* 1186 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -94145,7 +95347,7 @@
 	}
 
 /***/ },
-/* 1183 */
+/* 1187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -94185,7 +95387,7 @@
 	exports.default = new Typography();
 
 /***/ },
-/* 1184 */
+/* 1188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -94216,7 +95418,7 @@
 	
 	var _react = __webpack_require__(300);
 	
-	var _getMuiTheme = __webpack_require__(1139);
+	var _getMuiTheme = __webpack_require__(1143);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
@@ -94257,7 +95459,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295)))
 
 /***/ },
-/* 1185 */
+/* 1189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var require;/* WEBPACK VAR INJECTION */(function(process, global) {/*!
@@ -94392,7 +95594,7 @@
 	function attemptVertx() {
 	  try {
 	    var r = require;
-	    var vertx = __webpack_require__(1186);
+	    var vertx = __webpack_require__(1190);
 	    vertxNext = vertx.runOnLoop || vertx.runOnContext;
 	    return useVertxTimer();
 	  } catch (e) {
@@ -95417,14 +96619,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(295), (function() { return this; }())))
 
 /***/ },
-/* 1186 */
+/* 1190 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 1187 */,
-/* 1188 */
+/* 1191 */,
+/* 1192 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__, __webpack_module_template_argument_6__, __webpack_module_template_argument_7__, __webpack_module_template_argument_8__, __webpack_module_template_argument_9__, __webpack_module_template_argument_10__, __webpack_module_template_argument_11__, __webpack_module_template_argument_12__, __webpack_module_template_argument_13__, __webpack_module_template_argument_14__, __webpack_module_template_argument_15__, __webpack_module_template_argument_16__, __webpack_module_template_argument_17__, __webpack_module_template_argument_18__, __webpack_module_template_argument_19__, __webpack_module_template_argument_20__, __webpack_module_template_argument_21__, __webpack_module_template_argument_22__, __webpack_module_template_argument_23__, __webpack_module_template_argument_24__, __webpack_module_template_argument_25__, __webpack_module_template_argument_26__, __webpack_module_template_argument_27__, __webpack_module_template_argument_28__, __webpack_module_template_argument_29__) {
 
 	'use strict';
@@ -95664,7 +96866,7 @@
 	setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
-/* 1189 */
+/* 1193 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// Thank's IE8 for his funny defineProperty
@@ -95673,7 +96875,7 @@
 	});
 
 /***/ },
-/* 1190 */
+/* 1194 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	var dP         = __webpack_require__(__webpack_module_template_argument_0__)
@@ -95686,7 +96888,7 @@
 	};
 
 /***/ },
-/* 1191 */
+/* 1195 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	var anObject       = __webpack_require__(__webpack_module_template_argument_0__)
@@ -95707,7 +96909,7 @@
 	};
 
 /***/ },
-/* 1192 */
+/* 1196 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	var isObject = __webpack_require__(__webpack_module_template_argument_0__);
@@ -95717,7 +96919,7 @@
 	};
 
 /***/ },
-/* 1193 */
+/* 1197 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	module.exports = !__webpack_require__(__webpack_module_template_argument_0__) && !__webpack_require__(__webpack_module_template_argument_1__)(function(){
@@ -95725,7 +96927,7 @@
 	});
 
 /***/ },
-/* 1194 */
+/* 1198 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	var isObject = __webpack_require__(__webpack_module_template_argument_0__)
@@ -95737,7 +96939,7 @@
 	};
 
 /***/ },
-/* 1195 */
+/* 1199 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// 7.1.1 ToPrimitive(input [, PreferredType])
@@ -95754,7 +96956,7 @@
 	};
 
 /***/ },
-/* 1196 */
+/* 1200 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// optional / simple context binding
@@ -95779,7 +96981,7 @@
 	};
 
 /***/ },
-/* 1197 */
+/* 1201 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__) {
 
 	var META     = __webpack_require__(__webpack_module_template_argument_0__)('meta')
@@ -95837,7 +97039,7 @@
 	};
 
 /***/ },
-/* 1198 */
+/* 1202 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	var global = __webpack_require__(__webpack_module_template_argument_0__)
@@ -95848,7 +97050,7 @@
 	};
 
 /***/ },
-/* 1199 */
+/* 1203 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	var def = __webpack_require__(__webpack_module_template_argument_0__).f
@@ -95860,7 +97062,7 @@
 	};
 
 /***/ },
-/* 1200 */
+/* 1204 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	var store      = __webpack_require__(__webpack_module_template_argument_0__)('wks')
@@ -95876,13 +97078,13 @@
 	$exports.store = store;
 
 /***/ },
-/* 1201 */
+/* 1205 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	exports.f = __webpack_require__(__webpack_module_template_argument_0__);
 
 /***/ },
-/* 1202 */
+/* 1206 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__) {
 
 	var global         = __webpack_require__(__webpack_module_template_argument_0__)
@@ -95896,7 +97098,7 @@
 	};
 
 /***/ },
-/* 1203 */
+/* 1207 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	var getKeys   = __webpack_require__(__webpack_module_template_argument_0__)
@@ -95911,7 +97113,7 @@
 	};
 
 /***/ },
-/* 1204 */
+/* 1208 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// 19.1.2.14 / 15.2.3.14 Object.keys(O)
@@ -95923,7 +97125,7 @@
 	};
 
 /***/ },
-/* 1205 */
+/* 1209 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	var has          = __webpack_require__(__webpack_module_template_argument_0__)
@@ -95945,7 +97147,7 @@
 	};
 
 /***/ },
-/* 1206 */
+/* 1210 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// to indexed object, toObject with fallback for non-array-like ES3 strings
@@ -95956,7 +97158,7 @@
 	};
 
 /***/ },
-/* 1207 */
+/* 1211 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// fallback for non-array-like ES3 and non-enumerable old V8 strings
@@ -95966,7 +97168,7 @@
 	};
 
 /***/ },
-/* 1208 */
+/* 1212 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	// false -> Array#indexOf
@@ -95992,7 +97194,7 @@
 	};
 
 /***/ },
-/* 1209 */
+/* 1213 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// 7.1.15 ToLength
@@ -96003,7 +97205,7 @@
 	};
 
 /***/ },
-/* 1210 */
+/* 1214 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	var toInteger = __webpack_require__(__webpack_module_template_argument_0__)
@@ -96015,7 +97217,7 @@
 	};
 
 /***/ },
-/* 1211 */
+/* 1215 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	var shared = __webpack_require__(__webpack_module_template_argument_0__)('keys')
@@ -96025,7 +97227,7 @@
 	};
 
 /***/ },
-/* 1212 */
+/* 1216 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	// all enumerable object keys, includes symbols
@@ -96045,7 +97247,7 @@
 	};
 
 /***/ },
-/* 1213 */
+/* 1217 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// 7.2.2 IsArray(argument)
@@ -96055,7 +97257,7 @@
 	};
 
 /***/ },
-/* 1214 */
+/* 1218 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__) {
 
 	// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
@@ -96102,7 +97304,7 @@
 
 
 /***/ },
-/* 1215 */
+/* 1219 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	var dP       = __webpack_require__(__webpack_module_template_argument_0__)
@@ -96120,13 +97322,13 @@
 	};
 
 /***/ },
-/* 1216 */
+/* 1220 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	module.exports = __webpack_require__(__webpack_module_template_argument_0__).document && document.documentElement;
 
 /***/ },
-/* 1217 */
+/* 1221 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -96151,7 +97353,7 @@
 
 
 /***/ },
-/* 1218 */
+/* 1222 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
@@ -96163,7 +97365,7 @@
 	};
 
 /***/ },
-/* 1219 */
+/* 1223 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__, __webpack_module_template_argument_6__) {
 
 	var pIE            = __webpack_require__(__webpack_module_template_argument_0__)
@@ -96184,7 +97386,7 @@
 	};
 
 /***/ },
-/* 1220 */
+/* 1224 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	var $export = __webpack_require__(__webpack_module_template_argument_0__)
@@ -96192,7 +97394,7 @@
 	$export($export.S, 'Object', {create: __webpack_require__(__webpack_module_template_argument_1__)});
 
 /***/ },
-/* 1221 */
+/* 1225 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	var $export = __webpack_require__(__webpack_module_template_argument_0__);
@@ -96200,7 +97402,7 @@
 	$export($export.S + $export.F * !__webpack_require__(__webpack_module_template_argument_1__), 'Object', {defineProperty: __webpack_require__(__webpack_module_template_argument_2__).f});
 
 /***/ },
-/* 1222 */
+/* 1226 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	// most Object methods by ES6 should accept primitives
@@ -96215,7 +97417,7 @@
 	};
 
 /***/ },
-/* 1223 */
+/* 1227 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	// 19.1.2.9 Object.getPrototypeOf(O)
@@ -96229,7 +97431,7 @@
 	});
 
 /***/ },
-/* 1224 */
+/* 1228 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// 7.1.13 ToObject(argument)
@@ -96239,7 +97441,7 @@
 	};
 
 /***/ },
-/* 1225 */
+/* 1229 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
@@ -96257,7 +97459,7 @@
 	};
 
 /***/ },
-/* 1226 */
+/* 1230 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__) {
 
 	// 19.1.2.14 Object.keys(O)
@@ -96271,7 +97473,7 @@
 	});
 
 /***/ },
-/* 1227 */
+/* 1231 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// 19.1.3.1 Object.assign(target, source)
@@ -96280,7 +97482,7 @@
 	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(__webpack_module_template_argument_1__)});
 
 /***/ },
-/* 1228 */
+/* 1232 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__) {
 
 	'use strict';
@@ -96318,7 +97520,7 @@
 	} : $assign;
 
 /***/ },
-/* 1229 */
+/* 1233 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -96326,7 +97528,7 @@
 	$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(__webpack_module_template_argument_1__).set});
 
 /***/ },
-/* 1230 */
+/* 1234 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	// Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -96356,7 +97558,7 @@
 	};
 
 /***/ },
-/* 1231 */
+/* 1235 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// getting tag from 19.1.3.6 Object.prototype.toString()
@@ -96384,7 +97586,7 @@
 	};
 
 /***/ },
-/* 1232 */
+/* 1236 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -96406,7 +97608,7 @@
 	});
 
 /***/ },
-/* 1233 */
+/* 1237 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	var toInteger = __webpack_require__(__webpack_module_template_argument_0__)
@@ -96428,7 +97630,7 @@
 	};
 
 /***/ },
-/* 1234 */
+/* 1238 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__, __webpack_module_template_argument_6__, __webpack_module_template_argument_7__, __webpack_module_template_argument_8__, __webpack_module_template_argument_9__) {
 
 	'use strict';
@@ -96503,7 +97705,7 @@
 	};
 
 /***/ },
-/* 1235 */
+/* 1239 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__) {
 
 	'use strict';
@@ -96521,7 +97723,7 @@
 	};
 
 /***/ },
-/* 1236 */
+/* 1240 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__, __webpack_module_template_argument_5__, __webpack_module_template_argument_6__, __webpack_module_template_argument_7__, __webpack_module_template_argument_8__) {
 
 	'use strict';
@@ -96564,7 +97766,7 @@
 
 
 /***/ },
-/* 1237 */
+/* 1241 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	// call something on iterator step with safe closing on error
@@ -96581,7 +97783,7 @@
 	};
 
 /***/ },
-/* 1238 */
+/* 1242 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	// check on default Array iterator
@@ -96594,7 +97796,7 @@
 	};
 
 /***/ },
-/* 1239 */
+/* 1243 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	'use strict';
@@ -96607,7 +97809,7 @@
 	};
 
 /***/ },
-/* 1240 */
+/* 1244 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	var classof   = __webpack_require__(__webpack_module_template_argument_0__)
@@ -96620,7 +97822,7 @@
 	};
 
 /***/ },
-/* 1241 */
+/* 1245 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	var ITERATOR     = __webpack_require__(__webpack_module_template_argument_0__)('iterator')
@@ -96646,7 +97848,7 @@
 	};
 
 /***/ },
-/* 1242 */
+/* 1246 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__, __webpack_module_template_argument_4__) {
 
 	'use strict';
@@ -96685,19 +97887,19 @@
 	addToUnscopables('entries');
 
 /***/ },
-/* 1243 */
+/* 1247 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	__webpack_require__(__webpack_module_template_argument_0__)('asyncIterator');
 
 /***/ },
-/* 1244 */
+/* 1248 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	__webpack_require__(__webpack_module_template_argument_0__)('observable');
 
 /***/ },
-/* 1245 */
+/* 1249 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**

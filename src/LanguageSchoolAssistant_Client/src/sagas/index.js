@@ -21,6 +21,8 @@ import {
 
   LOAD_STUDENTS_START,
   LOAD_STUDENTS_SUCCESS,
+  UPDATE_STUDENTS_GROUP_START,
+  UPDATE_STUDENTS_GORUP_SUCCESS,
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
@@ -50,6 +52,8 @@ import {
 
   loadStudentsStart,
   loadStudentsSuccess,
+  updateStudentsGroupStart,
+
   loadLanguageInstructorsStart,
   loadLanguageInstructorsSuccess,
 
@@ -262,6 +266,20 @@ export function* loadStudentsSaga() {
     console.log("result data: " + JSON.stringify(resultData));
 
     yield put(loadStudentsSuccess(resultData));
+  }
+}
+
+export function* updateStudentsGroupSaga() {
+  while (true) {
+    yield take(UPDATE_STUDENTS_GROUP_START);
+
+    console.log("updateStudentsGroupSaga");
+
+    const students = store.getState().groupResource.temporaryStudentsToUpdateGroup;
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateStudentsGroup/';
+    
+    yield call(apiRequest, url, 'POST', students);
   }
 }
 
