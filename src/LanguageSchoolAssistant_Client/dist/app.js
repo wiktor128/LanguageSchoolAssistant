@@ -43963,13 +43963,13 @@
 	}
 	
 	function updateStudentsGroupSaga() {
-	    var students, url;
+	    var students, url, i, student;
 	    return regeneratorRuntime.wrap(function updateStudentsGroupSaga$(_context12) {
 	        while (1) {
 	            switch (_context12.prev = _context12.next) {
 	                case 0:
 	                    if (false) {
-	                        _context12.next = 10;
+	                        _context12.next = 21;
 	                        break;
 	                    }
 	
@@ -43981,15 +43981,39 @@
 	                    console.log("updateStudentsGroupSaga");
 	
 	                    students = _store2.default.getState().groupResource.temporaryStudentsToUpdateGroup;
-	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateStudentsGroup/';
-	                    _context12.next = 8;
-	                    return (0, _effects.call)(_request2.default, url, 'POST', students);
 	
-	                case 8:
+	
+	                    console.log("#####################################");
+	                    console.log(JSON.stringify(students));
+	                    console.log("#####################################");
+	
+	                    url = _constants.RESOURCE_SERVER_ADDRESS + '/Management/UpdateStudentGroup/';
+	                    i = 0;
+	
+	                case 10:
+	                    if (!(i < students.length)) {
+	                        _context12.next = 17;
+	                        break;
+	                    }
+	
+	                    student = students[i];
+	                    _context12.next = 14;
+	                    return (0, _effects.call)(_request2.default, url, 'POST', student);
+	
+	                case 14:
+	                    i++;
+	                    _context12.next = 10;
+	                    break;
+	
+	                case 17:
+	                    _context12.next = 19;
+	                    return (0, _effects.put)((0, _actions.loadStudentsStart)());
+	
+	                case 19:
 	                    _context12.next = 0;
 	                    break;
 	
-	                case 10:
+	                case 21:
 	                case 'end':
 	                    return _context12.stop();
 	            }
@@ -44038,7 +44062,7 @@
 	            switch (_context14.prev = _context14.next) {
 	                case 0:
 	                    _context14.next = 2;
-	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), loadStudentsSaga(), updateGroupSaga(), loadGroupSaga(), loadGroupsSaga(), deleteGroupSaga(), updateClassesSaga()];
+	                    return [loadTestResourceSaga(), loadSubscriptionsSaga(), loadProfileResourceSaga(), updateProfileResourceSaga(), loadUsefulLinksSaga(), updateUsefulLinksSaga(), loadStudentsSaga(), updateStudentsGroupSaga(), updateGroupSaga(), loadGroupSaga(), loadGroupsSaga(), deleteGroupSaga(), updateClassesSaga()];
 	
 	                case 2:
 	                case 'end':
@@ -44227,9 +44251,10 @@
 	    payload: existingStudents
 	  };
 	}
-	function updateStudentsGroupStart() {
+	function updateStudentsGroupStart(temporaryStudentsToUpdateGroup) {
 	  return {
-	    type: _constants.UPDATE_STUDENTS_GROUP_START
+	    type: _constants.UPDATE_STUDENTS_GROUP_START,
+	    payload: temporaryStudentsToUpdateGroup
 	  };
 	}
 	
@@ -44329,7 +44354,7 @@
 	function apiRequest(url) {
 	  var method = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'GET';
 	  var bodyData = arguments[2];
-	  // improve headers to make it working
+	
 	  var token = _store2.default.getState().oidc.user.access_token;
 	  var headers = new Headers();
 	  headers.append('Accept', 'application/json');
@@ -54669,7 +54694,12 @@
 	    case _reduxOidc.SESSION_TERMINATED:
 	    case _reduxOidc.USER_EXPIRED:
 	      return Object.assign({}, _extends({}, state), {
-	        temporaryGroup: {}
+	        temporaryGroup: {},
+	        temporaryStudentsToUpdateGroup: []
+	      });
+	    case _constants.UPDATE_STUDENTS_GROUP_START:
+	      return Object.assign({}, _extends({}, state), {
+	        temporaryStudentsToUpdateGroup: action.payload
 	      });
 	    case _constants.LOAD_GROUP_SUCCESS:
 	      return Object.assign({}, _extends({}, state), {
@@ -84056,6 +84086,7 @@
 	    _this.handleLevelSelectChange = _this.handleLevelSelectChange.bind(_this);
 	    _this.handleAddChip = _this.handleAddChip.bind(_this);
 	    _this.handleDeleteChip = _this.handleDeleteChip.bind(_this);
+	    _this.initializeTemporaryStudentsToUpdateGroup = _this.initializeTemporaryStudentsToUpdateGroup.bind(_this);
 	
 	    return _this;
 	  }
@@ -84083,6 +84114,27 @@
 	      console.log("this.props.location.query['id']: " + this.props.location.query['id']);
 	      console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
 	      console.log("this.state: " + JSON.stringify(this.state));
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      console.log("component did mount");
+	      this.initializeTemporaryStudentsToUpdateGroup();
+	    }
+	  }, {
+	    key: 'initializeTemporaryStudentsToUpdateGroup',
+	    value: function initializeTemporaryStudentsToUpdateGroup() {
+	      console.log('initialize temporary students to update group');
+	
+	      if (!this.props.existingStudents.length) {
+	        setTimeout(this.initializeTemporaryStudentsToUpdateGroup, 500);
+	      } else {
+	        for (var i = 0; i < this.props.existingStudents.length; i++) {
+	          if (this.props.existingStudents[i].studentsGroupId == this.props.temporaryGroup.studentsGroupId) {
+	            this.setState({ studentsInGroup: this.state.studentsInGroup.concat([this.props.existingStudents[i]]) });
+	          }
+	        }
+	      }
 	    }
 	  }, {
 	    key: 'handleStartDateChange',
@@ -84152,13 +84204,17 @@
 	    key: 'handleEditGroupSubmit',
 	    value: function handleEditGroupSubmit(event) {
 	      event.preventDefault();
-	      console.log("handle new group submit function");
-	      console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
-	      console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
-	      console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
-	      console.log("this.props.existingStudents: " + JSON.stringify(this.props.existingStudents));
+	      console.log("handle Edit Group Submit");
 	
-	      //this.props.dispatch(updateGroupStart());
+	      console.log("this.props " + JSON.stringify(this.props));
+	      //this.props.temporaryStudentsToUpdateGroup = this.props.temporaryStudentsToUpdateGroup.concat(this.state.studentsInGroup); 
+	      //this.props.temporaryStudentsToUpdateGroup.push(this.state.studentsInGroup); 
+	      // this.props.temporaryStudentsToUpdateGroup.push({id: 'Applist', index: 2}); 
+	
+	      this.props.dispatch((0, _actions.updateGroupStart)());
+	      this.props.dispatch((0, _actions.updateStudentsGroupStart)(this.state.studentsInGroup));
+	
+	      console.log("this.props.temporaryStudentsToUpdateGroup: " + JSON.stringify(this.props.temporaryStudentsToUpdateGroup));
 	    }
 	  }, {
 	    key: 'render',
@@ -84366,7 +84422,8 @@
 	    existingGroups: state.groupResource.existingGroups,
 	    existingLanguageInstructors: state.groupResource.existingLanguageInstructors,
 	    temporaryGroup: state.groupResource.temporaryGroup,
-	    existingStudents: state.groupResource.existingStudents
+	    existingStudents: state.groupResource.existingStudents,
+	    temporaryStudentsToUpdateGroup: state.groupResource.temporaryStudentsToUpdateGroup
 	  };
 	}
 	

@@ -1,4 +1,4 @@
-import { LOAD_GROUP_SUCCESS, LOAD_GROUPS_SUCCESS, LOAD_STUDENTS_SUCCESS, LOAD_LANGUAGE_INSTRUCTORS_SUCCESS } from '../constants';
+import { LOAD_GROUP_SUCCESS, LOAD_GROUPS_SUCCESS, LOAD_STUDENTS_SUCCESS, LOAD_LANGUAGE_INSTRUCTORS_SUCCESS, UPDATE_STUDENTS_GROUP_START } from '../constants';
 import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 
 const initialState = {
@@ -20,7 +20,16 @@ export default function reducer(state = initialState, action) {
         {}, 
         {...state}, 
         {
-          temporaryGroup: {}
+          temporaryGroup: {},
+          temporaryStudentsToUpdateGroup: [],
+        }
+      );
+    case UPDATE_STUDENTS_GROUP_START:
+      return Object.assign(
+        {},
+        {...state},
+        {
+          temporaryStudentsToUpdateGroup: action.payload
         }
       );
     case LOAD_GROUP_SUCCESS:

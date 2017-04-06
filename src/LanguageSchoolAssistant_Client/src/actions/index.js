@@ -124,9 +124,10 @@ export function loadStudentsSuccess(existingStudents) {
     payload: existingStudents
   };
 }
-export function updateStudentsGroupStart() {
+export function updateStudentsGroupStart(temporaryStudentsToUpdateGroup) {
   return {
-    type: UPDATE_STUDENTS_GROUP_START
+    type: UPDATE_STUDENTS_GROUP_START,
+    payload: temporaryStudentsToUpdateGroup
   };
 }
 

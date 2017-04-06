@@ -8,7 +8,8 @@ import {
   loadGroupsStart,
   loadStudentsStart,
   loadLanguageInstructorsStart,
-  updateGroupStart
+  updateGroupStart,
+  updateStudentsGroupStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
@@ -54,6 +55,7 @@ class EditGroupPage extends React.Component {
     this.handleLevelSelectChange = this.handleLevelSelectChange.bind(this);
     this.handleAddChip = this.handleAddChip.bind(this);
     this.handleDeleteChip = this.handleDeleteChip.bind(this);
+    this.initializeTemporaryStudentsToUpdateGroup = this.initializeTemporaryStudentsToUpdateGroup.bind(this);
 
   }
 
@@ -65,6 +67,7 @@ class EditGroupPage extends React.Component {
     this.props.dispatch(loadStudentsStart());
     this.props.dispatch(loadLanguageInstructorsStart());
 
+    
 
         // this.props.temporaryGroup.studentsGroupId = null;
 
@@ -79,6 +82,26 @@ class EditGroupPage extends React.Component {
     console.log("this.props.location.query['id']: " + this.props.location.query['id']);
     console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
     console.log("this.state: " + JSON.stringify(this.state));
+  }
+
+  componentDidMount() {
+    console.log("component did mount");
+    this.initializeTemporaryStudentsToUpdateGroup();
+    
+  }
+
+  initializeTemporaryStudentsToUpdateGroup() {
+    console.log('initialize temporary students to update group');
+
+    if (!this.props.existingStudents.length) {
+      setTimeout(this.initializeTemporaryStudentsToUpdateGroup, 500);
+    } else {
+      for (var i = 0; i < this.props.existingStudents.length; i++) {
+        if (this.props.existingStudents[i].studentsGroupId == this.props.temporaryGroup.studentsGroupId) {
+          this.setState({studentsInGroup: this.state.studentsInGroup.concat([this.props.existingStudents[i]])});
+        }
+      }
+    }
   }
 
   handleStartDateChange(event, date) {
@@ -141,14 +164,17 @@ class EditGroupPage extends React.Component {
 
   handleEditGroupSubmit(event) {
     event.preventDefault();
-    console.log("handle new group submit function");
-    console.log("this.props.existingLanguageInstructors: " + JSON.stringify(this.props.existingLanguageInstructors));
-    console.log("this.props.existingGroups: " + JSON.stringify(this.props.existingGroups));
-    console.log("this.props.temporaryGroup: " + JSON.stringify(this.props.temporaryGroup));
-    console.log("this.props.existingStudents: " + JSON.stringify(this.props.existingStudents));
+    console.log("handle Edit Group Submit");
 
+    console.log("this.props " + JSON.stringify(this.props) );
+    //this.props.temporaryStudentsToUpdateGroup = this.props.temporaryStudentsToUpdateGroup.concat(this.state.studentsInGroup); 
+    //this.props.temporaryStudentsToUpdateGroup.push(this.state.studentsInGroup); 
+    // this.props.temporaryStudentsToUpdateGroup.push({id: 'Applist', index: 2}); 
 
-    //this.props.dispatch(updateGroupStart());
+    this.props.dispatch(updateGroupStart());
+    this.props.dispatch(updateStudentsGroupStart(this.state.studentsInGroup));
+
+    console.log("this.props.temporaryStudentsToUpdateGroup: " + JSON.stringify(this.props.temporaryStudentsToUpdateGroup));
 
   }
 

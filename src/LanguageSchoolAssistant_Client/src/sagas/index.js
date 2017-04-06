@@ -277,9 +277,20 @@ export function* updateStudentsGroupSaga() {
 
     const students = store.getState().groupResource.temporaryStudentsToUpdateGroup;
 
-    const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateStudentsGroup/';
+    console.log("#####################################");
+    console.log(JSON.stringify(students));
+    console.log("#####################################");
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/UpdateStudentGroup/';
+
+    for (var i = 0; i < students.length; i++) {
+        const student = students[i];
+        yield call(apiRequest, url, 'POST', student);
+    }
     
-    yield call(apiRequest, url, 'POST', students);
+    
+
+    yield put(loadStudentsStart());
   }
 }
 
@@ -312,6 +323,7 @@ export function* rootSaga() {
     updateUsefulLinksSaga(),
 
     loadStudentsSaga(),
+    updateStudentsGroupSaga(),
 
     updateGroupSaga(),
     loadGroupSaga(),

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using ResourceServer01.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace ResourceServer01.Controllers
 {
@@ -71,6 +72,23 @@ namespace ResourceServer01.Controllers
                 _context.StudentsGroup.Remove(group);
                 _context.SaveChanges();
             }
+        }
+
+        [HttpPost] 
+        public void UpdateStudentGroup(PersonalProfile student)
+        {
+            var tempStudent = _context.PersonalProfiles
+                                .Where(
+                                    s => s.IsLanguageInstructor == false
+                                    && s.PersonalProfileId == student.PersonalProfileId
+                                ).SingleOrDefault();
+            tempStudent.StudentsGroupId = student.StudentsGroupId;
+            tempStudent.StudentsGroup = _context.StudentsGroup
+                                            .Where(x => x.StudentsGroupId == student.StudentsGroupId)
+                                            .SingleOrDefault();
+
+            _context.PersonalProfiles.Update(tempStudent);
+            _context.SaveChanges();
         }
 
         [HttpPost]

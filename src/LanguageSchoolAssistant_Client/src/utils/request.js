@@ -2,7 +2,7 @@
 import store from '../store';
 
 // a request helper which reads the access_token from the redux state and passes it in its HTTP request
-export default function apiRequest(url, method = 'GET', bodyData) { // improve headers to make it working
+export default function apiRequest(url, method = 'GET', bodyData) {
   const token = store.getState().oidc.user.access_token;
   const headers = new Headers();
   headers.append('Accept', 'application/json');
@@ -12,7 +12,6 @@ export default function apiRequest(url, method = 'GET', bodyData) { // improve h
   var formData = new FormData();
 
   if (bodyData) {
-    
     function* entries(obj) {
       for (let key of Object.keys(obj)) {
         yield [key, obj[key]];
@@ -28,6 +27,7 @@ export default function apiRequest(url, method = 'GET', bodyData) { // improve h
     headers,
     body: formData
   };
+
 
   return fetch(url, options)
     .then((res) => res.json())
