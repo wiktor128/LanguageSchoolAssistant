@@ -30,6 +30,8 @@ import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColu
 import UsefulLinks from './usefulLinks';
 import NextClasses from './nextClasses';
 
+import ScheduleTable from './scheduleTable';
+
 
 class LanguageInstructorDashboardPage extends React.Component {
 
@@ -53,61 +55,8 @@ class LanguageInstructorDashboardPage extends React.Component {
       <Grid fluid>
         <Row center='xs'>
           <Col xs={12} md={9}>
-            <SimpleFrame
-              title="Schedule"
-              /*iconElementRight = {<FeatureButton />}*/
-            >
-                <Table
-                  selectable={false}
-                >
-                  <TableHeader
-                    displaySelectAll={false}
-                    adjustForCheckbox={false}
-                    displayRowCheckbox={false}
-                  >
-                    <TableRow>
-                      <TableHeaderColumn>Monday</TableHeaderColumn>
-                      <TableHeaderColumn>Tuesday</TableHeaderColumn>
-                      <TableHeaderColumn>Wednesday</TableHeaderColumn>
-                      <TableHeaderColumn>Thursday</TableHeaderColumn>
-                      <TableHeaderColumn>Friday</TableHeaderColumn>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody
-                    showRowHover={true}
-                    displayRowCheckbox={false}
-                  >
-                    <TableRow>
-                      <TableRowColumn>1</TableRowColumn>
-                      <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
-                      <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
-                    </TableRow>
-                    <TableRow>
-                      <TableRowColumn>2</TableRowColumn>
-                      <TableRowColumn>Randal White</TableRowColumn>
-                      <TableRowColumn>Unemployed</TableRowColumn>
-                      <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
-                    </TableRow>
-                    <TableRow>
-                      <TableRowColumn>3</TableRowColumn>
-                      <TableRowColumn>Stephanie Sanders</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
-                      <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
-                    </TableRow>
-                    <TableRow>
-                      <TableRowColumn>4</TableRowColumn>
-                      <TableRowColumn>Steve Brown</TableRowColumn>
-                      <TableRowColumn>Employed</TableRowColumn>
-                      <TableRowColumn>John Smith</TableRowColumn>
-                      <TableRowColumn>John Smith</TableRowColumn>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-            </SimpleFrame>
+          
+            <ScheduleTable />
 
           </Col>
           <Col xs={12} md={3} style={styles.leftAlign}>
