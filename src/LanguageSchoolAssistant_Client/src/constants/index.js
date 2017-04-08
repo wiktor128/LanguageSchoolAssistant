@@ -42,6 +42,9 @@ export const LOAD_LANGUAGE_INSTRUCTORS_SUCCESS = 'redux-oidc-sample/LOAD_LANGUAG
 export const LOAD_CLASSES_START = 'redux-oidc-sample/LOAD_CLASSES_START';
 export const LOAD_CLASSES_END = 'redux-oidc-sample/LOAD_CLASSES_END';
 
+export const LOAD_RELATED_CLASSES_START = 'redux-oidc-sample/LOAD_RELATED_CLASSES_START';
+export const LOAD_RELATED_CLASSES_SUCCESS = 'redux-oidc-sample/LOAD_RELATED_CLASSES_END';
+
 export const UPDATE_CLASSES_START = 'redux-oidc-sample/UPDATE_CLASSES_START';
 export const UPDATE_CLASSES_END = 'redux-oidc-sample/UPDATE_CLASSES_END';
 

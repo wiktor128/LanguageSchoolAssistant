@@ -1,4 +1,4 @@
-import { LOAD_CLASSES_SUCCESS } from '../constants';
+import { LOAD_CLASSES_SUCCESS, LOAD_RELATED_CLASSES_SUCCESS  } from '../constants';
 import { SESSION_TERMINATED, USER_EXPIRED } from 'redux-oidc';
 
 const initialState = {
@@ -6,6 +6,7 @@ const initialState = {
   sinceDate: null,
   monthsToLoad: null,
   classes: [],
+  relatedClasses: [],
   temporaryClasses: {}
 };
 
@@ -21,6 +22,7 @@ export default function reducer(state = initialState, action) {
           relatedPersonalProfileId: "",
           sinceDate: null,
           monthsToLoad: null,
+          relatedClasses: []
         }
       );
     case LOAD_CLASSES_SUCCESS:
@@ -29,6 +31,14 @@ export default function reducer(state = initialState, action) {
         {...state}, 
         {
           classes: action.payload
+        }
+      );
+    case LOAD_RELATED_CLASSES_SUCCESS:
+      return Object.assign(
+        {}, 
+        {...state}, 
+        {
+          relatedClasses: action.payload
         }
       );
     default:

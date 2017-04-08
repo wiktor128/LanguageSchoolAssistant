@@ -7,7 +7,8 @@ import { reduxForm } from 'redux-form';
 
 import {
   loadProfileResourceStart,
-  updateProfileResourceStart
+  updateProfileResourceStart,
+  loadRelatedClassesStart,
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
@@ -30,9 +31,20 @@ import FlatButton from 'material-ui/FlatButton';
 
 class NextClasses extends React.Component {
 
-  state = {
-    stepIndex: 0,
-  };
+  constructor (props) {
+    super(props);
+
+    this.state = {
+      stepIndex: 0,
+    }
+  }
+
+  componentWillMount() {
+    this.props.dispatch(loadRelatedClassesStart());
+
+
+    console.log("RelatedClasses: " + JSON.stringify(this.props.relatedClasses));
+  }
 
   handleNext = () => {
     const {stepIndex} = this.state;
@@ -73,52 +85,37 @@ class NextClasses extends React.Component {
 
   render() {
     const {stepIndex} = this.state;
+    var countRelatedClasses = 0;
+    console.log("______________________________________________________________");
 
     return (
+
       <SimpleFrame
         title="Next Classes"
       >
         <Stepper
-          activeStep={stepIndex}
+          activeStep={this.state["stepIndex"]}
           linear={false}
           orientation="vertical"
-        >
-          <Step>
-            <StepButton onTouchTap={() => this.setState({stepIndex: 0})}>
-              Select campaign settings
-            </StepButton>
-            <StepContent>
-              <p>
-                For each ad campaign that you create, you can control how much
-                you're willing to spend on clicks and conversions, which networks
-                and geographical locations you want your ads to show on, and more.
-              </p>
-              {this.renderStepActions(0)}
-            </StepContent>
-          </Step>
-          <Step>
-            <StepButton onTouchTap={() => this.setState({stepIndex: 1})}>
-              Create an ad group
-            </StepButton>
-            <StepContent>
-              <p>An ad group contains one or more ads which target a shared set of keywords.</p>
-              {this.renderStepActions(1)}
-            </StepContent>
-          </Step>
-          <Step>
-            <StepButton onTouchTap={() => this.setState({stepIndex: 2})}>
-              Create an ad
-            </StepButton>
-            <StepContent>
-              <p>
-                Try out different ad text to see what brings in the most customers,
-                and learn how to enhance your ads using features like ad extensions.
-                If you run into any problems with your ads, find out how to tell if
-                they're running and how to resolve approval issues.
-              </p>
-              {this.renderStepActions(2)}
-            </StepContent>
-          </Step>
+        >         
+          
+          {this.props.relatedClasses.map((item) =>
+            <Step key={item.unitOfClassesId}>
+
+              <StepButton onTouchTap={() => this.setState({stepIndex: this.props.relatedClasses.indexOf(item)})}>                
+                {item.startTime}
+              </StepButton>
+              <StepContent>
+                <p>
+                  {item.subject}
+                  
+                </p>
+      
+              </StepContent>
+              
+            </Step>
+          )}
+          
         </Stepper>
       </SimpleFrame>
     );
@@ -128,7 +125,8 @@ class NextClasses extends React.Component {
 function mapStateToProps(state) {
   return {
     user: state.oidc.user,
-    profile: state.profileResource.profile
+    profile: state.profileResource.profile,
+    relatedClasses: state.classesResource.relatedClasses
   };
 }
 

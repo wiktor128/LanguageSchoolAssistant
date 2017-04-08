@@ -30,7 +30,10 @@ import {
   LOAD_CLASSES_START,
   LOAD_CLASSES_END,
   UPDATE_CLASSES_START,
-  UPDATE_CLASSES_END
+  UPDATE_CLASSES_END,
+
+  LOAD_RELATED_CLASSES_START,
+  LOAD_RELATED_CLASSES_END,
 
 } from '../constants';
 import { 
@@ -61,6 +64,9 @@ import {
   loadClassesSuccess,
   updateClassesStart,
 
+  loadRelatedClassesStart,
+  loadRelatedClassesSuccess,
+
 } from '../actions';
 import apiRequest from '../utils/request';
 
@@ -86,8 +92,6 @@ export function* loadSubscriptionsSaga() {
     yield put(loadSubscriptionsSuccess(channels));
   }
 }
-
-
 export function* loadTestResourceSaga() {
   while (true) {
     yield take(LOAD_TEST_RESOURCE_START);
@@ -119,12 +123,12 @@ export function* loadProfileResourceSaga() {
     yield put(loadProfileResourceSuccess(resultData));
   }
 }
-
 export function* updateProfileResourceSaga() {
   while (true) {
     yield take(UPDATE_PROFILE_RESOURCE_START);
 
     console.log("updateProfileResourceSaga");
+
 
     const profile = store.getState().profileResource.profile;
 
@@ -155,7 +159,6 @@ export function* loadUsefulLinksSaga() {
     yield put(loadUsefulLinksSuccess(resultData));
   }
 }
-
 export function* updateUsefulLinksSaga() {
   while (true) {
     yield take(UPDATE_USEFUL_LINKS_START);
@@ -195,7 +198,6 @@ export function* updateGroupSaga() {
     yield put(loadGroupsStart());
   }
 }
-
 export function* deleteGroupSaga() {
   while (true) {
     yield take(DELETE_GROUP_START);
@@ -234,7 +236,6 @@ export function* loadGroupSaga() {
     yield put(loadGroupSuccess(resultData));
   }
 }
-
 export function* loadGroupsSaga() {
   while (true) {
     yield take(LOAD_GROUPS_START);
@@ -293,7 +294,6 @@ export function* updateStudentsGroupSaga() {
     yield put(loadStudentsStart());
   }
 }
-
 export function* updateClassesSaga() {
   while (true) {
     yield take(UPDATE_CLASSES_START);
@@ -308,6 +308,27 @@ export function* updateClassesSaga() {
     yield call(apiRequest, url, 'POST', classes);
 
     //yield put(loadClassesStart());
+  }
+}
+
+export function* loadRelatedClassesSaga() {
+  while (true) {
+    yield take(LOAD_RELATED_CLASSES_START);
+    console.log("loadRelatedClassesSaga");
+
+    // const profile = store.getState().profileResource.profile;
+    const userLoginName = store.getState().oidc.user.profile.name;
+    var bodyParams = {
+      loginName: userLoginName
+    }
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Profile/GetRelatedClasses/';
+    const result = yield call(apiRequest, url, 'POST', bodyParams);
+    const resultData = result.data;
+
+    console.log("related classes: " + JSON.stringify(resultData));
+
+    yield put(loadRelatedClassesSuccess(resultData));
   }
 }
 
@@ -331,5 +352,6 @@ export function* rootSaga() {
     deleteGroupSaga(),
 
     updateClassesSaga(),
+    loadRelatedClassesSaga()
   ]
 }

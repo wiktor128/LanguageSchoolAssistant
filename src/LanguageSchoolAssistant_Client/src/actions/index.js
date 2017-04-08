@@ -39,7 +39,10 @@ import {
   LOAD_CLASSES_START,
   LOAD_CLASSES_END,
   UPDATE_CLASSES_START,
-  UPDATE_CLASSES_END
+  UPDATE_CLASSES_END,
+
+  LOAD_RELATED_CLASSES_START,
+  LOAD_RELATED_CLASSES_SUCCESS,
   
 } from '../constants';
 
@@ -64,6 +67,18 @@ export function updateClassesSuccess(classes) {
   return {
     type: UPDATE_CLASSES_SUCCESS,
     payload: classes
+  };
+}
+
+export function loadRelatedClassesStart() {
+  return {
+    type: LOAD_RELATED_CLASSES_START
+  };
+}
+export function loadRelatedClassesSuccess(relatedClasses) {
+  return {
+    type: LOAD_RELATED_CLASSES_SUCCESS,
+    payload: relatedClasses
   };
 }
 

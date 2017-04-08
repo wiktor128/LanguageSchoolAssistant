@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using ResourceServer01.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System;
 
 namespace ResourceServer01.Controllers
 {
@@ -118,6 +119,26 @@ namespace ResourceServer01.Controllers
                             .Where(x => x.PersonalProfile == personalProfile);
 
             return Json(usefulLinks);
+        }
+
+
+        [HttpPost]
+        public IActionResult GetRelatedClasses(string loginName)
+        {
+            var profile = _context.PersonalProfiles
+                            .Where(p => p.LoginName == loginName)
+                            .SingleOrDefault();
+
+            string x = profile.ToString();
+
+            var relatedClasses = _context.UnitOfClasses
+                                    .Where(y =>
+                                        y.StudentsGroupId == profile.StudentsGroupId
+                                        //&& y.StartTime > DateTime.Today.AddMonths(-3)
+                                        //&& y.StartTime < DateTime.Today.AddMonths(+3)
+                                    ).ToList();
+
+            return Json(relatedClasses);
         }
 
 
