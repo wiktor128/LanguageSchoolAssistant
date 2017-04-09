@@ -20,7 +20,8 @@ namespace ResourceServer01.Models
         public int? LocalizationId { get; set; }
         [ForeignKey("LocalizationId")]
         public Localization Localization { get; set; }
-
+        //relative path
+        public string DataFilePath { get; set; }
         public int? StudentsGroupId { get; set; }
         [ForeignKey("StudentsGroupId")]
         public StudentsGroup StudentsGroup { get; set; }

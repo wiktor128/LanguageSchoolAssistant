@@ -77,8 +77,22 @@ class NextClasses extends React.Component {
             disableTouchRipple={true}
             disableFocusRipple={true}
             onTouchTap={this.handlePrev}
+            targe="_blank"
           />
         )}
+      </div>
+    );
+  }
+
+  renderDownloadFileButton(dataFilePath) {
+    console.log("::DATAFILEPATH:: " + dataFilePath);
+    return (
+      <div style={{margin: '12px 0'}}>
+        <RaisedButton
+          label="Download Materials"
+          primary={true}
+          href={"http://localhost:5001/Resource/DownloadFile/?DataFilePath=" + dataFilePath} //TODO
+        />
       </div>
     );
   }
@@ -87,7 +101,7 @@ class NextClasses extends React.Component {
     const {stepIndex} = this.state;
     var countRelatedClasses = 0;
     console.log("______________________________________________________________");
-
+    
     return (
 
       <SimpleFrame
@@ -110,7 +124,8 @@ class NextClasses extends React.Component {
                   {item.subject}
                   
                 </p>
-      
+                <span>datafilepath: {item.dataFilePath}</span>
+                {this.renderDownloadFileButton(item.dataFilePath)}
               </StepContent>
               
             </Step>

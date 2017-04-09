@@ -213,6 +213,8 @@ D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Controllers\ResourceController.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Migrations\20170401161217_Init.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Migrations\20170401161217_Init.Designer.cs
+D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Migrations\20170409094451_unit of classes - add DataFilePath column.cs
+D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Migrations\20170409094451_unit of classes - add DataFilePath column.Designer.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Migrations\ApplicationDbContextModelSnapshot.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Models\ApplicationDbContext.cs
 D:\VISUAL_STUDIO_PROJECTS\LanguageSchoolAssistant\src\ImplicitFlow\ImplicitFlow\ResourceServer01\Models\Localization.cs

@@ -81,6 +81,8 @@ namespace ResourceServer01.Migrations
                     b.Property<int>("UnitOfClassesId")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("DataFilePath");
+
                     b.Property<DateTime>("Duration");
 
                     b.Property<int?>("LocalizationId");
