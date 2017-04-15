@@ -121,7 +121,6 @@ namespace ResourceServer01.Controllers
             return Json(usefulLinks);
         }
 
-
         [HttpPost]
         public IActionResult GetRelatedClasses(string loginName)
         {
@@ -140,8 +139,6 @@ namespace ResourceServer01.Controllers
 
             return Json(relatedClasses);
         }
-
-
 
         [HttpPost]
         public IActionResult Image()

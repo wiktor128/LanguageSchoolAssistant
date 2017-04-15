@@ -35,6 +35,7 @@ import {
   LOAD_RELATED_CLASSES_START,
   LOAD_RELATED_CLASSES_END,
 
+  SHOW_SNACKBAR_MESSAGE,
 } from '../constants';
 import { 
   loadSubscriptionsSuccess,
@@ -67,6 +68,8 @@ import {
   loadRelatedClassesStart,
   loadRelatedClassesSuccess,
 
+  showSnackbarMessage,
+  hideSnackbarMessage
 } from '../actions';
 import apiRequest from '../utils/request';
 
@@ -308,6 +311,8 @@ export function* updateClassesSaga() {
     yield call(apiRequest, url, 'POST', classes);
 
     //yield put(loadClassesStart());
+    console.log("before put");
+    yield put(showSnackbarMessage("Classes updated successfully."));
   }
 }
 
@@ -332,6 +337,7 @@ export function* loadRelatedClassesSaga() {
   }
 }
 
+
 export function* rootSaga() {
   yield [
     loadTestResourceSaga(),
@@ -352,6 +358,8 @@ export function* rootSaga() {
     deleteGroupSaga(),
 
     updateClassesSaga(),
-    loadRelatedClassesSaga()
+    loadRelatedClassesSaga(),
+
+    // snackbar()
   ]
 }

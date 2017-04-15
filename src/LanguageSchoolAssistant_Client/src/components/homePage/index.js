@@ -3,23 +3,50 @@ import { connect } from 'react-redux';
 import LoginPage from '../loginPage';
 import MainPage from '../mainPage';
 
+import {
+  loadProfileResourceStart,
+  updateProfileResourceStart
+} from '../../actions';
+
+import LanguageInstructorDashboardPage from '../languageInstructorDashboardPage';
+import StudentDashboardPage from  '../studentDashboardPage'
+
 class HomePage extends React.Component {
   get infoPage() {
     return(
       <div>Info Page</div>
     );
   }
+  componentWillMount() {
+    this.props.dispatch(loadProfileResourceStart());
+  }
+
+  isLanguageInstructor() {
+    if (this.props.profile.isLanguageInstructor) {
+      
+    }
+
+  }
 
   render() {
+    console.log("profile: " + JSON.stringify(this.props.profile));
+    console.log("user: " + JSON.stringify(this.props.user));
+
     const { user } = this.props;
 
-    return !user || user.expired ? <LoginPage/> : <MainPage />;
+    return !user || user.expired 
+      ? <LoginPage/> 
+      : ( user.profile.roles == "LanguageInstructor" 
+          ? <LanguageInstructorDashboardPage /> 
+          : <StudentDashboardPage />
+        );
   }
 }
 
 function mapStateToProps(state) {
   return {
-    user: state.oidc.user
+    user: state.oidc.user,
+    profile: state.profileResource.profile
   };
 }
 

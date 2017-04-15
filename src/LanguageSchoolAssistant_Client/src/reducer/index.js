@@ -8,6 +8,7 @@ import { reducer as formReducer } from 'redux-form';
 import usefulLinksReducer from './usefulLinks';
 import groupsReducer from './groupsResource';
 import classesReducer from './classesResource';
+import generalReducer from './general';
 
 const reducer = combineReducers(
   {
@@ -20,6 +21,7 @@ const reducer = combineReducers(
     groupResource: groupsReducer,
     usefulLinks: usefulLinksReducer,
     classesResource: classesReducer,
+    generalResource: generalReducer
   }
 );
 

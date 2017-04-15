@@ -48,3 +48,5 @@ export const LOAD_RELATED_CLASSES_SUCCESS = 'redux-oidc-sample/LOAD_RELATED_CLAS
 export const UPDATE_CLASSES_START = 'redux-oidc-sample/UPDATE_CLASSES_START';
 export const UPDATE_CLASSES_END = 'redux-oidc-sample/UPDATE_CLASSES_END';
 
+export const SHOW_SNACKBAR_MESSAGE = 'redux-oidc-sample/SHOW_SNACKBAR_MESSAGE';
+export const HIDE_SNACKBAR_MESSAGE = 'redux-oidc-sample/HIDE_SNACKBAR_MESSAGE';

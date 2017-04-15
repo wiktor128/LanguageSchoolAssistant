@@ -14,8 +14,12 @@ namespace ResourceServer01
                 .Build();
 
             var host = new WebHostBuilder()
-                .ConfigureLogging(options => options.AddConsole())
-                .ConfigureLogging(options => options.AddDebug())
+                .ConfigureLogging(
+                    options => options.AddConsole()
+                )
+                .ConfigureLogging(
+                    options => options.AddDebug()
+                )
                 .UseConfiguration(configuration)
                 .UseIISIntegration()
                 .UseKestrel()

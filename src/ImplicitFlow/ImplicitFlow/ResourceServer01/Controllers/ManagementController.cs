@@ -67,9 +67,17 @@ namespace ResourceServer01.Controllers
                 .AsNoTracking()
                 .SingleOrDefault( g => g.StudentsGroupId == id);
 
+            var relatedStudents = _context.PersonalProfiles
+                .AsNoTracking()
+                .Where(s => s.StudentsGroupId == id)
+                .ToList()
+                .Select(st => { st.StudentsGroupId = null; return st; });
+
+
             if (group != null)
             {
                 _context.StudentsGroup.Remove(group);
+                _context.PersonalProfiles.UpdateRange(relatedStudents);
                 _context.SaveChanges();
             }
         }
@@ -92,7 +100,7 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
-        public void UpdateClasses([Bind("UnitOfClassesId, Subject, ShortDescription, StartTime, Duration, LanguageInstructor, Localization, StudentsGroupId")]UnitOfClasses classes) // TODO
+        public void UpdateClasses([Bind("UnitOfClassesId, Subject, ShortDescription, StartTime, Duration, LanguageInstructor, Localization, StudentsGroupId, PersonalProfileId")]UnitOfClasses classes) // TODO
         {
             var x = classes;
             if (classes.UnitOfClassesId == 0)

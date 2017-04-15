@@ -44,8 +44,21 @@ import {
   LOAD_RELATED_CLASSES_START,
   LOAD_RELATED_CLASSES_SUCCESS,
   
+  SHOW_SNACKBAR_MESSAGE,
+  HIDE_SNACKBAR_MESSAGE
 } from '../constants';
 
+export function showSnackbarMessage(message) {
+  return {
+    type: SHOW_SNACKBAR_MESSAGE,
+    payload: message
+  }
+}
+export function hideSnackbarMessage() {
+  return {
+    type: HIDE_SNACKBAR_MESSAGE
+  }
+}
 
 export function loadClassesStart() {
   return {
