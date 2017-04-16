@@ -35,6 +35,8 @@ import {
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
+  LOAD_INSTRUCTOR_SCHEDULE_START,
+  LOAD_INSTRUCTOR_SCHEDULE_SUCCESS,
 
   LOAD_CLASSES_START,
   LOAD_CLASSES_END,
@@ -168,6 +170,18 @@ export function loadLanguageInstructorsSuccess(existingLanguageInstructors) {
   return {
     type: LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
     payload: existingLanguageInstructors
+  };
+}
+
+export function loadInstructorScheduleStart() {
+  return {
+    type: LOAD_INSTRUCTOR_SCHEDULE_START
+  };
+}
+export function loadInstructorScheduleSuccess(classes) {
+  return {
+    type: LOAD_INSTRUCTOR_SCHEDULE_SUCCESS,
+    payload: classes
   };
 }
 

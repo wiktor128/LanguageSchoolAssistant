@@ -13,7 +13,8 @@ namespace ResourceServer01.Models
         public string Subject { get; set; }
         public string ShortDescription { get; set; }
         public DateTime StartTime { get; set; }
-        public DateTime Duration { get; set; }
+        public DateTime? Duration { get; set; }
+        public DateTime? EndTime { get; set; }
         public int? PersonalProfileId { get; set; }
         [ForeignKey("PersonalProfileId")]
         public PersonalProfile LanguageInstructor { get; set; }

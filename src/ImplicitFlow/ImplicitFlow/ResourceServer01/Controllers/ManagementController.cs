@@ -6,6 +6,8 @@ using ResourceServer01.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Collections.Generic;
+using System;
+using Newtonsoft.Json.Linq;
 
 namespace ResourceServer01.Controllers
 {
@@ -100,18 +102,23 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpPost]
-        public void UpdateClasses([Bind("UnitOfClassesId, Subject, ShortDescription, StartTime, Duration, LanguageInstructor, Localization, StudentsGroupId, PersonalProfileId")]UnitOfClasses classes) // TODO
+        public void UpdateClasses(UnitOfClasses classes) // TODO
         {
-            var x = classes;
+            var tempClasses = classes;
+            tempClasses.StudentsGroup = _context
+                                            .StudentsGroup
+                                            .Where(x => x.StudentsGroupId == tempClasses.StudentsGroupId)
+                                            .SingleOrDefault();
+
+
             if (classes.UnitOfClassesId == 0)
             {
-                _context.Add(classes);
+                _context.Add(tempClasses);
                 // create new
             }
             else
             {
-                // update existing
-                ;
+                _context.UnitOfClasses.Update(tempClasses);
             }
             _context.SaveChanges();
             return;
@@ -131,6 +138,87 @@ namespace ResourceServer01.Controllers
 
             return Json(usefulLinks);
         }
+
+        [HttpPost]
+        public IActionResult GetLanguageInstructorWeekSchedule(string loginName)
+        {
+            // saturday is start of week
+            DateTime leftDateMargin;
+            DateTime rightDateMargin;
+
+            switch (DateTime.Today.DayOfWeek)
+            {
+                case DayOfWeek.Saturday:
+                    leftDateMargin = DateTime.Today.AddDays(2);
+                    break;
+                case DayOfWeek.Sunday:
+                    leftDateMargin = DateTime.Today.AddDays(1);
+                    break;
+                default:
+                    leftDateMargin = DateTime.Today.AddDays(-(int)DateTime.Today.DayOfWeek);
+                    break;
+            }
+            rightDateMargin = leftDateMargin.AddDays(7);
+
+
+            int languageInstructorId = _context.PersonalProfiles
+                                        .Where(pp => pp.LoginName == loginName)
+                                        .SingleOrDefault()
+                                        .PersonalProfileId;
+
+            var thisWeekClasses = _context.UnitOfClasses
+                                    .Where(
+                                        c => c.PersonalProfileId == languageInstructorId
+                                        && c.StudentsGroup != null
+                                        && c.StartTime > leftDateMargin
+                                        && c.StartTime < rightDateMargin
+                                    ).ToList();
+
+            foreach (var item in thisWeekClasses)
+            {
+                if (item.StudentsGroupId != null && item.StudentsGroup == null)
+                {
+                    item.StudentsGroup = _context.StudentsGroup
+                                                    .Where(x => x.StudentsGroupId == item.StudentsGroupId)
+                                                    .SingleOrDefault();
+                }
+            }
+
+
+            JObject finalClassesList = JObject.FromObject(
+                new
+                {
+                    Monday =
+                        from t in thisWeekClasses
+                        where t.StartTime.DayOfWeek == DayOfWeek.Monday
+                        orderby t.StartTime
+                        select t,
+                    Tuesday =
+                        from t in thisWeekClasses
+                        where t.StartTime.DayOfWeek == DayOfWeek.Tuesday
+                        orderby t.StartTime
+                        select t,
+                    Wednesday =
+                        from t in thisWeekClasses
+                        where t.StartTime.DayOfWeek == DayOfWeek.Wednesday
+                        orderby t.StartTime
+                        select t,
+                    Thursday =
+                        from t in thisWeekClasses
+                        where t.StartTime.DayOfWeek == DayOfWeek.Thursday
+                        orderby t.StartTime
+                        select t,
+                    Friday =
+                        from t in thisWeekClasses
+                        where t.StartTime.DayOfWeek == DayOfWeek.Friday
+                        orderby t.StartTime
+                        select t 
+                });
+
+            return Json(finalClassesList);
+        }
+
+
 
         [HttpPost]
         public IActionResult AddUsefulLink(UsefulLink usefulLink)

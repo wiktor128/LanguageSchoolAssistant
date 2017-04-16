@@ -8,7 +8,8 @@ import { reduxForm } from 'redux-form';
 
 import {
   loadProfileResourceStart,
-  updateProfileResourceStart
+  updateProfileResourceStart,
+  loadInstructorScheduleStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
@@ -45,7 +46,8 @@ class LanguageInstructorDashboardPage extends React.Component {
   }
 
   componentWillMount() {
-    this.props.dispatch(loadProfileResourceStart())
+    this.props.dispatch(loadProfileResourceStart());
+    this.props.dispatch(loadInstructorScheduleStart());
   }
 
 
@@ -111,7 +113,8 @@ const styles = {
 function mapStateToProps(state) {
   return {
     user: state.oidc.user,
-    profile: state.profileResource.profile
+    profile: state.profileResource.profile,
+    classes: state.scheduleResource.classes
   };
 }
 

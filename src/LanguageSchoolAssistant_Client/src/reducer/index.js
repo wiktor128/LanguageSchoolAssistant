@@ -9,6 +9,7 @@ import usefulLinksReducer from './usefulLinks';
 import groupsReducer from './groupsResource';
 import classesReducer from './classesResource';
 import generalReducer from './general';
+import scheduleReducer from './scheduleResource';
 
 const reducer = combineReducers(
   {
@@ -21,7 +22,8 @@ const reducer = combineReducers(
     groupResource: groupsReducer,
     usefulLinks: usefulLinksReducer,
     classesResource: classesReducer,
-    generalResource: generalReducer
+    generalResource: generalReducer,
+    scheduleResource: scheduleReducer
   }
 );
 

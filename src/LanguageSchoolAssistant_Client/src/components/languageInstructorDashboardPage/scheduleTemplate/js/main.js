@@ -388,4 +388,4 @@ $(document).bind('_schedule_page_ready', function() {
 		});
 	}
 });
-$(function() { $(document).trigger('_schedule_page_ready'); });
+// $(function() { $(document).trigger('_schedule_page_ready'); });

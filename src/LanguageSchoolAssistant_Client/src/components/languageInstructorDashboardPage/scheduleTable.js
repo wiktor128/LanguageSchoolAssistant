@@ -5,7 +5,8 @@ import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
 
 import {
-  loadProfileResourceStart
+  loadProfileResourceStart,
+  loadInstructorScheduleStart
 } from '../../actions';
 
 import SimpleFrame from '../simpleFrame';
@@ -35,14 +36,23 @@ class ScheduleTable extends React.Component {
 
   componentWillMount() {
     this.props.dispatch(loadProfileResourceStart());
-    console.log("<ScheduleTable /> loaded");
-
+    this.props.dispatch(loadInstructorScheduleStart());
   }
 
 
   render() {
+    console.log("schedule classes: " + JSON.stringify(this.props.classes));
     $(document).trigger('_schedule_page_ready');
     console.log("render ");
+    var tempStartTime;
+    var tempEndTime;
+    
+    if(this.props.classes.Monday == undefined) {
+      return (<SimpleFrame
+        title="Schedule" />)
+    }
+    
+    $(function() { $(document).trigger('_schedule_page_ready'); });
     return (
       <SimpleFrame
         title="Schedule"
@@ -75,143 +85,99 @@ class ScheduleTable extends React.Component {
 
           <div className="events">
             <ul>
+
               <li className="events-group">
                 <div className="top-info"><span>Monday</span></div>
-
                 <ul>
-                  <li className="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
-                    <a href="#0">
-                      <em className="event-name">Abs Circuit</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="11:00" data-end="12:30" data-content="event-rowing-workout" data-event="event-2">
-                    <a href="#0">
-                      <em className="event-name">Rowing Workout</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="14:00" data-end="15:15"  data-content="event-yoga-1" data-event="event-3">
-                    <a href="#0">
-                      <em className="event-name">Yoga Level 1</em>
-                    </a>
-                  </li>
+                  {this.props.classes.Monday.map((item) => 
+                    <li 
+                      key={item.UnitOfClassesId}
+                      className="single-event" 
+                      data-start={item.StartTime.substr(11, 5)} 
+                      data-end={item.EndTime.substr(11, 5)} 
+                      data-content="event-abs-circuit" 
+                      data-event={"event-" + (Math.floor(Math.random() * (4 - 1)) + 1)}>
+                      <a href="#0">
+                        <em className="event-name">{item.StudentsGroup.Name}</em>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </li>
-
               <li className="events-group">
                 <div className="top-info"><span>Tuesday</span></div>
-
                 <ul>
-                  <li className="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
-                    <a href="#0">
-                      <em className="event-name">Rowing Workout</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="11:30" data-end="13:00"  data-content="event-restorative-yoga" data-event="event-4">
-                    <a href="#0">
-                      <em className="event-name">Restorative Yoga</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="13:30" data-end="15:00" data-content="event-abs-circuit" data-event="event-1">
-                    <a href="#0">
-                      <em className="event-name">Abs Circuit</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-                    <a href="#0">
-                      <em className="event-name">Yoga Level 1</em>
-                    </a>
-                  </li>
+                  {this.props.classes.Tuesday.map((item) => 
+                    <li 
+                      key={item.UnitOfClassesId}
+                      className="single-event" 
+                      data-start={item.StartTime.substr(11, 5)} 
+                      data-end={item.EndTime.substr(11, 5)} 
+                      data-content="event-abs-circuit" 
+                      data-event={"event-" + (Math.floor(Math.random() * (4 - 1)) + 1)}>
+                      <a href="#0">
+                        <em className="event-name">{item.StudentsGroup.Name}</em>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </li>
-
               <li className="events-group">
                 <div className="top-info"><span>Wednesday</span></div>
-
                 <ul>
-                  <li className="single-event" data-start="09:00" data-end="10:15" data-content="event-restorative-yoga" data-event="event-4">
-                    <a href="#0">
-                      <em className="event-name">Restorative Yoga</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="10:45" data-end="11:45" data-content="event-yoga-1" data-event="event-3">
-                    <a href="#0">
-                      <em className="event-name">Yoga Level 1</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="12:00" data-end="13:45"  data-content="event-rowing-workout" data-event="event-2">
-                    <a href="#0">
-                      <em className="event-name">Rowing Workout</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="13:45" data-end="15:00" data-content="event-yoga-1" data-event="event-3">
-                    <a href="#0">
-                      <em className="event-name">Yoga Level 1</em>
-                    </a>
-                  </li>
+                  {this.props.classes.Wednesday.map((item) => 
+                    <li 
+                      key={item.UnitOfClassesId}
+                      className="single-event" 
+                      data-start={item.StartTime.substr(11, 5)} 
+                      data-end={item.EndTime.substr(11, 5)} 
+                      data-content="event-abs-circuit" 
+                      data-event={"event-" + (Math.floor(Math.random() * (4 - 1)) + 1)}>
+                      <a href="#0">
+                        <em className="event-name">{item.StudentsGroup.Name}</em>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </li>
-
               <li className="events-group">
                 <div className="top-info"><span>Thursday</span></div>
-
                 <ul>
-                  <li className="single-event" data-start="09:30" data-end="10:30" data-content="event-abs-circuit" data-event="event-1">
-                    <a href="#0">
-                      <em className="event-name">Abs Circuit</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="12:00" data-end="13:45" data-content="event-restorative-yoga" data-event="event-4">
-                    <a href="#0">
-                      <em className="event-name">Restorative Yoga</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-1">
-                    <a href="#0">
-                      <em className="event-name">Abs Circuit</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="17:00" data-end="18:30"  data-content="event-rowing-workout" data-event="event-2">
-                    <a href="#0">
-                      <em className="event-name">Rowing Workout</em>
-                    </a>
-                  </li>
+                  {this.props.classes.Thursday.map((item) => 
+                    <li 
+                      key={item.UnitOfClassesId}
+                      className="single-event" 
+                      data-start={item.StartTime.substr(11, 5)} 
+                      data-end={item.EndTime.substr(11, 5)} 
+                      data-content="event-abs-circuit" 
+                      data-event={"event-" + (Math.floor(Math.random() * (4 - 1)) + 1)}>
+                      <a href="#0">
+                        <em className="event-name">{item.StudentsGroup.Name}</em>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </li>
-
               <li className="events-group">
                 <div className="top-info"><span>Friday</span></div>
-
                 <ul>
-                  <li className="single-event" data-start="10:00" data-end="11:00"  data-content="event-rowing-workout" data-event="event-2">
-                    <a href="#0">
-                      <em className="event-name">Rowing Workout</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="12:30" data-end="14:00" data-content="event-abs-circuit" data-event="event-1">
-                    <a href="#0">
-                      <em className="event-name">Abs Circuit</em>
-                    </a>
-                  </li>
-
-                  <li className="single-event" data-start="15:45" data-end="16:45"  data-content="event-yoga-1" data-event="event-3">
-                    <a href="#0">
-                      <em className="event-name">Yoga Level 1</em>
-                    </a>
-                  </li>
+                  {this.props.classes.Friday.map((item) =>
+                    <li 
+                      key={item.UnitOfClassesId}
+                      className="single-event" 
+                      data-start={item.StartTime.substr(11, 5)} 
+                      data-end={item.EndTime.substr(11, 5)} 
+                      data-content="event-abs-circuit" 
+                      data-event={"event-" + (Math.floor(Math.random() * (4 - 1)) + 1)}
+                    >
+                      <a href="#0">
+                        <em className="event-name">{item.StudentsGroup.Name}</em>
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </li>
+
             </ul>
           </div>
 
@@ -243,7 +209,8 @@ class ScheduleTable extends React.Component {
 function mapStateToProps(state) {
   return {
     user: state.oidc.user,
-    profile: state.profileResource.profile
+    profile: state.profileResource.profile,
+    classes: state.scheduleResource.classes
   };
 }
 

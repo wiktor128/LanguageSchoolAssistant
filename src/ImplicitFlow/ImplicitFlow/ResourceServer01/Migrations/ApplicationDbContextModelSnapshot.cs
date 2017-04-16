@@ -83,7 +83,9 @@ namespace ResourceServer01.Migrations
 
                     b.Property<string>("DataFilePath");
 
-                    b.Property<DateTime>("Duration");
+                    b.Property<DateTime?>("Duration");
+
+                    b.Property<DateTime?>("EndTime");
 
                     b.Property<int?>("LocalizationId");
 

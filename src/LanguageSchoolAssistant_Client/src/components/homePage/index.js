@@ -21,16 +21,7 @@ class HomePage extends React.Component {
     this.props.dispatch(loadProfileResourceStart());
   }
 
-  isLanguageInstructor() {
-    if (this.props.profile.isLanguageInstructor) {
-      
-    }
-
-  }
-
   render() {
-    console.log("profile: " + JSON.stringify(this.props.profile));
-    console.log("user: " + JSON.stringify(this.props.user));
 
     const { user } = this.props;
 

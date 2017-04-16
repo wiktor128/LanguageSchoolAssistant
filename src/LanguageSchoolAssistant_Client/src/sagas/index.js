@@ -26,6 +26,8 @@ import {
 
   LOAD_LANGUAGE_INSTRUCTORS_START,
   LOAD_LANGUAGE_INSTRUCTORS_SUCCESS,
+  LOAD_INSTRUCTOR_SCHEDULE_START,
+  LOAD_INSTRUCTOR_SCHEDULE_SUCCESS,
 
   LOAD_CLASSES_START,
   LOAD_CLASSES_END,
@@ -60,6 +62,8 @@ import {
 
   loadLanguageInstructorsStart,
   loadLanguageInstructorsSuccess,
+  loadInstructorScheduleStart,
+  loadInstructorScheduleSuccess,
 
   loadClassesStart,
   loadClassesSuccess,
@@ -140,6 +144,7 @@ export function* updateProfileResourceSaga() {
     const resultData = result.data;
 
     yield put(updateProfileResourceSuccess());
+    yield put(showSnackbarMessage("Profile updated successfully."));
   }
 }
 
@@ -181,6 +186,7 @@ export function* updateUsefulLinksSaga() {
     const resultData = result.data;
 
     yield put(loadUsefulLinksSuccess(resultData));
+    yield put(showSnackbarMessage("Udeful link - successfull."));
   }
 }
 
@@ -199,6 +205,7 @@ export function* updateGroupSaga() {
     yield call(apiRequest, url, 'POST', group);
 
     yield put(loadGroupsStart());
+    yield put(showSnackbarMessage("Group updated successfully."));
   }
 }
 export function* deleteGroupSaga() {
@@ -216,6 +223,7 @@ export function* deleteGroupSaga() {
     yield call(apiRequest, url, 'POST', id);
 
     yield put(loadGroupsStart());
+    yield put(showSnackbarMessage("Group deleted successfully."));
   }
 }
 
@@ -254,6 +262,25 @@ export function* loadGroupsSaga() {
     console.log("result data: " + JSON.stringify(resultData));
 
     yield put(loadGroupsSuccess(resultData));
+  }
+}
+
+export function* loadInstructorScheduleSaga() {
+  while (true) {
+    yield take(LOAD_INSTRUCTOR_SCHEDULE_START);
+
+    console.log("loadInstructorScheduleSaga");
+
+    const loginName = store.getState().oidc.user.profile.name;
+    var bodyParams = {
+      loginName: loginName
+    }
+
+    const url = RESOURCE_SERVER_ADDRESS + '/Management/GetLanguageInstructorWeekSchedule/';
+    const result = yield call(apiRequest, url, 'POST', bodyParams);
+    const resultData = result.data;
+
+    yield put(loadInstructorScheduleSuccess(resultData));
   }
 }
 
@@ -351,6 +378,8 @@ export function* rootSaga() {
 
     loadStudentsSaga(),
     updateStudentsGroupSaga(),
+
+    loadInstructorScheduleSaga(),
 
     updateGroupSaga(),
     loadGroupSaga(),

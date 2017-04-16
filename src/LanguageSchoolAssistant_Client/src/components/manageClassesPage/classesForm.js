@@ -66,18 +66,18 @@ class ClassesForm extends React.Component {
   }
 
   handleStartDateChange(event, date) {
-    console.log("start date change");
-    this.setState({startDate: JSON.stringify(date).substr(1, 10)});
+    console.log("start date change: " + date.toLocaleString().substr(0, 11));
+    this.setState({startDate: date.toLocaleString().substr(0, 11)});
   }
 
   handleStartTimeChange(event, date) {
-    console.log("start time change");
-    this.setState({startTime: JSON.stringify(date)});
+    console.log("start time change " + date.toLocaleString().substr(12, 5));
+    this.setState({startTime: date.toLocaleString().substr(12, 5)});
   }
 
   handleEndTimeChange(event, date) {
-    console.log("end time change");
-    this.setState({endTime: JSON.stringify(date)});
+    console.log("end time change" + date.toLocaleString().substr(12, 5));
+    this.setState({endTime: date.toLocaleString().substr(12, 5)});
   }
 
   handleStudentGroupChange(event, index, value) {
@@ -115,9 +115,9 @@ class ClassesForm extends React.Component {
     this.props.temporaryClasses.unitOfClassesId = this.state.unitOfClassesId,
     this.props.temporaryClasses.subject = this.state.subject,
     this.props.temporaryClasses.shortDescription = this.state.shortDescription,
-    this.props.temporaryClasses.startDate = this.state.startDate, // should be copied to startTime [redundant value, just for input purposes]
-    this.props.temporaryClasses.startTime = this.state.startTime,
-    this.props.temporaryClasses.endTime = this.state.endTime,
+    //this.props.temporaryClasses.startDate = this.state.startDate, // should be copied to startTime [redundant value, just for input purposes]
+    this.props.temporaryClasses.startTime = (this.state.startDate + " " + (this.state.startTime)),
+    this.props.temporaryClasses.endTime = (this.state.startDate + " " + (this.state.endTime)),
     this.props.temporaryClasses.studentsGroupId = this.state.studentsGroupId,
     this.props.temporaryClasses.personalProfileId = this.props.profile.personalProfileId,
     this.props.temporaryClasses.localizationId = this.state.localizationId,

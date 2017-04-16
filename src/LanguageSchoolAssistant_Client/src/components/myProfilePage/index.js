@@ -42,7 +42,7 @@ class MyProfilePage extends React.Component {
 
     this.state = {
       profile: this.props.profile,
-      showSnackbar: false,
+      // showSnackbar: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -54,11 +54,11 @@ class MyProfilePage extends React.Component {
   }
 
   
-  handleCloseSnackbar = () => {
-    this.setState({
-      showSnackbar: false,
-    });
-  };
+  // handleCloseSnackbar = () => {
+  //   this.setState({
+  //     showSnackbar: false,
+  //   });
+  // };
 
   handleInputChange(event) {
     const target = event.target;
@@ -79,7 +79,7 @@ class MyProfilePage extends React.Component {
     event.preventDefault();
     this.props.dispatch(updateProfileResourceStart());
 
-    this.setState({showSnackbar: true});
+    // this.setState({showSnackbar: true});
   }
 
   render() {
@@ -155,14 +155,14 @@ class MyProfilePage extends React.Component {
                 </Col>
               </Row>
             </SimpleFrame>
-            <Snackbar
+            {/*<Snackbar
               open={this.state.showSnackbar}
               message="Profile Updated"
               autoHideDuration={4000}
               onRequestClose={this.handleCloseSnackbar}
               action="OK"
               onActionTouchTap={this.handleCloseSnackbar}
-            />
+            />*/}
           </Col>
         </Row>
       </Grid>
