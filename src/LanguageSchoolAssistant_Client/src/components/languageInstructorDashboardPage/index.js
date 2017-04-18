@@ -42,7 +42,6 @@ class LanguageInstructorDashboardPage extends React.Component {
     this.state = {
       profile: this.props.profile
     };
-
   }
 
   componentWillMount() {

@@ -9,6 +9,8 @@ export default function apiRequest(url, method = 'GET', bodyData) {
   headers.append('Authorization', `Bearer ${token}`);
   headers.append('Access-Control-Allow-Origin', 'true');
 
+  console.log("token: " + JSON.stringify(token));
+
   var formData = new FormData();
 
   if (bodyData) {

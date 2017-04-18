@@ -44523,6 +44523,8 @@
 	  headers.append('Authorization', 'Bearer ' + token);
 	  headers.append('Access-Control-Allow-Origin', 'true');
 	
+	  console.log("token: " + JSON.stringify(token));
+	
 	  var formData = new FormData();
 	
 	  if (bodyData) {
@@ -55566,7 +55568,6 @@
 	    _this.state = {
 	      profile: _this.props.profile
 	    };
-	
 	    return _this;
 	  }
 	
@@ -97481,11 +97482,6 @@
 	    var _this = _possibleConstructorReturn(this, (AddGroupForm.__proto__ || Object.getPrototypeOf(AddGroupForm)).call(this, props));
 	
 	    _this.state = {
-	      // value: null,
-	      // startDate: this.props.temporaryGroup.startDate,
-	      // endDate: this.props.temporaryGroup.endDate,
-	      // levelSelectboxValue: null,
-	
 	      level: "",
 	      name: "",
 	      startDate: "",
@@ -97506,7 +97502,6 @@
 	  _createClass(AddGroupForm, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
-	      //this.props.dispatch(loadProfileResourceStart());
 	      this.props.dispatch((0, _actions.loadGroupsStart)());
 	      this.props.dispatch((0, _actions.loadLanguageInstructorsStart)());
 	    }
@@ -97568,7 +97563,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	
 	      return _react2.default.createElement(
 	        _simpleFrame2.default,
 	        {

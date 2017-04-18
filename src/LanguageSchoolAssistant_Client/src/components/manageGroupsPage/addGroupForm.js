@@ -3,7 +3,6 @@ import { createStyleSheet } from 'jss-theme-reactor';
 import { connect } from 'react-redux';
 
 import {
-  // loadProfileResourceStart,
   loadGroupsStart,
   loadLanguageInstructorsStart,
   updateGroupStart
@@ -28,11 +27,6 @@ class AddGroupForm extends React.Component {
     super(props);
 
     this.state = {
-      // value: null,
-      // startDate: this.props.temporaryGroup.startDate,
-      // endDate: this.props.temporaryGroup.endDate,
-      // levelSelectboxValue: null,
-
       level: "",
       name: "",
       startDate: "",
@@ -50,7 +44,6 @@ class AddGroupForm extends React.Component {
   }
 
   componentWillMount() {
-    //this.props.dispatch(loadProfileResourceStart());
     this.props.dispatch(loadGroupsStart());
     this.props.dispatch(loadLanguageInstructorsStart());
   }
@@ -112,80 +105,79 @@ class AddGroupForm extends React.Component {
   }
 
   render() {
-
     return (
-            <SimpleFrame
-              title="New Course Group"
-              /*iconElementRight = {<FeatureButton />}*/
-            >
-              <form onSubmit={this.handleNewGroupSubmit}>
-                <Row center='xs' bottom='xs' around='xs'>
-                  <Col xs={12} md>
-                    <TextField
-                      value={this.state.name}
-                      fullWidth={true}
-                      floatingLabelText="Group Name"
-                      name="name"
-                      onChange={this.handleInputChange}
-                    />
-                  </Col>
-                  <Col xs={12} md>
-                    <TextField
-                      value={this.state.language}
-                      fullWidth={true}
-                      floatingLabelText="Language"
-                      name="language"
-                      onChange={this.handleInputChange}
-                    />
-                  </Col>
-                  <Col xs={12} md>
-                    <SelectField
-                      fullWidth={true}
-                      floatingLabelText="Level"
-                      value={this.state.level}
-                      name="level"
-                      onChange={this.handleLevelSelectChange}
-                      style={styles.leftAlign}
-                    >
-                      <MenuItem value='A1' key='A1' primaryText='A1' />
-                      <MenuItem value='A2' key='A2' primaryText='A2' />
-                      <MenuItem value='B1' key='B1' primaryText='B1' />
-                      <MenuItem value='B2' key='B2' primaryText='B2' />
-                      <MenuItem value='C1' key='C1' primaryText='C1' />
-                      <MenuItem value='C2' key='C2' primaryText='C2' />
-                    </SelectField>
-                  </Col>
-                  <Col xs={12} md>
-                    <DatePicker 
-             
-                      fullWidth={true}
-                      floatingLabelText="Start Date"
-                      mode="landscape"  
-                      name="startDate"
-                      onChange={this.handleStartDateChange}
-                    />
-                  </Col>
-                  <Col xs={12} md>
-                    <DatePicker
-                  
-                      fullWidth={true}
-                      floatingLabelText="End Date"
-                      mode="landscape" 
-                      name="endDate"
-                      onChange={this.handleEndDateChange}
-                    />
-                  </Col>
-                  <Col xs={12} md={1}>
-                    <FlatButton 
-                      type='submit'
-                      style={styles.btnGreen}
-                      label="Add" 
-                      icon={<AddIcon />}
-                    />
-                  </Col>
-                </Row>
-              </form>
-            </SimpleFrame >
+      <SimpleFrame
+        title="New Course Group"
+        /*iconElementRight = {<FeatureButton />}*/
+      >
+        <form onSubmit={this.handleNewGroupSubmit}>
+          <Row center='xs' bottom='xs' around='xs'>
+            <Col xs={12} md>
+              <TextField
+                value={this.state.name}
+                fullWidth={true}
+                floatingLabelText="Group Name"
+                name="name"
+                onChange={this.handleInputChange}
+              />
+            </Col>
+            <Col xs={12} md>
+              <TextField
+                value={this.state.language}
+                fullWidth={true}
+                floatingLabelText="Language"
+                name="language"
+                onChange={this.handleInputChange}
+              />
+            </Col>
+            <Col xs={12} md>
+              <SelectField
+                fullWidth={true}
+                floatingLabelText="Level"
+                value={this.state.level}
+                name="level"
+                onChange={this.handleLevelSelectChange}
+                style={styles.leftAlign}
+              >
+                <MenuItem value='A1' key='A1' primaryText='A1' />
+                <MenuItem value='A2' key='A2' primaryText='A2' />
+                <MenuItem value='B1' key='B1' primaryText='B1' />
+                <MenuItem value='B2' key='B2' primaryText='B2' />
+                <MenuItem value='C1' key='C1' primaryText='C1' />
+                <MenuItem value='C2' key='C2' primaryText='C2' />
+              </SelectField>
+            </Col>
+            <Col xs={12} md>
+              <DatePicker 
+        
+                fullWidth={true}
+                floatingLabelText="Start Date"
+                mode="landscape"  
+                name="startDate"
+                onChange={this.handleStartDateChange}
+              />
+            </Col>
+            <Col xs={12} md>
+              <DatePicker
+            
+                fullWidth={true}
+                floatingLabelText="End Date"
+                mode="landscape" 
+                name="endDate"
+                onChange={this.handleEndDateChange}
+              />
+            </Col>
+            <Col xs={12} md={1}>
+              <FlatButton 
+                type='submit'
+                style={styles.btnGreen}
+                label="Add" 
+                icon={<AddIcon />}
+              />
+            </Col>
+          </Row>
+        </form>
+      </SimpleFrame>
     );
   }
 }
