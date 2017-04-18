@@ -92604,7 +92604,7 @@
 	    value: function componentWillMount() {
 	      this.props.dispatch((0, _actions.loadRelatedClassesStart)());
 	
-	      console.log("RelatedClasses: " + JSON.stringify(this.props.relatedClasses));
+	      // console.log("RelatedClasses: " + JSON.stringify(this.props.relatedClasses));
 	    }
 	  }, {
 	    key: 'renderStepActions',
@@ -92640,8 +92640,39 @@
 	          label: 'Download Materials',
 	          primary: true,
 	          href: "http://localhost:5001/Resource/DownloadFile/?DataFilePath=" + dataFilePath //TODO
+	          , disabled: dataFilePath == true ? false : true
 	        })
 	      );
+	    }
+	  }, {
+	    key: 'threeNearestDates',
+	    value: function threeNearestDates(relatedClassesList) {
+	
+	      var temporaryList = [];
+	
+	      if (relatedClassesList.length == 0) {
+	        return temporaryList;
+	      }
+	
+	      for (var i = 0; i < relatedClassesList.length; i++) {
+	        if (Date.parse(relatedClassesList[i].startTime) > Date.now()) {
+	          if (relatedClassesList[i - 1]) {
+	            temporaryList.push(relatedClassesList[i - 1]);
+	          }
+	          temporaryList.push(relatedClassesList[i]);
+	          if (relatedClassesList[i + 1]) {
+	            temporaryList.push(relatedClassesList[i + 1]);
+	          }
+	          break;
+	        }
+	      }
+	      if (temporaryList.length == 0 && relatedClassesList[relatedClassesList.length]) {
+	        temporaryList.push(relatedClassesList[relatedClassesList.length]);
+	        temporaryList.push(relatedClassesList[relatedClassesList.length - 1]);
+	        temporaryList.push(relatedClassesList[relatedClassesList.length - 2]);
+	      }
+	      console.log("threeNearestDates, temporaryList: " + JSON.stringify(temporaryList));
+	      return temporaryList;
 	    }
 	  }, {
 	    key: 'render',
@@ -92651,7 +92682,8 @@
 	      var stepIndex = this.state.stepIndex;
 	
 	      var countRelatedClasses = 0;
-	      console.log("______________________________________________________________");
+	
+	      var threeNearestDates = this.threeNearestDates(this.props.relatedClasses);
 	
 	      return _react2.default.createElement(
 	        _simpleFrame2.default,
@@ -92665,16 +92697,20 @@
 	            linear: false,
 	            orientation: 'vertical'
 	          },
-	          this.props.relatedClasses.map(function (item) {
+	          threeNearestDates.map(function (item) {
 	            return _react2.default.createElement(
 	              _Stepper.Step,
 	              { key: item.unitOfClassesId },
 	              _react2.default.createElement(
 	                _Stepper.StepButton,
 	                { onTouchTap: function onTouchTap() {
-	                    return _this2.setState({ stepIndex: _this2.props.relatedClasses.indexOf(item) });
+	                    return _this2.setState({ stepIndex: threeNearestDates.indexOf(item) });
 	                  } },
-	                item.startTime
+	                _react2.default.createElement(
+	                  'strong',
+	                  null,
+	                  item.startTime.substring(0, 10).replace(new RegExp("-", "g"), ".")
+	                )
 	              ),
 	              _react2.default.createElement(
 	                _Stepper.StepContent,
@@ -92682,13 +92718,9 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
+	                  item.startTime.substring(12, 16).replace(new RegExp("-", "g"), ":"),
+	                  _react2.default.createElement('br', null),
 	                  item.subject
-	                ),
-	                _react2.default.createElement(
-	                  'span',
-	                  null,
-	                  'datafilepath: ',
-	                  item.dataFilePath
 	                ),
 	                _this2.renderDownloadFileButton(item.dataFilePath)
 	              )

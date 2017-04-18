@@ -42,8 +42,7 @@ class NextClasses extends React.Component {
   componentWillMount() {
     this.props.dispatch(loadRelatedClassesStart());
 
-
-    console.log("RelatedClasses: " + JSON.stringify(this.props.relatedClasses));
+    // console.log("RelatedClasses: " + JSON.stringify(this.props.relatedClasses));
   }
 
   handleNext = () => {
@@ -92,15 +91,48 @@ class NextClasses extends React.Component {
           label="Download Materials"
           primary={true}
           href={"http://localhost:5001/Resource/DownloadFile/?DataFilePath=" + dataFilePath} //TODO
+          disabled={dataFilePath == true ? false : true}
         />
       </div>
     );
   }
 
+  
+  threeNearestDates(relatedClassesList) {
+
+    var temporaryList = [];
+
+    if(relatedClassesList.length == 0) {
+      return temporaryList;
+    }
+
+    for (var i = 0; i < relatedClassesList.length; i++) { 
+      if(Date.parse(relatedClassesList[i].startTime) > Date.now()) {
+        if(relatedClassesList[i - 1]) {
+          temporaryList.push(relatedClassesList[i - 1]);
+        }
+        temporaryList.push(relatedClassesList[i]);
+        if(relatedClassesList[i + 1]) {
+          temporaryList.push(relatedClassesList[i + 1]);
+        }
+        break;
+      }
+    }
+    if(temporaryList.length == 0 && relatedClassesList[relatedClassesList.length]) {
+      temporaryList.push(relatedClassesList[relatedClassesList.length]);
+      temporaryList.push(relatedClassesList[relatedClassesList.length - 1]);
+      temporaryList.push(relatedClassesList[relatedClassesList.length - 2]);
+    }
+    console.log("threeNearestDates, temporaryList: " + JSON.stringify(temporaryList));
+    return temporaryList;
+
+  }
+
   render() {
     const {stepIndex} = this.state;
     var countRelatedClasses = 0;
-    console.log("______________________________________________________________");
+
+    var threeNearestDates = this.threeNearestDates(this.props.relatedClasses);
     
     return (
 
@@ -113,18 +145,19 @@ class NextClasses extends React.Component {
           orientation="vertical"
         >         
           
-          {this.props.relatedClasses.map((item) =>
+          {threeNearestDates.map((item) =>
             <Step key={item.unitOfClassesId}>
 
-              <StepButton onTouchTap={() => this.setState({stepIndex: this.props.relatedClasses.indexOf(item)})}>                
-                {item.startTime}
+              <StepButton onTouchTap={() => this.setState({stepIndex: threeNearestDates.indexOf(item)})}>                
+                <strong>{item.startTime.substring(0, 10).replace(new RegExp("-","g"), ".")}</strong>
               </StepButton>
               <StepContent>
                 <p>
+                  {item.startTime.substring(12, 16).replace(new RegExp("-","g"), ":")}<br/>
                   {item.subject}
                   
                 </p>
-                <span>datafilepath: {item.dataFilePath}</span>
+
                 {this.renderDownloadFileButton(item.dataFilePath)}
               </StepContent>
               
