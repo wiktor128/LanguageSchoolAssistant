@@ -27,7 +27,8 @@
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.3"
-    }
+    },
+    "dropzone": "4.2.0"
   },
   "frameworks": {
     "netcoreapp1.0": {}

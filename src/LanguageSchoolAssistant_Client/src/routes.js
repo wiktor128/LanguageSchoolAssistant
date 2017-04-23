@@ -11,6 +11,7 @@ import LanguageInstructorDashboardPage from './components/languageInstructorDash
 import ManageGroupsPage from './components/manageGroupsPage';
 import EditGroupPage from './components/manageGroupsPage/edit'
 import ManageClasses from './components/manageClassesPage';
+import UploadRelatedFiles from './components/languageInstructorDashboardPage/uploadRelatedFiles';
 
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -28,6 +29,8 @@ export default function Routes(props) {
       <Route path="/editgroup" component={EditGroupPage} />
 
       <Route path="/manageclasses" component={ManageClasses} />
+
+      <Route path="/uploadrelatedfiles" component={UploadRelatedFiles} />
     </Router>
   );
 }

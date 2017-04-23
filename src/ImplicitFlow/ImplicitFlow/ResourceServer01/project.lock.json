@@ -19,6 +19,9 @@
           "lib/netstandard1.4/AspNet.Security.OAuth.Introspection.dll": {}
         }
       },
+      "dropzone/4.2.0": {
+        "type": "package"
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -4136,6 +4139,23 @@
         "lib/net451/AspNet.Security.OAuth.Introspection.xml",
         "lib/netstandard1.4/AspNet.Security.OAuth.Introspection.dll",
         "lib/netstandard1.4/AspNet.Security.OAuth.Introspection.xml"
+      ]
+    },
+    "dropzone/4.2.0": {
+      "sha512": "DPgbwxoCOH4QIpZYZ0CNU0sAjP15LnkYhANItOoEjPJdeSzN2omYVqvjM6sM7F1EH+Ul4w6Fz8V8rgsdhAmKFg==",
+      "type": "package",
+      "path": "dropzone/4.2.0",
+      "files": [
+        "content/Scripts/dropzone/basic.css",
+        "content/Scripts/dropzone/basic.min.css",
+        "content/Scripts/dropzone/dropzone-amd-module.js",
+        "content/Scripts/dropzone/dropzone-amd-module.min.js",
+        "content/Scripts/dropzone/dropzone.css",
+        "content/Scripts/dropzone/dropzone.js",
+        "content/Scripts/dropzone/dropzone.min.css",
+        "content/Scripts/dropzone/dropzone.min.js",
+        "dropzone.4.2.0.nupkg.sha512",
+        "dropzone.nuspec"
       ]
     },
     "Libuv/1.9.1": {
@@ -10681,7 +10701,8 @@
       "Microsoft.Extensions.Configuration.Json >= 1.0.0",
       "Microsoft.Extensions.Logging.Console >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 1.0.0",
-      "Microsoft.NETCore.App >= 1.0.3"
+      "Microsoft.NETCore.App >= 1.0.3",
+      "dropzone >= 4.2.0"
     ],
     ".NETCoreApp,Version=v1.0": []
   },

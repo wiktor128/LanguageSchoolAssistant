@@ -79,6 +79,7 @@ class LanguageInstructorDashboardPage extends React.Component {
                 <RaisedButton 
                   primary={true} 
                   label="Add New Content" 
+                  onTouchTap = {() => browserHistory.push('/uploadrelatedfiles')} 
                   fullWidth={true} />
                 <br /><br />
                 <RaisedButton 
