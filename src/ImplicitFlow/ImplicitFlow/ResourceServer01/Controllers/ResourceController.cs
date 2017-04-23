@@ -8,6 +8,7 @@ using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Net.Http.Headers;
 using System.IO.Compression;
+using System.Collections.Generic;
 
 namespace ResourceServer01.Controllers
 {

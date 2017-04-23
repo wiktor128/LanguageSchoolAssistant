@@ -21,8 +21,6 @@ import DropzoneComponent from 'react-dropzone-component/lib/react-dropzone';
 import FlatButton from 'material-ui/FlatButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import AutoComplete from 'material-ui/AutoComplete';
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
 
 class UploadRelatedFiles extends React.Component {
 
@@ -39,7 +37,7 @@ class UploadRelatedFiles extends React.Component {
         text: 'fullName',
         value: 'UnitOfClassesId'
       },
-      unitOfClassesId: null
+      unitOfClassesId: ''
     };
 
 
@@ -50,7 +48,8 @@ class UploadRelatedFiles extends React.Component {
             params: {
                 myParam: 'Hello from a parameter!',
                 anotherParam: 43,
-                unitOfClassesId: this.state.unitOfClassesId
+                unitOfClassesId: this.state.UnitOfClassesId,
+
             }
         };
 
@@ -76,7 +75,6 @@ class UploadRelatedFiles extends React.Component {
 
     //console.log("ALL CLASSES: " + JSON.stringify(this.props.classes));
     var availableClasses = [];
-    var items = [];
 
     for(var propertyName in this.props.classes) {
       // propertyName is what you want
@@ -87,48 +85,39 @@ class UploadRelatedFiles extends React.Component {
                           this.props.classes[propertyName].map( (item)=> {
                             return Object.assign(
                                     {
-                                      name: item.StudentsGroup.Name + ", " + 
-                                            item.StartTime.replace("T"," ").substr(0, 16) + ", " + 
-                                            item.Subject
+                                      fullName: item.StudentsGroup.Name + ", " + 
+                                      item.StartTime.replace("T"," ").substr(0, 16) + ", " + 
+                                      item.Subject
                                     },
-                                    {
-                                      value: item.UnitOfClassesId
-                                    }
+                                    item
                                    )
                           })
                          );
     }
 
     this.setState({
-      items: availableClasses,
+      autoCompleteDataSource: availableClasses,
     });
   }
 
-  menuItems(params) {
-    return params.map((item) => (
-      <MenuItem
-        key={item.value}
-        insetChildren={true}
-        value={item.value}
-        primaryText={item.name}
-      />
-    ));
-  }
+  handleUpdateInput = (searchText, value) => {
+    console.log("value: " + JSON.stringify(value));
+    console.log("handleUpdateInput: " + searchText);
+    this.setState({
+      searchText: searchText,
+    });
+  };
+
+  // handleNewRequest = () => {
+  //    console.log("handleNewRequest");
+  //   this.setState({
+  //     searchText: '',
+  //   });
+  // };
 
 
   handleFileAdded(file) {
     console.log(file);
-  }
-
-  handleChange = (event, index, value) => {
-    console.log("handleChange");
-    console.log("value: " + value);
-    console.log("handleChange");
-    this.setState(
-      {unitOfClassesId: value}
-    );
-
-    this.djsConfig.params.unitOfClassesId = value;
   }
 
   handlePost() {
@@ -138,7 +127,7 @@ class UploadRelatedFiles extends React.Component {
  
   render() {    
     const config = this.componentConfig;
-    //const djsConfig = this.djsConfig;
+    const djsConfig = this.djsConfig;
 
     // For a list of all possible events (there are many), see README.md!
     const eventHandlers = {
@@ -157,15 +146,16 @@ class UploadRelatedFiles extends React.Component {
         <Grid>
           <Row middle="xs">
             <Col xs={12}>
-              <SelectField
-                value={this.state.unitOfClassesId}
-                onChange={this.handleChange}
-                floatingLabelText="Floating Label Text"
+              <AutoComplete
+                hintText="Find classes to upload files."
+                searchText={this.state.searchText}
+                onUpdateInput={this.handleUpdateInput}
+                dataSource={this.state.autoCompleteDataSource}
+                dataSourceConfig={this.state.dataSourceConfig}
+                /*filter={(searchText, key) => (key.indexOf(searchText) !== -1)}*/
+                openOnFocus={true}
                 fullWidth={true}
-                maxHeight={300}
-              >
-                {this.menuItems(this.state.items)}
-              </SelectField>
+              />
             </Col>
           </Row>
           <Row middle="xs">
@@ -173,7 +163,7 @@ class UploadRelatedFiles extends React.Component {
               <DropzoneComponent 
                 config={config}
                 eventHandlers={eventHandlers}
-                djsConfig={this.djsConfig} 
+                djsConfig={djsConfig} 
               />
             </Col>
           </Row>

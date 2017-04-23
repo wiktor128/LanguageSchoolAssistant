@@ -102741,6 +102741,18 @@
 	
 	var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 	
+	var _AutoComplete = __webpack_require__(1137);
+	
+	var _AutoComplete2 = _interopRequireDefault(_AutoComplete);
+	
+	var _SelectField = __webpack_require__(1107);
+	
+	var _SelectField2 = _interopRequireDefault(_SelectField);
+	
+	var _MenuItem = __webpack_require__(1060);
+	
+	var _MenuItem2 = _interopRequireDefault(_MenuItem);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -102761,26 +102773,41 @@
 	
 	    var _this = _possibleConstructorReturn(this, (UploadRelatedFiles.__proto__ || Object.getPrototypeOf(UploadRelatedFiles)).call(this, props));
 	
+	    _this.handleChange = function (event, index, value) {
+	      console.log("handleChange");
+	      console.log("value: " + value);
+	      console.log("handleChange");
+	      _this.setState({ unitOfClassesId: value });
+	
+	      _this.djsConfig.params.unitOfClassesId = value;
+	    };
+	
 	    _this.state = {
 	      profile: _this.props.profile,
 	      uploadedFile: null,
-	      uploadedFileCloudinaryUrl: ''
+	      uploadedFileCloudinaryUrl: '',
+	      searchText: '',
+	      autoCompleteDataSource: [],
+	      dataSourceConfig: {
+	        text: 'fullName',
+	        value: 'UnitOfClassesId'
+	      },
+	      unitOfClassesId: null
 	    };
 	
 	    _this.djsConfig = {
 	      addRemoveLinks: true,
-	      acceptedFiles: "image/jpeg,image/png,image/gif",
+	      //acceptedFiles: "image/jpeg,image/png,image/gif",
 	      autoProcessQueue: false,
 	      params: {
 	        myParam: 'Hello from a parameter!',
 	        anotherParam: 43,
-	        unitOfClassesId: "Hello from a ID parameter!"
+	        unitOfClassesId: _this.state.unitOfClassesId
 	      }
-	
 	    };
 	
 	    _this.componentConfig = {
-	      iconFiletypes: ['.jpg', '.png', '.gif'],
+	      //iconFiletypes: ['.jpg', '.png', '.gif'],
 	      showFiletypeIcon: true,
 	      postUrl: 'https://localhost:44305/Resource/UploadFile'
 	    };
@@ -102792,31 +102819,60 @@
 	    }, function () {
 	      return console.log('Ho!');
 	    }];
-	
 	    // Simple callbacks work too, of course
 	    _this.callback = function () {
 	      return console.log('Hello!');
 	    };
-	
 	    _this.success = function (file) {
 	      return console.log('uploaded', file);
 	    };
-	
 	    _this.removedfile = function (file) {
 	      return console.log('removing...', file);
 	    };
-	
 	    _this.dropzone = null;
-	
 	    return _this;
 	  }
 	
-	  // componentWillMount() {
-	  //   this.props.dispatch(loadProfileResourceStart());
-	
-	  // }
-	
 	  _createClass(UploadRelatedFiles, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      this.props.dispatch((0, _actions.loadProfileResourceStart)());
+	
+	      //console.log("ALL CLASSES: " + JSON.stringify(this.props.classes));
+	      var availableClasses = [];
+	      var items = [];
+	
+	      for (var propertyName in this.props.classes) {
+	        // propertyName is what you want
+	        // you can get the value like this: myObject[propertyName]
+	
+	        //console.log("inside property: " + JSON.stringify(this.props.classes[propertyName]));
+	        availableClasses = availableClasses.concat(this.props.classes[propertyName].map(function (item) {
+	          return Object.assign({
+	            name: item.StudentsGroup.Name + ", " + item.StartTime.replace("T", " ").substr(0, 16) + ", " + item.Subject
+	          }, {
+	            value: item.UnitOfClassesId
+	          });
+	        }));
+	      }
+	
+	      this.setState({
+	        items: availableClasses
+	      });
+	    }
+	  }, {
+	    key: 'menuItems',
+	    value: function menuItems(params) {
+	      return params.map(function (item) {
+	        return _react2.default.createElement(_MenuItem2.default, {
+	          key: item.value,
+	          insetChildren: true,
+	          value: item.value,
+	          primaryText: item.name
+	        });
+	      });
+	    }
+	  }, {
 	    key: 'handleFileAdded',
 	    value: function handleFileAdded(file) {
 	      console.log(file);
@@ -102833,7 +102889,7 @@
 	      var _this2 = this;
 	
 	      var config = this.componentConfig;
-	      var djsConfig = this.djsConfig;
+	      //const djsConfig = this.djsConfig;
 	
 	      // For a list of all possible events (there are many), see README.md!
 	      var eventHandlers = {
@@ -102861,10 +102917,29 @@
 	            _react2.default.createElement(
 	              _reactFlexboxGrid.Col,
 	              { xs: 12 },
+	              _react2.default.createElement(
+	                _SelectField2.default,
+	                {
+	                  value: this.state.unitOfClassesId,
+	                  onChange: this.handleChange,
+	                  floatingLabelText: 'Floating Label Text',
+	                  fullWidth: true,
+	                  maxHeight: 300
+	                },
+	                this.menuItems(this.state.items)
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactFlexboxGrid.Row,
+	            { middle: 'xs' },
+	            _react2.default.createElement(
+	              _reactFlexboxGrid.Col,
+	              { xs: 12 },
 	              _react2.default.createElement(_reactDropzone2.default, {
 	                config: config,
 	                eventHandlers: eventHandlers,
-	                djsConfig: djsConfig
+	                djsConfig: this.djsConfig
 	              })
 	            )
 	          ),
