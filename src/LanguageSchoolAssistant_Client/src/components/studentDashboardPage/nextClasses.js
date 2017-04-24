@@ -83,15 +83,16 @@ class NextClasses extends React.Component {
     );
   }
 
-  renderDownloadFileButton(dataFilePath) {
-    console.log("::DATAFILEPATH:: " + dataFilePath);
+  renderDownloadFileButton(unitOfClassesId, dataFilePath) {
+    console.log("================= " + JSON.stringify(unitOfClassesId) + "    " + JSON.stringify(dataFilePath));
+    console.log("dataFilePath == true " + JSON.stringify(dataFilePath == true));
     return (
       <div style={{margin: '12px 0'}}>
         <RaisedButton
           label="Download Materials"
           primary={true}
-          href={"http://localhost:5001/Resource/DownloadFile/?DataFilePath=" + dataFilePath} //TODO
-          disabled={dataFilePath == true ? false : true}
+          href={"http://localhost:5001/Resource/DownloadFile/?unitOfClassesId=" + unitOfClassesId} //TODO
+          disabled={dataFilePath == null ? true : false}
         />
       </div>
     );
@@ -158,7 +159,7 @@ class NextClasses extends React.Component {
                   
                 </p>
 
-                {this.renderDownloadFileButton(item.dataFilePath)}
+                {this.renderDownloadFileButton(item.unitOfClassesId, item.dataFilePath)}
               </StepContent>
               
             </Step>

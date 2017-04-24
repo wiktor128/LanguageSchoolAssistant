@@ -9,16 +9,20 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Net.Http.Headers;
 using System.IO.Compression;
 using System.Collections.Generic;
+using ResourceServer01.Models;
+using System.Linq;
 
 namespace ResourceServer01.Controllers
 {
     public class ResourceController : Controller
     {
         private IHostingEnvironment _environment;
+        private ApplicationDbContext _context;
 
-        public ResourceController(IHostingEnvironment environment)
+        public ResourceController(IHostingEnvironment environment, ApplicationDbContext applicationDbContext)
         {
             _environment = environment;
+            _context = applicationDbContext;
         }
 
         [Authorize(
@@ -45,27 +49,55 @@ namespace ResourceServer01.Controllers
         }
 
         [HttpGet]
-        public FileStreamResult DownloadFile(string dataFilePath = "test.txt")
+        public FileStreamResult DownloadFile(string unitOfClassesId )
         {
-            //string filePath = "test.txt";
-            Response.Headers.Add("content-disposition", $"attachment; filename={dataFilePath}");
+
+            string contentSaveDirectory = $"{_environment.ContentRootPath}\\Data\\{unitOfClassesId}";
+            string zipFileName = $"{unitOfClassesId}.zip";
+            string zipFilePath = $"{_environment.ContentRootPath}\\Data\\{zipFileName}";
+
+            //ZipArchive zipArchive = null;
+
+            if (Directory.Exists(contentSaveDirectory))
+            {
+                ZipFile.CreateFromDirectory(contentSaveDirectory, zipFilePath);
+                //zipArchive = ZipFile.OpenRead(zipFilePath);
+            }
+
+
+            Response.Headers.Add("content-disposition", $"attachment; filename={zipFileName}");
             return File(
                 new System.IO.FileStream(
-                    $@".\Data\{dataFilePath}",
+                    zipFilePath,
                     FileMode.Open),
                 "application/octet-stream"
             ); // or "application/x-rar-compressed"
+
         }
 
         [HttpPost]
         public void UploadFile(IFormFile file, string unitOfClassesId)
         {
-            //string filePath = "test.txt";
-            ;
-            var x = "";
-            var y = x;
-            var param = unitOfClassesId;
+            var contentSaveDirectory = $"{_environment.ContentRootPath}\\Data\\{unitOfClassesId}";
 
+            if (!Directory.Exists(contentSaveDirectory))
+            {
+                Directory.CreateDirectory(contentSaveDirectory);
+            }
+
+            if (!System.IO.File.Exists($"{contentSaveDirectory}\\{file.FileName}"))
+            {
+                file.CopyTo(new FileStream($"{contentSaveDirectory}\\{file.FileName}", FileMode.Create));
+            }
+
+            var classToUpdate = _context.UnitOfClasses
+                                    .Where(x => x.UnitOfClassesId == int.Parse(unitOfClassesId))
+                                    .SingleOrDefault();
+
+            classToUpdate.DataFilePath = unitOfClassesId;
+            _context.UnitOfClasses.Update(classToUpdate);
+        
+            _context.SaveChanges();
         }
 
 

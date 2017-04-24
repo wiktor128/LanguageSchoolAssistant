@@ -92639,16 +92639,17 @@
 	    }
 	  }, {
 	    key: 'renderDownloadFileButton',
-	    value: function renderDownloadFileButton(dataFilePath) {
-	      console.log("::DATAFILEPATH:: " + dataFilePath);
+	    value: function renderDownloadFileButton(unitOfClassesId, dataFilePath) {
+	      console.log("================= " + JSON.stringify(unitOfClassesId) + "    " + JSON.stringify(dataFilePath));
+	      console.log("dataFilePath == true " + JSON.stringify(dataFilePath == true));
 	      return _react2.default.createElement(
 	        'div',
 	        { style: { margin: '12px 0' } },
 	        _react2.default.createElement(_RaisedButton2.default, {
 	          label: 'Download Materials',
 	          primary: true,
-	          href: "http://localhost:5001/Resource/DownloadFile/?DataFilePath=" + dataFilePath //TODO
-	          , disabled: dataFilePath == true ? false : true
+	          href: "http://localhost:5001/Resource/DownloadFile/?unitOfClassesId=" + unitOfClassesId //TODO
+	          , disabled: dataFilePath == null ? true : false
 	        })
 	      );
 	    }
@@ -92730,7 +92731,7 @@
 	                  _react2.default.createElement('br', null),
 	                  item.subject
 	                ),
-	                _this2.renderDownloadFileButton(item.dataFilePath)
+	                _this2.renderDownloadFileButton(item.unitOfClassesId, item.dataFilePath)
 	              )
 	            );
 	          })
